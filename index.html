@@ -12390,9 +12390,341 @@ body.theme-dark .final-zero-check span{
     flex-direction:column;
   }
 }
+
+/* ============================================================
+   DJANGO ACADEMY V13 · PowerShell + errores de venv para nuevos
+   ============================================================ */
+
+.powershell-beginner-guide,
+.venv-troubleshooting,
+.install-sequence-beginner{
+  margin:22px 0 26px;
+  overflow:hidden;
+  border:1px solid #dbe4ef;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 10px 30px rgba(15,23,42,.045);
+}
+
+.powershell-guide-head,
+.install-sequence-head{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  align-items:center;
+  padding:16px 18px;
+  border-bottom:1px solid #e2e8f0;
+  background:linear-gradient(180deg,#eff6ff,#f8fbff);
+}
+.powershell-guide-head>div,
+.install-sequence-head{
+  min-width:0;
+}
+.powershell-guide-head span,
+.install-sequence-head span{
+  display:block;
+  margin-bottom:3px;
+  color:#1d4ed8;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.1em;
+}
+.powershell-guide-head strong,
+.install-sequence-head strong{
+  color:#0f172a;
+  font-size:16px;
+}
+.powershell-guide-head small{
+  color:#64748b;
+  font-size:11px;
+}
+
+.powershell-steps{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  padding:18px;
+}
+.powershell-steps article{
+  display:grid;
+  grid-template-columns:36px 1fr;
+  gap:11px;
+  padding:15px;
+  border:1px solid #e2e8f0;
+  border-radius:15px;
+  background:#fff;
+}
+.powershell-steps article>b{
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  background:#2563eb;
+  color:#fff;
+  font-size:12px;
+}
+.powershell-steps strong{
+  display:block;
+  margin-bottom:6px;
+  color:#0f172a;
+  font-size:13px;
+}
+.powershell-steps pre,
+.powershell-success pre,
+.venv-recovery-flow pre,
+.venv-policy-note pre,
+.install-terminal pre,
+.final-zero-step-sequence pre{
+  margin:7px 0 !important;
+  padding:12px 13px !important;
+  border-radius:10px;
+  background:#0b1220 !important;
+  color:#e8f1ff !important;
+  font-size:13px !important;
+  line-height:1.7 !important;
+  white-space:pre-wrap;
+}
+.powershell-steps p{
+  margin:5px 0 0 !important;
+  color:#64748b !important;
+  font-size:12px !important;
+}
+
+.powershell-success{
+  margin:0 18px 18px;
+  padding:14px 16px;
+  border:1px solid #86efac;
+  border-radius:14px;
+  background:#f0fdf4;
+}
+.powershell-success strong{
+  color:#166534;
+  font-size:13px;
+}
+
+.venv-trouble-title{
+  padding:17px 18px;
+  border-bottom:1px solid #fed7aa;
+  background:#fff7ed;
+}
+.venv-trouble-title span{
+  display:block;
+  margin-bottom:4px;
+  color:#c2410c;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.venv-trouble-title strong{
+  color:#7c2d12;
+  font-size:14px;
+}
+.venv-troubleshooting>p{
+  margin:0 !important;
+  padding:16px 18px 4px;
+  color:#475569 !important;
+  font-size:13px !important;
+  line-height:1.72 !important;
+}
+.venv-recovery-flow{
+  display:grid;
+  gap:10px;
+  padding:14px 18px 18px;
+}
+.venv-recovery-flow>div{
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:12px;
+  padding:13px 14px;
+  border:1px solid #e2e8f0;
+  border-radius:14px;
+  background:#fff;
+}
+.venv-recovery-flow>div>span{
+  width:36px;
+  height:36px;
+  display:grid;
+  place-items:center;
+  border-radius:11px;
+  background:#ea580c;
+  color:#fff;
+  font-size:12px;
+  font-weight:900;
+}
+.venv-recovery-flow strong{
+  color:#0f172a;
+  font-size:13px;
+}
+.venv-recovery-flow small{
+  color:#64748b;
+  font-size:11px;
+}
+.venv-recovery-flow section{
+  padding:0 !important;
+  margin:0 !important;
+  width:auto !important;
+  max-width:none !important;
+}
+
+.venv-policy-note{
+  margin:0 18px 18px;
+  padding:15px 16px;
+  border:1px solid #fde68a;
+  border-radius:14px;
+  background:#fffbeb;
+}
+.venv-policy-note strong{
+  color:#92400e;
+  font-size:13px;
+}
+.venv-policy-note p,
+.venv-policy-note small{
+  color:#6b7280;
+  font-size:12px;
+}
+
+.install-terminal{
+  padding:18px 18px 6px;
+}
+.install-dont-do{
+  margin:0 18px 18px;
+  padding:14px 16px;
+  border:1px solid #fecaca;
+  border-radius:14px;
+  background:#fef2f2;
+}
+.install-dont-do strong{
+  color:#991b1b;
+  font-size:13px;
+}
+.install-dont-do p{
+  margin:5px 0 0 !important;
+  color:#7f1d1d !important;
+  font-size:12px !important;
+}
+
+.final-zero-step-sequence{
+  display:grid;
+  gap:10px;
+  margin:16px 0;
+}
+.final-zero-step-sequence article{
+  display:grid;
+  grid-template-columns:42px 1fr;
+  gap:12px;
+  padding:14px;
+  border:1px solid #dbe4ef;
+  border-radius:14px;
+  background:#fff;
+}
+.final-zero-step-sequence article>span{
+  width:40px;
+  height:40px;
+  display:grid;
+  place-items:center;
+  border-radius:11px;
+  background:#0C4B33;
+  color:#fff;
+  font-size:12px;
+  font-weight:900;
+}
+.final-zero-step-sequence strong{
+  color:#0f172a;
+}
+.final-zero-step-sequence p{
+  margin:4px 0 0 !important;
+  color:#64748b !important;
+  font-size:12px !important;
+}
+.final-zero-error-link{
+  margin:14px 0;
+  padding:14px 16px;
+  border:1px solid #fed7aa;
+  border-radius:14px;
+  background:#fff7ed;
+}
+.final-zero-error-link strong{
+  color:#9a3412;
+}
+.final-zero-error-link p{
+  margin:5px 0 0 !important;
+  color:#7c2d12 !important;
+  font-size:12px !important;
+}
+.final-zero-error-link a{
+  color:#0C4B33;
+  font-weight:800;
+}
+
+/* dark mode */
+body.theme-dark .powershell-beginner-guide,
+body.theme-dark .venv-troubleshooting,
+body.theme-dark .install-sequence-beginner{
+  background:#0b1220;
+  border-color:#26344f;
+}
+body.theme-dark .powershell-guide-head,
+body.theme-dark .install-sequence-head{
+  background:#10213f;
+  border-bottom-color:#26344f;
+}
+body.theme-dark .powershell-guide-head strong,
+body.theme-dark .install-sequence-head strong,
+body.theme-dark .powershell-steps strong,
+body.theme-dark .venv-recovery-flow strong,
+body.theme-dark .final-zero-step-sequence strong{
+  color:#f8fafc;
+}
+body.theme-dark .powershell-steps article,
+body.theme-dark .venv-recovery-flow>div,
+body.theme-dark .final-zero-step-sequence article{
+  background:#0f172a;
+  border-color:#26344f;
+}
+body.theme-dark .powershell-success{
+  background:#0d2a20;
+  border-color:#14532d;
+}
+body.theme-dark .venv-trouble-title,
+body.theme-dark .venv-policy-note,
+body.theme-dark .final-zero-error-link{
+  background:#2b2110;
+  border-color:#713f12;
+}
+body.theme-dark .venv-trouble-title strong,
+body.theme-dark .venv-policy-note strong,
+body.theme-dark .final-zero-error-link strong{
+  color:#fde68a;
+}
+body.theme-dark .venv-troubleshooting>p,
+body.theme-dark .venv-recovery-flow small,
+body.theme-dark .venv-policy-note p,
+body.theme-dark .venv-policy-note small,
+body.theme-dark .final-zero-error-link p{
+  color:#d1c6a8 !important;
+}
+body.theme-dark .install-dont-do{
+  background:#2b1013;
+  border-color:#7f1d1d;
+}
+body.theme-dark .install-dont-do strong,
+body.theme-dark .install-dont-do p{
+  color:#fecaca !important;
+}
+
+@media(max-width:850px){
+  .powershell-steps{
+    grid-template-columns:1fr;
+  }
+  .powershell-guide-head{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><link href="https://unpkg.com/tippy.js@6/animations/shift-away.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css" rel="stylesheet"/>
-<meta content="12" name="django-academy-version"/>
+<meta content="13" name="django-academy-version"/>
 </head><body>
 <div class="progress-top" id="progressTop"></div>
 <div class="layout">
@@ -13500,6 +13832,52 @@ except ValueError:
 </div>
 </article>
 </div>
+</div><div class="powershell-beginner-guide">
+<div class="powershell-guide-head">
+<div>
+<span>🪟 WINDOWS + POWERSHELL</span>
+<strong>Hazlo en este orden</strong>
+</div>
+<small>Recomendado para principiantes</small>
+</div>
+<div class="powershell-steps">
+<article>
+<b>1</b>
+<div>
+<strong>Comprueba Python</strong>
+<pre>python --version</pre>
+<p>Si ves una versión de Python, continúa.</p>
+</div>
+</article>
+<article>
+<b>2</b>
+<div>
+<strong>Crea el entorno virtual</strong>
+<pre>python -m venv .venv</pre>
+<p>Espera a que vuelva a aparecer el prompt de PowerShell. No interrumpas el proceso.</p>
+</div>
+</article>
+<article>
+<b>3</b>
+<div>
+<strong>Activa el entorno</strong>
+<pre>.\.venv\Scripts\Activate.ps1</pre>
+<p>Cuando funcione, la terminal comenzará con <code>(.venv)</code>.</p>
+</div>
+</article>
+<article>
+<b>4</b>
+<div>
+<strong>Comprueba pip</strong>
+<pre>python -m pip --version</pre>
+<p>Así verificas que pip pertenece al Python del entorno virtual.</p>
+</div>
+</article>
+</div>
+<div class="powershell-success">
+<strong>✅ Así debe verse cuando está activo</strong>
+<pre>(.venv) PS C:\Users\user\Documents\desarrolloDjango&gt;</pre>
+</div>
 </div><div class="chapter-preview-only"><div class="chapter-preview-card">
 <div class="chapter-panel-head">
 <div>
@@ -13509,7 +13887,7 @@ except ValueError:
 <span class="chapter-step-badge">Paso 03</span>
 </div>
 <div class="chapter-preview-stage preview-kind-terminal">
-<div class="terminal-preview"><div>&gt; py -m venv .venv</div><div>&gt; .venv\Scripts\activate</div><div>(.venv) &gt; python -m pip --version</div><strong>Entorno activado: ahora puedes instalar dependencias sin mezclarlas con otros proyectos.</strong></div>
+<div class="terminal-preview"><div>&gt; python -m venv .venv</div><div>&gt; .\.venv\Scripts\Activate.ps1</div><div>(.venv) &gt; python -m pip --version</div><strong>Entorno activado: ahora puedes instalar dependencias sin mezclarlas con otros proyectos.</strong></div>
 </div>
 <div class="chapter-preview-note">
 <strong>Qué debes observar</strong>
@@ -13518,6 +13896,62 @@ except ValueError:
 </div></div><div class="easy-dictionary">
 <div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
 <div class="easy-dictionary-grid"><div><strong>venv</strong><span>Entorno virtual aislado.</span></div><div><strong>pip</strong><span>Instalador de paquetes Python.</span></div><div><strong>dependencia</strong><span>Librería que tu proyecto necesita.</span></div></div>
+</div><div class="venv-troubleshooting">
+<div class="venv-trouble-title">
+<span>🧯 SI <code>python -m venv .venv</code> FALLA</span>
+<strong>Ejemplo: aparece <code>KeyboardInterrupt</code> mientras ejecuta <code>ensurepip</code></strong>
+</div>
+<p>
+        Eso no significa que el comando <code>python -m venv .venv</code> esté mal.
+        Significa que la creación del entorno se interrumpió antes de terminar, normalmente
+        mientras Python instalaba <code>pip</code> dentro de <code>.venv</code>.
+      </p>
+<div class="venv-recovery-flow">
+<div>
+<span>1</span>
+<section>
+<strong>Borra el entorno incompleto</strong>
+<pre>Remove-Item -Recurse -Force .venv</pre>
+<small>Si dice que la carpeta no existe, continúa.</small>
+</section>
+</div>
+<div>
+<span>2</span>
+<section>
+<strong>Comprueba que pip puede prepararse</strong>
+<pre>python -m ensurepip --upgrade</pre>
+</section>
+</div>
+<div>
+<span>3</span>
+<section>
+<strong>Comprueba pip</strong>
+<pre>python -m pip --version</pre>
+</section>
+</div>
+<div>
+<span>4</span>
+<section>
+<strong>Vuelve a crear el entorno</strong>
+<pre>python -m venv .venv</pre>
+<small>Déjalo terminar antes de escribir otro comando.</small>
+</section>
+</div>
+<div>
+<span>5</span>
+<section>
+<strong>Actívalo</strong>
+<pre>.\.venv\Scripts\Activate.ps1</pre>
+</section>
+</div>
+</div>
+<div class="venv-policy-note">
+<strong>¿PowerShell bloquea <code>Activate.ps1</code>?</strong>
+<p>Permítelo solo para la terminal actual y vuelve a activar:</p>
+<pre>Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1</pre>
+<small>Con <code>-Scope Process</code> el cambio dura únicamente mientras esa ventana de PowerShell esté abierta.</small>
+</div>
 </div>
 <details class="course-topic" id="venv" open="">
 <summary>
@@ -13539,13 +13973,13 @@ except ValueError:
 <div class="flow-wide"><span class="flow-box">Proyecto A</span><span class="flow-arr">→</span><span class="flow-box hot">venv</span><span class="flow-arr">→</span><span class="flow-box">Django 6.1.1</span></div>
 <div class="codebox">
 <div class="codehead"><span>Windows</span></div>
-<pre><code>py -m venv .venv
-.venv\Scripts\activate</code></pre>
+<pre>python -m venv .venv
+.\.venv\Scripts\Activate.ps1</pre>
 </div>
 <div class="codebox">
 <div class="codehead"><span>Linux / macOS</span></div>
-<pre><code>python3 -m venv .venv
-source .venv/bin/activate</code></pre>
+<pre>python3 -m venv .venv
+source .venv/bin/activate</pre>
 </div>
 </div>
 </details>
@@ -13568,7 +14002,7 @@ python -m pip list</pre>
 </div>
 <div class="codebox">
 <div class="codehead"><span>Comprobar</span></div>
-<pre><code>python -m django --version</code></pre>
+<pre>python -m django --version</pre>
 </div>
 <div class="deep-concepts-grid">
 <article class="deep-concept">
@@ -13699,6 +14133,29 @@ python -m pip list</pre>
 <i>→</i>
 <a href="#que-es-django"><b>4</b><strong>Entiende MVT</strong><small>Ahora estudia la arquitectura</small></a>
 </div>
+</div><div class="install-sequence-beginner">
+<div class="install-sequence-head">
+<span>✅ SECUENCIA RECOMENDADA</span>
+<strong>Instala Django solo después de ver <code>(.venv)</code></strong>
+</div>
+<div class="install-terminal">
+<pre># 1. Debes estar dentro de tu carpeta de proyecto
+# 2. El entorno debe estar activo y verse así:
+(.venv) PS C:\Users\user\Documents\desarrolloDjango&gt;
+
+# 3. Actualiza pip
+python -m pip install --upgrade pip
+
+# 4. Instala Django
+python -m pip install Django==6.1.1
+
+# 5. Comprueba Django
+python -m django --version</pre>
+</div>
+<div class="install-dont-do">
+<strong>⚠️ No continúes si no aparece <code>(.venv)</code>.</strong>
+<p>Si instalas Django antes de activar el entorno, puedes terminar instalándolo en el Python global de Windows.</p>
+</div>
 </div><div class="chapter-preview-only"><div class="chapter-preview-card">
 <div class="chapter-panel-head">
 <div>
@@ -13737,10 +14194,10 @@ python -m pip list</pre>
     </div>
 <div class="codebox">
 <div class="codehead"><span>Terminal</span></div>
-<pre><code>py -m venv .venv
-.venv\Scripts\activate
-pip install Django==6.1.1
-py -m django --version</code></pre>
+<pre><code>python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install Django==6.1.1
+python -m django --version</code></pre>
 </div>
 <div class="interaction-live-preview">
 <div class="interaction-preview-head">
@@ -13750,7 +14207,7 @@ py -m django --version</code></pre>
 <div class="mini-browser">
 <div class="mini-browser-bar"><i></i><i></i><i></i><span>Terminal</span></div>
 <div class="mini-browser-body"><div class="terminal-preview">
-<div>&gt; py -m django --version</div>
+<div>&gt; python -m django --version</div>
 <strong>6.1.1</strong>
 <div class="terminal-ok">✓ Django instalado correctamente</div>
 </div></div>
@@ -19550,33 +20007,62 @@ CSRF_COOKIE_SECURE = True</code></pre>
 <small>empieza literalmente desde una carpeta vacía</small>
 </span>
 </summary>
-<div class="course-topic-body">
-<div class="topic-simple-intro">
+<div class="course-topic-body"><div class="topic-simple-intro">
 <span>EN UNA FRASE</span>
 <p>En este bloque vas a <strong>Preparar la carpeta y el entorno</strong>: empieza literalmente desde una carpeta vacía. Hazlo con calma y prueba antes de continuar.</p>
 </div>
 <div class="final-zero-grid">
 <article class="final-zero-card">
 <span class="final-zero-label">📁 CARPETA</span>
-<h4>1. Crea el proyecto</h4>
-<pre>django_estudiantes/</pre>
-<p>Abre esa carpeta en tu editor. Todo lo demás irá dentro de ella.</p>
+<h4>1. Crea y abre la carpeta</h4>
+<pre>mkdir django_estudiantes
+cd django_estudiantes</pre>
+<p>También puedes crearla desde el Explorador de Windows y abrir PowerShell dentro de ella.</p>
 </article>
 <article class="final-zero-card">
-<span class="final-zero-label">🐍 ENTORNO</span>
-<h4>2. Crea y activa .venv</h4>
-<pre>python -m venv .venv
-
-# Windows
-.venv\Scripts\activate
-
-# macOS / Linux
-source .venv/bin/activate</pre>
+<span class="final-zero-label">🐍 POWERSHELL</span>
+<h4>2. Comprueba Python</h4>
+<pre>python --version
+python -m pip --version</pre>
+<p>Haz esta comprobación antes de crear <code>.venv</code>.</p>
+</article>
+</div>
+<div class="final-zero-step-sequence">
+<article>
+<span>3</span>
+<div>
+<strong>Crea el entorno virtual</strong>
+<pre>python -m venv .venv</pre>
+<p>Espera hasta que PowerShell vuelva a mostrar el prompt.</p>
+</div>
+</article>
+<article>
+<span>4</span>
+<div>
+<strong>Actívalo en PowerShell</strong>
+<pre>.\.venv\Scripts\Activate.ps1</pre>
+</div>
+</article>
+<article>
+<span>5</span>
+<div>
+<strong>Comprueba que está activo</strong>
+<pre>(.venv) PS C:\...\django_estudiantes&gt;</pre>
+<p>Ese <code>(.venv)</code> es la señal más fácil de reconocer para un estudiante nuevo.</p>
+</div>
 </article>
 </div>
 <div class="callout success">
 <strong>Comprueba antes de seguir.</strong>
-<p>La terminal debe mostrar que el entorno está activo. Si no lo está, no continúes todavía.</p>
+<p>No pases a “Instalar Django” hasta ver <code>(.venv)</code> al comienzo de la terminal.</p>
+</div>
+<div class="final-zero-error-link">
+<strong>¿Falló la creación del entorno?</strong>
+<p>
+            Si aparece <code>KeyboardInterrupt</code> durante <code>ensurepip</code>,
+            vuelve a la lección <a href="#entorno-python">Entorno virtual, pip y dependencias</a>
+            y usa el bloque de recuperación paso a paso.
+          </p>
 </div>
 </div>
 </details>
@@ -19598,7 +20084,10 @@ source .venv/bin/activate</pre>
 </div>
 <div class="codebox">
 <div class="codehead"><strong>Comandos</strong><span>ejecútalos uno por uno</span></div>
-<pre>python -m pip install django
+<pre># El entorno ya debe estar activo: (.venv)
+
+python -m pip install --upgrade pip
+python -m pip install Django==6.1.1
 python -m django --version
 django-admin startproject config .
 python manage.py runserver</pre>

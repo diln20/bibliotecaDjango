@@ -9867,9 +9867,203 @@ body.theme-dark .relation-preview .many span{background:#10213f;border-color:#1e
   .profile-preview{grid-template-columns:1fr;text-align:center}
   .avatar{margin:auto}
 }
+
+/* ============================================================
+   DJANGO ACADEMY V4 · Explicaciones fáciles para principiantes
+   ============================================================ */
+.easy-explanation-panel{
+  margin:0 0 24px;
+  overflow:hidden;
+  border:1px solid #dbe4ef;
+  border-radius:22px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(250,204,21,.10),transparent 35%),
+    linear-gradient(180deg,#fff,#fffef8);
+  box-shadow:0 10px 28px rgba(15,23,42,.045);
+}
+.easy-explanation-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 17px;
+  border-bottom:1px solid #e2e8f0;
+}
+.easy-explanation-head span{
+  padding:5px 8px;
+  border-radius:999px;
+  background:#fef9c3;
+  color:#854d0e;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.1em;
+}
+.easy-explanation-head strong{
+  color:#0f172a;
+  font-size:14px;
+}
+.easy-explanation-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  padding:15px;
+}
+.easy-card{
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:11px;
+  align-items:start;
+  padding:13px;
+  border:1px solid #e2e8f0;
+  border-radius:14px;
+  background:#fff;
+}
+.easy-card-icon{
+  width:36px;height:36px;
+  display:grid;place-items:center;
+  border-radius:11px;
+  font-size:16px;
+  background:#f8fafc;
+}
+.easy-card strong{
+  display:block;
+  margin-bottom:4px;
+  color:#0f172a;
+  font-size:11px;
+}
+.easy-card p{
+  margin:0!important;
+  color:#475569!important;
+  font-size:11px!important;
+  line-height:1.65!important;
+}
+.easy-card.simple{border-color:#bbf7d0}
+.easy-card.simple .easy-card-icon{background:#ecfdf5}
+.easy-card.daily{border-color:#bfdbfe}
+.easy-card.daily .easy-card-icon{background:#eff6ff}
+.easy-card.behind{border-color:#ddd6fe}
+.easy-card.behind .easy-card-icon{background:#f5f3ff}
+.easy-card.remember{border-color:#fde68a}
+.easy-card.remember .easy-card-icon{background:#fffbeb}
+
+.topic-simple-intro{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:10px;
+  align-items:center;
+  margin:0 0 16px;
+  padding:10px 12px;
+  border:1px solid #d1fae5;
+  border-radius:11px;
+  background:#f0fdf4;
+}
+.topic-simple-intro span{
+  padding:4px 7px;
+  border-radius:999px;
+  background:#0C4B33;
+  color:#fff;
+  font-size:7px;
+  font-weight:900;
+  letter-spacing:.09em;
+}
+.topic-simple-intro p{
+  margin:0!important;
+  color:#166534!important;
+  font-size:10.5px!important;
+  line-height:1.5!important;
+}
+
+.easy-dictionary{
+  margin:-10px 0 24px;
+  padding:14px 15px;
+  border:1px dashed #cbd5e1;
+  border-radius:16px;
+  background:#f8fafc;
+}
+.easy-dictionary-title{
+  margin-bottom:9px;
+  color:#475569;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.04em;
+}
+.easy-dictionary-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+}
+.easy-dictionary-grid>div{
+  padding:9px 10px;
+  border:1px solid #e2e8f0;
+  border-radius:9px;
+  background:#fff;
+}
+.easy-dictionary-grid strong,
+.easy-dictionary-grid span{
+  display:block;
+}
+.easy-dictionary-grid strong{
+  margin-bottom:3px;
+  color:#0C4B33;
+  font-size:9px;
+}
+.easy-dictionary-grid span{
+  color:#64748b;
+  font-size:8.5px;
+  line-height:1.45;
+}
+
+/* Dark mode */
+body.theme-dark .easy-explanation-panel{
+  background:
+    radial-gradient(circle at 100% 0%,rgba(250,204,21,.08),transparent 35%),
+    linear-gradient(180deg,#0b1220,#0d1627)!important;
+  border-color:#26344f;
+}
+body.theme-dark .easy-explanation-head{
+  border-bottom-color:#26344f;
+}
+body.theme-dark .easy-explanation-head strong,
+body.theme-dark .easy-card strong{
+  color:#f8fafc;
+}
+body.theme-dark .easy-card{
+  background:#0f172a;
+  border-color:#26344f;
+}
+body.theme-dark .easy-card p{
+  color:#a9b6c9!important;
+}
+body.theme-dark .easy-card-icon{
+  background:#111827!important;
+}
+body.theme-dark .topic-simple-intro{
+  background:#0d2a20;
+  border-color:#14532d;
+}
+body.theme-dark .topic-simple-intro p{
+  color:#a7f3d0!important;
+}
+body.theme-dark .easy-dictionary{
+  background:#0d1627;
+  border-color:#334155;
+}
+body.theme-dark .easy-dictionary-grid>div{
+  background:#0b1220;
+  border-color:#26344f;
+}
+body.theme-dark .easy-dictionary-grid strong{color:#86efac}
+body.theme-dark .easy-dictionary-grid span{color:#a9b6c9}
+
+@media(max-width:850px){
+  .easy-explanation-grid{grid-template-columns:1fr}
+  .easy-dictionary-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  .topic-simple-intro{grid-template-columns:1fr}
+}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><link href="https://unpkg.com/tippy.js@6/animations/shift-away.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css" rel="stylesheet"/>
-<meta content="3" name="django-academy-version"/>
+<meta content="4" name="django-academy-version"/>
 </head><body>
 <div class="progress-top" id="progressTop"></div>
 <div class="layout">
@@ -10200,6 +10394,41 @@ body.theme-dark .relation-preview .many span{background:#10213f;border-color:#1e
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Esta guía no está pensada para que memorices comandos. La idea es que entiendas qué hace cada pieza de Django mientras construyes una aplicación real.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Piensa en el curso como armar una casa: primero preparas las herramientas, después haces la estructura, luego instalas puertas, ventanas y finalmente la dejas lista para usar.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Cada capítulo agrega una parte al mismo proyecto. Por eso verás que los archivos anteriores vuelven a aparecer y se van ampliando.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>No necesitas entender todo desde el primer intento. Lo importante es saber qué archivo tocar y por qué.</p>
+</div>
+</article>
+</div>
 </div>
 <div class="academy-dashboard" id="academyDashboard">
 <article class="academy-dashboard-card continue-card">
@@ -10319,6 +10548,44 @@ body.theme-dark .relation-preview .many span{background:#10213f;border-color:#1e
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Cuando escribes una dirección en el navegador, el navegador le pide algo a un servidor. Django vive en ese servidor, recibe la petición y decide qué responder.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como ir a un restaurante: tú haces el pedido, el mesero lleva la solicitud a cocina y después vuelve con el plato.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>El navegador envía una request HTTP. Django la recibe, busca una URL que coincida, ejecuta una view y devuelve una response.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Request = pregunta. Response = respuesta.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Request</strong><span>Petición que llega al servidor.</span></div><div><strong>Response</strong><span>Respuesta que devuelve el servidor.</span></div><div><strong>HTTP</strong><span>Reglas de comunicación entre cliente y servidor.</span></div></div>
 </div>
 <details class="course-topic" id="antes-web" open="">
 <summary>
@@ -10328,7 +10595,10 @@ body.theme-dark .relation-preview .many span{background:#10213f;border-color:#1e
 <small>cliente, servidor, request y response</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>¿Qué ocurre cuando abres una web?</strong>: cliente, servidor, request y response. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="learning-triad">
 <div class="learning-triad-card"><strong>🎯 Qué vas a aprender</strong><span>Entender el recorrido de una petición antes de tocar Django.</span></div>
 <div class="learning-triad-card"><strong>🧠 Cómo pensarlo</strong><span>Django vive en el servidor: recibe requests y devuelve responses.</span></div>
@@ -10373,7 +10643,10 @@ body.theme-dark .relation-preview .many span{background:#10213f;border-color:#1e
 <small>GET, POST, PUT/PATCH y DELETE</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Métodos HTTP</strong>: GET, POST, PUT/PATCH y DELETE. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>GET</h4>
 <p>Consulta un recurso.</p>
@@ -10412,7 +10685,10 @@ body.theme-dark .relation-preview .many span{background:#10213f;border-color:#1e
 <small>qué hace cada parte</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Frontend vs backend</strong>: qué hace cada parte. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="preview-compare">
 <div class="preview-compare-panel good">
 <span class="compare-label">FRONTEND</span>
@@ -10491,6 +10767,44 @@ body.theme-dark .relation-preview .many span{background:#10213f;border-color:#1e
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Django está escrito en Python, así que primero necesitas conocer las piezas básicas del lenguaje: variables, listas, funciones, condicionales, ciclos y clases.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Una variable es como una caja con una etiqueta. Una función es como una máquina: recibe algo, trabaja con eso y puede devolver un resultado.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Los Models, Forms y Views que usarás después son clases y funciones de Python. Aprender esta base evita copiar código sin comprenderlo.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Si entiendes Python básico, Django deja de parecer magia.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Variable</strong><span>Nombre que referencia un valor.</span></div><div><strong>Función</strong><span>Bloque reutilizable de código.</span></div><div><strong>Clase</strong><span>Plantilla para crear objetos.</span></div></div>
 </div>
 <details class="course-topic" id="py-basicos" open="">
 <summary>
@@ -10500,7 +10814,10 @@ body.theme-dark .relation-preview .many span{background:#10213f;border-color:#1e
 <small>str, int, float, bool y None</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Variables y tipos</strong>: str, int, float, bool y None. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>Variables</h4>
 <p>Guardan referencias a valores.</p>
@@ -10549,7 +10866,10 @@ nota = 4.5</pre>
 <small>colecciones que usarás todo el tiempo</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Listas, tuplas y diccionarios</strong>: colecciones que usarás todo el tiempo. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>list</h4>
 <p>Colección ordenada y mutable.</p>
@@ -10592,7 +10912,10 @@ nombres.append('Sara')</pre>
 <small>controlar el flujo</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>if, for y while</strong>: controlar el flujo. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>if</h4>
 <p>Ejecuta según una condición.</p>
@@ -10627,7 +10950,10 @@ nombres.append('Sara')</pre>
 <small>parámetros, return y argumentos</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Funciones</strong>: parámetros, return y argumentos. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>def</h4>
 <p>Define una función.</p>
@@ -10661,7 +10987,10 @@ nombres.append('Sara')</pre>
 <small>la base para models, forms y class-based views</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Clases y objetos</strong>: la base para models, forms y class-based views. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>class</h4>
 <p>Define comportamiento y atributos para objetos.</p>
@@ -10697,7 +11026,10 @@ nombres.append('Sara')</pre>
 <small>organizar código en archivos</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Imports y módulos</strong>: organizar código en archivos. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>import</h4>
 <p>Trae código de otro módulo.</p>
@@ -10722,7 +11054,10 @@ nombres.append('Sara')</pre>
 <small>try, except y errores</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Excepciones</strong>: try, except y errores. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>try / except</h4>
 <p>Permite manejar situaciones excepcionales.</p>
@@ -10805,6 +11140,44 @@ except ValueError:
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>El entorno virtual crea un espacio separado para las librerías de este proyecto. Así no mezclas versiones de Django entre distintos trabajos.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como tener una caja de herramientas distinta para cada proyecto en vez de tirar todas las herramientas en el mismo cajón.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Al activar .venv, los comandos python y pip apuntan al entorno del proyecto y no a la instalación global.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Un proyecto → un entorno virtual.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>venv</strong><span>Entorno virtual aislado.</span></div><div><strong>pip</strong><span>Instalador de paquetes Python.</span></div><div><strong>dependencia</strong><span>Librería que tu proyecto necesita.</span></div></div>
 </div>
 <details class="course-topic" id="venv" open="">
 <summary>
@@ -10814,7 +11187,10 @@ except ValueError:
 <small>aislar dependencias por proyecto</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>¿Por qué usar un entorno virtual?</strong>: aislar dependencias por proyecto. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="learning-triad">
 <div class="learning-triad-card"><strong>🎯 Qué vas a aprender</strong><span>Crear un entorno separado para Django y sus paquetes.</span></div>
 <div class="learning-triad-card"><strong>🧠 Cómo pensarlo</strong><span>Cada proyecto debería controlar sus propias versiones.</span></div>
@@ -10841,7 +11217,10 @@ source .venv/bin/activate</code></pre>
 <small>instalar paquetes de Python</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>pip</strong>: instalar paquetes de Python. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>Instalar Django estable</span></div>
 <pre><code>python -m pip install Django==6.1.1</code></pre>
@@ -10930,6 +11309,44 @@ source .venv/bin/activate</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Django es un framework: ya trae una estructura y muchas herramientas para crear aplicaciones web sin empezar desde cero.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>En vez de fabricar ladrillos, cemento y herramientas, Django te entrega un kit de construcción preparado para que te concentres en la aplicación.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Django organiza el trabajo con URLs, Views, Models, Templates, Forms, autenticación, admin y otras piezas que se conectan entre sí.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>URL decide dónde ir; View decide qué hacer; Model maneja datos; Template muestra HTML.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Framework</strong><span>Conjunto de herramientas y reglas.</span></div><div><strong>MVT</strong><span>Model, View y Template.</span></div><div><strong>ORM</strong><span>Forma de consultar la base desde Python.</span></div></div>
 </div>
 <details class="course-topic" id="django-intro" open="">
 <summary>
@@ -10939,7 +11356,10 @@ source .venv/bin/activate</code></pre>
 <small>framework web de Python</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>¿Qué es Django?</strong>: framework web de Python. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="learning-triad">
 <div class="learning-triad-card"><strong>🎯 Qué vas a aprender</strong><span>Entender qué resuelve el framework.</span></div>
 <div class="learning-triad-card"><strong>🧠 Cómo pensarlo</strong><span>Django te da piezas integradas para URLs, views, templates, ORM, forms, auth, admin y más.</span></div>
@@ -10970,7 +11390,10 @@ source .venv/bin/activate</code></pre>
 <small>la arquitectura mental más útil</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="flow-wide"><span class="flow-box hot">URL</span><span class="flow-arr">→</span><span class="flow-box">View</span><span class="flow-arr">→</span><span class="flow-box">Model</span><span class="flow-arr">→</span><span class="flow-box good">Template</span><span class="flow-arr">→</span><span class="flow-box">Response</span></div><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>MVT: Model – View – Template</strong>: la arquitectura mental más útil. Primero identifica la idea; después mira el código.</p>
+</div><div class="flow-wide"><span class="flow-box hot">URL</span><span class="flow-arr">→</span><span class="flow-box">View</span><span class="flow-arr">→</span><span class="flow-box">Model</span><span class="flow-arr">→</span><span class="flow-box good">Template</span><span class="flow-arr">→</span><span class="flow-box">Response</span></div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>Model</h4>
 <p>Representa datos y reglas relacionadas con la persistencia.</p>
@@ -11059,6 +11482,41 @@ source .venv/bin/activate</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Instalar Django significa agregar el framework al entorno virtual para poder usar sus comandos y librerías.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como instalar un programa antes de usarlo: primero lo agregas al computador y después puedes abrirlo.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>pip descarga Django y sus dependencias. Luego python -m django --version confirma que el entorno puede encontrarlo.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Si Django no aparece en la versión, revisa primero si el entorno virtual está activado.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="install-django" open="">
 <summary>
@@ -11068,7 +11526,10 @@ source .venv/bin/activate</code></pre>
 <small>Django 6.1.1 + Python compatible</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Instalación actual</strong>: Django 6.1.1 + Python compatible. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="callout success">
 <strong>Versión usada en la guía:</strong> Django 6.1.1. Django 6.1 soporta Python 3.12, 3.13 y 3.14.
     </div>
@@ -11103,7 +11564,10 @@ py -m django --version</code></pre>
 <small>base de datos incluida en el flujo inicial</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>SQLite para comenzar</strong>: base de datos incluida en el flujo inicial. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>SQLite</h4>
 <p>Django la configura por defecto en un proyecto nuevo.</p>
@@ -11185,6 +11649,41 @@ py -m django --version</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Un proyecto Django es la configuración general de toda la aplicación. Aquí viven los ajustes, rutas principales y archivos de arranque.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como crear la carpeta principal de una empresa: allí están las reglas generales y desde ahí se organizan las áreas.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>startproject crea manage.py y la carpeta config. runserver inicia un servidor local para probar el proyecto.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Proyecto = configuración general. App = funcionalidad específica.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="startproject" open="">
 <summary>
@@ -11194,7 +11693,10 @@ py -m django --version</code></pre>
 <small>crear la configuración principal</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>startproject</strong>: crear la configuración principal. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>Terminal</span></div>
 <pre><code>django-admin startproject config .</code></pre>
@@ -11217,7 +11719,10 @@ py -m django --version</code></pre>
 <small>levantar el servidor de desarrollo</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>runserver</strong>: levantar el servidor de desarrollo. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>Terminal</span></div>
 <pre><code>python manage.py runserver</code></pre>
@@ -11247,7 +11752,10 @@ py -m django --version</code></pre>
 <small>el comando central del proyecto</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>manage.py</strong>: el comando central del proyecto. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>manage.py</h4>
 <p>Ejecuta comandos con la configuración del proyecto cargada.</p>
@@ -11325,6 +11833,41 @@ py -m django --version</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Los archivos de Django están separados porque cada uno tiene una responsabilidad. Saber para qué sirve cada archivo evita poner código en cualquier parte.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como una oficina: contabilidad, recursos humanos y soporte tienen tareas distintas aunque trabajen para la misma organización.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>settings.py configura, urls.py enruta, manage.py ejecuta comandos, asgi.py y wsgi.py conectan Django con servidores.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Antes de escribir código, pregúntate: ¿esto es configuración, ruta, lógica, datos o presentación?</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="settings" open="">
 <summary>
@@ -11334,7 +11877,10 @@ py -m django --version</code></pre>
 <small>configuración del proyecto</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>settings.py</strong>: configuración del proyecto. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>INSTALLED_APPS</h4>
 <p>Lista apps habilitadas.</p>
@@ -11376,7 +11922,10 @@ py -m django --version</code></pre>
 <small>puntos de entrada</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>urls.py, asgi.py y wsgi.py</strong>: puntos de entrada. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>urls.py</h4>
 <p>Mapa principal de rutas.</p>
@@ -11461,6 +12010,41 @@ py -m django --version</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Una app Django agrupa una funcionalidad concreta. En este curso la app estudiantes se encarga de todo lo relacionado con estudiantes.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Si el proyecto fuera una universidad, una app podría ser estudiantes, otra cursos y otra matrículas.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>startapp crea archivos para models, views, admin, tests y configuración de la app.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>No crees una app por cada tabla; crea apps por funcionalidades que tengan sentido juntas.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="startapp" open="">
 <summary>
@@ -11470,7 +12054,10 @@ py -m django --version</code></pre>
 <small>separar funcionalidades</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>startapp</strong>: separar funcionalidades. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>Terminal</span></div>
 <pre><code>python manage.py startapp estudiantes</code></pre>
@@ -11509,7 +12096,10 @@ py -m django --version</code></pre>
 <small>una app por dominio coherente</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Estructura feature-first</strong>: una app por dominio coherente. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="project-architecture">
 <div class="project-layer"><strong>estudiantes</strong><code>models.py</code><code>views.py</code><code>forms.py</code></div>
 <div class="project-layer"><strong>cursos</strong><code>models.py</code><code>views.py</code><code>urls.py</code></div>
@@ -11578,6 +12168,44 @@ py -m django --version</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Las URLs son el mapa de caminos de la aplicación. Django compara la dirección solicitada con urlpatterns para decidir qué View ejecutar.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como el directorio de un edificio: 'Piso 2 → Recursos Humanos', 'Piso 3 → Sistemas'.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>path() define una ruta. include() permite que cada app tenga su propio archivo urls.py.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>URL no contiene la lógica; solo decide qué código debe atender esa dirección.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>path</strong><span>Regla de una ruta.</span></div><div><strong>include</strong><span>Delega rutas a otra app.</span></div><div><strong>namespace</strong><span>Nombre que evita colisiones entre rutas.</span></div></div>
 </div>
 <details class="course-topic" id="url-path" open="">
 <summary>
@@ -11587,7 +12215,10 @@ py -m django --version</code></pre>
 <small>conectar una URL con una view</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>path()</strong>: conectar una URL con una view. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>estudiantes/urls.py</span></div>
 <pre><code>from django.urls import path
@@ -11610,7 +12241,10 @@ urlpatterns = [
 <small>delegar rutas a una app</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>include()</strong>: delegar rutas a una app. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>config/urls.py</span></div>
 <pre><code>from django.contrib import admin
@@ -11653,7 +12287,10 @@ urlpatterns = [
 <small>capturar ids o slugs</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Parámetros de URL</strong>: capturar ids o slugs. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4><int:pk></int:pk></h4>
 <p>Captura un entero y lo pasa como argumento.</p>
@@ -11728,6 +12365,44 @@ urlpatterns = [
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Una View es una función o clase que recibe una petición y decide qué respuesta devolver.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como una persona en recepción: escucha lo que necesitas, busca información y te entrega una respuesta.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>La View puede consultar Models, validar Forms, preparar contexto y finalmente devolver HTML, JSON o una redirección.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Toda View termina produciendo una Response.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>View</strong><span>Código que atiende una request.</span></div><div><strong>render</strong><span>Combina template + datos.</span></div><div><strong>redirect</strong><span>Envía al navegador a otra URL.</span></div></div>
 </div>
 <details class="course-topic" id="view-function" open="">
 <summary>
@@ -11737,7 +12412,10 @@ urlpatterns = [
 <small>recibir request y devolver response</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>View basada en función</strong>: recibir request y devolver response. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>estudiantes/views.py</span></div>
 <pre><code>from django.http import HttpResponse
@@ -11767,7 +12445,10 @@ def inicio(request):
 <small>combinar template + contexto</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>render()</strong>: combinar template + contexto. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>from django.shortcuts import render
@@ -11789,7 +12470,10 @@ def saludo(request):
 <small>enviar al usuario a otra URL</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>redirect()</strong>: enviar al usuario a otra URL. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>from django.shortcuts import redirect
@@ -11823,7 +12507,10 @@ def guardar(request):
 <small>leer datos de la petición</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>request.GET y request.POST</strong>: leer datos de la petición. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>request.GET</h4>
 <p>Query string de la URL.</p>
@@ -11900,6 +12587,44 @@ def guardar(request):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Los Templates son archivos HTML que Django completa con datos antes de enviarlos al navegador.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Piensa en una carta modelo: el texto es el mismo, pero el nombre y otros datos cambian para cada persona.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>La View envía un contexto y el Template usa {{ variable }}, {% if %} y {% for %} para construir el HTML final.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>La lógica complicada va en Python; el Template se concentra en mostrar información.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Contexto</strong><span>Datos enviados al template.</span></div><div><strong>Variable</strong><span>Dato mostrado con {{ }}.</span></div><div><strong>Tag</strong><span>Instrucción como {% if %} o {% for %}.</span></div></div>
 </div>
 <details class="course-topic" id="template-vars" open="">
 <summary>
@@ -11909,7 +12634,10 @@ def guardar(request):
 <small>mostrar datos del contexto</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Variables {{ }}</strong>: mostrar datos del contexto. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>templates/estudiantes/saludo.html</span></div>
 <pre><code>&lt;h1&gt;Hola {{ nombre }}&lt;/h1&gt;
@@ -11935,7 +12663,10 @@ def guardar(request):
 <small>control de presentación</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>{% if %} y {% for %}</strong>: control de presentación. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>lista.html</span></div>
 <pre><code>{% if estudiantes %}
@@ -11973,7 +12704,10 @@ def guardar(request):
 <small>base.html + bloques</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Herencia de templates</strong>: base.html + bloques. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>templates/base.html</span></div>
 <pre><code>&lt;!doctype html&gt;
@@ -12009,7 +12743,10 @@ def guardar(request):
 <small>rutas y componentes de template</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>{% url %} y {% include %}</strong>: rutas y componentes de template. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>{% url %}</h4>
 <p>Construye URLs a partir del nombre de ruta.</p>
@@ -12084,6 +12821,41 @@ def guardar(request):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Static son los archivos que forman parte del diseño de tu proyecto: CSS, JavaScript, íconos e imágenes del sitio.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>El Template es la estructura de una casa; CSS es la pintura y decoración; JavaScript agrega comportamientos.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Django usa {% static %} para construir correctamente las rutas a estos archivos.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Static = archivos del proyecto. Media = archivos que suben los usuarios.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="static-load" open="">
 <summary>
@@ -12093,7 +12865,10 @@ def guardar(request):
 <small>cargar CSS, JavaScript e imágenes</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>{% static %}</strong>: cargar CSS, JavaScript e imágenes. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>base.html</span></div>
 <pre><code>{% load static %}
@@ -12120,7 +12895,10 @@ def guardar(request):
 <small>desarrollo vs producción</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>STATIC_URL y collectstatic</strong>: desarrollo vs producción. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>STATIC_URL</h4>
 <p>Prefijo URL de archivos estáticos.</p>
@@ -12195,6 +12973,44 @@ def guardar(request):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Un Model es una clase de Python que representa información que quieres guardar en la base de datos.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Un Model Estudiante es como una ficha: define qué datos debe tener cada estudiante.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Django transforma los Fields del Model en columnas y usa el ORM para crear consultas SQL sin que tengas que escribirlas siempre a mano.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Model define la estructura; ORM permite consultar y guardar.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Model</strong><span>Clase que representa datos.</span></div><div><strong>Field</strong><span>Campo/columna del model.</span></div><div><strong>QuerySet</strong><span>Conjunto consultable de registros.</span></div></div>
 </div>
 <details class="course-topic" id="models-first" open="">
 <summary>
@@ -12204,7 +13020,10 @@ def guardar(request):
 <small>definir datos como clases Python</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Crear un Model</strong>: definir datos como clases Python. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>estudiantes/models.py</span></div>
 <pre><code>from django.db import models
@@ -12258,7 +13077,10 @@ class Estudiante(models.Model):
 <small>consultar sin escribir SQL para lo común</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>ORM</strong>: consultar sin escribir SQL para lo común. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>Django shell</span></div>
 <pre><code>from estudiantes.models import Estudiante
@@ -12282,7 +13104,10 @@ Estudiante.objects.create(
 <small>filter, exclude, order_by y first</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>QuerySet</strong>: filter, exclude, order_by y first. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>all()</h4>
 <p>Obtiene un QuerySet base.</p>
@@ -12328,7 +13153,10 @@ Estudiante.objects.create(
 <small>simulación de filtros</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Así se ve el ORM</strong>: simulación de filtros. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="interaction-live-preview">
 <div class="interaction-preview-head">
 <div><span>ASÍ SE VE</span><strong>QuerySet interactivo</strong></div>
@@ -12407,6 +13235,44 @@ Estudiante.objects.create(
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Las migraciones son el historial de cambios de la estructura de la base de datos.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como guardar versiones de los planos de una casa cada vez que agregas una habitación.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>makemigrations detecta cambios en los Models y crea instrucciones. migrate aplica esas instrucciones a la base.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Cambias Model → makemigrations → migrate.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Schema</strong><span>Estructura de la base de datos.</span></div><div><strong>makemigrations</strong><span>Genera cambios.</span></div><div><strong>migrate</strong><span>Aplica cambios.</span></div></div>
 </div>
 <details class="course-topic" id="makemigrations" open="">
 <summary>
@@ -12416,7 +13282,10 @@ Estudiante.objects.create(
 <small>crear instrucciones de cambio</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>makemigrations</strong>: crear instrucciones de cambio. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>Terminal</span></div>
 <pre><code>python manage.py makemigrations</code></pre>
@@ -12431,7 +13300,10 @@ Estudiante.objects.create(
 <small>aplicar cambios a la base</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>migrate</strong>: aplicar cambios a la base. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>Terminal</span></div>
 <pre><code>python manage.py migrate</code></pre>
@@ -12446,7 +13318,10 @@ Estudiante.objects.create(
 <small>model → migration → database</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Flujo correcto</strong>: model → migration → database. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="callout warning">
 <strong>No edites la base a mano como hábito mientras aprendes el ORM.</strong>
       Cambia el model, genera la migration y aplícala. Así Django conserva el historial del esquema.
@@ -12516,6 +13391,41 @@ python manage.py migrate</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Django Admin es un panel administrativo que Django genera para trabajar con tus Models sin construir todavía todas las pantallas.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como una oficina interna donde el personal autorizado puede crear, buscar y modificar registros.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Cuando registras un Model, Django lee sus Fields y construye formularios y listados automáticamente.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Admin es excelente para administración interna, pero no siempre es la interfaz final del usuario.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="admin-register" open="">
 <summary>
@@ -12525,7 +13435,10 @@ python manage.py migrate</code></pre>
 <small>usar el admin integrado</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Registrar modelos</strong>: usar el admin integrado. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>estudiantes/admin.py</span></div>
 <pre><code>from django.contrib import admin
@@ -12567,7 +13480,10 @@ class EstudianteAdmin(admin.ModelAdmin):
 <small>acceder al admin</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Crear superusuario</strong>: acceder al admin. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>Terminal</span></div>
 <pre><code>python manage.py createsuperuser</code></pre>
@@ -12647,6 +13563,44 @@ class EstudianteAdmin(admin.ModelAdmin):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Django Forms recibe datos, los valida y te dice si son correctos antes de usarlos o guardarlos.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como un formulario de inscripción que revisa si faltan campos o si el correo tiene un formato válido.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>is_valid() ejecuta validaciones. Si todo está bien, cleaned_data contiene datos seguros y ModelForm puede guardar la instancia.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Primero validar; después guardar.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Form</strong><span>Valida datos recibidos.</span></div><div><strong>ModelForm</strong><span>Form conectado a un Model.</span></div><div><strong>cleaned_data</strong><span>Datos ya validados.</span></div></div>
 </div>
 <details class="course-topic" id="form-basic" open="">
 <summary>
@@ -12656,7 +13610,10 @@ class EstudianteAdmin(admin.ModelAdmin):
 <small>validar datos que no dependen directamente de un model</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>forms.Form</strong>: validar datos que no dependen directamente de un model. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>forms.py</span></div>
 <pre><code>from django import forms
@@ -12698,7 +13655,10 @@ class ContactoForm(forms.Form):
 <small>formulario conectado a un Model</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>ModelForm</strong>: formulario conectado a un Model. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>forms.py</span></div>
 <pre><code>from django import forms
@@ -12734,7 +13694,10 @@ class EstudianteForm(forms.ModelForm):
 <small>GET muestra; POST procesa</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Renderizar y validar</strong>: GET muestra; POST procesa. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>def crear(request):
@@ -12830,6 +13793,41 @@ class EstudianteForm(forms.ModelForm):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Los formularios POST pueden cambiar información, por eso Django protege estas acciones con un token CSRF.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como comprobar que una orden realmente vino de una persona autorizada y no de alguien que intentó enviarla desde otro sitio.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Django compara el token del formulario con el esperado para la sesión. Si no coincide, rechaza la petición.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Formulario POST de Django → normalmente necesita {% csrf_token %}.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="csrf" open="">
 <summary>
@@ -12839,7 +13837,10 @@ class EstudianteForm(forms.ModelForm):
 <small>protección de formularios POST</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>{% csrf_token %}</strong>: protección de formularios POST. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>formulario.html</span></div>
 <pre><code>&lt;form method="post"&gt;
@@ -12876,7 +13877,10 @@ class EstudianteForm(forms.ModelForm):
 <small>qué debe hacer cada botón</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Botones y acciones</strong>: qué debe hacer cada botón. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="interaction-live-preview">
 <div class="interaction-preview-head">
 <div><span>ASÍ SE VE</span><strong>Botones de un CRUD</strong></div>
@@ -12905,7 +13909,10 @@ class EstudianteForm(forms.ModelForm):
 <small>evitar reenvío de formularios</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="flow-wide"><span class="flow-box">GET formulario</span><span class="flow-arr">→</span><span class="flow-box">POST datos</span><span class="flow-arr">→</span><span class="flow-box hot">guardar</span><span class="flow-arr">→</span><span class="flow-box good">redirect</span><span class="flow-arr">→</span><span class="flow-box">GET lista</span></div>
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Patrón POST → redirect</strong>: evitar reenvío de formularios. Primero identifica la idea; después mira el código.</p>
+</div><div class="flow-wide"><span class="flow-box">GET formulario</span><span class="flow-arr">→</span><span class="flow-box">POST datos</span><span class="flow-arr">→</span><span class="flow-box hot">guardar</span><span class="flow-arr">→</span><span class="flow-box good">redirect</span><span class="flow-arr">→</span><span class="flow-box">GET lista</span></div>
 <div class="callout">
 <strong>Post/Redirect/Get:</strong> después de guardar correctamente, redirigir evita que actualizar el navegador vuelva a enviar el formulario.
     </div>
@@ -12971,6 +13978,44 @@ class EstudianteForm(forms.ModelForm):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>CRUD reúne las cuatro operaciones básicas que casi toda aplicación hace con datos: crear, leer, actualizar y eliminar.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>En una agenda puedes agregar un contacto, verlo, editarlo y borrarlo. Eso es CRUD.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Cada operación combina URL, View, Model, Form y Template de una manera distinta.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Create, Read, Update, Delete.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Create</strong><span>Crear.</span></div><div><strong>Read</strong><span>Leer.</span></div><div><strong>Update</strong><span>Actualizar.</span></div><div><strong>Delete</strong><span>Eliminar.</span></div></div>
 </div>
 <details class="course-topic" id="crud-read" open="">
 <summary>
@@ -12980,7 +14025,10 @@ class EstudianteForm(forms.ModelForm):
 <small>leer datos</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>READ: lista y detalle</strong>: leer datos. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>def lista(request):
@@ -13009,7 +14057,10 @@ def detalle(request, pk):
 <small>crear con ModelForm</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>CREATE</strong>: crear con ModelForm. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>def crear(request):
@@ -13032,7 +14083,10 @@ def detalle(request, pk):
 <small>editar una instancia</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>UPDATE</strong>: editar una instancia. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>def editar(request, pk):
@@ -13059,7 +14113,10 @@ def detalle(request, pk):
 <small>eliminar con confirmación POST</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>DELETE</strong>: eliminar con confirmación POST. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>def eliminar(request, pk):
@@ -13085,7 +14142,10 @@ def detalle(request, pk):
 <small>práctica en memoria dentro de la guía</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Así se ve: CRUD interactivo</strong>: práctica en memoria dentro de la guía. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="interaction-live-preview">
 <div class="interaction-preview-head">
 <div><span>ASÍ SE VE</span><strong>CRUD de estudiantes</strong></div>
@@ -13176,6 +14236,41 @@ def detalle(request, pk):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Las relaciones permiten conectar datos. Por ejemplo, muchos estudiantes pueden pertenecer a un mismo programa.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Un programa académico puede tener muchos estudiantes, pero cada estudiante pertenece a un programa concreto.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>ForeignKey guarda una referencia al otro registro. Django también permite navegar la relación desde ambos lados.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>ForeignKey suele representar muchos → uno.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="foreignkey" open="">
 <summary>
@@ -13185,7 +14280,10 @@ def detalle(request, pk):
 <small>muchos registros apuntan a uno</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>ForeignKey</strong>: muchos registros apuntan a uno. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>models.py</span></div>
 <pre><code>class Programa(models.Model):
@@ -13209,7 +14307,10 @@ class Estudiante(models.Model):
 <small>muchos a muchos</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>ManyToManyField</strong>: muchos a muchos. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>models.py</span></div>
 <pre><code>class Curso(models.Model):
@@ -13251,7 +14352,10 @@ class Estudiante(models.Model):
 <small>evitar consultas repetidas</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>select_related y prefetch_related</strong>: evitar consultas repetidas. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>select_related</h4>
 <p>JOIN para ForeignKey/OneToOne.</p>
@@ -13326,6 +14430,44 @@ class Estudiante(models.Model):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Autenticación responde '¿quién eres?'. Autorización responde '¿qué tienes permiso de hacer?'.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Mostrar el carné identifica a la persona; el cargo que tiene determina a qué lugares puede entrar.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Django mantiene usuarios, contraseñas hasheadas, sesiones, grupos y permisos.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Login no significa permiso para todo.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Autenticación</strong><span>Identificar al usuario.</span></div><div><strong>Autorización</strong><span>Decidir qué puede hacer.</span></div><div><strong>Session</strong><span>Estado que permite reconocerlo entre requests.</span></div></div>
 </div>
 <details class="course-topic" id="auth-login" open="">
 <summary>
@@ -13335,7 +14477,10 @@ class Estudiante(models.Model):
 <small>User, login y logout</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Sistema de autenticación</strong>: User, login y logout. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>urls.py</span></div>
 <pre><code>from django.contrib.auth import views as auth_views
@@ -13371,7 +14516,10 @@ urlpatterns = [
 <small>proteger views</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>@login_required</strong>: proteger views. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>from django.contrib.auth.decorators import login_required
@@ -13413,7 +14561,10 @@ def panel(request): ...</pre>
 <small>autorización</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Grupos y permisos</strong>: autorización. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>Groups</h4>
 <p>Agrupan usuarios y permisos.</p>
@@ -13488,6 +14639,41 @@ def panel(request): ...</pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Una sesión permite recordar información entre una petición y la siguiente. Messages sirve para mostrar avisos temporales al usuario.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>La sesión es como una pulsera de un evento que te identifica durante tu visita; un message es como un aviso que lees una vez.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>El navegador conserva un identificador de sesión y Django relaciona ese id con información guardada del lado del servidor.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Session recuerda; Message avisa.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="sessions" open="">
 <summary>
@@ -13497,7 +14683,10 @@ def panel(request): ...</pre>
 <small>guardar estado entre requests</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Sessions</strong>: guardar estado entre requests. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>def seleccionar_tema(request):
@@ -13533,7 +14722,10 @@ def inicio(request):
 <small>feedback de una sola vez</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Messages framework</strong>: feedback de una sola vez. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>from django.contrib import messages
@@ -13609,6 +14801,41 @@ messages.error(request, "No se pudo guardar.")</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Cuando un usuario sube una foto o documento, ese archivo no es static: es media.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>El logo de la universidad es static; la foto que cada estudiante sube es media.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>request.FILES contiene los archivos recibidos y el formulario debe usar multipart/form-data.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Static pertenece al proyecto; Media pertenece al contenido subido.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="uploads-topic-files" open="">
 <summary>
@@ -13618,7 +14845,10 @@ messages.error(request, "No se pudo guardar.")</code></pre>
 <small>archivos asociados a models</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>FileField e ImageField</strong>: archivos asociados a models. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>models.py</span></div>
 <pre><code>class Estudiante(models.Model):
@@ -13659,7 +14889,10 @@ messages.error(request, "No se pudo guardar.")</code></pre>
 <small>enctype correcto</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Formulario de archivo</strong>: enctype correcto. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>template</span></div>
 <pre><code>&lt;form method="post" enctype="multipart/form-data"&gt;
@@ -13728,6 +14961,41 @@ messages.error(request, "No se pudo guardar.")</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Las Class-Based Views son Views escritas como clases. Django trae clases genéricas para patrones repetidos como listar, ver detalle, crear o editar.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>En vez de construir una bicicleta desde piezas cada vez, usas un modelo base y solo ajustas lo que cambia.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>ListView, DetailView, CreateView y otras clases implementan comportamientos comunes que puedes personalizar.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Primero entiende FBV; después CBV tiene mucho más sentido.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="cbv-topic-list-detail" open="">
 <summary>
@@ -13737,7 +15005,10 @@ messages.error(request, "No se pudo guardar.")</code></pre>
 <small>patrones reutilizables</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>ListView y DetailView</strong>: patrones reutilizables. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>from django.views.generic import ListView, DetailView
@@ -13783,7 +15054,10 @@ class EstudianteDetailView(DetailView):
 <small>conectar la clase a URLs</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>as_view()</strong>: conectar la clase a URLs. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>urls.py</span></div>
 <pre><code>path(
@@ -13852,6 +15126,41 @@ class EstudianteDetailView(DetailView):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Middleware es código que puede ejecutarse alrededor de muchas peticiones y respuestas, antes o después de la View.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como el control de seguridad en la entrada de un edificio: todas las personas pasan por allí antes de llegar a su oficina.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Cada middleware recibe la request, puede modificarla, llamar al siguiente componente y también modificar la response.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Middleware sirve para comportamiento transversal, no para lógica de una sola página.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="middleware-cycle" open="">
 <summary>
@@ -13861,7 +15170,10 @@ class EstudianteDetailView(DetailView):
 <small>código alrededor de todas las requests</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="flow-wide"><span class="flow-box">Browser</span><span class="flow-arr">→</span><span class="flow-box hot">Middleware →</span><span class="flow-arr">→</span><span class="flow-box">View</span><span class="flow-arr">→</span><span class="flow-box hot">← Middleware</span><span class="flow-arr">→</span><span class="flow-box">Response</span></div><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Ciclo middleware</strong>: código alrededor de todas las requests. Primero identifica la idea; después mira el código.</p>
+</div><div class="flow-wide"><span class="flow-box">Browser</span><span class="flow-arr">→</span><span class="flow-box hot">Middleware →</span><span class="flow-arr">→</span><span class="flow-box">View</span><span class="flow-arr">→</span><span class="flow-box hot">← Middleware</span><span class="flow-arr">→</span><span class="flow-box">Response</span></div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>Middleware</h4>
 <p>Capa que procesa requests/responses globalmente.</p>
@@ -13886,7 +15198,10 @@ class EstudianteDetailView(DetailView):
 <small>ejemplo de tiempo de respuesta</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Middleware propio</strong>: ejemplo de tiempo de respuesta. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>middleware.py</span></div>
 <pre><code>import time
@@ -13963,6 +15278,41 @@ class TiempoMiddleware:
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Las Signals permiten ejecutar una reacción cuando ocurre un evento dentro de Django, como guardar un Model.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como una alarma: ocurre algo y automáticamente se dispara otra acción.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>post_save se emite después de guardar. Un receiver escucha esa señal y ejecuta código.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Signals pueden ser útiles, pero demasiadas hacen difícil seguir el flujo de la aplicación.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="django-signals" open="">
 <summary>
@@ -13972,7 +15322,10 @@ class TiempoMiddleware:
 <small>reaccionar a eventos internos</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Signals</strong>: reaccionar a eventos internos. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>signals.py</span></div>
 <pre><code>from django.db.models.signals import post_save
@@ -14015,7 +15368,10 @@ def estudiante_guardado(sender, instance, created, **kwargs):
 <small>claridad antes que magia</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>¿Cuándo NO usar signals?</strong>: claridad antes que magia. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="callout warning">
 <strong>Regla práctica:</strong> si una acción forma parte directa del caso de uso “crear estudiante”, suele ser más claro llamarla explícitamente desde un servicio/view.
       Usa signals cuando realmente quieres desacoplar una reacción transversal.
@@ -14084,6 +15440,44 @@ def estudiante_guardado(sender, instance, created, **kwargs):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Una API permite que Django entregue datos en vez de una página HTML completa. Esos datos pueden ser consumidos por JavaScript u otra aplicación.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>En vez de entregar un plato servido, entregas los ingredientes organizados para que otro sistema los use.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>JsonResponse convierte datos de Python en JSON. fetch() desde JavaScript pide ese JSON y lo procesa.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>HTML es para mostrar; JSON es para intercambiar datos.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>API</strong><span>Interfaz para intercambiar datos.</span></div><div><strong>JSON</strong><span>Formato de datos.</span></div><div><strong>fetch</strong><span>Función JS para hacer peticiones HTTP.</span></div></div>
 </div>
 <details class="course-topic" id="jsonresponse" open="">
 <summary>
@@ -14093,7 +15487,10 @@ def estudiante_guardado(sender, instance, created, **kwargs):
 <small>devolver JSON sin template</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>JsonResponse</strong>: devolver JSON sin template. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>views.py</span></div>
 <pre><code>from django.http import JsonResponse
@@ -14139,7 +15536,10 @@ def api_estudiantes(request):
 <small>consumir un endpoint Django</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>fetch() desde el frontend</strong>: consumir un endpoint Django. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>static/js/estudiantes.js</span></div>
 <pre><code>async function cargarEstudiantes() {
@@ -14185,7 +15585,10 @@ def api_estudiantes(request):
 <small>enviar cambios desde JavaScript</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>POST JSON y CSRF</strong>: enviar cambios desde JavaScript. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>JavaScript</span></div>
 <pre><code>const response = await fetch("/api/estudiantes/", {
@@ -14210,7 +15613,10 @@ def api_estudiantes(request):
 <small>paquete externo para APIs más grandes</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Django REST Framework (opcional)</strong>: paquete externo para APIs más grandes. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="callout">
 <strong>Importante:</strong> Django REST Framework no forma parte del core de Django.
       Es un paquete de terceros muy utilizado para serializers, viewsets, routers, autenticación de APIs y más.
@@ -14294,6 +15700,44 @@ def api_estudiantes(request):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Los tests ejecutan automáticamente situaciones para comprobar que tu aplicación sigue funcionando como esperas.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es como una lista de revisión que repites cada vez que haces cambios para asegurarte de no haber dañado algo.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>TestCase crea un entorno aislado, el test client simula requests y las assertions comparan el resultado real con el esperado.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Un test útil comprueba comportamiento, no solo que una línea se ejecuta.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Test</strong><span>Comprobación automatizada.</span></div><div><strong>Assertion</strong><span>Comparación esperado vs real.</span></div><div><strong>Test Client</strong><span>Cliente que simula requests.</span></div></div>
 </div>
 <details class="course-topic" id="testing-topic-testcase" open="">
 <summary>
@@ -14303,7 +15747,10 @@ def api_estudiantes(request):
 <small>probar comportamiento de Django</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>TestCase</strong>: probar comportamiento de Django. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>tests.py</span></div>
 <pre><code>from django.test import TestCase
@@ -14324,7 +15771,10 @@ class EstudianteModelTests(TestCase):
 <small>simular requests</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Client de pruebas</strong>: simular requests. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>tests.py</span></div>
 <pre><code>from django.urls import reverse
@@ -14346,7 +15796,10 @@ class ListaTests(TestCase):
 <small>manage.py test</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Ejecutar tests</strong>: manage.py test. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>Terminal</span></div>
 <pre><code>python manage.py test</code></pre>
@@ -14417,6 +15870,41 @@ class ListaTests(TestCase):
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Seguridad significa evitar que datos, sesiones, contraseñas o funciones sensibles queden expuestas por una mala configuración.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>No basta con poner una cerradura; también debes controlar quién tiene la llave y qué puertas puede abrir.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Django trae protecciones importantes, pero tú debes usar correctamente permisos, CSRF, configuración de producción y manejo de secretos.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>No desactives una protección solo porque 'así funciona'. Entiende primero por qué está allí.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="security" open="">
 <summary>
@@ -14426,7 +15914,10 @@ class ListaTests(TestCase):
 <small>CSRF, templates, auth y headers</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Seguridad integrada</strong>: CSRF, templates, auth y headers. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>CSRF protection</h4>
 <p>Protege acciones autenticadas contra requests forjadas.</p>
@@ -14465,7 +15956,10 @@ class ListaTests(TestCase):
 <small>no publicar secretos</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>SECRET_KEY y variables de entorno</strong>: no publicar secretos. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>.env (conceptual)</span></div>
 <pre><code>DJANGO_SECRET_KEY=...
@@ -14484,7 +15978,10 @@ DATABASE_URL=...</code></pre>
 <small>configuración de producción</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>ALLOWED_HOSTS y HTTPS</strong>: configuración de producción. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>settings.py</span></div>
 <pre><code>DEBUG = False
@@ -14557,6 +16054,44 @@ CSRF_COOKIE_SECURE = True</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Desplegar significa llevar tu proyecto desde tu computador a un servidor accesible por otros usuarios.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es pasar de ensayar una obra en casa a presentarla en un teatro preparado para público real.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>En producción intervienen servidor WSGI/ASGI, variables de entorno, base de datos, archivos estáticos, HTTPS y configuración segura.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>runserver es para desarrollo, no para producción.</p>
+</div>
+</article>
+</div>
+</div><div class="easy-dictionary">
+<div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
+<div class="easy-dictionary-grid"><div><strong>Deploy</strong><span>Publicar la aplicación.</span></div><div><strong>WSGI/ASGI</strong><span>Interfaces entre servidor y Django.</span></div><div><strong>Producción</strong><span>Entorno real donde usan la app.</span></div></div>
 </div>
 <details class="course-topic" id="deploy-topic-production" open="">
 <summary>
@@ -14566,7 +16101,10 @@ CSRF_COOKIE_SECURE = True</code></pre>
 <small>usar servidor de despliegue</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>runserver NO es producción</strong>: usar servidor de despliegue. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="callout warning">
 <strong>runserver es un servidor ligero para desarrollo.</strong>
       En producción despliegas Django detrás de una configuración WSGI/ASGI y un servidor/plataforma apropiados.
@@ -14581,7 +16119,10 @@ CSRF_COOKIE_SECURE = True</code></pre>
 <small>antes de publicar</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Checklist de producción</strong>: antes de publicar. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="project-checks">
 <label class="project-check"><input type="checkbox"/><span><strong>DEBUG=False</strong>Evitar páginas de error con detalles internos.</span></label>
 <label class="project-check"><input type="checkbox"/><span><strong>SECRET_KEY segura</strong>Fuera del repositorio.</span></label>
@@ -14602,7 +16143,10 @@ CSRF_COOKIE_SECURE = True</code></pre>
 <small>revisión automática</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>check --deploy</strong>: revisión automática. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>Terminal</span></div>
 <pre><code>python manage.py check --deploy</code></pre>
@@ -14675,6 +16219,41 @@ CSRF_COOKIE_SECURE = True</code></pre>
           Cada ejercicio modifica o amplía el mismo proyecto <code>django_estudiantes</code>.
         </div>
 </div>
+</div><div class="easy-explanation-panel">
+<div class="easy-explanation-head">
+<span>💡 EXPLICACIÓN FÁCIL</span>
+<strong>Antes del código, entiende la idea</strong>
+</div>
+<div class="easy-explanation-grid">
+<article class="easy-card simple">
+<div class="easy-card-icon">🙂</div>
+<div>
+<strong>En palabras simples</strong>
+<p>Aquí unes todo: datos, formularios, relaciones, autenticación, mensajes, archivos, API, tests y seguridad.</p>
+</div>
+</article>
+<article class="easy-card daily">
+<div class="easy-card-icon">🏠</div>
+<div>
+<strong>Ejemplo cotidiano</strong>
+<p>Es el momento de ensamblar todas las piezas que construiste por separado y comprobar que trabajan juntas.</p>
+</div>
+</article>
+<article class="easy-card behind">
+<div class="easy-card-icon">⚙️</div>
+<div>
+<strong>¿Qué está pasando por detrás?</strong>
+<p>Una acción del usuario atraviesa varias capas: URL → View → Form → Model/ORM → DB → Template/JSON → Response.</p>
+</div>
+</article>
+<article class="easy-card remember">
+<div class="easy-card-icon">🧠</div>
+<div>
+<strong>Qué debes recordar</strong>
+<p>Si puedes explicar el recorrido completo de un dato, realmente estás entendiendo Django.</p>
+</div>
+</article>
+</div>
 </div>
 <details class="course-topic" id="project-architecture" open="">
 <summary>
@@ -14684,7 +16263,10 @@ CSRF_COOKIE_SECURE = True</code></pre>
 <small>Sistema de estudiantes</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Arquitectura</strong>: Sistema de estudiantes. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="file-explorer"><div class="tree">academia/
 ├── manage.py
 ├── config/
@@ -14718,7 +16300,10 @@ CSRF_COOKIE_SECURE = True</code></pre>
 <small>lo que debe poder hacer</small>
 </span>
 </summary>
-<div class="course-topic-body"><div class="deep-concepts-grid">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Funcionalidades</strong>: lo que debe poder hacer. Primero identifica la idea; después mira el código.</p>
+</div><div class="deep-concepts-grid">
 <article class="deep-concept">
 <h4>Login</h4>
 <p>Usuarios ingresan al sistema.</p>
@@ -14771,7 +16356,10 @@ CSRF_COOKIE_SECURE = True</code></pre>
 <small>mapa del sistema</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Rutas finales</strong>: mapa del sistema. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="codebox">
 <div class="codehead"><span>estudiantes/urls.py</span></div>
 <pre><code>urlpatterns = [
@@ -14792,7 +16380,10 @@ CSRF_COOKIE_SECURE = True</code></pre>
 <small>checklist que guarda progreso</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Plan de construcción</strong>: checklist que guarda progreso. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="project-checks" id="djangoProjectChecklist">
 <label class="project-check"><input type="checkbox"/><span><strong>1. Entorno virtual</strong>Python + Django instalados.</span></label>
 <label class="project-check"><input type="checkbox"/><span><strong>2. startproject</strong>config creado.</span></label>
@@ -14819,7 +16410,10 @@ CSRF_COOKIE_SECURE = True</code></pre>
 <small>no solo que funcione</small>
 </span>
 </summary>
-<div class="course-topic-body">
+<div class="course-topic-body"><div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a entender <strong>Qué debe explicar el estudiante</strong>: no solo que funcione. Primero identifica la idea; después mira el código.</p>
+</div>
 <div class="callout success">
 <strong>Meta final:</strong> ser capaz de seguir un dato desde el formulario HTML →
       Form/ModelForm → View → Model/ORM → Base de datos → View → Template → Response,
@@ -15136,7 +16730,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if(window.hljs){ window.hljs.highlightAll(); }
 });
 </script>
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const exercisePrefix = 'django-academy-v3-exercise-';

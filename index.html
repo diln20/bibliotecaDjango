@@ -12722,9 +12722,424 @@ body.theme-dark .install-dont-do p{
     align-items:flex-start;
   }
 }
+
+/* ============================================================
+   DJANGO ACADEMY V14 · Explicaciones para principiantes
+   ============================================================ */
+
+.beginner-command-explainer{
+  display:grid;
+  gap:18px;
+}
+
+.beginner-command-analogy{
+  display:grid;
+  grid-template-columns:56px 1fr;
+  gap:14px;
+  align-items:start;
+  padding:18px;
+  border:1px solid #bbf7d0;
+  border-radius:18px;
+  background:linear-gradient(180deg,#f0fdf4,#ffffff);
+}
+.analogy-icon{
+  width:52px;
+  height:52px;
+  display:grid;
+  place-items:center;
+  border-radius:15px;
+  background:#dcfce7;
+  font-size:24px;
+}
+.beginner-command-analogy span,
+.beginner-explain-block>span,
+.comparison-title>span,
+.scenario-head>span{
+  display:block;
+  margin-bottom:5px;
+  color:#166534;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.09em;
+}
+.beginner-command-analogy strong{
+  color:#0f172a;
+  font-size:16px;
+}
+.beginner-command-analogy p{
+  margin:7px 0 0 !important;
+  color:#475569 !important;
+  font-size:14px !important;
+  line-height:1.75 !important;
+}
+
+.beginner-command-cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.beginner-command-card{
+  padding:19px;
+  border:1px solid #dbe4ef;
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 8px 25px rgba(15,23,42,.04);
+}
+.beginner-command-card.manage{
+  border-top:4px solid #0C4B33;
+}
+.beginner-command-card.admin{
+  border-top:4px solid #2563eb;
+}
+.beginner-command-card-head{
+  display:grid;
+  grid-template-columns:44px 1fr;
+  gap:11px;
+  align-items:center;
+  margin-bottom:14px;
+}
+.command-number{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:#0f172a;
+  color:#fff;
+  font-size:12px;
+  font-weight:900;
+}
+.beginner-command-card-head small{
+  display:block;
+  color:#64748b;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.beginner-command-card-head h4{
+  margin:2px 0 0 !important;
+  color:#0f172a;
+  font-size:21px !important;
+}
+
+.beginner-explain-block{
+  margin-top:11px;
+  padding:13px 14px;
+  border:1px solid #e2e8f0;
+  border-radius:14px;
+  background:#f8fafc;
+}
+.beginner-explain-block p{
+  margin:5px 0 0 !important;
+  color:#475569 !important;
+  font-size:13px !important;
+  line-height:1.72 !important;
+}
+.beginner-explain-block pre,
+.beginner-command-result-tree pre,
+.comparison-flow pre,
+.scenario-steps pre{
+  margin:9px 0 0 !important;
+  padding:12px 13px !important;
+  border-radius:10px;
+  background:#0b1220 !important;
+  color:#edf4ff !important;
+  font-size:13px !important;
+  line-height:1.65 !important;
+  white-space:pre-wrap;
+}
+.command-result{
+  margin-top:8px !important;
+  padding:9px 11px;
+  border-left:3px solid #22c55e;
+  background:#f0fdf4;
+}
+
+.beginner-command-list{
+  display:grid;
+  gap:7px;
+  margin-top:13px;
+}
+.beginner-command-list>strong,
+.beginner-command-result-tree>strong{
+  color:#0f172a;
+  font-size:13px;
+}
+.beginner-command-list>div{
+  display:grid;
+  grid-template-columns:minmax(235px,.9fr) 1fr;
+  gap:10px;
+  align-items:center;
+  padding:9px 11px;
+  border:1px solid #e2e8f0;
+  border-radius:11px;
+  background:#fff;
+}
+.beginner-command-list code{
+  color:#0C4B33;
+  font-size:11px !important;
+}
+.beginner-command-list span{
+  color:#64748b;
+  font-size:11px;
+}
+
+.beginner-command-result-tree{
+  margin-top:13px;
+}
+
+.beginner-remember{
+  margin-top:13px;
+  padding:13px 14px;
+  border:1px solid #fde68a;
+  border-radius:14px;
+  background:#fffbeb;
+}
+.beginner-remember strong{
+  color:#92400e;
+  font-size:12px;
+}
+.beginner-remember p{
+  margin:5px 0 0 !important;
+  color:#6b7280 !important;
+  font-size:12px !important;
+  line-height:1.65 !important;
+}
+
+.beginner-command-comparison{
+  padding:18px;
+  border:1px solid #bfdbfe;
+  border-radius:19px;
+  background:#eff6ff;
+}
+.comparison-title strong,
+.scenario-head strong{
+  display:block;
+  color:#0f172a;
+  font-size:15px;
+}
+.comparison-flow{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:12px;
+  align-items:center;
+  margin-top:14px;
+}
+.comparison-flow article{
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:10px;
+  padding:14px;
+  border:1px solid #dbeafe;
+  border-radius:14px;
+  background:#fff;
+}
+.comparison-flow article>b{
+  width:36px;
+  height:36px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  background:#2563eb;
+  color:#fff;
+  font-size:12px;
+}
+.comparison-flow strong{
+  color:#0f172a;
+  font-size:13px;
+}
+.comparison-flow p{
+  margin:4px 0 0 !important;
+  color:#64748b !important;
+  font-size:11.5px !important;
+}
+.comparison-arrow{
+  color:#2563eb;
+  font-size:25px;
+  font-weight:900;
+}
+
+.beginner-command-scenario{
+  padding:18px;
+  border:1px solid #dbe4ef;
+  border-radius:19px;
+  background:#fff;
+}
+.scenario-steps{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:14px;
+}
+.scenario-steps>div{
+  display:grid;
+  grid-template-columns:37px 1fr;
+  gap:10px;
+  padding:13px;
+  border:1px solid #e2e8f0;
+  border-radius:13px;
+  background:#f8fafc;
+}
+.scenario-steps>div>span{
+  width:35px;
+  height:35px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  background:#0C4B33;
+  color:#fff;
+  font-size:11px;
+  font-weight:900;
+}
+.scenario-steps section{
+  width:auto !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+.scenario-steps strong{
+  color:#0f172a;
+  font-size:12px;
+}
+.scenario-steps small{
+  color:#64748b;
+  font-size:11px;
+}
+
+.beginner-command-warning{
+  padding:14px 16px;
+  border:1px solid #fed7aa;
+  border-radius:14px;
+  background:#fff7ed;
+}
+.beginner-command-warning strong{
+  color:#9a3412;
+  font-size:12px;
+}
+.beginner-command-warning p{
+  margin:5px 0 0 !important;
+  color:#7c2d12 !important;
+  font-size:12px !important;
+  line-height:1.65 !important;
+}
+
+/* Dark mode */
+body.theme-dark .beginner-command-analogy,
+body.theme-dark .beginner-command-card,
+body.theme-dark .beginner-command-scenario{
+  background:#0f172a;
+  border-color:#26344f;
+}
+body.theme-dark .beginner-command-card-head h4,
+body.theme-dark .beginner-command-analogy strong,
+body.theme-dark .beginner-command-list>strong,
+body.theme-dark .beginner-command-result-tree>strong,
+body.theme-dark .comparison-title strong,
+body.theme-dark .scenario-head strong,
+body.theme-dark .comparison-flow strong,
+body.theme-dark .scenario-steps strong{
+  color:#f8fafc;
+}
+body.theme-dark .beginner-explain-block,
+body.theme-dark .scenario-steps>div,
+body.theme-dark .comparison-flow article,
+body.theme-dark .beginner-command-list>div{
+  background:#111827;
+  border-color:#26344f;
+}
+body.theme-dark .beginner-command-comparison{
+  background:#10213f;
+  border-color:#1e3a5f;
+}
+body.theme-dark .beginner-explain-block p,
+body.theme-dark .beginner-command-analogy p,
+body.theme-dark .comparison-flow p{
+  color:#a9b6c9 !important;
+}
+body.theme-dark .beginner-remember{
+  background:#2b2110;
+  border-color:#713f12;
+}
+body.theme-dark .beginner-command-warning{
+  background:#2b2110;
+  border-color:#713f12;
+}
+
+@media(max-width:900px){
+  .beginner-command-cards,
+  .scenario-steps{
+    grid-template-columns:1fr;
+  }
+  .comparison-flow{
+    grid-template-columns:1fr;
+  }
+  .comparison-arrow{
+    transform:rotate(90deg);
+    justify-self:center;
+  }
+  .beginner-command-list>div{
+    grid-template-columns:1fr;
+  }
+  .beginner-command-analogy{
+    grid-template-columns:1fr;
+  }
+}
+
+/* ============================================================
+   DJANGO ACADEMY V15 · Proyecto progresivo en cada lección
+   ============================================================ */
+.progressive-course-banner{
+  display:grid;grid-template-columns:58px 1fr;gap:15px;align-items:start;
+  margin:22px 0;padding:18px;border:1px solid #bbf7d0;border-radius:20px;
+  background:linear-gradient(180deg,#f0fdf4,#ffffff);
+}
+.progressive-course-icon{width:54px;height:54px;display:grid;place-items:center;border-radius:15px;background:#dcfce7;font-size:25px}
+.progressive-course-banner span{display:block;margin-bottom:4px;color:#166534;font-size:10px;font-weight:900;letter-spacing:.1em}
+.progressive-course-banner strong{color:#0f172a;font-size:17px}
+.progressive-course-banner p{margin:6px 0 0!important;color:#475569!important;font-size:13.5px!important;line-height:1.7!important}
+
+.progressive-project-card{overflow:hidden;border:1px solid #cbd5e1;border-radius:24px;background:#fff;box-shadow:0 16px 38px rgba(15,23,42,.055)}
+.progressive-project-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;padding:22px 24px;border-bottom:1px solid #dbe4ef;background:linear-gradient(180deg,#f8fafc,#fff)}
+.progressive-project-kicker{display:block;margin-bottom:6px;color:#166534;font-size:10px;font-weight:900;letter-spacing:.1em}
+.progressive-project-head h3{margin:0 0 7px!important;color:#0f172a;font-size:23px!important}
+.progressive-project-head p{margin:0!important;color:#64748b!important;font-size:13.5px!important;line-height:1.7!important;max-width:850px}
+.progressive-project-complete{flex:0 0 auto;min-height:40px;padding:9px 12px;border:1px solid #cbd5e1;border-radius:11px;background:#fff;color:#64748b;font-size:11px;font-weight:900;cursor:pointer}
+.progressive-project-complete.is-complete{border-color:#86efac;background:#ecfdf5;color:#166534}
+
+.progressive-project-rule{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;margin:18px 24px 0;padding:14px 16px;border:1px solid #bfdbfe;border-radius:14px;background:#eff6ff}
+.progressive-project-rule strong{color:#1e3a8a;font-size:12.5px;white-space:nowrap}.progressive-project-rule span{color:#475569;font-size:12.5px;line-height:1.7}
+
+.project-files-stack{display:grid;gap:14px;margin:18px 24px}
+.project-file-change{overflow:hidden;border:1px solid #dbe4ef;border-radius:16px;background:#fff}
+.project-file-head{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:11px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc}
+.project-file-head span{color:#64748b;font-size:9px;font-weight:900;letter-spacing:.09em}.project-file-head code{color:#0C4B33;font-size:12px!important;font-weight:800}
+.project-file-change pre{margin:0!important;padding:16px!important;background:#0b1220!important;color:#edf4ff!important;font-size:13px!important;line-height:1.72!important;white-space:pre-wrap!important;overflow:auto}
+
+.project-step-list{margin:18px 24px;padding:17px;border:1px solid #dbe4ef;border-radius:16px;background:#f8fafc}
+.project-step-list-title{display:block;margin-bottom:11px;color:#64748b;font-size:9px;font-weight:900;letter-spacing:.09em}
+.project-step-list ol{display:grid;gap:9px;margin:0!important;padding:0!important;list-style:none!important}
+.project-step-list li{display:grid;grid-template-columns:32px 1fr;gap:10px;align-items:start;padding:11px 12px;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
+.project-step-list li>span{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:#0C4B33;color:#fff;font-size:10px;font-weight:900}
+.project-step-list li p{margin:3px 0 0!important;color:#334155!important;font-size:12.5px!important;line-height:1.65!important}
+.project-step-list code{color:#0C4B33;font-size:12px!important;font-weight:800}
+
+.progressive-project-result{margin:0 24px 22px;padding:14px 16px;border:1px solid #86efac;border-radius:14px;background:#f0fdf4}
+.progressive-project-result span{display:block;color:#166534;font-size:9px;font-weight:900;letter-spacing:.09em}.progressive-project-result p{margin:5px 0 0!important;color:#365344!important;font-size:13px!important;line-height:1.7!important}
+
+body.theme-dark .progressive-course-banner,body.theme-dark .progressive-project-card{background:#0f172a;border-color:#26344f}
+body.theme-dark .progressive-project-head,body.theme-dark .project-file-head,body.theme-dark .project-step-list{background:#111827;border-color:#26344f}
+body.theme-dark .progressive-course-banner strong,body.theme-dark .progressive-project-head h3{color:#f8fafc}
+body.theme-dark .progressive-course-banner p,body.theme-dark .progressive-project-head p,body.theme-dark .progressive-project-rule span,body.theme-dark .project-step-list li p{color:#a9b6c9!important}
+body.theme-dark .progressive-project-rule{background:#10213f;border-color:#1e3a5f}
+body.theme-dark .project-file-change,body.theme-dark .project-step-list li{background:#0f172a;border-color:#26344f}
+body.theme-dark .progressive-project-result{background:#0d2a20;border-color:#14532d}
+body.theme-dark .progressive-project-complete{background:#111827;border-color:#334155;color:#cbd5e1}
+body.theme-dark .progressive-project-complete.is-complete{background:#0d2a20;border-color:#14532d;color:#86efac}
+
+@media(max-width:850px){.progressive-course-banner{grid-template-columns:1fr}.progressive-project-head{flex-direction:column}.progressive-project-rule{grid-template-columns:1fr}.project-file-head{align-items:flex-start;flex-direction:column}.project-file-head code{white-space:normal;word-break:break-word}}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><link href="https://unpkg.com/tippy.js@6/animations/shift-away.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css" rel="stylesheet"/>
-<meta content="13" name="django-academy-version"/>
+<meta content="15" name="django-academy-version"/>
 </head><body>
 <div class="progress-top" id="progressTop"></div>
 <div class="layout">
@@ -13001,6 +13416,13 @@ body.theme-dark .install-dont-do p{
 <button data-study-action="review" type="button">◐ Repasar</button>
 <button data-study-action="done" type="button">✓ Entendido</button>
 <button class="favorite-section-btn" data-favorite-section="inicio" type="button">☆</button>
+</div><div class="progressive-course-banner">
+<div class="progressive-course-icon">🧱</div>
+<div>
+<span>METODOLOGÍA DEL CURSO</span>
+<strong>Vas a construir un solo proyecto de principio a fin</strong>
+<p>En cada lección verás el archivo exacto que debes abrir, el código que debes agregar o modificar y el resultado que debes comprobar antes de continuar.</p>
+</div>
 </div><div class="easy-explanation-panel">
 <div class="easy-explanation-head">
 <span>💡 EXPLICACIÓN FÁCIL</span>
@@ -13087,14 +13509,14 @@ body.theme-dark .install-dont-do p{
 </div>
 </article>
 <article class="academy-dashboard-card project-build-card" id="buildProjectProgressCard">
-<span class="dashboard-kicker">MINI PROYECTOS</span>
-<strong>Progreso de práctica</strong>
+<span class="dashboard-kicker">PROYECTO PROGRESIVO</span>
+<strong>django_estudiantes</strong>
 <div class="build-project-progress-top">
 <span id="buildProjectStepText">0 de 31 pasos</span>
 <b id="buildProjectPercent">0%</b>
 </div>
 <div class="dashboard-progress-track"><span id="buildProjectProgressBar"></span></div>
-<small>Cada lección termina con un mini proyecto independiente.</small>
+<small>Un solo proyecto que se modifica en cada lección.</small>
 </article></div>
 <div class="django-roadmap"><a href="#python-desde-cero"><span>01</span><strong>Python</strong><small>Base mínima</small></a><b>→</b><a href="#instalacion"><span>02</span><strong>Instalar</strong><small>Preparar Django</small></a><b>→</b><a href="#crear-proyecto"><span>03</span><strong>Hola Mundo</strong><small>Primera respuesta</small></a><b>→</b><a href="#que-es-django"><span>04</span><strong>MVT</strong><small>Entender las piezas</small></a><b>→</b><a href="#templates"><span>05</span><strong>Templates</strong><small>HTML dinámico</small></a><b>→</b><a href="#models"><span>06</span><strong>ORM</strong><small>Datos</small></a><b>→</b><a href="#crud"><span>07</span><strong>CRUD</strong><small>Aplicación real</small></a></div>
 <div class="callout success">
@@ -13104,57 +13526,42 @@ body.theme-dark .install-dont-do p{
 </div>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="inicio">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="inicio">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Mapa visual de tu primer proyecto Django</h3>
-<p>Una hoja visual donde identifiques las piezas que aprenderás: Python, URL, View, Template, Model y Form.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Define el proyecto que construirás durante todo el curso</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="inicio" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="inicio" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>15–20 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Muy fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/00_mapa_django/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Te ayuda a saber hacia dónde va el curso antes de escribir código.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/README.md</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>README.md</code>
+<pre># Sistema de estudiantes
+
+Proyecto de práctica construido paso a paso durante el curso.
+
+Objetivo: registrar, consultar, editar y eliminar estudiantes.</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea la carpeta mini_proyectos/00_mapa_django.</span></li><li><span class="mini-project-step-num">2</span><span>Dentro crea README.md.</span></li><li><span class="mini-project-step-num">3</span><span>Escribe los títulos Python, URL, View, Template, Model y Form.</span></li><li><span class="mini-project-step-num">4</span><span>Debajo de cada uno escribe una frase corta sobre para qué crees que sirve.</span></li><li><span class="mini-project-step-num">5</span><span>Al terminar la guía vuelve a este archivo y corrige tus definiciones.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un README sencillo con tu mapa inicial de Django.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega flechas mostrando cómo crees que se conectan las piezas.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea la carpeta <code>django_estudiantes</code>.</p></li><li><span>2</span><p>Dentro crea <code>README.md</code>.</p></li><li><span>3</span><p>Escribe el objetivo del sistema.</p></li><li><span>4</span><p>No borres esta carpeta: la iremos modificando en cada lección.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>Ya tienes el proyecto base y sabes qué aplicación vas a construir.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link next" href="#antes-django"><small>SIGUIENTE →</small><strong>Antes de Django</strong></a></nav></section><section data-course-group="Fundamentos" id="antes-django" style="--section-accent:var(--django-green);">
 <div class="section-kicker">01 · ANTES DE DJANGO</div>
 <h2>Primero entiende la Web</h2>
@@ -13342,57 +13749,43 @@ body.theme-dark .install-dont-do p{
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="antes-django">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="antes-django">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Simulador de una petición web</h3>
-<p>Una pequeña página HTML que muestre visualmente el recorrido Navegador → Request → Servidor → Response.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Documenta cómo viajará una petición dentro de tu proyecto</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="antes-django" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="antes-django" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>20–25 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Muy fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/01_peticion_web/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Antes de Django necesitas entender qué ocurre cuando visitas una dirección web.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/docs/peticion_web.md</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>index.html · styles.css</code>
+<pre># Cómo funciona una petición web
+
+Navegador -&gt; Request -&gt; Django -&gt; Response
+
+GET: consultar información.
+POST: enviar información al servidor.</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea index.html y styles.css.</span></li><li><span class="mini-project-step-num">2</span><span>Muestra cuatro tarjetas: Navegador, Request, Servidor y Response.</span></li><li><span class="mini-project-step-num">3</span><span>Únelas con flechas usando HTML y CSS.</span></li><li><span class="mini-project-step-num">4</span><span>Debajo escribe un ejemplo GET /estudiantes/.</span></li><li><span class="mini-project-step-num">5</span><span>Agrega otro ejemplo POST /estudiantes/nuevo/.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una página visual que explique el ciclo de una petición web.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega colores distintos para GET y POST.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea la carpeta <code>docs</code>.</p></li><li><span>2</span><p>Crea <code>peticion_web.md</code>.</p></li><li><span>3</span><p>Escribe el flujo Request/Response.</p></li><li><span>4</span><p>Relaciona GET con listar estudiantes y POST con guardar un estudiante.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El proyecto ya tiene una explicación simple de cómo una petición llegará a Django.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#inicio"><small>← ANTERIOR</small><strong>Inicio</strong></a><a class="lesson-pager-link next" href="#python-desde-cero"><small>SIGUIENTE →</small><strong>Python desde cero</strong></a></nav></section><section data-course-group="Fundamentos" id="python-desde-cero" style="--section-accent:var(--django-green);">
 <div class="section-kicker">02 · PYTHON DESDE CERO</div>
 <h2>Python que necesitas antes de Django</h2>
@@ -13736,57 +14129,47 @@ except ValueError:
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="python-desde-cero">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="python-desde-cero">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Gestor de estudiantes en consola</h3>
-<p>Un programa Python que permita listar, buscar y contar estudiantes sin usar Django todavía.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Crea un prototipo en Python antes de usar Django</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="python-desde-cero" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="python-desde-cero" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>35–45 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/02_python_estudiantes/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas justo el Python que después aparecerá dentro de Views, Models y Forms.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/prototipo_estudiantes.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>app.py</code>
+<pre>estudiantes = [
+    {"documento": "1001", "nombre": "Ana", "activo": True},
+    {"documento": "1002", "nombre": "Luis", "activo": True},
+]
+
+def listar_estudiantes():
+    for estudiante in estudiantes:
+        print(estudiante["documento"], estudiante["nombre"])
+
+listar_estudiantes()</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea una lista de diccionarios con al menos 4 estudiantes.</span></li><li><span class="mini-project-step-num">2</span><span>Crea una función listar_estudiantes().</span></li><li><span class="mini-project-step-num">3</span><span>Crea buscar_por_documento(documento).</span></li><li><span class="mini-project-step-num">4</span><span>Crea contar_activos().</span></li><li><span class="mini-project-step-num">5</span><span>Muestra un menú simple con input() para elegir una opción.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un gestor de estudiantes que funcione completamente desde la terminal.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega una opción para crear un estudiante nuevo en memoria.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea <code>prototipo_estudiantes.py</code>.</p></li><li><span>2</span><p>Guarda estudiantes en una lista de diccionarios.</p></li><li><span>3</span><p>Crea una función para listarlos.</p></li><li><span>4</span><p>Ejecuta <code>python prototipo_estudiantes.py</code>.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>Practicas listas, diccionarios, funciones y ciclos usando el mismo dominio del proyecto.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#antes-django"><small>← ANTERIOR</small><strong>Antes de Django</strong></a><a class="lesson-pager-link next" href="#entorno-python"><small>SIGUIENTE →</small><strong>Entorno virtual y pip</strong></a></nav></section><section data-course-group="Fundamentos" id="entorno-python" style="--section-accent:var(--django-green);">
 <div class="section-kicker">03 · ENTORNO PYTHON</div>
 <h2>Entorno virtual, pip y dependencias</h2>
@@ -14023,57 +14406,45 @@ python -m pip list</pre>
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="entorno-python">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="entorno-python">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Laboratorio Python aislado</h3>
-<p>Un proyecto pequeño con su propio entorno virtual y archivo requirements.txt.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Aísla las dependencias del proyecto</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="entorno-python" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="entorno-python" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>15–20 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Muy fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/03_entorno_virtual/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Aprendes a preparar proyectos sin mezclar dependencias.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/.venv/</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>.venv/ · requirements.txt · verificar.py</code>
+<pre># Esta carpeta la crea Python; no se crea manualmente.</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/requirements.txt</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea la carpeta del mini proyecto.</span></li><li><span class="mini-project-step-num">2</span><span>Crea y activa .venv.</span></li><li><span class="mini-project-step-num">3</span><span>Instala Django.</span></li><li><span class="mini-project-step-num">4</span><span>Genera requirements.txt.</span></li><li><span class="mini-project-step-num">5</span><span>Crea verificar.py e imprime la versión de Django instalada.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una carpeta reproducible con entorno virtual y dependencias.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Desactiva el entorno y comprueba qué cambia al ejecutar Python.</p>
-</article>
+<pre># Por ahora puede estar vacío; lo llenaremos al instalar Django.</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Abre PowerShell dentro de <code>django_estudiantes</code>.</p></li><li><span>2</span><p>Ejecuta <code>python -m venv .venv</code>.</p></li><li><span>3</span><p>Activa con <code>.\.venv\Scripts\Activate.ps1</code>.</p></li><li><span>4</span><p>Comprueba que aparece <code>(.venv)</code> en la terminal.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El proyecto ya tiene su propio entorno Python aislado.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#python-desde-cero"><small>← ANTERIOR</small><strong>Python desde cero</strong></a><a class="lesson-pager-link next" href="#instalacion"><small>SIGUIENTE →</small><strong>Instalación</strong></a></nav></section><section data-course-group="Django esencial" id="instalacion" style="--section-accent:var(--django-green);">
 <div class="section-kicker">04 · INSTALACIÓN</div>
 <h2>Instalar Django sin perderse</h2>
@@ -14249,57 +14620,38 @@ python -m django --version</code></pre>
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="instalacion">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="instalacion">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Verificador de instalación Django</h3>
-<p>Un script que muestre información básica del entorno de desarrollo.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Instala Django dentro del entorno del proyecto</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="instalacion" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="instalacion" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>15 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Muy fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/04_verificador_django/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Aprendes a comprobar si el problema está en Python, pip o Django.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/requirements.txt</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>verificar_entorno.py</code>
+<pre>Django==6.1.1</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Importa sys y django.</span></li><li><span class="mini-project-step-num">2</span><span>Muestra la versión de Python.</span></li><li><span class="mini-project-step-num">3</span><span>Muestra django.get_version().</span></li><li><span class="mini-project-step-num">4</span><span>Muestra un mensaje final indicando que el entorno está listo.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un script que confirme las versiones del entorno.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Muestra también sys.executable para saber qué Python estás usando.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Verifica que la terminal comience con <code>(.venv)</code>.</p></li><li><span>2</span><p>Ejecuta <code>python -m pip install Django==6.1.1</code>.</p></li><li><span>3</span><p>Comprueba con <code>python -m django --version</code>.</p></li><li><span>4</span><p>Guarda la dependencia en <code>requirements.txt</code>.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>Django queda instalado específicamente para este proyecto.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#entorno-python"><small>← ANTERIOR</small><strong>Entorno virtual y pip</strong></a><a class="lesson-pager-link next" href="#crear-proyecto"><small>SIGUIENTE →</small><strong>Hola Mundo</strong></a></nav></section><section data-course-group="Django esencial" id="crear-proyecto" style="--section-accent:var(--django-green);">
 <div class="section-kicker">05 · HOLA MUNDO</div>
 <h2>Hola Mundo: tu primer proyecto Django</h2>
@@ -14497,75 +14849,234 @@ urlpatterns = [
 </summary>
 <div class="course-topic-body"><div class="topic-simple-intro">
 <span>EN UNA FRASE</span>
-<p>En este bloque vas a entender <strong>manage.py</strong>: el comando central del proyecto. Primero identifica la idea; después mira el código.</p>
-</div><div class="deep-concepts-grid">
-<article class="deep-concept">
-<h4>manage.py</h4>
-<p>Ejecuta comandos con la configuración del proyecto cargada.</p>
-<div class="mental">Cómo pensarlo: Lo usarás para runserver, migrations, tests, shell, admin...</div>
-<pre>python manage.py help</pre>
-<div class="mistake">⚠ No edites manage.py para tareas normales.</div>
+<p>En este bloque vas a entender la diferencia entre <strong>manage.py</strong> y <strong>django-admin</strong>. Los dos sirven para darle órdenes a Django, pero <b>no se usan exactamente en el mismo momento</b>. Primero mira la idea y después prueba el ejemplo.</p>
+</div>
+<div class="beginner-command-explainer">
+<div class="beginner-command-analogy">
+<div class="analogy-icon">🧰</div>
+<div>
+<span>IMAGÍNALO ASÍ</span>
+<strong>Django tiene una caja de herramientas general y cada proyecto tiene su propio control remoto.</strong>
+<p>
+<code>django-admin</code> es la <b>caja de herramientas general de Django</b>.
+        <code>manage.py</code> es el <b>control remoto de tu proyecto actual</b>, porque ya sabe
+        qué archivo <code>settings.py</code> debe utilizar.
+      </p>
+</div>
+</div>
+<div class="beginner-command-cards">
+<article class="beginner-command-card manage">
+<div class="beginner-command-card-head">
+<span class="command-number">A</span>
+<div>
+<small>EL QUE USARÁS CASI TODO EL TIEMPO</small>
+<h4>python manage.py</h4>
+</div>
+</div>
+<div class="beginner-explain-block">
+<span>🙂 ¿QUÉ ES EN PALABRAS SIMPLES?</span>
+<p>
+          Es un archivo que Django crea dentro de tu proyecto. Sirve para darle órdenes
+          a <b>ese proyecto en particular</b>.
+        </p>
+</div>
+<div class="beginner-explain-block">
+<span>🏠 EJEMPLO COTIDIANO</span>
+<p>
+          Imagina que tienes dos restaurantes. Cada restaurante tiene su propio panel de control.
+          <code>manage.py</code> sería el panel del restaurante que tienes abierto en este momento.
+        </p>
+</div>
+<div class="beginner-explain-block">
+<span>💻 EJEMPLO REAL</span>
+<pre>python manage.py runserver</pre>
+<p class="command-result">
+          Django lee la configuración de tu proyecto y enciende el servidor de desarrollo.
+        </p>
+</div>
+<div class="beginner-command-list">
+<strong>Comandos que usarás con frecuencia</strong>
+<div><code>python manage.py runserver</code><span>Inicia la aplicación.</span></div>
+<div><code>python manage.py makemigrations</code><span>Prepara cambios de la base de datos.</span></div>
+<div><code>python manage.py migrate</code><span>Aplica esos cambios.</span></div>
+<div><code>python manage.py createsuperuser</code><span>Crea un usuario administrador.</span></div>
+<div><code>python manage.py test</code><span>Ejecuta las pruebas.</span></div>
+</div>
+<div class="beginner-remember">
+<strong>🧠 Qué debes recordar</strong>
+<p>
+          Si ya estás dentro de un proyecto Django y quieres trabajar con él,
+          normalmente usarás <code>python manage.py ...</code>.
+        </p>
+</div>
 </article>
-<article class="deep-concept">
+<article class="beginner-command-card admin">
+<div class="beginner-command-card-head">
+<span class="command-number">B</span>
+<div>
+<small>LA HERRAMIENTA GENERAL DE DJANGO</small>
 <h4>django-admin</h4>
-<p>Comando general de Django.</p>
-<div class="mental">Cómo pensarlo: Muy útil antes de tener proyecto o para tareas globales.</div>
+</div>
+</div>
+<div class="beginner-explain-block">
+<span>🙂 ¿QUÉ ES EN PALABRAS SIMPLES?</span>
+<p>
+          Es un comando que viene con Django. No pertenece a un proyecto específico:
+          funciona como una herramienta general del framework.
+        </p>
+</div>
+<div class="beginner-explain-block">
+<span>🏠 EJEMPLO COTIDIANO</span>
+<p>
+          Antes de tener un restaurante todavía no existe su panel de control.
+          Necesitas primero la herramienta que construye el restaurante.
+          Ese papel lo cumple <code>django-admin</code>.
+        </p>
+</div>
+<div class="beginner-explain-block">
+<span>💻 EJEMPLO REAL</span>
 <pre>django-admin startproject config .</pre>
-<div class="mistake">⚠ Dentro del proyecto manage.py suele ser más cómodo.</div>
+<p class="command-result">
+          Django crea la estructura inicial del proyecto, incluyendo
+          <code>manage.py</code> y la carpeta <code>config/</code>.
+        </p>
+</div>
+<div class="beginner-command-result-tree">
+<strong>Después de ejecutar el comando tendrás algo parecido a:</strong>
+<pre>mi_proyecto/
+├── manage.py
+└── config/
+    ├── settings.py
+    ├── urls.py
+    ├── asgi.py
+    └── wsgi.py</pre>
+</div>
+<div class="beginner-remember">
+<strong>🧠 Qué debes recordar</strong>
+<p>
+          Para <b>crear</b> el proyecto puedes usar <code>django-admin</code>.
+          Una vez creado, normalmente trabajarás con <code>manage.py</code>.
+        </p>
+</div>
 </article>
-</div></div>
+</div>
+<div class="beginner-command-comparison">
+<div class="comparison-title">
+<span>🔎 ¿CUÁL USO ENTONCES?</span>
+<strong>No necesitas memorizarlo: piensa en el momento en el que estás.</strong>
+</div>
+<div class="comparison-flow">
+<article>
+<b>1</b>
+<div>
+<strong>Todavía NO tengo proyecto</strong>
+<p>Quiero crearlo por primera vez.</p>
+<pre>django-admin startproject config .</pre>
+</div>
+</article>
+<span class="comparison-arrow">→</span>
+<article>
+<b>2</b>
+<div>
+<strong>El proyecto ya existe</strong>
+<p>Ahora quiero ejecutarlo o administrarlo.</p>
+<pre>python manage.py runserver</pre>
+</div>
+</article>
+</div>
+</div>
+<div class="beginner-command-scenario">
+<div class="scenario-head">
+<span>👣 EJEMPLO COMPLETO PARA UN ESTUDIANTE NUEVO</span>
+<strong>Desde una carpeta vacía hasta ver Django en el navegador</strong>
+</div>
+<div class="scenario-steps">
+<div>
+<span>1</span>
+<section>
+<strong>Activa tu entorno virtual</strong>
+<pre>.\.venv\Scripts\Activate.ps1</pre>
+</section>
+</div>
+<div>
+<span>2</span>
+<section>
+<strong>Crea el proyecto</strong>
+<pre>django-admin startproject config .</pre>
+<small>Aquí aparece <code>manage.py</code>.</small>
+</section>
+</div>
+<div>
+<span>3</span>
+<section>
+<strong>Enciende el servidor usando manage.py</strong>
+<pre>python manage.py runserver</pre>
+</section>
+</div>
+<div>
+<span>4</span>
+<section>
+<strong>Abre el navegador</strong>
+<pre>http://127.0.0.1:8000/</pre>
+<small>Si aparece la página de Django, la secuencia funcionó.</small>
+</section>
+</div>
+</div>
+</div>
+<div class="beginner-command-warning">
+<strong>⚠ Error común de principiante</strong>
+<p>
+      No escribas <code>python manage.py runserver</code> antes de crear el proyecto.
+      Si todavía no existe el archivo <code>manage.py</code>, Python no tendrá qué ejecutar.
+    </p>
+</div>
+</div>
+</div>
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="crear-proyecto">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="crear-proyecto">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Hola Mundo con Django</h3>
-<p>Crea un proyecto desde cero y haz que la página principal muestre tu primer mensaje.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Convierte la carpeta en un proyecto Django y muestra Hola Mundo</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="crear-proyecto" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="crear-proyecto" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>25–35 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/05_hola_mundo/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Compruebas instalación, proyecto, servidor y una respuesta HTTP antes de entrar a la arquitectura completa.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/config/urls.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>manage.py · config/urls.py</code>
+<pre>from django.contrib import admin
+from django.urls import path
+from django.http import HttpResponse
+
+def hola_mundo(request):
+    return HttpResponse("&lt;h1&gt;¡Hola Mundo con Django!&lt;/h1&gt;")
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", hola_mundo),
+]</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps"><li><span class="mini-project-step-num">1</span><span>Crea y activa un entorno virtual.</span></li><li><span class="mini-project-step-num">2</span><span>Instala Django y comprueba su versión.</span></li><li><span class="mini-project-step-num">3</span><span>Ejecuta django-admin startproject config .</span></li><li><span class="mini-project-step-num">4</span><span>Ejecuta python manage.py runserver y comprueba la pantalla inicial.</span></li><li><span class="mini-project-step-num">5</span><span>Modifica config/urls.py para crear hola_mundo() y conecta path("", hola_mundo).</span></li><li><span class="mini-project-step-num">6</span><span>Recarga http://127.0.0.1:8000/ y comprueba que aparece tu mensaje.</span></li></ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una página en http://127.0.0.1:8000/ que muestre “¡Hola Mundo con Django!”.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega una segunda ruta /saludo/ que muestre otro mensaje.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Ejecuta <code>django-admin startproject config .</code>.</p></li><li><span>2</span><p>Abre <code>config/urls.py</code>.</p></li><li><span>3</span><p>Agrega temporalmente <code>hola_mundo</code>.</p></li><li><span>4</span><p>Ejecuta <code>python manage.py runserver</code>.</p></li><li><span>5</span><p>Abre <code>http://127.0.0.1:8000/</code>.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El mismo proyecto ya responde desde Django en el navegador.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#instalacion"><small>← ANTERIOR</small><strong>Instalación</strong></a><a class="lesson-pager-link next" href="#que-es-django"><small>SIGUIENTE →</small><strong>Qué es Django</strong></a></nav></section><section data-course-group="Django esencial" id="que-es-django" style="--section-accent:var(--django-green);">
 <div class="section-kicker">06 · CÓMO FUNCIONA DJANGO</div>
 <h2>Django y el patrón MVT</h2>
@@ -14708,57 +15219,45 @@ urlpatterns = [
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="que-es-django">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="que-es-django">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Diagrama MVT interactivo</h3>
-<p>Una página HTML que explique Model, View y Template con tarjetas.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Separa mentalmente URL, View, Model y Template</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="que-es-django" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="que-es-django" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>20–30 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/06_mvt/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Te obliga a explicar MVT con tus propias palabras antes de programarlo.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/docs/mvt.md</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>index.html · styles.css</code>
+<pre># MVT en este proyecto
+
+URL -&gt; decide qué View se ejecuta.
+View -&gt; decide qué hacer.
+Model -&gt; representa los datos.
+Template -&gt; genera el HTML.
+
+Ejemplo futuro: /estudiantes/ -&gt; lista() -&gt; Estudiante -&gt; lista.html</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea tres tarjetas: Model, View y Template.</span></li><li><span class="mini-project-step-num">2</span><span>Escribe una responsabilidad para cada una.</span></li><li><span class="mini-project-step-num">3</span><span>Agrega una tarjeta URL antes de View.</span></li><li><span class="mini-project-step-num">4</span><span>Conecta todo con flechas.</span></li><li><span class="mini-project-step-num">5</span><span>Usa el ejemplo Sistema de estudiantes.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un diagrama visual de URL → View → Model/Template → Response.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega un ejemplo de dato viajando por el diagrama.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea <code>docs/mvt.md</code>.</p></li><li><span>2</span><p>Escribe el recorrido que tendrá <code>/estudiantes/</code>.</p></li><li><span>3</span><p>Identifica qué parte será URL, View, Model y Template.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>La arquitectura que estudiarás queda conectada con tu propio proyecto.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#crear-proyecto"><small>← ANTERIOR</small><strong>Hola Mundo</strong></a><a class="lesson-pager-link next" href="#estructura"><small>SIGUIENTE →</small><strong>Estructura</strong></a></nav></section><section data-course-group="Django esencial" id="estructura" style="--section-accent:var(--django-green);">
 <div class="section-kicker">07 · ESTRUCTURA</div>
 <h2>Cómo leer un proyecto Django</h2>
@@ -14905,57 +15404,43 @@ urlpatterns = [
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="estructura">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="estructura">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Explorador comentado de Django</h3>
-<p>Un documento donde expliques los archivos principales de un proyecto real.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Documenta para qué sirve cada archivo que Django creó</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="estructura" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="estructura" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>20–25 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/07_explorador/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Evita que settings.py, urls.py, wsgi.py y manage.py parezcan archivos misteriosos.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/README.md</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>README.md</code>
+<pre>## Estructura Django
+
+- manage.py: ejecuta comandos del proyecto.
+- config/settings.py: configuración general.
+- config/urls.py: rutas principales.
+- config/wsgi.py y asgi.py: entrada para servidores.</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Copia la estructura de un proyecto startproject.</span></li><li><span class="mini-project-step-num">2</span><span>Al lado de manage.py escribe para qué sirve.</span></li><li><span class="mini-project-step-num">3</span><span>Haz lo mismo con settings.py y urls.py.</span></li><li><span class="mini-project-step-num">4</span><span>Describe brevemente asgi.py y wsgi.py.</span></li><li><span class="mini-project-step-num">5</span><span>Marca cuáles archivos normalmente modificarás más.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un mapa de carpetas comentado por ti.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega una tabla: archivo / responsabilidad / frecuencia de uso.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Abre la estructura creada por <code>startproject</code>.</p></li><li><span>2</span><p>Añade al <code>README.md</code> una sección “Estructura Django”.</p></li><li><span>3</span><p>Explica <code>manage.py</code>, <code>settings.py</code> y <code>urls.py</code> con una frase cada uno.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El estudiante ya sabe dónde mirar cuando necesite cambiar configuración o rutas.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#que-es-django"><small>← ANTERIOR</small><strong>Qué es Django</strong></a><a class="lesson-pager-link next" href="#apps"><small>SIGUIENTE →</small><strong>Apps</strong></a></nav></section><section data-course-group="Django esencial" id="apps" style="--section-accent:var(--django-green);">
 <div class="section-kicker">08 · APPS</div>
 <h2>Apps: dividir el proyecto por funcionalidades</h2>
@@ -15086,57 +15571,51 @@ urlpatterns = [
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="apps">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="apps">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>App de biblioteca</h3>
-<p>Un proyecto Django con una app independiente llamada biblioteca.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Crea la app estudiantes y regístrala en el proyecto</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="apps" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="apps" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>25–35 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/08_app_biblioteca/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas la diferencia entre proyecto y app sin copiar la app estudiantes del curso.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/config/settings.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>biblioteca/ · config/settings.py</code>
+<pre>INSTALLED_APPS = [
+    # ... apps de Django ...
+    "estudiantes",
+]</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/urls.py</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea un proyecto Django nuevo.</span></li><li><span class="mini-project-step-num">2</span><span>Ejecuta python manage.py startapp biblioteca.</span></li><li><span class="mini-project-step-num">3</span><span>Registra biblioteca en INSTALLED_APPS.</span></li><li><span class="mini-project-step-num">4</span><span>Crea biblioteca/urls.py.</span></li><li><span class="mini-project-step-num">5</span><span>Escribe en README qué responsabilidad tendrá esa app.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un proyecto con una app correctamente creada y registrada.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Crea también una app cuentas y compara para qué serviría cada una.</p>
-</article>
+<pre>from django.urls import path
+
+app_name = "estudiantes"
+urlpatterns = []</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Ejecuta <code>python manage.py startapp estudiantes</code>.</p></li><li><span>2</span><p>Agrega <code>"estudiantes"</code> en <code>INSTALLED_APPS</code>.</p></li><li><span>3</span><p>Crea manualmente <code>estudiantes/urls.py</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El proyecto ya tiene una app propia donde crecerá toda la funcionalidad académica.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#estructura"><small>← ANTERIOR</small><strong>Estructura</strong></a><a class="lesson-pager-link next" href="#urls"><small>SIGUIENTE →</small><strong>URLs</strong></a></nav></section><section data-course-group="Django esencial" id="urls" style="--section-accent:var(--django-green);">
 <div class="section-kicker">09 · URLS</div>
 <h2>Enrutamiento: URL → view</h2>
@@ -15303,57 +15782,58 @@ urlpatterns = [
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="urls">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="urls">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Mini sitio con tres rutas</h3>
-<p>Un sitio Django con /, /acerca/ y /contacto/.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Conecta las rutas generales con la app estudiantes</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="urls" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="urls" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>25–35 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/09_rutas/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas path(), include(), nombres de ruta y organización por app.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/config/urls.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>config/urls.py · sitio/urls.py · sitio/views.py</code>
+<pre>from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("estudiantes/", include("estudiantes.urls")),
+]</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/urls.py</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea una app sitio.</span></li><li><span class="mini-project-step-num">2</span><span>Crea tres Views temporales con HttpResponse.</span></li><li><span class="mini-project-step-num">3</span><span>Crea rutas inicio, acerca y contacto.</span></li><li><span class="mini-project-step-num">4</span><span>Incluye sitio.urls desde config/urls.py.</span></li><li><span class="mini-project-step-num">5</span><span>Comprueba las tres URLs en el navegador.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un mini sitio navegable por tres direcciones diferentes.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega una ruta /saludo/&lt;str:nombre&gt;/.</p>
-</article>
+<pre>from django.urls import path
+from . import views
+
+app_name = "estudiantes"
+
+urlpatterns = [
+    path("", views.lista, name="lista"),
+]</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Quita el <code>hola_mundo</code> temporal de <code>config/urls.py</code>.</p></li><li><span>2</span><p>Incluye <code>estudiantes.urls</code>.</p></li><li><span>3</span><p>Crea la ruta vacía de la app que llamará <code>views.lista</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>`/estudiantes/` ya apunta a una View de tu app.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#apps"><small>← ANTERIOR</small><strong>Apps</strong></a><a class="lesson-pager-link next" href="#views"><small>SIGUIENTE →</small><strong>Views</strong></a></nav></section><section data-course-group="Django esencial" id="views" style="--section-accent:var(--django-green);">
 <div class="section-kicker">10 · VIEWS</div>
 <h2>Views: el centro de decisión</h2>
@@ -15543,57 +16023,41 @@ def guardar(request):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="views">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="views">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Calculadora de saludo con Views</h3>
-<p>Una View que reciba un nombre por la URL y construya una respuesta.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Crea la primera View real del sistema</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="views" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="views" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>25–35 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/10_views/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas parámetros de URL, request y HttpResponse.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/views.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>saludos/views.py · saludos/urls.py</code>
+<pre>from django.http import HttpResponse
+
+def lista(request):
+    return HttpResponse("&lt;h1&gt;Lista de estudiantes&lt;/h1&gt;")</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea una ruta saludo/&lt;str:nombre&gt;/.</span></li><li><span class="mini-project-step-num">2</span><span>Recibe nombre en la View.</span></li><li><span class="mini-project-step-num">3</span><span>Devuelve Hola, nombre usando HttpResponse.</span></li><li><span class="mini-project-step-num">4</span><span>Agrega otra View que devuelva la fecha actual.</span></li><li><span class="mini-project-step-num">5</span><span>Prueba ambas rutas.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Dos Views funcionales que generan respuestas dinámicas.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Devuelve un status HTTP diferente en una ruta de prueba.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Abre <code>estudiantes/views.py</code>.</p></li><li><span>2</span><p>Crea la función <code>lista(request)</code>.</p></li><li><span>3</span><p>Visita <code>/estudiantes/</code>.</p></li><li><span>4</span><p>Comprueba que aparece el texto.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>La ruta ya ejecuta código Python dentro de la app.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#urls"><small>← ANTERIOR</small><strong>URLs</strong></a><a class="lesson-pager-link next" href="#templates"><small>SIGUIENTE →</small><strong>Templates</strong></a></nav></section><section data-course-group="Django esencial" id="templates" style="--section-accent:var(--django-green);">
 <div class="section-kicker">11 · TEMPLATES</div>
 <h2>Templates: HTML dinámico sin mezclar todo</h2>
@@ -15799,57 +16263,73 @@ def guardar(request):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="templates">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="templates">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Catálogo de cursos con Templates</h3>
-<p>Una página que muestre una lista Python de cursos usando {% for %}.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Reemplaza el HTML escrito en Python por Templates</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="templates" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="templates" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>35–45 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/11_templates/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas contexto, variables, bucles y herencia de templates.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/views.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>templates/base.html · templates/cursos/lista.html · views.py</code>
+<pre>from django.shortcuts import render
+
+def lista(request):
+    estudiantes = [
+        {"documento": "1001", "nombre": "Ana"},
+        {"documento": "1002", "nombre": "Luis"},
+    ]
+    return render(request, "estudiantes/lista.html", {"estudiantes": estudiantes})</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/templates/base.html</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea base.html con un bloque content.</span></li><li><span class="mini-project-step-num">2</span><span>Desde la View prepara una lista de cursos.</span></li><li><span class="mini-project-step-num">3</span><span>Envía la lista como contexto.</span></li><li><span class="mini-project-step-num">4</span><span>Recórrela con {% for %}.</span></li><li><span class="mini-project-step-num">5</span><span>Agrega {% empty %} para una lista vacía.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una página HTML dinámica generada con datos enviados desde Python.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega una condición para destacar cursos activos.</p>
-</article>
+<pre>&lt;!doctype html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;{% block title %}Academia{% endblock %}&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+  &lt;main&gt;{% block content %}{% endblock %}&lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/templates/estudiantes/lista.html</code>
+</div>
+<pre>{% extends "base.html" %}
+{% block content %}
+&lt;h1&gt;Estudiantes&lt;/h1&gt;
+{% for estudiante in estudiantes %}
+  &lt;p&gt;{{ estudiante.documento }} - {{ estudiante.nombre }}&lt;/p&gt;
+{% empty %}
+  &lt;p&gt;No hay estudiantes.&lt;/p&gt;
+{% endfor %}
+{% endblock %}</pre>
+</div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Configura <code>TEMPLATES[0]["DIRS"] = [BASE_DIR / "templates"]</code> en <code>settings.py</code>.</p></li><li><span>2</span><p>Crea <code>templates/base.html</code>.</p></li><li><span>3</span><p>Crea <code>templates/estudiantes/lista.html</code>.</p></li><li><span>4</span><p>Cambia la View para usar <code>render</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>La lista ya se genera desde un Template separado del código Python.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#views"><small>← ANTERIOR</small><strong>Views</strong></a><a class="lesson-pager-link next" href="#static"><small>SIGUIENTE →</small><strong>Static files</strong></a></nav></section><section data-course-group="Django esencial" id="static" style="--section-accent:var(--django-green);">
 <div class="section-kicker">12 · STATIC FILES</div>
 <h2>CSS, JavaScript e imágenes</h2>
@@ -15971,57 +16451,58 @@ def guardar(request):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="static">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="static">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Tarjetas de cursos con CSS</h3>
-<p>La página anterior, pero ahora con una interfaz visual mediante static files.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Añade estilos al proyecto sin mezclar CSS con HTML</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="static" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="static" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>30–40 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/12_static/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas {% static %}, estructura de CSS y separación de responsabilidades.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/static/css/app.css</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>static/css/app.css · base.html</code>
+<pre>body {
+  font-family: Arial, sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.tarjeta {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/templates/base.html</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea static/css/app.css.</span></li><li><span class="mini-project-step-num">2</span><span>Carga {% load static %}.</span></li><li><span class="mini-project-step-num">3</span><span>Enlaza el CSS desde base.html.</span></li><li><span class="mini-project-step-num">4</span><span>Diseña cards para cada curso.</span></li><li><span class="mini-project-step-num">5</span><span>Haz el listado responsive.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un catálogo visual que usa correctamente static files.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega una pequeña animación hover.</p>
-</article>
+<pre>{% load static %}
+&lt;link rel="stylesheet" href="{% static 'css/app.css' %}"&gt;</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea <code>static/css/app.css</code>.</p></li><li><span>2</span><p>Agrega <code>STATICFILES_DIRS = [BASE_DIR / "static"]</code> en <code>settings.py</code>.</p></li><li><span>3</span><p>Carga <code>{% load static %}</code> en <code>base.html</code>.</p></li><li><span>4</span><p>Enlaza <code>app.css</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El mismo listado ahora tiene presentación visual usando archivos estáticos.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#templates"><small>← ANTERIOR</small><strong>Templates</strong></a><a class="lesson-pager-link next" href="#models"><small>SIGUIENTE →</small><strong>Models + ORM</strong></a></nav></section><section data-course-group="Datos y ORM" id="models" style="--section-accent:var(--django-green);">
 <div class="section-kicker">13 · MODELS Y ORM</div>
 <h2>Modelos y ORM: trabajar con la base de datos</h2>
@@ -16253,57 +16734,59 @@ Estudiante.objects.create(
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="models">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="models">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Inventario de libros con ORM</h3>
-<p>Un Model Libro y varias consultas desde Django shell.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Reemplaza los datos de prueba por un Model real</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="models" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="models" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>40–50 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio inicial</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/13_modelos/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas Fields y ORM con un dominio distinto a estudiantes.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/models.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>biblioteca/models.py</code>
+<pre>from django.db import models
+
+class Estudiante(models.Model):
+    documento = models.CharField(max_length=20, unique=True)
+    nombre = models.CharField(max_length=120)
+    correo = models.EmailField()
+    activo = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f"{self.documento} - {self.nombre}"</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/views.py</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea Model Libro con titulo, autor, disponible y creado.</span></li><li><span class="mini-project-step-num">2</span><span>Genera y aplica migrations.</span></li><li><span class="mini-project-step-num">3</span><span>Abre python manage.py shell.</span></li><li><span class="mini-project-step-num">4</span><span>Crea al menos 3 libros.</span></li><li><span class="mini-project-step-num">5</span><span>Prueba all(), filter() y get().</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una tabla Libro con datos consultables mediante ORM.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Ordena los libros por titulo usando order_by().</p>
-</article>
+<pre>from django.shortcuts import render
+from .models import Estudiante
+
+def lista(request):
+    estudiantes = Estudiante.objects.all()
+    return render(request, "estudiantes/lista.html", {"estudiantes": estudiantes})</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea el Model <code>Estudiante</code>.</p></li><li><span>2</span><p>Quita la lista escrita a mano de <code>views.py</code>.</p></li><li><span>3</span><p>Consulta <code>Estudiante.objects.all()</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>La página deja de depender de datos inventados y empieza a leer desde la base de datos.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#static"><small>← ANTERIOR</small><strong>Static files</strong></a><a class="lesson-pager-link next" href="#migrations"><small>SIGUIENTE →</small><strong>Migraciones</strong></a></nav></section><section data-course-group="Datos y ORM" id="migrations" style="--section-accent:var(--django-green);">
 <div class="section-kicker">14 · MIGRACIONES</div>
 <h2>Migraciones: cambiar la base sin perder el historial</h2>
@@ -16429,57 +16912,38 @@ python manage.py migrate</code></pre>
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="migrations">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="migrations">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Evolución de un Model</h3>
-<p>Un pequeño historial de cambios sobre un Model existente.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Crea la tabla Estudiante en la base de datos</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="migrations" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="migrations" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>25–35 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/14_migraciones/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Aprendes que las migraciones son versiones del esquema, no comandos mágicos.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/migrations/</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>models.py · migrations/</code>
+<pre># Django genera los archivos de esta carpeta automáticamente.</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Parte de un Model Libro ya creado.</span></li><li><span class="mini-project-step-num">2</span><span>Agrega campo isbn opcional.</span></li><li><span class="mini-project-step-num">3</span><span>Ejecuta makemigrations.</span></li><li><span class="mini-project-step-num">4</span><span>Abre la migration y léela.</span></li><li><span class="mini-project-step-num">5</span><span>Ejecuta migrate y revisa showmigrations.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una segunda migration aplicada correctamente.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega un tercer cambio y observa cómo Django genera 0003.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Ejecuta <code>python manage.py makemigrations</code>.</p></li><li><span>2</span><p>Revisa el archivo <code>0001_initial.py</code> generado.</p></li><li><span>3</span><p>Ejecuta <code>python manage.py migrate</code>.</p></li><li><span>4</span><p>Comprueba con <code>python manage.py showmigrations</code>.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>La estructura definida en `models.py` ya existe físicamente en SQLite.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#models"><small>← ANTERIOR</small><strong>Models + ORM</strong></a><a class="lesson-pager-link next" href="#admin"><small>SIGUIENTE →</small><strong>Admin</strong></a></nav></section><section data-course-group="Datos y ORM" id="admin" style="--section-accent:var(--django-green);">
 <div class="section-kicker">15 · ADMIN</div>
 <h2>Admin: panel interno casi inmediato</h2>
@@ -16621,57 +17085,45 @@ class EstudianteAdmin(admin.ModelAdmin):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="admin">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="admin">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Panel de inventario con Django Admin</h3>
-<p>Un panel administrativo para gestionar libros.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Gestiona estudiantes desde Django Admin</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="admin" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="admin" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>30–40 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/15_admin/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas ModelAdmin antes de crear un CRUD público.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/admin.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>biblioteca/admin.py</code>
+<pre>from django.contrib import admin
+from .models import Estudiante
+
+@admin.register(Estudiante)
+class EstudianteAdmin(admin.ModelAdmin):
+    list_display = ("documento", "nombre", "correo", "activo")
+    search_fields = ("documento", "nombre", "correo")
+    list_filter = ("activo",)</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Registra Libro en admin.</span></li><li><span class="mini-project-step-num">2</span><span>Configura list_display.</span></li><li><span class="mini-project-step-num">3</span><span>Agrega search_fields.</span></li><li><span class="mini-project-step-num">4</span><span>Agrega list_filter por disponible.</span></li><li><span class="mini-project-step-num">5</span><span>Crea un superusuario y prueba el panel.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un admin que permita buscar y filtrar libros.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Configura ordering por titulo.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Registra <code>Estudiante</code> en <code>admin.py</code>.</p></li><li><span>2</span><p>Ejecuta <code>python manage.py createsuperuser</code>.</p></li><li><span>3</span><p>Entra a <code>/admin/</code>.</p></li><li><span>4</span><p>Crea al menos tres estudiantes.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>Ya puedes cargar datos reales sin construir todavía el formulario público.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#migrations"><small>← ANTERIOR</small><strong>Migraciones</strong></a><a class="lesson-pager-link next" href="#forms"><small>SIGUIENTE →</small><strong>Forms</strong></a></nav></section><section data-course-group="Forms y CRUD" id="forms" style="--section-accent:var(--django-green);">
 <div class="section-kicker">16 · FORMS</div>
 <h2>Formularios: recibir y validar datos</h2>
@@ -16871,57 +17323,69 @@ class EstudianteForm(forms.ModelForm):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="forms">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="forms">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Formulario de contacto validado</h3>
-<p>Un formulario de contacto con nombre, correo y mensaje.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Crea un formulario reutilizable para Estudiante</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="forms" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="forms" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>35–45 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/16_forms/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas forms.Form sin depender todavía de guardar un Model.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/forms.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>contacto/forms.py · views.py · contacto.html</code>
+<pre>from django import forms
+from .models import Estudiante
+
+class EstudianteForm(forms.ModelForm):
+    class Meta:
+        model = Estudiante
+        fields = ["documento", "nombre", "correo", "activo"]</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/views.py</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea ContactoForm.</span></li><li><span class="mini-project-step-num">2</span><span>Agrega nombre, correo y mensaje.</span></li><li><span class="mini-project-step-num">3</span><span>Renderiza el Form en GET.</span></li><li><span class="mini-project-step-num">4</span><span>Valídalo en POST.</span></li><li><span class="mini-project-step-num">5</span><span>Muestra un mensaje con cleaned_data cuando sea válido.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un formulario que detecta datos inválidos y acepta datos correctos.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega una validación personalizada para el mensaje.</p>
-</article>
+<pre>from .forms import EstudianteForm
+
+def crear(request):
+    form = EstudianteForm()
+    return render(request, "estudiantes/formulario.html", {"form": form})</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/templates/estudiantes/formulario.html</code>
+</div>
+<pre>{% extends "base.html" %}
+{% block content %}
+&lt;h1&gt;Nuevo estudiante&lt;/h1&gt;
+&lt;form&gt;
+  {{ form.as_p }}
+  &lt;button&gt;Guardar&lt;/button&gt;
+&lt;/form&gt;
+{% endblock %}</pre>
+</div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea <code>forms.py</code>.</p></li><li><span>2</span><p>Añade una View <code>crear</code>.</p></li><li><span>3</span><p>Crea el Template <code>formulario.html</code>.</p></li><li><span>4</span><p>Agrega la ruta <code>nuevo/</code> en <code>estudiantes/urls.py</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El navegador ya muestra un formulario generado a partir del Model.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#admin"><small>← ANTERIOR</small><strong>Admin</strong></a><a class="lesson-pager-link next" href="#csrf-botones"><small>SIGUIENTE →</small><strong>Botones + CSRF</strong></a></nav></section><section data-course-group="Forms y CRUD" id="csrf-botones" style="--section-accent:var(--django-green);">
 <div class="section-kicker">17 · BOTONES + CSRF</div>
 <h2>Formularios POST seguros y acciones claras</h2>
@@ -17074,57 +17538,57 @@ class EstudianteForm(forms.ModelForm):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="csrf-botones">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="csrf-botones">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Registro seguro de tareas</h3>
-<p>Un formulario POST que cree una tarea y redirija a una lista.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Haz que el formulario realmente guarde con POST y CSRF</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="csrf-botones" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="csrf-botones" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>30–40 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/17_post_csrf/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas CSRF y Post/Redirect/Get con un caso pequeño.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/views.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>templates/tareas/form.html · views.py</code>
+<pre>from django.shortcuts import redirect, render
+from .forms import EstudianteForm
+
+def crear(request):
+    form = EstudianteForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect("estudiantes:lista")
+    return render(request, "estudiantes/formulario.html", {"form": form})</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/templates/estudiantes/formulario.html</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea un formulario method='post'.</span></li><li><span class="mini-project-step-num">2</span><span>Agrega {% csrf_token %}.</span></li><li><span class="mini-project-step-num">3</span><span>Procesa request.POST desde una View.</span></li><li><span class="mini-project-step-num">4</span><span>Después de guardar, usa redirect().</span></li><li><span class="mini-project-step-num">5</span><span>Actualiza el navegador y verifica que no reenvía el formulario.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un flujo POST protegido que termina en redirect.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Quita temporalmente csrf_token para observar el error y luego vuelve a colocarlo.</p>
-</article>
+<pre>&lt;form method="post"&gt;
+  {% csrf_token %}
+  {{ form.as_p }}
+  &lt;button type="submit"&gt;Guardar&lt;/button&gt;
+&lt;/form&gt;</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Cambia el <code>&lt;form&gt;</code> a <code>method="post"</code>.</p></li><li><span>2</span><p>Agrega <code>{% csrf_token %}</code>.</p></li><li><span>3</span><p>Entrega <code>request.POST</code> al Form.</p></li><li><span>4</span><p>Guarda si <code>form.is_valid()</code>.</p></li><li><span>5</span><p>Redirige a la lista.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>Ya puedes crear estudiantes desde tu propia interfaz.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#forms"><small>← ANTERIOR</small><strong>Forms</strong></a><a class="lesson-pager-link next" href="#crud"><small>SIGUIENTE →</small><strong>CRUD completo</strong></a></nav></section><section data-course-group="Forms y CRUD" id="crud" style="--section-accent:var(--django-green);">
 <div class="section-kicker">18 · CRUD COMPLETO</div>
 <h2>CRUD: crear, listar, editar y eliminar</h2>
@@ -17354,57 +17818,63 @@ def detalle(request, pk):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="crud">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="crud">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>CRUD de tareas</h3>
-<p>Una mini aplicación para crear, listar, editar y eliminar tareas.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Completa el CRUD del mismo Model Estudiante</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="crud" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="crud" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>60–80 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio inicial</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/18_crud_tareas/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Une Models, Forms, URLs, Views y Templates en un proyecto pequeño.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/urls.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>models.py · forms.py · views.py · urls.py · templates/</code>
+<pre>urlpatterns = [
+    path("", views.lista, name="lista"),
+    path("nuevo/", views.crear, name="crear"),
+    path("&lt;int:pk&gt;/", views.detalle, name="detalle"),
+    path("&lt;int:pk&gt;/editar/", views.editar, name="editar"),
+    path("&lt;int:pk&gt;/eliminar/", views.eliminar, name="eliminar"),
+]</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/templates/estudiantes/detalle.html</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea Model Tarea con titulo, descripcion y completada.</span></li><li><span class="mini-project-step-num">2</span><span>Crea TareaForm.</span></li><li><span class="mini-project-step-num">3</span><span>Implementa lista y detalle.</span></li><li><span class="mini-project-step-num">4</span><span>Implementa crear y editar.</span></li><li><span class="mini-project-step-num">5</span><span>Implementa eliminar con pantalla de confirmación.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un CRUD completo de tareas.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega un filtro para mostrar solo tareas pendientes.</p>
-</article>
+<pre>&lt;h1&gt;{{ estudiante.nombre }}&lt;/h1&gt;
+&lt;p&gt;{{ estudiante.correo }}&lt;/p&gt;</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/templates/estudiantes/confirmar_eliminar.html</code>
+</div>
+<pre>&lt;h1&gt;Eliminar {{ estudiante.nombre }}&lt;/h1&gt;
+&lt;form method="post"&gt;
+  {% csrf_token %}
+  &lt;button type="submit"&gt;Sí, eliminar&lt;/button&gt;
+&lt;/form&gt;</pre>
+</div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Agrega rutas de detalle, editar y eliminar.</p></li><li><span>2</span><p>Crea las tres Views correspondientes en <code>views.py</code>.</p></li><li><span>3</span><p>Reutiliza <code>formulario.html</code> para crear y editar.</p></li><li><span>4</span><p>Crea <code>detalle.html</code> y <code>confirmar_eliminar.html</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El proyecto ya puede crear, listar, consultar, editar y eliminar estudiantes.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#csrf-botones"><small>← ANTERIOR</small><strong>Botones + CSRF</strong></a><a class="lesson-pager-link next" href="#relaciones"><small>SIGUIENTE →</small><strong>Relaciones</strong></a></nav></section><section data-course-group="Datos y ORM" id="relaciones" style="--section-accent:var(--django-green);">
 <div class="section-kicker">19 · RELACIONES</div>
 <h2>Relaciones entre modelos</h2>
@@ -17568,57 +18038,59 @@ class Estudiante(models.Model):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="relaciones">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="relaciones">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Autores y libros</h3>
-<p>Una app donde un Autor tenga muchos Libros.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Relaciona cada estudiante con un Programa</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="relaciones" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="relaciones" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>45–60 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio inicial</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/19_relaciones/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>ForeignKey se entiende mejor cuando ves registros realmente relacionados.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/models.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>models.py · admin.py · templates/</code>
+<pre>class Programa(models.Model):
+    nombre = models.CharField(max_length=120)
+
+    def __str__(self):
+        return self.nombre
+
+class Estudiante(models.Model):
+    # campos anteriores...
+    programa = models.ForeignKey(
+        Programa,
+        on_delete=models.PROTECT,
+        related_name="estudiantes",
+        null=True,
+        blank=True,
+    )</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/forms.py</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea Model Autor.</span></li><li><span class="mini-project-step-num">2</span><span>Agrega autor = ForeignKey(Autor, ...) a Libro.</span></li><li><span class="mini-project-step-num">3</span><span>Genera migrations.</span></li><li><span class="mini-project-step-num">4</span><span>Crea autores y libros desde admin.</span></li><li><span class="mini-project-step-num">5</span><span>Muestra el nombre del autor junto a cada libro.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una relación 1:N funcionando y visible.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Usa related_name para listar los libros de un autor.</p>
-</article>
+<pre>fields = ["documento", "nombre", "correo", "programa", "activo"]</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea el Model <code>Programa</code>.</p></li><li><span>2</span><p>Agrega <code>programa = ForeignKey(...)</code> a <code>Estudiante</code>.</p></li><li><span>3</span><p>Incluye <code>programa</code> en el Form.</p></li><li><span>4</span><p>Ejecuta <code>makemigrations</code> y <code>migrate</code>.</p></li><li><span>5</span><p>Registra <code>Programa</code> en <code>admin.py</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>Ahora los estudiantes quedan relacionados con un programa académico.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#crud"><small>← ANTERIOR</small><strong>CRUD completo</strong></a><a class="lesson-pager-link next" href="#auth"><small>SIGUIENTE →</small><strong>Autenticación</strong></a></nav></section><section data-course-group="Django avanzado" id="auth" style="--section-accent:var(--django-green);">
 <div class="section-kicker">20 · AUTENTICACIÓN</div>
 <h2>Login, logout y permisos</h2>
@@ -17797,57 +18269,69 @@ def panel(request): ...</pre>
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="auth">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="auth">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Zona privada para docentes</h3>
-<p>Un pequeño panel que solo pueda abrir un usuario autenticado.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Protege las acciones que modifican datos</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="auth" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="auth" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>45–60 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio inicial</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/20_login/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas autenticación y protección real del backend.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/config/urls.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>login.html · urls.py · views.py</code>
+<pre>from django.contrib.auth.views import LoginView, LogoutView
+
+urlpatterns += [
+    path("login/", LoginView.as_view(template_name="registration/login.html"), name="login"),
+    path("logout/", LogoutView.as_view(), name="logout"),
+]</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/templates/registration/login.html</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Configura LoginView.</span></li><li><span class="mini-project-step-num">2</span><span>Crea login.html.</span></li><li><span class="mini-project-step-num">3</span><span>Crea una View panel.</span></li><li><span class="mini-project-step-num">4</span><span>Protege panel con @login_required.</span></li><li><span class="mini-project-step-num">5</span><span>Agrega logout.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una zona privada con login y logout.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Muestra el nombre del usuario autenticado.</p>
-</article>
+<pre>{% extends "base.html" %}
+{% block content %}
+&lt;h1&gt;Iniciar sesión&lt;/h1&gt;
+&lt;form method="post"&gt;
+  {% csrf_token %}
+  {{ form.as_p }}
+  &lt;button type="submit"&gt;Entrar&lt;/button&gt;
+&lt;/form&gt;
+{% endblock %}</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/views.py</code>
+</div>
+<pre>from django.contrib.auth.decorators import login_required
+
+@login_required
+def crear(request):
+    ...</pre>
+</div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Agrega login/logout en <code>config/urls.py</code>.</p></li><li><span>2</span><p>Crea <code>templates/registration/login.html</code>.</p></li><li><span>3</span><p>Protege <code>crear</code>, <code>editar</code> y <code>eliminar</code> con <code>@login_required</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>Consultar puede seguir siendo público, pero modificar datos requiere iniciar sesión.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#relaciones"><small>← ANTERIOR</small><strong>Relaciones</strong></a><a class="lesson-pager-link next" href="#sessions-messages"><small>SIGUIENTE →</small><strong>Sesiones + mensajes</strong></a></nav></section><section data-course-group="Django avanzado" id="sessions-messages" style="--section-accent:var(--django-green);">
 <div class="section-kicker">21 · SESIONES + MENSAJES</div>
 <h2>Estado entre requests y feedback</h2>
@@ -17979,57 +18463,55 @@ messages.error(request, "No se pudo guardar.")</code></pre>
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="sessions-messages">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="sessions-messages">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Preferencia de tema + mensajes</h3>
-<p>Una página que recuerde una preferencia y muestre mensajes temporales.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Añade mensajes de éxito y recuerda una preferencia simple</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="sessions-messages" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="sessions-messages" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>30–40 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Fácil</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/21_sessions/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Distingues datos de sesión de mensajes de una sola vez.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/views.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>views.py · base.html</code>
+<pre>from django.contrib import messages
+
+# Después de guardar:
+messages.success(request, "Estudiante guardado correctamente.")
+
+# Ejemplo de sesión:
+request.session["ultimo_filtro"] = request.GET.get("q", "")</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/templates/base.html</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea botones Tema claro y Tema oscuro.</span></li><li><span class="mini-project-step-num">2</span><span>Guarda la elección en request.session.</span></li><li><span class="mini-project-step-num">3</span><span>Lee la preferencia al volver a la página.</span></li><li><span class="mini-project-step-num">4</span><span>Agrega messages.success al cambiar el tema.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una preferencia que se mantiene entre requests.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega un botón para borrar la preferencia de sesión.</p>
-</article>
+<pre>{% if messages %}
+  {% for message in messages %}
+    &lt;div class="mensaje"&gt;{{ message }}&lt;/div&gt;
+  {% endfor %}
+{% endif %}</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Añade <code>messages.success()</code> después de crear/editar/eliminar.</p></li><li><span>2</span><p>Muestra <code>messages</code> en <code>base.html</code>.</p></li><li><span>3</span><p>Guarda en sesión el último texto de búsqueda.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>La interfaz informa qué ocurrió y el proyecto empieza a recordar estado entre peticiones.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#auth"><small>← ANTERIOR</small><strong>Autenticación</strong></a><a class="lesson-pager-link next" href="#uploads"><small>SIGUIENTE →</small><strong>Archivos y media</strong></a></nav></section><section data-course-group="Django avanzado" id="uploads" style="--section-accent:var(--django-green);">
 <div class="section-kicker">22 · ARCHIVOS Y MEDIA</div>
 <h2>Subir fotos y documentos</h2>
@@ -18159,57 +18641,63 @@ messages.error(request, "No se pudo guardar.")</code></pre>
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="uploads">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="uploads">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Perfil con foto</h3>
-<p>Una ficha de perfil donde el usuario suba una imagen.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Permite subir una foto para cada estudiante</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="uploads" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="uploads" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>45–60 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio inicial</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/22_uploads/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas media, request.FILES y multipart/form-data.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/models.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>models.py · forms.py · settings.py · perfil.html</code>
+<pre>foto = models.ImageField(upload_to="estudiantes/", blank=True, null=True)</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/config/settings.py</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea Model Perfil con nombre y foto.</span></li><li><span class="mini-project-step-num">2</span><span>Configura MEDIA_ROOT y MEDIA_URL.</span></li><li><span class="mini-project-step-num">3</span><span>Crea un ModelForm.</span></li><li><span class="mini-project-step-num">4</span><span>Usa enctype='multipart/form-data'.</span></li><li><span class="mini-project-step-num">5</span><span>Muestra la imagen subida en detalle.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un perfil que permite subir y mostrar una foto.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Muestra una imagen por defecto cuando no exista foto.</p>
-</article>
+<pre>MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/config/urls.py</code>
+</div>
+<pre>from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)</pre>
+</div>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/templates/estudiantes/formulario.html</code>
+</div>
+<pre>&lt;form method="post" enctype="multipart/form-data"&gt;</pre>
+</div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Instala Pillow.</p></li><li><span>2</span><p>Agrega <code>foto</code> al Model y al Form.</p></li><li><span>3</span><p>Configura <code>MEDIA_URL</code> y <code>MEDIA_ROOT</code>.</p></li><li><span>4</span><p>Usa <code>request.FILES</code> en crear/editar.</p></li><li><span>5</span><p>Agrega <code>enctype="multipart/form-data"</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El registro del estudiante ahora puede incluir una imagen real.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#sessions-messages"><small>← ANTERIOR</small><strong>Sesiones + mensajes</strong></a><a class="lesson-pager-link next" href="#cbv"><small>SIGUIENTE →</small><strong>Class-Based Views</strong></a></nav></section><section data-course-group="Django avanzado" id="cbv" style="--section-accent:var(--django-green);">
 <div class="section-kicker">23 · CLASS-BASED VIEWS</div>
 <h2>Views basadas en clases</h2>
@@ -18344,57 +18832,57 @@ class EstudianteDetailView(DetailView):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="cbv">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="cbv">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Catálogo con ListView y DetailView</h3>
-<p>Un listado y detalle de libros usando Generic Views.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Refactoriza lista y detalle a Class-Based Views</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="cbv" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="cbv" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>35–45 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio inicial</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/23_cbv/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Comparas directamente FBV con CBV en un caso sencillo.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/views.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>views.py · urls.py · templates/</code>
+<pre>from django.views.generic import DetailView, ListView
+from .models import Estudiante
+
+class EstudianteListView(ListView):
+    model = Estudiante
+    template_name = "estudiantes/lista.html"
+    context_object_name = "estudiantes"
+
+class EstudianteDetailView(DetailView):
+    model = Estudiante
+    template_name = "estudiantes/detalle.html"
+    context_object_name = "estudiante"</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/urls.py</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea LibroListView.</span></li><li><span class="mini-project-step-num">2</span><span>Define model y template_name.</span></li><li><span class="mini-project-step-num">3</span><span>Crea LibroDetailView.</span></li><li><span class="mini-project-step-num">4</span><span>Conecta las clases con as_view().</span></li><li><span class="mini-project-step-num">5</span><span>Prueba lista y detalle.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Dos páginas funcionando con Class-Based Views.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega context_object_name personalizado.</p>
-</article>
+<pre>path("", views.EstudianteListView.as_view(), name="lista"),
+path("&lt;int:pk&gt;/", views.EstudianteDetailView.as_view(), name="detalle"),</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Reemplaza solo lista y detalle por CBV.</p></li><li><span>2</span><p>Deja crear/editar/eliminar como FBV para comparar estilos.</p></li><li><span>3</span><p>Actualiza las dos rutas con <code>.as_view()</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El mismo proyecto permite comparar FBV y CBV con un caso real.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#uploads"><small>← ANTERIOR</small><strong>Archivos y media</strong></a><a class="lesson-pager-link next" href="#middleware"><small>SIGUIENTE →</small><strong>Middleware</strong></a></nav></section><section data-course-group="Django avanzado" id="middleware" style="--section-accent:var(--django-green);">
 <div class="section-kicker">24 · MIDDLEWARE</div>
 <h2>Middleware: capas globales del request/response</h2>
@@ -18516,57 +19004,58 @@ class TiempoMiddleware:
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="middleware">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="middleware">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Monitor simple de requests</h3>
-<p>Un middleware que mida cuánto tarda cada request.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Mide cuánto tarda cada petición del proyecto</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="middleware" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="middleware" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>30–45 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/24_middleware/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Ves claramente qué significa ejecutar código antes y después de la View.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/middleware.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>middleware.py · settings.py</code>
+<pre>import time
+
+class TiempoMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        inicio = time.perf_counter()
+        response = self.get_response(request)
+        response["X-Tiempo"] = f"{time.perf_counter() - inicio:.4f}"
+        return response</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/config/settings.py</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea TiempoMiddleware.</span></li><li><span class="mini-project-step-num">2</span><span>Guarda time.perf_counter() antes de get_response.</span></li><li><span class="mini-project-step-num">3</span><span>Calcula la diferencia después.</span></li><li><span class="mini-project-step-num">4</span><span>Agrega header X-Tiempo.</span></li><li><span class="mini-project-step-num">5</span><span>Comprueba el header desde DevTools.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Cada response incluye un tiempo de procesamiento.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Imprime method y path de cada request.</p>
-</article>
+<pre>MIDDLEWARE = [
+    # ...
+    "estudiantes.middleware.TiempoMiddleware",
+]</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea <code>estudiantes/middleware.py</code>.</p></li><li><span>2</span><p>Añade <code>TiempoMiddleware</code>.</p></li><li><span>3</span><p>Regístralo en <code>settings.py</code>.</p></li><li><span>4</span><p>Revisa el header <code>X-Tiempo</code> en DevTools.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>Cada respuesta del proyecto ahora pasa por una capa global que puedes observar.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#cbv"><small>← ANTERIOR</small><strong>Class-Based Views</strong></a><a class="lesson-pager-link next" href="#signals"><small>SIGUIENTE →</small><strong>Signals de Django</strong></a></nav></section><section data-course-group="Django avanzado" id="signals" style="--section-accent:var(--django-green);">
 <div class="section-kicker">25 · SIGNALS</div>
 <h2>Signals de Django: eventos del backend</h2>
@@ -18694,57 +19183,59 @@ def estudiante_guardado(sender, instance, created, **kwargs):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="signals">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="signals">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Bitácora automática de creación</h3>
-<p>Una signal que registre cuándo se crea un Libro.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Reacciona automáticamente cuando se crea un estudiante</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="signals" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="signals" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>30–40 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/25_signals/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Practicas eventos internos sin usar signals para lógica central.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/signals.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>signals.py · apps.py</code>
+<pre>from django.db.models.signals import post_save
+from django.dispatch import receiver
+from .models import Estudiante
+
+@receiver(post_save, sender=Estudiante)
+def estudiante_creado(sender, instance, created, **kwargs):
+    if created:
+        print(f"Nuevo estudiante: {instance.nombre}")</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/apps.py</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea un receiver para post_save.</span></li><li><span class="mini-project-step-num">2</span><span>Configúralo para el Model Libro.</span></li><li><span class="mini-project-step-num">3</span><span>Si created es True imprime un mensaje.</span></li><li><span class="mini-project-step-num">4</span><span>Carga signals desde AppConfig.ready().</span></li><li><span class="mini-project-step-num">5</span><span>Crea un libro y observa la terminal.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una reacción automática después de crear un registro.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Incluye id y titulo en el mensaje.</p>
-</article>
+<pre>from django.apps import AppConfig
+
+class EstudiantesConfig(AppConfig):
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "estudiantes"
+
+    def ready(self):
+        from . import signals  # noqa</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea <code>signals.py</code>.</p></li><li><span>2</span><p>Define un <code>post_save</code>.</p></li><li><span>3</span><p>Importa signals desde <code>AppConfig.ready()</code>.</p></li><li><span>4</span><p>Crea un estudiante y mira la terminal.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El proyecto ejecuta una reacción automática después de guardar un estudiante.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#middleware"><small>← ANTERIOR</small><strong>Middleware</strong></a><a class="lesson-pager-link next" href="#apis"><small>SIGUIENTE →</small><strong>APIs + fetch</strong></a></nav></section><section data-course-group="APIs" id="apis" style="--section-accent:var(--django-green);">
 <div class="section-kicker">26 · APIS + FETCH</div>
 <h2>APIs con Django y JavaScript</h2>
@@ -18978,57 +19469,63 @@ def api_estudiantes(request):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="apis">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="apis">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Buscador de libros con fetch</h3>
-<p>Un endpoint JSON y una página que lo consuma con JavaScript.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Expón los estudiantes como JSON y consúmelos con JavaScript</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="apis" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="apis" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>50–65 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/26_api_fetch/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Conectas Django backend con frontend dinámico.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/views.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>views.py · urls.py · static/js/app.js · template.html</code>
+<pre>from django.http import JsonResponse
+
+def api_estudiantes(request):
+    data = list(Estudiante.objects.values("id", "documento", "nombre", "correo", "activo"))
+    return JsonResponse({"estudiantes": data})</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/urls.py</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea /api/libros/ con JsonResponse.</span></li><li><span class="mini-project-step-num">2</span><span>Devuelve id y titulo.</span></li><li><span class="mini-project-step-num">3</span><span>Desde JavaScript usa fetch().</span></li><li><span class="mini-project-step-num">4</span><span>Comprueba response.ok.</span></li><li><span class="mini-project-step-num">5</span><span>Renderiza tarjetas con los datos recibidos.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una lista que obtiene información desde una API Django.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega un input de búsqueda que envíe ?q=texto.</p>
-</article>
+<pre>path("api/", views.api_estudiantes, name="api"),</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/static/js/app.js</code>
+</div>
+<pre>async function cargarEstudiantes() {
+  const response = await fetch("/estudiantes/api/");
+  if (!response.ok) throw new Error("Error al consultar la API");
+  const data = await response.json();
+  console.log(data.estudiantes);
+}
+
+cargarEstudiantes();</pre>
+</div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Crea <code>api_estudiantes</code>.</p></li><li><span>2</span><p>Agrega la ruta <code>api/</code>.</p></li><li><span>3</span><p>Crea <code>static/js/app.js</code>.</p></li><li><span>4</span><p>Enlázalo desde <code>base.html</code>.</p></li><li><span>5</span><p>Comprueba los datos en la consola del navegador.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>Tu proyecto funciona también como fuente de datos para JavaScript.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#signals"><small>← ANTERIOR</small><strong>Signals de Django</strong></a><a class="lesson-pager-link next" href="#testing"><small>SIGUIENTE →</small><strong>Testing</strong></a></nav></section><section data-course-group="Calidad y producción" id="testing" style="--section-accent:var(--django-green);">
 <div class="section-kicker">27 · TESTING</div>
 <h2>Testing: comprobar models, views y URLs</h2>
@@ -19168,57 +19665,45 @@ class ListaTests(TestCase):
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="testing">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="testing">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Banco de pruebas del CRUD</h3>
-<p>Una suite pequeña que pruebe Model, lista y creación.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Automatiza pruebas sobre el mismo proyecto</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="testing" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="testing" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>45–60 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/27_tests/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Aprendes a comprobar automáticamente que el proyecto sigue funcionando.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/estudiantes/tests.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>tests.py</code>
+<pre>from django.test import TestCase
+from django.urls import reverse
+from .models import Estudiante
+
+class EstudianteTests(TestCase):
+    def test_lista_responde_200(self):
+        response = self.client.get(reverse("estudiantes:lista"))
+        self.assertEqual(response.status_code, 200)</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea un test para __str__ del Model.</span></li><li><span class="mini-project-step-num">2</span><span>Crea un test GET de la lista.</span></li><li><span class="mini-project-step-num">3</span><span>Crea un test POST con datos válidos.</span></li><li><span class="mini-project-step-num">4</span><span>Crea un test con datos inválidos.</span></li><li><span class="mini-project-step-num">5</span><span>Ejecuta python manage.py test.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Una suite con al menos cuatro tests verdes.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Prueba una View protegida sin iniciar sesión.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Abre <code>estudiantes/tests.py</code>.</p></li><li><span>2</span><p>Agrega un test de la lista.</p></li><li><span>3</span><p>Añade después tests del Model y del formulario.</p></li><li><span>4</span><p>Ejecuta <code>python manage.py test</code>.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>Ahora puedes comprobar automáticamente que cambios futuros no rompan funciones esenciales.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#apis"><small>← ANTERIOR</small><strong>APIs + fetch</strong></a><a class="lesson-pager-link next" href="#seguridad"><small>SIGUIENTE →</small><strong>Seguridad</strong></a></nav></section><section data-course-group="Calidad y producción" id="seguridad" style="--section-accent:var(--django-green);">
 <div class="section-kicker">28 · SEGURIDAD</div>
 <h2>Seguridad que el estudiante debe conocer</h2>
@@ -19372,57 +19857,60 @@ CSRF_COOKIE_SECURE = True</code></pre>
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="seguridad">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="seguridad">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Auditoría básica de seguridad</h3>
-<p>Una revisión guiada de un pequeño proyecto Django.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Saca configuraciones sensibles del código y revisa accesos</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="seguridad" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="seguridad" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>30–45 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/28_seguridad/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Aprendes a detectar configuraciones inseguras antes de publicar.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/config/settings.py</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>AUDITORIA.md · settings.py</code>
+<pre>import os
+
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "solo-desarrollo")
+DEBUG = os.environ.get("DJANGO_DEBUG", "1") == "1"</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/.env.example</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Comprueba que los POST usan CSRF.</span></li><li><span class="mini-project-step-num">2</span><span>Revisa que no existan contraseñas escritas en código.</span></li><li><span class="mini-project-step-num">3</span><span>Mueve SECRET_KEY a una variable de entorno.</span></li><li><span class="mini-project-step-num">4</span><span>Identifica qué Views requieren login.</span></li><li><span class="mini-project-step-num">5</span><span>Anota en AUDITORIA.md los cambios realizados.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un checklist de seguridad aplicado a un proyecto real.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Ejecuta python manage.py check --deploy y documenta dos advertencias.</p>
-</article>
+<pre>DJANGO_SECRET_KEY=cambia-esta-clave
+DJANGO_DEBUG=1</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/.gitignore</code>
+</div>
+<pre>.venv/
+__pycache__/
+*.pyc
+.env
+media/</pre>
+</div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Lee variables de entorno en <code>settings.py</code>.</p></li><li><span>2</span><p>Crea <code>.env.example</code> solo como referencia.</p></li><li><span>3</span><p>Agrega <code>.env</code> a <code>.gitignore</code>.</p></li><li><span>4</span><p>Revisa que crear/editar/eliminar sigan protegidos.</p></li><li><span>5</span><p>Ejecuta <code>python manage.py check --deploy</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El proyecto deja de depender de secretos escritos directamente en el repositorio.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#testing"><small>← ANTERIOR</small><strong>Testing</strong></a><a class="lesson-pager-link next" href="#deploy"><small>SIGUIENTE →</small><strong>Despliegue</strong></a></nav></section><section data-course-group="Calidad y producción" id="deploy" style="--section-accent:var(--django-green);">
 <div class="section-kicker">29 · DESPLIEGUE</div>
 <h2>Preparar Django para producción</h2>
@@ -19549,57 +20037,61 @@ CSRF_COOKIE_SECURE = True</code></pre>
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="deploy">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="deploy">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Preparar una app para producción</h3>
-<p>Un paquete de configuración preparado para salir de runserver.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Prepara el proyecto para salir del computador local</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="deploy" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="deploy" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>35–50 min</strong></div>
-<div><span>📊 NIVEL</span><strong>Intermedio</strong></div>
-<div><span>📁 CARPETA</span><code>mini_proyectos/29_predeploy/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Aprendes qué cambia cuando una aplicación deja tu computador.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/requirements.txt</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>README_DEPLOY.md · requirements.txt · settings.py</code>
+<pre># Genera este archivo con:
+# python -m pip freeze &gt; requirements.txt</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/README_DEPLOY.md</code>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Configura DEBUG=False en una configuración de prueba.</span></li><li><span class="mini-project-step-num">2</span><span>Define ALLOWED_HOSTS.</span></li><li><span class="mini-project-step-num">3</span><span>Ejecuta collectstatic.</span></li><li><span class="mini-project-step-num">4</span><span>Ejecuta check --deploy.</span></li><li><span class="mini-project-step-num">5</span><span>Escribe en README_DEPLOY.md los pasos necesarios para publicar.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un proyecto con checklist y documentación de predespliegue.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Describe qué servicio alojaría base de datos, static y media.</p>
-</article>
+<pre># Preparación de producción
+
+1. DEBUG=False
+2. Configurar ALLOWED_HOSTS
+3. Configurar variables de entorno
+4. Ejecutar migrate
+5. Ejecutar collectstatic
+6. Usar un servidor de producción</pre>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/config/settings.py</code>
+</div>
+<pre>ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
+STATIC_ROOT = BASE_DIR / "staticfiles"</pre>
+</div>
+</div>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Genera <code>requirements.txt</code>.</p></li><li><span>2</span><p>Configura <code>ALLOWED_HOSTS</code>.</p></li><li><span>3</span><p>Agrega <code>STATIC_ROOT</code>.</p></li><li><span>4</span><p>Crea <code>README_DEPLOY.md</code>.</p></li><li><span>5</span><p>Ejecuta <code>python manage.py collectstatic</code> y <code>check --deploy</code>.</p></li></ol>
+</div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El proyecto queda documentado y preparado para una plataforma de despliegue.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#seguridad"><small>← ANTERIOR</small><strong>Seguridad</strong></a><a class="lesson-pager-link next" href="#proyecto-final"><small>SIGUIENTE →</small><strong>Proyecto final</strong></a></nav></section><section data-course-group="Proyecto final" id="proyecto-final" style="--section-accent:var(--django-green);">
 <div class="section-kicker">30 · PROYECTO FINAL</div>
 <h2>Proyecto final: Sistema de estudiantes</h2>
@@ -19837,57 +20329,52 @@ CSRF_COOKIE_SECURE = True</code></pre>
 </details>
 <div class="section-final-practice"><div class="practice-divider">
 <span></span>
-<strong>FIN DE LA LECCIÓN · MINI PROYECTO</strong>
+<strong>FIN DE LA EXPLICACIÓN · APLÍCALO AL PROYECTO</strong>
 <span></span>
-</div><div class="mini-project-card" data-mini-project="proyecto-final">
-<div class="mini-project-header">
+</div><div class="progressive-project-card" data-project-step="proyecto-final">
+<div class="progressive-project-head">
 <div>
-<span class="mini-project-kicker">🚀 MINI PROYECTO DE LA LECCIÓN</span>
-<h3>Proyecto integrador: Sistema de estudiantes</h3>
-<p>Una aplicación completa que reúne lo practicado en todos los mini proyectos.</p>
+<span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
+<h3>Integra, limpia y presenta el proyecto que construiste</h3>
+<p>No empieces otro proyecto. Continúa trabajando sobre <code>django_estudiantes</code> y conserva todo lo que ya hiciste.</p>
 </div>
-<button class="mini-project-complete" data-mini-complete="proyecto-final" type="button">
-          ○ Pendiente
-        </button>
+<button class="progressive-project-complete" data-project-complete="proyecto-final" type="button">○ Pendiente</button>
 </div>
-<div class="mini-project-meta">
-<div><span>⏱ TIEMPO</span><strong>Varias sesiones</strong></div>
-<div><span>📊 NIVEL</span><strong>Integrador</strong></div>
-<div><span>📁 CARPETA</span><code>proyecto_final/django_estudiantes/</code></div>
+<div class="progressive-project-rule">
+<strong>📌 Regla del curso</strong>
+<span>Cada lección modifica el mismo proyecto. Los bloques de abajo indican exactamente <b>qué archivo abrir</b> y <b>qué cambio aplicar</b>.</span>
 </div>
-<div class="mini-project-why">
-<span>🤔 ¿POR QUÉ HACER ESTE MINI PROYECTO?</span>
-<p>Aquí demuestras que puedes conectar las piezas sin depender de un ejemplo aislado.</p>
+<div class="project-files-stack">
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO</span>
+<code>django_estudiantes/README.md</code>
 </div>
-<div class="mini-project-files">
-<span>ARCHIVOS PRINCIPALES</span>
-<code>Proyecto completo</code>
+<pre># Sistema de estudiantes
+
+## Funciones
+- CRUD de estudiantes
+- Programas
+- Login
+- Fotos
+- API JSON
+- Tests
+
+## Ejecutar
+1. Crear y activar .venv
+2. Instalar requirements.txt
+3. migrate
+4. runserver</pre>
 </div>
-<div class="mini-project-start">
-<strong>Antes de empezar</strong>
-<p>
-          No necesitas hacerlo de memoria. Puedes volver a la explicación y copiar
-          pequeñas partes del ejemplo mientras entiendes qué hace cada línea.
-        </p>
 </div>
-<ol class="mini-project-steps">
-<li><span class="mini-project-step-num">1</span><span>Crea Models Programa y Estudiante.</span></li><li><span class="mini-project-step-num">2</span><span>Implementa autenticación y permisos básicos.</span></li><li><span class="mini-project-step-num">3</span><span>Construye CRUD de estudiantes.</span></li><li><span class="mini-project-step-num">4</span><span>Agrega búsqueda, filtros y mensajes.</span></li><li><span class="mini-project-step-num">5</span><span>Incluye foto de estudiante.</span></li><li><span class="mini-project-step-num">6</span><span>Agrega un endpoint JSON.</span></li><li><span class="mini-project-step-num">7</span><span>Crea tests de las funciones principales.</span></li><li><span class="mini-project-step-num">8</span><span>Realiza auditoría de seguridad y checklist de deploy.</span></li>
-</ol>
-<div class="mini-project-end-grid">
-<article class="deliverable">
-<span>✅ ENTREGABLE</span>
-<p>Un Sistema de estudiantes funcional, explicado y listo para presentar.</p>
-</article>
-<article class="bonus">
-<span>⭐ SI TERMINAS RÁPIDO</span>
-<p>Agrega paginación, exportación CSV o dashboard con estadísticas.</p>
-</article>
+<div class="project-step-list">
+<span class="project-step-list-title">PASO A PASO</span>
+<ol><li><span>1</span><p>Revisa que todas las rutas funcionen.</p></li><li><span>2</span><p>Elimina código temporal y comentarios innecesarios.</p></li><li><span>3</span><p>Completa <code>README.md</code>.</p></li><li><span>4</span><p>Ejecuta <code>python manage.py test</code>.</p></li><li><span>5</span><p>Explica verbalmente el recorrido URL → View → Model → Template.</p></li></ol>
 </div>
-<div class="mini-project-rule">
-<strong>Importante:</strong>
-        este mini proyecto es independiente. Si no te sale perfecto, puedes seguir con
-        la siguiente lección sin dañar el resto del curso.
-      </div>
+<div class="progressive-project-result">
+<span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
+<p>El proyecto acumulativo queda listo como entrega final del curso.</p>
+</div>
 </div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#deploy"><small>← ANTERIOR</small><strong>Despliegue</strong></a><a class="lesson-pager-link next" href="#proyecto-desde-cero">
 <small>SIGUIENTE →</small>
 <strong>Proyecto final desde cero</strong>
@@ -21040,6 +21527,40 @@ document.addEventListener('DOMContentLoaded', function () {
   refreshMiniProjects();
 });
 </script>
-</body></html>
-</body></html>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const prefix = 'django-academy-progressive-project-';
+  const buttons = [...document.querySelectorAll('[data-project-complete]')];
+
+  function refreshProgressiveProject() {
+    let done = 0;
+    buttons.forEach(button => {
+      const completed = localStorage.getItem(prefix + button.dataset.projectComplete) === '1';
+      button.classList.toggle('is-complete', completed);
+      button.textContent = completed ? '✓ Aplicado al proyecto' : '○ Pendiente';
+      if (completed) done++;
+    });
+    const total = buttons.length;
+    const pct = Math.round((done / Math.max(total, 1)) * 100);
+    const text = document.getElementById('buildProjectStepText');
+    const percent = document.getElementById('buildProjectPercent');
+    const bar = document.getElementById('buildProjectProgressBar');
+    if (text) text.textContent = done + ' de ' + total + ' cambios aplicados';
+    if (percent) percent.textContent = pct + '%';
+    if (bar) bar.style.width = pct + '%';
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      const key = prefix + button.dataset.projectComplete;
+      const current = localStorage.getItem(key) === '1';
+      localStorage.setItem(key, current ? '0' : '1');
+      refreshProgressiveProject();
+    });
+  });
+
+  refreshProgressiveProject();
+});
+</script>
 </body></html>

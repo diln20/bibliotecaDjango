@@ -10999,9 +10999,538 @@ body.theme-dark .practice-divider span:last-child{
     display:none;
   }
 }
+
+/* ============================================================
+   DJANGO ACADEMY V8 · Escala de lectura aumentada
+   ============================================================ */
+
+:root{
+  --academy-sidebar:350px !important;
+  --academy-topbar-h:68px !important;
+}
+
+html{
+  font-size:19px !important;
+}
+
+body{
+  font-size:19px !important;
+  line-height:1.72 !important;
+}
+
+/* Contenido principal */
+main p,
+main li,
+main td,
+main th{
+  font-size:17px !important;
+  line-height:1.75 !important;
+}
+
+main .lead{
+  font-size:21px !important;
+  line-height:1.72 !important;
+}
+
+main h1{
+  font-size:clamp(50px,5.4vw,80px) !important;
+  line-height:1.03 !important;
+}
+
+main h2{
+  font-size:clamp(40px,3.6vw,58px) !important;
+  line-height:1.08 !important;
+}
+
+main h3{
+  font-size:26px !important;
+  line-height:1.24 !important;
+}
+
+main h4{
+  font-size:18px !important;
+  line-height:1.4 !important;
+}
+
+/* Sidebar más cómoda */
+@media (min-width:901px){
+  body:not(.focus-mode) .layout{
+    grid-template-columns:350px minmax(0,1fr) !important;
+  }
+
+  body:not(.focus-mode) #sidebar{
+    width:350px !important;
+    min-width:350px !important;
+    max-width:350px !important;
+    padding:22px 17px 20px !important;
+  }
+
+  .layout>main>section{
+    width:min(1320px,calc(100% - 60px)) !important;
+    max-width:1320px !important;
+    padding:56px 50px !important;
+  }
+}
+
+.academy-brand-copy strong{
+  font-size:17px !important;
+}
+
+.academy-brand-copy span{
+  font-size:12px !important;
+}
+
+.sidebar-search-trigger{
+  min-height:44px !important;
+  font-size:13px !important;
+}
+
+.sidebar-search-trigger kbd,
+.topbar-search kbd{
+  font-size:10px !important;
+}
+
+.sidebar-course-label{
+  font-size:10px !important;
+}
+
+.nav-group-title{
+  font-size:12.5px !important;
+}
+
+.nav-group-count{
+  font-size:9.5px !important;
+}
+
+#sidebar nav#toc a.academy-nav-link{
+  min-height:42px !important;
+  padding:9px 10px !important;
+  font-size:13.5px !important;
+  line-height:1.4 !important;
+}
+
+.nav-link-state{
+  font-size:11px !important;
+}
+
+.sidebar-progress-top{
+  font-size:11px !important;
+}
+
+.sidebar-progress-top strong{
+  font-size:13px !important;
+}
+
+.sidebar-continue-btn{
+  min-height:40px !important;
+  font-size:11px !important;
+}
+
+/* Topbar */
+.academy-topbar{
+  min-height:68px !important;
+  padding:12px 28px !important;
+}
+
+.academy-breadcrumbs{
+  font-size:12.5px !important;
+}
+
+.academy-breadcrumbs strong{
+  font-size:13px !important;
+}
+
+.topbar-search,
+.topbar-icon-btn{
+  min-height:42px !important;
+  font-size:11px !important;
+}
+
+.topbar-progress-pill{
+  min-height:40px !important;
+  font-size:11px !important;
+}
+
+/* Secciones */
+.section-kicker{
+  font-size:14px !important;
+}
+
+.section-group-badge{
+  font-size:10.5px !important;
+  padding:7px 11px !important;
+}
+
+.section-study-strip button{
+  min-height:36px !important;
+  padding:8px 11px !important;
+  font-size:11px !important;
+}
+
+/* Temas desplegables */
+.course-topic > summary{
+  padding:22px 24px !important;
+}
+
+.course-topic-num{
+  width:48px !important;
+  height:48px !important;
+  flex-basis:48px !important;
+  font-size:14px !important;
+}
+
+.course-topic-title strong{
+  font-size:19px !important;
+}
+
+.course-topic-title small{
+  font-size:13px !important;
+  line-height:1.55 !important;
+}
+
+.course-topic-body{
+  padding:26px !important;
+}
+
+/* Explicaciones fáciles */
+.easy-explanation-head span{
+  font-size:10px !important;
+}
+
+.easy-explanation-head strong{
+  font-size:17px !important;
+}
+
+.easy-card{
+  grid-template-columns:44px 1fr !important;
+  padding:17px !important;
+}
+
+.easy-card-icon{
+  width:42px !important;
+  height:42px !important;
+  font-size:19px !important;
+}
+
+.easy-card strong{
+  font-size:13.5px !important;
+}
+
+.easy-card p{
+  font-size:14px !important;
+  line-height:1.75 !important;
+}
+
+.topic-simple-intro span{
+  font-size:9px !important;
+}
+
+.topic-simple-intro p{
+  font-size:13px !important;
+  line-height:1.65 !important;
+}
+
+.easy-dictionary-title{
+  font-size:11px !important;
+}
+
+.easy-dictionary-grid strong{
+  font-size:11px !important;
+}
+
+.easy-dictionary-grid span{
+  font-size:10.5px !important;
+  line-height:1.6 !important;
+}
+
+/* Tarjetas conceptuales */
+.learning-triad-card strong{
+  font-size:13.5px !important;
+}
+
+.learning-triad-card span{
+  font-size:12.5px !important;
+  line-height:1.65 !important;
+}
+
+.deep-concept h4{
+  font-size:16.5px !important;
+}
+
+.deep-concept p{
+  font-size:14.5px !important;
+  line-height:1.72 !important;
+}
+
+.deep-concept .mental{
+  font-size:13px !important;
+  line-height:1.65 !important;
+}
+
+.deep-concept .mistake{
+  font-size:12.5px !important;
+  line-height:1.65 !important;
+}
+
+/* Código */
+pre,
+.codebox pre,
+.deep-concept pre,
+.api-json-preview pre,
+.terminal-preview{
+  font-size:14.5px !important;
+  line-height:1.75 !important;
+}
+
+code{
+  font-size:.98em !important;
+}
+
+.codehead span{
+  font-size:12px !important;
+}
+
+/* Vista previa del capítulo */
+.chapter-panel-head strong{
+  font-size:17px !important;
+}
+
+.chapter-panel-kicker{
+  font-size:10px !important;
+}
+
+.chapter-step-badge{
+  font-size:10px !important;
+}
+
+.chapter-preview-note strong{
+  font-size:11px !important;
+}
+
+.chapter-preview-note span{
+  font-size:12px !important;
+  line-height:1.65 !important;
+}
+
+/* Actividad final */
+.exercise-end-intro span{
+  font-size:9.5px !important;
+}
+
+.exercise-end-intro strong{
+  font-size:16px !important;
+}
+
+.exercise-end-intro p{
+  font-size:13.5px !important;
+  line-height:1.75 !important;
+}
+
+.exercise-beginner-banner{
+  font-size:14px !important;
+  line-height:1.7 !important;
+}
+
+.exercise-purpose-card span{
+  font-size:10px !important;
+}
+
+.exercise-purpose-card p{
+  font-size:14px !important;
+  line-height:1.72 !important;
+}
+
+.exercise-purpose-card li{
+  font-size:13px !important;
+  line-height:1.68 !important;
+}
+
+.exercise-file-path span{
+  font-size:11px !important;
+}
+
+.exercise-file-path code{
+  font-size:13.5px !important;
+}
+
+.exercise-task-list li span:last-child{
+  font-size:14px !important;
+  line-height:1.75 !important;
+}
+
+.exercise-step-number{
+  width:32px !important;
+  height:32px !important;
+  min-width:32px !important;
+  font-size:11px !important;
+}
+
+.exercise-support-strip>div{
+  font-size:13px !important;
+  line-height:1.68 !important;
+}
+
+.exercise-result-grid span{
+  font-size:10px !important;
+}
+
+.exercise-result-grid p{
+  font-size:13.5px !important;
+  line-height:1.72 !important;
+}
+
+.exercise-continuity-note{
+  font-size:13px !important;
+  line-height:1.72 !important;
+}
+
+.exercise-example-head strong{
+  font-size:14px !important;
+}
+
+.exercise-example-head span{
+  font-size:11.5px !important;
+}
+
+.exercise-mini-list li{
+  font-size:13.5px !important;
+}
+
+/* Botones */
+.exercise-complete-btn{
+  min-height:36px !important;
+  font-size:10.5px !important;
+}
+
+.preview-form label,
+.crud-lab-form label{
+  font-size:12.5px !important;
+}
+
+.preview-form input,
+.preview-form select,
+.crud-lab-form input{
+  min-height:46px !important;
+  font-size:13.5px !important;
+}
+
+.preview-form button,
+.crud-lab-actions button,
+.crud-row button,
+.student-app-head button{
+  min-height:40px !important;
+  font-size:11px !important;
+}
+
+/* Dashboard */
+.dashboard-kicker{
+  font-size:10px !important;
+}
+
+.academy-dashboard-card>strong{
+  font-size:17px !important;
+}
+
+.academy-dashboard-card p{
+  font-size:13px !important;
+}
+
+.dashboard-shortcuts a{
+  font-size:11.5px !important;
+}
+
+/* Navegación entre lecciones */
+.lesson-pager-link{
+  min-height:82px !important;
+  padding:16px 18px !important;
+}
+
+.lesson-pager-link small{
+  font-size:10px !important;
+}
+
+.lesson-pager-link strong{
+  font-size:13.5px !important;
+}
+
+/* Buscador */
+.academy-search-input-wrap input{
+  font-size:17px !important;
+}
+
+.academy-search-result-copy strong{
+  font-size:13px !important;
+}
+
+.academy-search-result-copy span,
+.search-result-type{
+  font-size:10.5px !important;
+}
+
+/* Footer */
+.django-reference-footer strong{
+  font-size:14px !important;
+}
+
+.django-reference-footer span{
+  font-size:12px !important;
+}
+
+/* Mobile */
+@media(max-width:900px){
+  body{
+    font-size:17px !important;
+  }
+
+  main p,
+  main li{
+    font-size:15.5px !important;
+  }
+
+  main .lead{
+    font-size:18px !important;
+  }
+
+  main h2{
+    font-size:clamp(34px,9vw,46px) !important;
+  }
+
+  .layout>main>section{
+    width:calc(100% - 18px) !important;
+    padding:36px 21px !important;
+  }
+
+  #sidebar nav#toc a.academy-nav-link{
+    min-height:43px !important;
+    font-size:13px !important;
+  }
+
+  .course-topic-title strong{
+    font-size:16.5px !important;
+  }
+
+  .course-topic-title small{
+    font-size:12px !important;
+  }
+
+  pre,
+  .codebox pre,
+  .deep-concept pre,
+  .terminal-preview{
+    font-size:12.5px !important;
+  }
+
+  .easy-card p{
+    font-size:13px !important;
+  }
+
+  .exercise-task-list li span:last-child{
+    font-size:13px !important;
+  }
+}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><link href="https://unpkg.com/tippy.js@6/animations/shift-away.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css" rel="stylesheet"/>
-<meta content="7" name="django-academy-version"/>
+<meta content="8" name="django-academy-version"/>
 </head><body>
 <div class="progress-top" id="progressTop"></div>
 <div class="layout">

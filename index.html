@@ -13827,9 +13827,166 @@ body.theme-dark .dynamic-url-remember span{
 .advanced-final-checklist{margin:22px 0;padding:18px;border:1px solid #c4b5fd;border-radius:18px;background:#faf5ff}.advanced-final-checklist>span{display:block;color:#7c3aed;font-size:9px;font-weight:900;letter-spacing:.09em}.advanced-final-checklist>strong{display:block;margin:5px 0 12px;color:#0f172a}.advanced-final-checklist>div{display:flex;flex-wrap:wrap;gap:8px}.advanced-final-checklist em{padding:7px 9px;border:1px solid #ddd6fe;border-radius:999px;background:#fff;color:#6d28d9;font-style:normal;font-size:10px;font-weight:800}
 .badge-json{background:#7c3aed}
 body.theme-dark .advanced-chapter-preview{background:#0d2a20;border-color:#14532d}body.theme-dark .advanced-chapter-preview strong{color:#bbf7d0}body.theme-dark .advanced-final-checklist{background:#21152f;border-color:#4c1d95}body.theme-dark .advanced-final-checklist>strong{color:#f8fafc}body.theme-dark .advanced-final-checklist em{background:#0f172a;border-color:#4c1d95;color:#ddd6fe}
+
+/* ============================================================
+   DJANGO ACADEMY V20 · Actividad complementaria amarilla
+   ============================================================ */
+.complementary-activity-card{
+  margin:26px 0 24px;
+  overflow:hidden;
+  border:1px solid #facc15;
+  border-radius:22px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(250,204,21,.16),transparent 38%),
+    linear-gradient(180deg,#fffbeb,#fffdf5);
+  box-shadow:0 14px 34px rgba(161,98,7,.08);
+}
+
+.complementary-activity-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:18px;
+  padding:18px 20px;
+  border-bottom:1px solid #fde68a;
+  background:linear-gradient(180deg,#fef9c3,#fff7cc);
+}
+.complementary-activity-head span{
+  display:block;
+  margin-bottom:5px;
+  color:#a16207;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.11em;
+}
+.complementary-activity-head strong{
+  display:block;
+  color:#713f12;
+  font-size:17px;
+  line-height:1.4;
+}
+.complementary-done-btn{
+  flex:0 0 auto;
+  min-height:38px;
+  padding:8px 11px;
+  border:1px solid #facc15;
+  border-radius:10px;
+  background:#fff;
+  color:#a16207;
+  font-size:10px;
+  font-weight:900;
+  cursor:pointer;
+}
+.complementary-done-btn.is-complete{
+  border-color:#ca8a04;
+  background:#fef3c7;
+  color:#713f12;
+}
+
+.complementary-activity-body{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:12px;
+  padding:18px 20px 20px;
+}
+.complementary-main-task,
+.complementary-extra-task{
+  padding:15px 16px;
+  border-radius:15px;
+}
+.complementary-main-task{
+  border:1px solid #fde68a;
+  background:#fff;
+}
+.complementary-extra-task{
+  border:1px dashed #eab308;
+  background:#fefce8;
+}
+.complementary-main-task span,
+.complementary-extra-task span{
+  display:block;
+  margin-bottom:6px;
+  color:#a16207;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.complementary-main-task p,
+.complementary-extra-task p{
+  margin:0 !important;
+  color:#4b5563 !important;
+  font-size:13px !important;
+  line-height:1.72 !important;
+}
+
+.complementary-note{
+  grid-column:1/-1;
+  display:flex;
+  gap:7px;
+  align-items:flex-start;
+  padding:11px 13px;
+  border-radius:12px;
+  background:#fef9c3;
+  color:#854d0e;
+  font-size:11px;
+  line-height:1.6;
+}
+.complementary-note strong{
+  color:#713f12;
+}
+
+/* Dark mode */
+body.theme-dark .complementary-activity-card{
+  border-color:#854d0e;
+  background:linear-gradient(180deg,#251c05,#1c1708);
+}
+body.theme-dark .complementary-activity-head{
+  border-bottom-color:#713f12;
+  background:#2b2108;
+}
+body.theme-dark .complementary-activity-head strong{
+  color:#fde68a;
+}
+body.theme-dark .complementary-main-task{
+  background:#171717;
+  border-color:#713f12;
+}
+body.theme-dark .complementary-extra-task,
+body.theme-dark .complementary-note{
+  background:#211b07;
+  border-color:#854d0e;
+}
+body.theme-dark .complementary-main-task p,
+body.theme-dark .complementary-extra-task p{
+  color:#e5e7eb !important;
+}
+body.theme-dark .complementary-note{
+  color:#facc15;
+}
+body.theme-dark .complementary-done-btn{
+  background:#171717;
+  border-color:#854d0e;
+  color:#facc15;
+}
+body.theme-dark .complementary-done-btn.is-complete{
+  background:#2b2108;
+  color:#fde68a;
+}
+
+@media(max-width:850px){
+  .complementary-activity-head{
+    flex-direction:column;
+  }
+  .complementary-activity-body{
+    grid-template-columns:1fr;
+  }
+  .complementary-note{
+    grid-column:auto;
+  }
+}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><link href="https://unpkg.com/tippy.js@6/animations/shift-away.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css" rel="stylesheet"/>
-<meta content="19" name="django-academy-version"/>
+<meta content="20" name="django-academy-version"/>
 </head><body>
 <div class="progress-top" id="progressTop"></div>
 <div class="layout">
@@ -14062,7 +14219,29 @@ Objetivo: registrar, consultar, editar y eliminar estudiantes.</pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>Ya tienes el proyecto base y sabes qué aplicación vas a construir.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link next" href="#antes-django"><small>SIGUIENTE →</small><strong>Primero entiende la Web</strong></a></nav></section><section data-course-group="Fundamentos" id="antes-django" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="inicio">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Dibuja el mapa del sistema</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="inicio" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>En una hoja o en `docs/mapa_proyecto.md`, dibuja cómo imaginas el recorrido desde que un usuario abre la lista de estudiantes hasta que ve información en pantalla.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Al final del curso vuelve a este dibujo y corrígelo con lo que aprendiste.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link next" href="#antes-django"><small>SIGUIENTE →</small><strong>Primero entiende la Web</strong></a></nav></section><section data-course-group="Fundamentos" id="antes-django" style="--section-accent:var(--django-green);">
 <div class="section-kicker">02 · ANTES DE DJANGO</div>
 <h2>Primero entiende la Web</h2>
 <p class="lead">Antes de memorizar comandos, entiende qué problema resuelve un framework backend.</p>
@@ -14319,7 +14498,29 @@ POST: enviar información al servidor.</pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El proyecto ya tiene una explicación simple de cómo una petición llegará a Django.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#inicio"><small>← ANTERIOR</small><strong>Django desde cero hasta una aplicación completa</strong></a><a class="lesson-pager-link next" href="#python-desde-cero"><small>SIGUIENTE →</small><strong>Python que necesitas antes de Django</strong></a></nav></section><section data-course-group="Fundamentos" id="python-desde-cero" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="antes-django">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Clasifica peticiones GET y POST</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="antes-django" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Escribe 6 acciones del sistema de estudiantes y clasifícalas como GET o POST: listar, buscar, ver detalle, crear, editar y eliminar.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Explica por qué eliminar no debería hacerse con un enlace GET.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#inicio"><small>← ANTERIOR</small><strong>Django desde cero hasta una aplicación completa</strong></a><a class="lesson-pager-link next" href="#python-desde-cero"><small>SIGUIENTE →</small><strong>Python que necesitas antes de Django</strong></a></nav></section><section data-course-group="Fundamentos" id="python-desde-cero" style="--section-accent:var(--django-green);">
 <div class="section-kicker">03 · PYTHON DESDE CERO</div>
 <h2>Python que necesitas antes de Django</h2>
 <p class="lead">No necesitas dominar todo Python, pero sí entender variables, colecciones, funciones, clases, imports y excepciones.</p>
@@ -14736,7 +14937,29 @@ listar_estudiantes()</pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>Practicas listas, diccionarios, funciones y ciclos usando el mismo dominio del proyecto.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#antes-django"><small>← ANTERIOR</small><strong>Primero entiende la Web</strong></a><a class="lesson-pager-link next" href="#entorno-python"><small>SIGUIENTE →</small><strong>Entorno virtual, pip y dependencias</strong></a></nav></section><section data-course-group="Fundamentos" id="entorno-python" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="python-desde-cero">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Agrega una opción al prototipo</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="python-desde-cero" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>En `prototipo_estudiantes.py`, agrega una función `contar_activos()` que cuente únicamente estudiantes activos.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega otra función que liste estudiantes cuyo nombre contenga un texto.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#antes-django"><small>← ANTERIOR</small><strong>Primero entiende la Web</strong></a><a class="lesson-pager-link next" href="#entorno-python"><small>SIGUIENTE →</small><strong>Entorno virtual, pip y dependencias</strong></a></nav></section><section data-course-group="Fundamentos" id="entorno-python" style="--section-accent:var(--django-green);">
 <div class="section-kicker">04 · ENTORNO PYTHON</div>
 <h2>Entorno virtual, pip y dependencias</h2>
 <p class="lead">Antes de crear el proyecto, prepara un entorno limpio y reproducible.</p>
@@ -15044,7 +15267,29 @@ python -m pip list</pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El proyecto ya tiene su propio entorno Python aislado.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#python-desde-cero"><small>← ANTERIOR</small><strong>Python que necesitas antes de Django</strong></a><a class="lesson-pager-link next" href="#instalacion"><small>SIGUIENTE →</small><strong>Instalar Django sin perderse</strong></a></nav></section><section data-course-group="Django esencial" id="instalacion" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="entorno-python">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Comprueba qué Python estás usando</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="entorno-python" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Con `.venv` activo, ejecuta `python -c "import sys; print(sys.executable)"` y anota la ruta obtenida.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Desactiva el entorno y compara la ruta del Python global.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#python-desde-cero"><small>← ANTERIOR</small><strong>Python que necesitas antes de Django</strong></a><a class="lesson-pager-link next" href="#instalacion"><small>SIGUIENTE →</small><strong>Instalar Django sin perderse</strong></a></nav></section><section data-course-group="Django esencial" id="instalacion" style="--section-accent:var(--django-green);">
 <div class="section-kicker">05 · INSTALACIÓN</div>
 <h2>Instalar Django sin perderse</h2>
 <p class="lead">Instala Django y comprueba que quedó listo antes de crear tu primer Hola Mundo.</p>
@@ -15284,7 +15529,29 @@ python -m django --version</code></pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>Django queda instalado específicamente para este proyecto.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#entorno-python"><small>← ANTERIOR</small><strong>Entorno virtual, pip y dependencias</strong></a><a class="lesson-pager-link next" href="#crear-proyecto"><small>SIGUIENTE →</small><strong>Hola Mundo: tu primer proyecto Django</strong></a></nav></section><section data-course-group="Django esencial" id="crear-proyecto" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="instalacion">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Genera una evidencia del entorno</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="instalacion" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Ejecuta `python -m django --version` y `python -m pip list`. Guarda en `docs/entorno.md` la versión de Python, pip y Django.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Explica qué problema habría si Django estuviera instalado fuera de `.venv`.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#entorno-python"><small>← ANTERIOR</small><strong>Entorno virtual, pip y dependencias</strong></a><a class="lesson-pager-link next" href="#crear-proyecto"><small>SIGUIENTE →</small><strong>Hola Mundo: tu primer proyecto Django</strong></a></nav></section><section data-course-group="Django esencial" id="crear-proyecto" style="--section-accent:var(--django-green);">
 <div class="section-kicker">06 · HOLA MUNDO</div>
 <h2>Hola Mundo: tu primer proyecto Django</h2>
 <p class="lead">Primero haz que Django funcione y muestre algo en el navegador. Después entenderás Apps, URLs, Views y Templates con más contexto.</p>
@@ -15742,7 +16009,29 @@ urlpatterns = [
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El mismo proyecto ya responde desde Django en el navegador.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#instalacion"><small>← ANTERIOR</small><strong>Instalar Django sin perderse</strong></a><a class="lesson-pager-link next" href="#que-es-django"><small>SIGUIENTE →</small><strong>Django y el patrón MVT</strong></a></nav></section><section data-course-group="Django esencial" id="que-es-django" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="crear-proyecto">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Crea una segunda respuesta sencilla</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="crear-proyecto" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Además del Hola Mundo, agrega temporalmente una ruta `/saludo/` que devuelva un mensaje diferente.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Haz que la respuesta muestre también tu nombre o el nombre del proyecto.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#instalacion"><small>← ANTERIOR</small><strong>Instalar Django sin perderse</strong></a><a class="lesson-pager-link next" href="#que-es-django"><small>SIGUIENTE →</small><strong>Django y el patrón MVT</strong></a></nav></section><section data-course-group="Django esencial" id="que-es-django" style="--section-accent:var(--django-green);">
 <div class="section-kicker">07 · CÓMO FUNCIONA DJANGO</div>
 <h2>Django y el patrón MVT</h2>
 <p class="lead">Ya viste Django funcionando. Ahora sí entiende qué piezas participaron y cómo se organiza el patrón MVT.</p>
@@ -15956,7 +16245,29 @@ Ejemplo futuro: /estudiantes/ -&gt; lista() -&gt; Estudiante -&gt; lista.html</p
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>La arquitectura que estudiarás queda conectada con tu propio proyecto.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#crear-proyecto"><small>← ANTERIOR</small><strong>Hola Mundo: tu primer proyecto Django</strong></a><a class="lesson-pager-link next" href="#estructura"><small>SIGUIENTE →</small><strong>Cómo leer un proyecto Django</strong></a></nav></section><section data-course-group="Django esencial" id="estructura" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="que-es-django">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Ubica MVT en tu proyecto</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="que-es-django" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>En `docs/mvt.md`, escribe un ejemplo concreto de Model, View y Template usando el sistema de estudiantes.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega una flecha mostrando dónde entra `urls.py` aunque no forme parte del nombre MVT.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#crear-proyecto"><small>← ANTERIOR</small><strong>Hola Mundo: tu primer proyecto Django</strong></a><a class="lesson-pager-link next" href="#estructura"><small>SIGUIENTE →</small><strong>Cómo leer un proyecto Django</strong></a></nav></section><section data-course-group="Django esencial" id="estructura" style="--section-accent:var(--django-green);">
 <div class="section-kicker">08 · ESTRUCTURA</div>
 <h2>Cómo leer un proyecto Django</h2>
 <p class="lead">Aprende qué responsabilidad tiene cada archivo para no copiar código sin saber dónde va.</p>
@@ -16172,7 +16483,29 @@ Ejemplo futuro: /estudiantes/ -&gt; lista() -&gt; Estudiante -&gt; lista.html</p
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El estudiante ya sabe dónde mirar cuando necesite cambiar configuración o rutas.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#que-es-django"><small>← ANTERIOR</small><strong>Django y el patrón MVT</strong></a><a class="lesson-pager-link next" href="#apps"><small>SIGUIENTE →</small><strong>Apps: dividir el proyecto por funcionalidades</strong></a></nav></section><section data-course-group="Django esencial" id="apps" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="estructura">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Haz una tabla archivo → responsabilidad</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="estructura" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea en `docs/estructura.md` una tabla con `manage.py`, `settings.py`, `urls.py`, `asgi.py` y `wsgi.py`, indicando para qué sirve cada uno.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Marca cuáles modificarás frecuentemente y cuáles casi nunca.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#que-es-django"><small>← ANTERIOR</small><strong>Django y el patrón MVT</strong></a><a class="lesson-pager-link next" href="#apps"><small>SIGUIENTE →</small><strong>Apps: dividir el proyecto por funcionalidades</strong></a></nav></section><section data-course-group="Django esencial" id="apps" style="--section-accent:var(--django-green);">
 <div class="section-kicker">09 · APPS</div>
 <h2>Apps: dividir el proyecto por funcionalidades</h2>
 <p class="lead">Django permite dividir un proyecto grande en aplicaciones coherentes y reutilizables.</p>
@@ -16380,7 +16713,29 @@ urlpatterns = []</pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El proyecto ya tiene una app propia donde crecerá toda la funcionalidad académica.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#estructura"><small>← ANTERIOR</small><strong>Cómo leer un proyecto Django</strong></a><a class="lesson-pager-link next" href="#urls"><small>SIGUIENTE →</small><strong>Enrutamiento: URL → view</strong></a></nav></section><section data-course-group="Django esencial" id="urls" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="apps">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Piensa una segunda app</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="apps" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Sin crearla todavía, define qué funcionalidades pondrías en una app `programas` o `reportes`.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Explica qué debería quedarse en `estudiantes` y qué moverías a esa nueva app.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#estructura"><small>← ANTERIOR</small><strong>Cómo leer un proyecto Django</strong></a><a class="lesson-pager-link next" href="#urls"><small>SIGUIENTE →</small><strong>Enrutamiento: URL → view</strong></a></nav></section><section data-course-group="Django esencial" id="urls" style="--section-accent:var(--django-green);">
 <div class="section-kicker">10 · URLS</div>
 <h2>Enrutamiento: URL → view</h2>
 <p class="lead">Django decide qué código ejecutar comparando la URL solicitada con urlpatterns.</p>
@@ -16862,7 +17217,29 @@ urlpatterns = [
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>`/estudiantes/` ya apunta a una View de tu app.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#apps"><small>← ANTERIOR</small><strong>Apps: dividir el proyecto por funcionalidades</strong></a><a class="lesson-pager-link next" href="#views"><small>SIGUIENTE →</small><strong>Views: el centro de decisión</strong></a></nav></section><section data-course-group="Django esencial" id="views" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="urls">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Crea una ruta dinámica adicional</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="urls" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Agrega una ruta de práctica como `saludo/&lt;str:nombre&gt;/` y haz que una View muestre ese nombre.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Compara `&lt;str:nombre&gt;` con `&lt;int:pk&gt;` y escribe cuándo usarías cada convertidor.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#apps"><small>← ANTERIOR</small><strong>Apps: dividir el proyecto por funcionalidades</strong></a><a class="lesson-pager-link next" href="#views"><small>SIGUIENTE →</small><strong>Views: el centro de decisión</strong></a></nav></section><section data-course-group="Django esencial" id="views" style="--section-accent:var(--django-green);">
 <div class="section-kicker">11 · VIEWS</div>
 <h2>Views: el centro de decisión</h2>
 <p class="lead">La view conecta request, reglas de negocio, ORM, templates y respuestas.</p>
@@ -17119,7 +17496,29 @@ def lista(request):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>La ruta ya ejecuta código Python dentro de la app.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#urls"><small>← ANTERIOR</small><strong>Enrutamiento: URL → view</strong></a><a class="lesson-pager-link next" href="#templates"><small>SIGUIENTE →</small><strong>Templates: HTML dinámico sin mezclar todo</strong></a></nav></section><section data-course-group="Django esencial" id="templates" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="views">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Crea una View con información del Request</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="views" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Agrega una View de práctica que muestre `request.method` y la ruta solicitada.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Muestra también si el usuario está autenticado usando `request.user.is_authenticated`.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#urls"><small>← ANTERIOR</small><strong>Enrutamiento: URL → view</strong></a><a class="lesson-pager-link next" href="#templates"><small>SIGUIENTE →</small><strong>Templates: HTML dinámico sin mezclar todo</strong></a></nav></section><section data-course-group="Django esencial" id="templates" style="--section-accent:var(--django-green);">
 <div class="section-kicker">12 · TEMPLATES</div>
 <h2>Templates: HTML dinámico sin mezclar todo</h2>
 <p class="lead">Aprende variables, control de flujo, herencia, enlaces y composición de plantillas.</p>
@@ -17424,7 +17823,29 @@ def lista(request):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>La lista ya se genera desde un Template separado del código Python.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#views"><small>← ANTERIOR</small><strong>Views: el centro de decisión</strong></a><a class="lesson-pager-link next" href="#static"><small>SIGUIENTE →</small><strong>CSS, JavaScript e imágenes</strong></a></nav></section><section data-course-group="Django esencial" id="static" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="templates">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Crea un componente reutilizable</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="templates" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Extrae una pequeña parte del HTML, por ejemplo una tarjeta de estudiante, a un archivo incluido con `{% include %}`.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Pasa una variable al include y comprueba que sigue mostrando el estudiante correcto.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#views"><small>← ANTERIOR</small><strong>Views: el centro de decisión</strong></a><a class="lesson-pager-link next" href="#static"><small>SIGUIENTE →</small><strong>CSS, JavaScript e imágenes</strong></a></nav></section><section data-course-group="Django esencial" id="static" style="--section-accent:var(--django-green);">
 <div class="section-kicker">13 · STATIC FILES</div>
 <h2>CSS, JavaScript e imágenes</h2>
 <p class="lead">Los templates producen HTML; staticfiles organiza los recursos que no cambian por usuario.</p>
@@ -17630,7 +18051,29 @@ def lista(request):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El mismo listado ahora tiene presentación visual usando archivos estáticos.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#templates"><small>← ANTERIOR</small><strong>Templates: HTML dinámico sin mezclar todo</strong></a><a class="lesson-pager-link next" href="#models"><small>SIGUIENTE →</small><strong>Modelos y ORM: trabajar con la base de datos</strong></a></nav></section><section data-course-group="Datos y ORM" id="models" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="static">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Agrega un estado visual</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="static" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea una clase CSS para diferenciar estudiantes activos e inactivos en el listado.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega un pequeño efecto `hover` a las filas sin usar JavaScript.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#templates"><small>← ANTERIOR</small><strong>Templates: HTML dinámico sin mezclar todo</strong></a><a class="lesson-pager-link next" href="#models"><small>SIGUIENTE →</small><strong>Modelos y ORM: trabajar con la base de datos</strong></a></nav></section><section data-course-group="Datos y ORM" id="models" style="--section-accent:var(--django-green);">
 <div class="section-kicker">14 · MODELS Y ORM</div>
 <h2>Modelos y ORM: trabajar con la base de datos</h2>
 <p class="lead">Define tus entidades en Python y consulta datos mediante QuerySets.</p>
@@ -17947,7 +18390,29 @@ def lista(request):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>La página deja de depender de datos inventados y empieza a leer desde la base de datos.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#static"><small>← ANTERIOR</small><strong>CSS, JavaScript e imágenes</strong></a><a class="lesson-pager-link next" href="#migrations"><small>SIGUIENTE →</small><strong>Migraciones: cambiar la base sin perder el historial</strong></a></nav></section><section data-course-group="Datos y ORM" id="migrations" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="models">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Agrega una regla sencilla al Model</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="models" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Añade un campo opcional como `telefono` o `fecha_nacimiento` y explica qué tipo de Field elegiste.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Antes de migrar, predice qué cambio aparecerá en la migration.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#static"><small>← ANTERIOR</small><strong>CSS, JavaScript e imágenes</strong></a><a class="lesson-pager-link next" href="#migrations"><small>SIGUIENTE →</small><strong>Migraciones: cambiar la base sin perder el historial</strong></a></nav></section><section data-course-group="Datos y ORM" id="migrations" style="--section-accent:var(--django-green);">
 <div class="section-kicker">15 · MIGRACIONES</div>
 <h2>Migraciones: cambiar la base sin perder el historial</h2>
 <p class="lead">Django traduce cambios de models.py en operaciones controladas sobre el esquema.</p>
@@ -18137,7 +18602,29 @@ python manage.py migrate</code></pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>La estructura definida en `models.py` ya existe físicamente en SQLite.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#models"><small>← ANTERIOR</small><strong>Modelos y ORM: trabajar con la base de datos</strong></a><a class="lesson-pager-link next" href="#admin"><small>SIGUIENTE →</small><strong>Admin: panel interno casi inmediato</strong></a></nav></section><section data-course-group="Datos y ORM" id="admin" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="migrations">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Lee una migration como si fuera historia</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="migrations" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Abre la migration más reciente y escribe en `docs/migrations.md` qué operación está realizando Django.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Usa `python manage.py sqlmigrate` para observar el SQL generado.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#models"><small>← ANTERIOR</small><strong>Modelos y ORM: trabajar con la base de datos</strong></a><a class="lesson-pager-link next" href="#admin"><small>SIGUIENTE →</small><strong>Admin: panel interno casi inmediato</strong></a></nav></section><section data-course-group="Datos y ORM" id="admin" style="--section-accent:var(--django-green);">
 <div class="section-kicker">16 · ADMIN</div>
 <h2>Admin: panel interno casi inmediato</h2>
 <p class="lead">Django puede generar una interfaz administrativa potente sin que construyas cada CRUD interno a mano.</p>
@@ -18350,7 +18837,29 @@ class EstudianteAdmin(admin.ModelAdmin):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>Ya puedes cargar datos reales sin construir todavía el formulario público.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#migrations"><small>← ANTERIOR</small><strong>Migraciones: cambiar la base sin perder el historial</strong></a><a class="lesson-pager-link next" href="#forms"><small>SIGUIENTE →</small><strong>Formularios: recibir y validar datos</strong></a></nav></section><section data-course-group="Forms y CRUD" id="forms" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="admin">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Mejora la experiencia del Admin</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="admin" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Agrega una columna nueva a `list_display` y un filtro útil para estudiantes.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Crea una acción de Admin sencilla o cambia el ordenamiento por defecto.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#migrations"><small>← ANTERIOR</small><strong>Migraciones: cambiar la base sin perder el historial</strong></a><a class="lesson-pager-link next" href="#forms"><small>SIGUIENTE →</small><strong>Formularios: recibir y validar datos</strong></a></nav></section><section data-course-group="Forms y CRUD" id="forms" style="--section-accent:var(--django-green);">
 <div class="section-kicker">17 · FORMS</div>
 <h2>Formularios: recibir y validar datos</h2>
 <p class="lead">Django Forms evita validar strings manualmente campo por campo y se integra con templates y models.</p>
@@ -18645,7 +19154,29 @@ def crear(request):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El navegador ya muestra un formulario generado a partir del Model.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#admin"><small>← ANTERIOR</small><strong>Admin: panel interno casi inmediato</strong></a><a class="lesson-pager-link next" href="#csrf-botones"><small>SIGUIENTE →</small><strong>Formularios POST seguros y acciones claras</strong></a></nav></section><section data-course-group="Forms y CRUD" id="csrf-botones" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="forms">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Agrega una validación de campo</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="forms" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea `clean_documento()` o `clean_nombre()` para impedir un valor inválido definido por ti.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Muestra un mensaje de error amigable y comprueba que el registro no se guarda.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#admin"><small>← ANTERIOR</small><strong>Admin: panel interno casi inmediato</strong></a><a class="lesson-pager-link next" href="#csrf-botones"><small>SIGUIENTE →</small><strong>Formularios POST seguros y acciones claras</strong></a></nav></section><section data-course-group="Forms y CRUD" id="csrf-botones" style="--section-accent:var(--django-green);">
 <div class="section-kicker">18 · BOTONES + CSRF</div>
 <h2>Formularios POST seguros y acciones claras</h2>
 <p class="lead">Conecta botones, métodos HTTP, CSRF y el patrón POST → redirect.</p>
@@ -18881,7 +19412,29 @@ def crear(request):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>Ya puedes crear estudiantes desde tu propia interfaz.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#forms"><small>← ANTERIOR</small><strong>Formularios: recibir y validar datos</strong></a><a class="lesson-pager-link next" href="#crud"><small>SIGUIENTE →</small><strong>CRUD: crear, listar, editar y eliminar</strong></a></nav></section><section data-course-group="Forms y CRUD" id="crud" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="csrf-botones">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Comprueba la protección CSRF</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="csrf-botones" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>En desarrollo, retira temporalmente `{% csrf_token %}` de un formulario POST, observa el error y vuelve a colocarlo.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Escribe en una frase qué ataque intenta evitar esta protección.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#forms"><small>← ANTERIOR</small><strong>Formularios: recibir y validar datos</strong></a><a class="lesson-pager-link next" href="#crud"><small>SIGUIENTE →</small><strong>CRUD: crear, listar, editar y eliminar</strong></a></nav></section><section data-course-group="Forms y CRUD" id="crud" style="--section-accent:var(--django-green);">
 <div class="section-kicker">19 · CRUD COMPLETO</div>
 <h2>CRUD: crear, listar, editar y eliminar</h2>
 <p class="lead">Une URLs, views, models, forms, templates, mensajes y redirecciones en una funcionalidad real.</p>
@@ -19200,7 +19753,29 @@ def detalle(request, pk):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El proyecto ya puede crear, listar, consultar, editar y eliminar estudiantes.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#csrf-botones"><small>← ANTERIOR</small><strong>Formularios POST seguros y acciones claras</strong></a><a class="lesson-pager-link next" href="#relaciones"><small>SIGUIENTE →</small><strong>Relaciones entre modelos</strong></a></nav></section><section data-course-group="Datos y ORM" id="relaciones" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="crud">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Agrega una acción rápida</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="crud" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Añade al listado un botón para ir directamente a editar cada estudiante.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega confirmación visual antes de la eliminación y comprueba que eliminar siga siendo POST.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#csrf-botones"><small>← ANTERIOR</small><strong>Formularios POST seguros y acciones claras</strong></a><a class="lesson-pager-link next" href="#relaciones"><small>SIGUIENTE →</small><strong>Relaciones entre modelos</strong></a></nav></section><section data-course-group="Datos y ORM" id="relaciones" style="--section-accent:var(--django-green);">
 <div class="section-kicker">20 · RELACIONES</div>
 <h2>Relaciones entre modelos</h2>
 <p class="lead">Aprende cómo expresar uno-a-muchos, muchos-a-muchos y uno-a-uno sin crear joins manuales para cada caso.</p>
@@ -19449,7 +20024,29 @@ class Estudiante(models.Model):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>Ahora los estudiantes quedan relacionados con un programa académico.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#crud"><small>← ANTERIOR</small><strong>CRUD: crear, listar, editar y eliminar</strong></a><a class="lesson-pager-link next" href="#auth"><small>SIGUIENTE →</small><strong>Login, logout y permisos</strong></a></nav></section><section data-course-group="Django avanzado" id="auth" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="relaciones">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Consulta la relación en ambos sentidos</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="relaciones" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Desde Django shell, obtiene un estudiante y consulta su programa; luego obtiene un programa y lista sus estudiantes.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Usa el `related_name` para hacer la consulta inversa.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#crud"><small>← ANTERIOR</small><strong>CRUD: crear, listar, editar y eliminar</strong></a><a class="lesson-pager-link next" href="#auth"><small>SIGUIENTE →</small><strong>Login, logout y permisos</strong></a></nav></section><section data-course-group="Django avanzado" id="auth" style="--section-accent:var(--django-green);">
 <div class="section-kicker">21 · AUTENTICACIÓN</div>
 <h2>Login, logout y permisos</h2>
 <p class="lead">Django trae autenticación, sesiones, grupos y permisos integrados.</p>
@@ -19723,7 +20320,29 @@ def crear(request):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>Consultar puede seguir siendo público, pero modificar datos requiere iniciar sesión.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#relaciones"><small>← ANTERIOR</small><strong>Relaciones entre modelos</strong></a><a class="lesson-pager-link next" href="#sessions-messages"><small>SIGUIENTE →</small><strong>Estado entre requests y feedback</strong></a></nav></section><section data-course-group="Django avanzado" id="sessions-messages" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="auth">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Diferencia autenticación y autorización</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="auth" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea dos usuarios y haz que solo uno tenga un permiso específico para cambiar estudiantes.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Muestra u oculta el botón Editar en el Template según el permiso.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#relaciones"><small>← ANTERIOR</small><strong>Relaciones entre modelos</strong></a><a class="lesson-pager-link next" href="#sessions-messages"><small>SIGUIENTE →</small><strong>Estado entre requests y feedback</strong></a></nav></section><section data-course-group="Django avanzado" id="sessions-messages" style="--section-accent:var(--django-green);">
 <div class="section-kicker">22 · SESIONES + MENSAJES</div>
 <h2>Estado entre requests y feedback</h2>
 <p class="lead">Usa sesiones para datos temporales del usuario y messages para confirmar acciones después de redirecciones.</p>
@@ -19936,7 +20555,29 @@ request.session["ultimo_filtro"] = request.GET.get("q", "")</pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>La interfaz informa qué ocurrió y el proyecto empieza a recordar estado entre peticiones.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#auth"><small>← ANTERIOR</small><strong>Login, logout y permisos</strong></a><a class="lesson-pager-link next" href="#uploads"><small>SIGUIENTE →</small><strong>Subir fotos y documentos</strong></a></nav></section><section data-course-group="Django avanzado" id="uploads" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="sessions-messages">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Guarda una preferencia del usuario</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="sessions-messages" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Guarda en sesión una preferencia como `filas_por_pagina` o `tema` y recupérala en otra petición.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega un botón para borrar esa preferencia.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#auth"><small>← ANTERIOR</small><strong>Login, logout y permisos</strong></a><a class="lesson-pager-link next" href="#uploads"><small>SIGUIENTE →</small><strong>Subir fotos y documentos</strong></a></nav></section><section data-course-group="Django avanzado" id="uploads" style="--section-accent:var(--django-green);">
 <div class="section-kicker">23 · ARCHIVOS Y MEDIA</div>
 <h2>Subir fotos y documentos</h2>
 <p class="lead">Django diferencia recursos estáticos del proyecto y archivos enviados por usuarios.</p>
@@ -20155,7 +20796,29 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)</pr
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El registro del estudiante ahora puede incluir una imagen real.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#sessions-messages"><small>← ANTERIOR</small><strong>Estado entre requests y feedback</strong></a><a class="lesson-pager-link next" href="#cbv"><small>SIGUIENTE →</small><strong>Views basadas en clases</strong></a></nav></section><section data-course-group="Django avanzado" id="cbv" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="uploads">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Valida el archivo subido</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="uploads" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Agrega una validación sencilla de tamaño o extensión para la foto del estudiante.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Muestra una imagen por defecto cuando un estudiante no tenga foto.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#sessions-messages"><small>← ANTERIOR</small><strong>Estado entre requests y feedback</strong></a><a class="lesson-pager-link next" href="#cbv"><small>SIGUIENTE →</small><strong>Views basadas en clases</strong></a></nav></section><section data-course-group="Django avanzado" id="cbv" style="--section-accent:var(--django-green);">
 <div class="section-kicker">24 · CLASS-BASED VIEWS</div>
 <h2>Views basadas en clases</h2>
 <p class="lead">Aprende las vistas genéricas cuando ya entiendes bien request, response, ORM y forms.</p>
@@ -20373,7 +21036,29 @@ path("&lt;int:pk&gt;/", views.EstudianteDetailView.as_view(), name="detalle"),</
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El mismo proyecto permite comparar FBV y CBV con un caso real.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#uploads"><small>← ANTERIOR</small><strong>Subir fotos y documentos</strong></a><a class="lesson-pager-link next" href="#middleware"><small>SIGUIENTE →</small><strong>Middleware: capas globales del request/response</strong></a></nav></section><section data-course-group="Django avanzado" id="middleware" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="cbv">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Compara FBV y CBV</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="cbv" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Escribe en `docs/cbv_vs_fbv.md` qué líneas desaparecen al cambiar una lista de FBV a `ListView`.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega `get_queryset()` para filtrar solo estudiantes activos.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#uploads"><small>← ANTERIOR</small><strong>Subir fotos y documentos</strong></a><a class="lesson-pager-link next" href="#middleware"><small>SIGUIENTE →</small><strong>Middleware: capas globales del request/response</strong></a></nav></section><section data-course-group="Django avanzado" id="middleware" style="--section-accent:var(--django-green);">
 <div class="section-kicker">25 · MIDDLEWARE</div>
 <h2>Middleware: capas globales del request/response</h2>
 <p class="lead">Comprende por qué auth, sesiones, CSRF y seguridad parecen estar disponibles en todas partes.</p>
@@ -20579,7 +21264,29 @@ class TiempoMiddleware:
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>Cada respuesta del proyecto ahora pasa por una capa global que puedes observar.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#cbv"><small>← ANTERIOR</small><strong>Views basadas en clases</strong></a><a class="lesson-pager-link next" href="#signals"><small>SIGUIENTE →</small><strong>Signals de Django: eventos del backend</strong></a></nav></section><section data-course-group="Django avanzado" id="signals" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="middleware">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Agrega una cabecera propia</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="middleware" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Haz que tu Middleware agregue una cabecera como `X-Academia: Django` a cada Response.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Comprueba la cabecera desde la pestaña Network de DevTools.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#cbv"><small>← ANTERIOR</small><strong>Views basadas en clases</strong></a><a class="lesson-pager-link next" href="#signals"><small>SIGUIENTE →</small><strong>Signals de Django: eventos del backend</strong></a></nav></section><section data-course-group="Django avanzado" id="signals" style="--section-accent:var(--django-green);">
 <div class="section-kicker">26 · SIGNALS</div>
 <h2>Signals de Django: eventos del backend</h2>
 <p class="lead">Aprende el sistema de eventos interno de Django y cuándo conviene usarlo sin ocultar lógica importante.</p>
@@ -20792,7 +21499,29 @@ class EstudiantesConfig(AppConfig):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El proyecto ejecuta una reacción automática después de guardar un estudiante.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#middleware"><small>← ANTERIOR</small><strong>Middleware: capas globales del request/response</strong></a><a class="lesson-pager-link next" href="#apis"><small>SIGUIENTE →</small><strong>APIs con Django y JavaScript</strong></a></nav></section><section data-course-group="APIs" id="apis" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="signals">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Registra una acción secundaria</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="signals" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Cuando se cree un estudiante, registra en consola su `pk` y nombre desde la Signal.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Comprueba que funciona tanto desde el Admin como desde el formulario público.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#middleware"><small>← ANTERIOR</small><strong>Middleware: capas globales del request/response</strong></a><a class="lesson-pager-link next" href="#apis"><small>SIGUIENTE →</small><strong>APIs con Django y JavaScript</strong></a></nav></section><section data-course-group="APIs" id="apis" style="--section-accent:var(--django-green);">
 <div class="section-kicker">27 · APIS + FETCH</div>
 <h2>APIs con Django y JavaScript</h2>
 <p class="lead">Aprende primero JsonResponse y fetch; luego podrás avanzar a Django REST Framework si el proyecto lo necesita.</p>
@@ -21115,7 +21844,29 @@ cargarEstudiantes();</pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>Tu proyecto funciona también como fuente de datos para JavaScript.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#signals"><small>← ANTERIOR</small><strong>Signals de Django: eventos del backend</strong></a><a class="lesson-pager-link next" href="#orm-avanzado"><small>SIGUIENTE →</small><strong>ORM avanzado: Q, F, annotate, aggregate y Managers</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="orm-avanzado" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="apis">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Agrega un filtro a la API</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="apis" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Permite consultar `/api/estudiantes/?activo=1` y devuelve solo estudiantes activos.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Desde `fetch()`, agrega un botón que cambie entre todos y activos.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#signals"><small>← ANTERIOR</small><strong>Signals de Django: eventos del backend</strong></a><a class="lesson-pager-link next" href="#orm-avanzado"><small>SIGUIENTE →</small><strong>ORM avanzado: Q, F, annotate, aggregate y Managers</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="orm-avanzado" style="--section-accent:var(--django-green);">
 <div class="section-kicker">28 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>ORM avanzado: Q, F, annotate, aggregate y Managers</h2>
 <p class="lead">Pasa de consultas básicas a consultas expresivas y reutilizables sin escribir SQL para cada caso.</p>
@@ -21219,7 +21970,29 @@ def lista(request):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto ya puede filtrar con condiciones complejas y calcular estadísticas desde la base de datos.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#apis"><small>← ANTERIOR</small><strong>APIs con Django y JavaScript</strong></a><a class="lesson-pager-link next" href="#models-avanzados"><small>SIGUIENTE →</small><strong>Models avanzados: Meta, índices, constraints y validators</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="models-avanzados" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="orm-avanzado">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Crea una consulta con Q y una agregación</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="orm-avanzado" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Busca estudiantes por nombre o documento usando `Q()` y calcula cuántos hay por programa.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Muestra el resultado con `annotate()` en Django shell.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#apis"><small>← ANTERIOR</small><strong>APIs con Django y JavaScript</strong></a><a class="lesson-pager-link next" href="#models-avanzados"><small>SIGUIENTE →</small><strong>Models avanzados: Meta, índices, constraints y validators</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="models-avanzados" style="--section-accent:var(--django-green);">
 <div class="section-kicker">29 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Models avanzados: Meta, índices, constraints y validators</h2>
 <p class="lead">Haz que el propio modelo proteja mejor la calidad de los datos y ayude a la base de datos a trabajar mejor.</p>
@@ -21308,7 +22081,29 @@ python manage.py migrate</pre>
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El esquema tiene orden, un índice útil y restricciones explícitas.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#orm-avanzado"><small>← ANTERIOR</small><strong>ORM avanzado: Q, F, annotate, aggregate y Managers</strong></a><a class="lesson-pager-link next" href="#transacciones"><small>SIGUIENTE →</small><strong>Transacciones: varias operaciones como una sola</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="transacciones" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="models-avanzados">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Agrega una restricción útil</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="models-avanzados" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Define una `Meta` con ordenamiento y una constraint o índice que tenga sentido para tu modelo.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Explica qué error evita esa constraint.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#orm-avanzado"><small>← ANTERIOR</small><strong>ORM avanzado: Q, F, annotate, aggregate y Managers</strong></a><a class="lesson-pager-link next" href="#transacciones"><small>SIGUIENTE →</small><strong>Transacciones: varias operaciones como una sola</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="transacciones" style="--section-accent:var(--django-green);">
 <div class="section-kicker">30 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Transacciones: varias operaciones como una sola</h2>
 <p class="lead">Aprende a evitar que una operación quede a medias cuando debe modificar varios datos relacionados.</p>
@@ -21376,7 +22171,29 @@ def cambiar_estado(estudiante_id, nuevo_estado):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>Las operaciones relacionadas pueden ejecutarse de manera atómica.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#models-avanzados"><small>← ANTERIOR</small><strong>Models avanzados: Meta, índices, constraints y validators</strong></a><a class="lesson-pager-link next" href="#forms-avanzados"><small>SIGUIENTE →</small><strong>Forms avanzados: clean(), widgets y validación cruzada</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="forms-avanzados" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="transacciones">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Simula una operación que debe ser atómica</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="transacciones" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea una función que haga dos cambios relacionados dentro de `transaction.atomic()`.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Provoca intencionalmente una excepción en el segundo paso y comprueba el rollback.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#models-avanzados"><small>← ANTERIOR</small><strong>Models avanzados: Meta, índices, constraints y validators</strong></a><a class="lesson-pager-link next" href="#forms-avanzados"><small>SIGUIENTE →</small><strong>Forms avanzados: clean(), widgets y validación cruzada</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="forms-avanzados" style="--section-accent:var(--django-green);">
 <div class="section-kicker">31 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Forms avanzados: clean(), widgets y validación cruzada</h2>
 <p class="lead">Haz que los formularios expliquen errores claros y apliquen reglas que dependen de más de un campo.</p>
@@ -21472,7 +22289,29 @@ class EstudianteForm(forms.ModelForm):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El formulario aplica reglas propias y widgets más claros.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#transacciones"><small>← ANTERIOR</small><strong>Transacciones: varias operaciones como una sola</strong></a><a class="lesson-pager-link next" href="#formsets"><small>SIGUIENTE →</small><strong>Formsets: trabajar con varios formularios a la vez</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="formsets" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="forms-avanzados">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Valida dos campos juntos</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="forms-avanzados" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Usa `clean()` para crear una regla que dependa de dos campos del formulario.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Muestra el error como validación general del formulario.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#transacciones"><small>← ANTERIOR</small><strong>Transacciones: varias operaciones como una sola</strong></a><a class="lesson-pager-link next" href="#formsets"><small>SIGUIENTE →</small><strong>Formsets: trabajar con varios formularios a la vez</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="formsets" style="--section-accent:var(--django-green);">
 <div class="section-kicker">32 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Formsets: trabajar con varios formularios a la vez</h2>
 <p class="lead">Edita varios estudiantes en una sola pantalla usando las herramientas de formularios múltiples de Django.</p>
@@ -21548,7 +22387,29 @@ def editar_varios(request):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto permite editar varios estudiantes desde un único POST.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#forms-avanzados"><small>← ANTERIOR</small><strong>Forms avanzados: clean(), widgets y validación cruzada</strong></a><a class="lesson-pager-link next" href="#cbv-edicion"><small>SIGUIENTE →</small><strong>CBV de edición: CreateView, UpdateView y DeleteView</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="cbv-edicion" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="formsets">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Edita varios registros en una sola pantalla</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="formsets" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea un formset pequeño para editar varios estudiantes o programas a la vez.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega una validación que impida enviar el conjunto completamente vacío.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#forms-avanzados"><small>← ANTERIOR</small><strong>Forms avanzados: clean(), widgets y validación cruzada</strong></a><a class="lesson-pager-link next" href="#cbv-edicion"><small>SIGUIENTE →</small><strong>CBV de edición: CreateView, UpdateView y DeleteView</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="cbv-edicion" style="--section-accent:var(--django-green);">
 <div class="section-kicker">33 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>CBV de edición: CreateView, UpdateView y DeleteView</h2>
 <p class="lead">Usa Generic Editing Views cuando el patrón CRUD ya es conocido y quieres reducir código repetitivo.</p>
@@ -21634,7 +22495,29 @@ path("cbv/&lt;int:pk&gt;/eliminar/", views.EstudianteDeleteView.as_view(), name=
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto muestra cómo Django automatiza patrones CRUD comunes.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#formsets"><small>← ANTERIOR</small><strong>Formsets: trabajar con varios formularios a la vez</strong></a><a class="lesson-pager-link next" href="#paginacion"><small>SIGUIENTE →</small><strong>Paginación: dividir listados grandes</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="paginacion" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="cbv-edicion">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Personaliza una CreateView</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="cbv-edicion" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Agrega `success_url` o `get_success_url()` y un mensaje de éxito a tu CreateView.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Sobrescribe `form_valid()` y observa cuándo se ejecuta.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#formsets"><small>← ANTERIOR</small><strong>Formsets: trabajar con varios formularios a la vez</strong></a><a class="lesson-pager-link next" href="#paginacion"><small>SIGUIENTE →</small><strong>Paginación: dividir listados grandes</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="paginacion" style="--section-accent:var(--django-green);">
 <div class="section-kicker">34 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Paginación: dividir listados grandes</h2>
 <p class="lead">Evita cargar todos los estudiantes en una sola página y aprende a navegar por páginas.</p>
@@ -21713,7 +22596,29 @@ def lista(request):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El listado muestra un número limitado de estudiantes por página.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#cbv-edicion"><small>← ANTERIOR</small><strong>CBV de edición: CreateView, UpdateView y DeleteView</strong></a><a class="lesson-pager-link next" href="#template-tags"><small>SIGUIENTE →</small><strong>Template tags y filtros personalizados</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="template-tags" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="paginacion">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Cambia el tamaño de página</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="paginacion" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Configura el listado para mostrar 5 estudiantes por página.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Conserva un parámetro de búsqueda al navegar a la página siguiente.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#cbv-edicion"><small>← ANTERIOR</small><strong>CBV de edición: CreateView, UpdateView y DeleteView</strong></a><a class="lesson-pager-link next" href="#template-tags"><small>SIGUIENTE →</small><strong>Template tags y filtros personalizados</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="template-tags" style="--section-accent:var(--django-green);">
 <div class="section-kicker">35 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Template tags y filtros personalizados</h2>
 <p class="lead">Crea pequeñas herramientas de presentación reutilizables sin meter lógica de negocio dentro del HTML.</p>
@@ -21786,7 +22691,29 @@ def activo_texto(valor):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>La app tiene una biblioteca de filtros reutilizable.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#paginacion"><small>← ANTERIOR</small><strong>Paginación: dividir listados grandes</strong></a><a class="lesson-pager-link next" href="#management-commands"><small>SIGUIENTE →</small><strong>Comandos propios de manage.py</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="management-commands" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="template-tags">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Crea un filtro propio</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="template-tags" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea un filtro `iniciales` que convierta un nombre en sus iniciales.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Úsalo en el listado junto al nombre del estudiante.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#paginacion"><small>← ANTERIOR</small><strong>Paginación: dividir listados grandes</strong></a><a class="lesson-pager-link next" href="#management-commands"><small>SIGUIENTE →</small><strong>Comandos propios de manage.py</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="management-commands" style="--section-accent:var(--django-green);">
 <div class="section-kicker">36 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Comandos propios de manage.py</h2>
 <p class="lead">Automatiza tareas administrativas creando comandos como python manage.py cargar_estudiantes_demo.</p>
@@ -21868,7 +22795,29 @@ class Command(BaseCommand):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto tiene un comando propio disponible desde manage.py.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#template-tags"><small>← ANTERIOR</small><strong>Template tags y filtros personalizados</strong></a><a class="lesson-pager-link next" href="#usuario-personalizado"><small>SIGUIENTE →</small><strong>Usuario personalizado y perfiles: una decisión que conviene tomar al inicio</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="usuario-personalizado" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="management-commands">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Crea un comando de resumen</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="management-commands" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea `python manage.py resumen_estudiantes` que muestre total, activos e inactivos.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega una opción `--programa` para filtrar el resumen.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#template-tags"><small>← ANTERIOR</small><strong>Template tags y filtros personalizados</strong></a><a class="lesson-pager-link next" href="#usuario-personalizado"><small>SIGUIENTE →</small><strong>Usuario personalizado y perfiles: una decisión que conviene tomar al inicio</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="usuario-personalizado" style="--section-accent:var(--django-green);">
 <div class="section-kicker">37 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Usuario personalizado y perfiles: una decisión que conviene tomar al inicio</h2>
 <p class="lead">Aprende la diferencia entre reemplazar AUTH_USER_MODEL y extender al usuario existente sin romper un proyecto avanzado.</p>
@@ -21946,7 +22895,29 @@ el modelo de usuario a mitad del historial de migraciones.</pre>
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>Los usuarios pueden tener datos adicionales sin reemplazar AUTH_USER_MODEL a mitad del curso.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#management-commands"><small>← ANTERIOR</small><strong>Comandos propios de manage.py</strong></a><a class="lesson-pager-link next" href="#password-reset"><small>SIGUIENTE →</small><strong>Recuperación y cambio de contraseña</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="password-reset" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="usuario-personalizado">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Diseña el perfil de usuario</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="usuario-personalizado" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Define qué datos deberían pertenecer al usuario y cuáles a un perfil separado.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega un campo simple al perfil y muéstralo después del login.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#management-commands"><small>← ANTERIOR</small><strong>Comandos propios de manage.py</strong></a><a class="lesson-pager-link next" href="#password-reset"><small>SIGUIENTE →</small><strong>Recuperación y cambio de contraseña</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="password-reset" style="--section-accent:var(--django-green);">
 <div class="section-kicker">38 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Recuperación y cambio de contraseña</h2>
 <p class="lead">Aprovecha las Views de autenticación que Django ya trae para un flujo de recuperación de contraseña.</p>
@@ -22026,7 +22997,29 @@ urlpatterns += [
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto dispone del flujo estándar de restablecimiento de contraseña.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#usuario-personalizado"><small>← ANTERIOR</small><strong>Usuario personalizado y perfiles: una decisión que conviene tomar al inicio</strong></a><a class="lesson-pager-link next" href="#email"><small>SIGUIENTE →</small><strong>Correo en Django 6.1: MAILERS y send_mail()</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="email" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="password-reset">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Prueba el flujo completo de recuperación</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="password-reset" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Configura el backend de correo de consola y recorre el proceso de recuperar contraseña.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Identifica qué URL/token cambia entre una solicitud y otra.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#usuario-personalizado"><small>← ANTERIOR</small><strong>Usuario personalizado y perfiles: una decisión que conviene tomar al inicio</strong></a><a class="lesson-pager-link next" href="#email"><small>SIGUIENTE →</small><strong>Correo en Django 6.1: MAILERS y send_mail()</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="email" style="--section-accent:var(--django-green);">
 <div class="section-kicker">39 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Correo en Django 6.1: MAILERS y send_mail()</h2>
 <p class="lead">Envía notificaciones usando la configuración de correo actual de Django 6.1 y un backend seguro para desarrollo.</p>
@@ -22101,7 +23094,29 @@ def enviar_bienvenida(estudiante):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto tiene una capa de notificaciones preparada para cambiar de backend.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#password-reset"><small>← ANTERIOR</small><strong>Recuperación y cambio de contraseña</strong></a><a class="lesson-pager-link next" href="#cache"><small>SIGUIENTE →</small><strong>Caché: reutilizar resultados seguros</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="cache" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="email">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Envía un correo de prueba</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="email" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea una View o comando que envíe un correo de bienvenida con `send_mail()`.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Cambia el backend para que en desarrollo escriba los correos en consola o archivos.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#password-reset"><small>← ANTERIOR</small><strong>Recuperación y cambio de contraseña</strong></a><a class="lesson-pager-link next" href="#cache"><small>SIGUIENTE →</small><strong>Caché: reutilizar resultados seguros</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="cache" style="--section-accent:var(--django-green);">
 <div class="section-kicker">40 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Caché: reutilizar resultados seguros</h2>
 <p class="lead">Reduce trabajo repetido guardando temporalmente respuestas o valores que no cambian en cada Request.</p>
@@ -22176,7 +23191,29 @@ def estadisticas_publicas(request):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto puede reutilizar respuestas públicas durante un tiempo configurable.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#email"><small>← ANTERIOR</small><strong>Correo en Django 6.1: MAILERS y send_mail()</strong></a><a class="lesson-pager-link next" href="#logging"><small>SIGUIENTE →</small><strong>Logging: registrar lo que ocurre en producción</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="logging" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="cache">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Mide el efecto de la caché</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="cache" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Aplica caché temporal a una View de lectura y observa cuándo se reutiliza la respuesta.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega un valor dependiente del usuario y explica por qué no debería compartirse indiscriminadamente.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#email"><small>← ANTERIOR</small><strong>Correo en Django 6.1: MAILERS y send_mail()</strong></a><a class="lesson-pager-link next" href="#logging"><small>SIGUIENTE →</small><strong>Logging: registrar lo que ocurre en producción</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="logging" style="--section-accent:var(--django-green);">
 <div class="section-kicker">41 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Logging: registrar lo que ocurre en producción</h2>
 <p class="lead">Deja trazas útiles para diagnosticar acciones y errores sin llenar el código de print().</p>
@@ -22254,7 +23291,29 @@ logger.info("Estudiante creado", extra={"estudiante_id": estudiante.pk})</pre>
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto genera trazas configurables y útiles para diagnóstico.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#cache"><small>← ANTERIOR</small><strong>Caché: reutilizar resultados seguros</strong></a><a class="lesson-pager-link next" href="#i18n-timezones"><small>SIGUIENTE →</small><strong>Internacionalización y zonas horarias</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="i18n-timezones" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="logging">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Registra una acción importante</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="logging" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea un logger para registrar cuándo se elimina un estudiante.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Incluye `pk`, usuario y nivel de log apropiado.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#cache"><small>← ANTERIOR</small><strong>Caché: reutilizar resultados seguros</strong></a><a class="lesson-pager-link next" href="#i18n-timezones"><small>SIGUIENTE →</small><strong>Internacionalización y zonas horarias</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="i18n-timezones" style="--section-accent:var(--django-green);">
 <div class="section-kicker">42 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Internacionalización y zonas horarias</h2>
 <p class="lead">Prepara textos traducibles y fechas conscientes de zona horaria.</p>
@@ -22329,7 +23388,29 @@ Nota: las herramientas gettext deben estar instaladas en el sistema.</pre>
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>La app está preparada para traducciones y fechas con zona horaria.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#logging"><small>← ANTERIOR</small><strong>Logging: registrar lo que ocurre en producción</strong></a><a class="lesson-pager-link next" href="#async-asgi"><small>SIGUIENTE →</small><strong>Async y ASGI: Views asíncronas</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="async-asgi" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="i18n-timezones">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Traduce una cadena y revisa una fecha</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="i18n-timezones" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Marca una cadena con `gettext` y muestra una fecha usando la zona horaria configurada.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Cambia temporalmente `LANGUAGE_CODE` o `TIME_ZONE` y observa el resultado.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#logging"><small>← ANTERIOR</small><strong>Logging: registrar lo que ocurre en producción</strong></a><a class="lesson-pager-link next" href="#async-asgi"><small>SIGUIENTE →</small><strong>Async y ASGI: Views asíncronas</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="async-asgi" style="--section-accent:var(--django-green);">
 <div class="section-kicker">43 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Async y ASGI: Views asíncronas</h2>
 <p class="lead">Conoce cuándo Django puede esperar operaciones sin bloquear el mismo flujo de ejecución.</p>
@@ -22395,7 +23476,29 @@ async def estado_async(request):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto contiene un endpoint asíncrono compatible con ASGI.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#i18n-timezones"><small>← ANTERIOR</small><strong>Internacionalización y zonas horarias</strong></a><a class="lesson-pager-link next" href="#fixtures"><small>SIGUIENTE →</small><strong>Fixtures y datos iniciales</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="fixtures" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="async-asgi">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Crea una View async sencilla</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="async-asgi" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Implementa una View `async def` que devuelva una respuesta simple.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Identifica qué operación dentro de tu proyecto seguiría siendo síncrona.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#i18n-timezones"><small>← ANTERIOR</small><strong>Internacionalización y zonas horarias</strong></a><a class="lesson-pager-link next" href="#fixtures"><small>SIGUIENTE →</small><strong>Fixtures y datos iniciales</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="fixtures" style="--section-accent:var(--django-green);">
 <div class="section-kicker">44 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Fixtures y datos iniciales</h2>
 <p class="lead">Exporta e importa conjuntos de datos de prueba usando herramientas integradas de Django.</p>
@@ -22457,7 +23560,29 @@ python manage.py loaddata programas</pre>
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto puede restaurar datos de ejemplo con un comando.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#async-asgi"><small>← ANTERIOR</small><strong>Async y ASGI: Views asíncronas</strong></a><a class="lesson-pager-link next" href="#serializacion"><small>SIGUIENTE →</small><strong>Serialización nativa: convertir QuerySets a formatos transportables</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="serializacion" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="fixtures">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Crea datos reutilizables</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="fixtures" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Exporta algunos programas con `dumpdata` y vuelve a cargarlos en una base limpia con `loaddata`.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Edita una fixture de forma controlada y documenta qué cambiaste.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#async-asgi"><small>← ANTERIOR</small><strong>Async y ASGI: Views asíncronas</strong></a><a class="lesson-pager-link next" href="#serializacion"><small>SIGUIENTE →</small><strong>Serialización nativa: convertir QuerySets a formatos transportables</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="serializacion" style="--section-accent:var(--django-green);">
 <div class="section-kicker">45 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Serialización nativa: convertir QuerySets a formatos transportables</h2>
 <p class="lead">Conoce el serializador integrado de Django además de JsonResponse.</p>
@@ -22527,7 +23652,29 @@ def exportar_estudiantes(request):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>La app puede serializar objetos Django con herramientas del core.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#fixtures"><small>← ANTERIOR</small><strong>Fixtures y datos iniciales</strong></a><a class="lesson-pager-link next" href="#contenttypes"><small>SIGUIENTE →</small><strong>ContentTypes y relaciones genéricas</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="contenttypes" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="serializacion">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Serializa un conjunto pequeño</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="serializacion" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Serializa varios estudiantes a JSON usando las herramientas nativas de Django.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Compara ese JSON con el producido por tu `JsonResponse` de la API.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#fixtures"><small>← ANTERIOR</small><strong>Fixtures y datos iniciales</strong></a><a class="lesson-pager-link next" href="#contenttypes"><small>SIGUIENTE →</small><strong>ContentTypes y relaciones genéricas</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="contenttypes" style="--section-accent:var(--django-green);">
 <div class="section-kicker">46 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>ContentTypes y relaciones genéricas</h2>
 <p class="lead">Entiende cómo Django puede relacionar un registro con objetos de distintos Models usando el framework contenttypes.</p>
@@ -22593,7 +23740,29 @@ class Actividad(models.Model):
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto demuestra cómo ContentTypes identifica objetos de distintos Models.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#serializacion"><small>← ANTERIOR</small><strong>Serialización nativa: convertir QuerySets a formatos transportables</strong></a><a class="lesson-pager-link next" href="#sitemaps-feeds"><small>SIGUIENTE →</small><strong>Sitemaps y feeds: utilidades web incluidas en Django</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="sitemaps-feeds" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="contenttypes">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Explora ContentType</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="contenttypes" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Desde Django shell, obtiene el `ContentType` correspondiente a Estudiante.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Usa `get_model()` y explica cuándo una relación genérica podría ser útil.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#serializacion"><small>← ANTERIOR</small><strong>Serialización nativa: convertir QuerySets a formatos transportables</strong></a><a class="lesson-pager-link next" href="#sitemaps-feeds"><small>SIGUIENTE →</small><strong>Sitemaps y feeds: utilidades web incluidas en Django</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="sitemaps-feeds" style="--section-accent:var(--django-green);">
 <div class="section-kicker">47 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Sitemaps y feeds: utilidades web incluidas en Django</h2>
 <p class="lead">Conoce dos frameworks integrados para exponer URLs indexables y contenido sindicado.</p>
@@ -22695,7 +23864,29 @@ urlpatterns += [
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto demuestra dos utilidades web adicionales del core de Django.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#contenttypes"><small>← ANTERIOR</small><strong>ContentTypes y relaciones genéricas</strong></a><a class="lesson-pager-link next" href="#seguridad-avanzada"><small>SIGUIENTE →</small><strong>Seguridad avanzada: HTTPS, cookies, HSTS y cabeceras</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="seguridad-avanzada" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="sitemaps-feeds">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Publica una utilidad web</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="sitemaps-feeds" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Crea un sitemap sencillo para una página pública o un feed con elementos recientes.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Abre la URL generada y revisa su estructura XML.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#contenttypes"><small>← ANTERIOR</small><strong>ContentTypes y relaciones genéricas</strong></a><a class="lesson-pager-link next" href="#seguridad-avanzada"><small>SIGUIENTE →</small><strong>Seguridad avanzada: HTTPS, cookies, HSTS y cabeceras</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="seguridad-avanzada" style="--section-accent:var(--django-green);">
 <div class="section-kicker">48 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Seguridad avanzada: HTTPS, cookies, HSTS y cabeceras</h2>
 <p class="lead">Distingue seguridad de desarrollo y endurecimiento de producción usando settings propios de Django.</p>
@@ -22769,7 +23960,29 @@ SECURE_HSTS_SECONDS = 0 if DEBUG else 3600</pre>
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El proyecto distingue claramente seguridad de desarrollo y producción.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#sitemaps-feeds"><small>← ANTERIOR</small><strong>Sitemaps y feeds: utilidades web incluidas en Django</strong></a><a class="lesson-pager-link next" href="#optimizacion-orm"><small>SIGUIENTE →</small><strong>Optimización ORM: menos consultas y consultas más precisas</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="optimizacion-orm" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="seguridad-avanzada">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Revisa cabeceras de seguridad</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="seguridad-avanzada" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Con `DEBUG=False` en un entorno de prueba, revisa cookies seguras, HSTS y cabeceras importantes.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Anota cuáles dependen de que el sitio use HTTPS real.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#sitemaps-feeds"><small>← ANTERIOR</small><strong>Sitemaps y feeds: utilidades web incluidas en Django</strong></a><a class="lesson-pager-link next" href="#optimizacion-orm"><small>SIGUIENTE →</small><strong>Optimización ORM: menos consultas y consultas más precisas</strong></a></nav></section><section data-course-group="Django intermedio y avanzado" id="optimizacion-orm" style="--section-accent:var(--django-green);">
 <div class="section-kicker">49 · DJANGO INTERMEDIO Y AVANZADO</div>
 <h2>Optimización ORM: menos consultas y consultas más precisas</h2>
 <p class="lead">Aprende a detectar patrones costosos y a pedir a la base de datos exactamente lo que necesitas.</p>
@@ -22851,7 +24064,29 @@ Preguntas:
 <div class="progressive-project-result"><span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span><p>El listado carga relaciones de manera más eficiente y el estudiante sabe inspeccionar el QuerySet.</p></div>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#seguridad-avanzada"><small>← ANTERIOR</small><strong>Seguridad avanzada: HTTPS, cookies, HSTS y cabeceras</strong></a><a class="lesson-pager-link next" href="#testing"><small>SIGUIENTE →</small><strong>Testing: comprobar models, views y URLs</strong></a></nav></section><section data-course-group="Calidad y producción" id="testing" style="--section-accent:var(--django-green);">
+<div class="complementary-activity-card" data-complementary-section="optimizacion-orm">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Cuenta consultas antes y después</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="optimizacion-orm" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Compara un listado con y sin `select_related()` usando una herramienta o el registro de consultas.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Escribe qué relación produjo el problema N+1.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#seguridad-avanzada"><small>← ANTERIOR</small><strong>Seguridad avanzada: HTTPS, cookies, HSTS y cabeceras</strong></a><a class="lesson-pager-link next" href="#testing"><small>SIGUIENTE →</small><strong>Testing: comprobar models, views y URLs</strong></a></nav></section><section data-course-group="Calidad y producción" id="testing" style="--section-accent:var(--django-green);">
 <div class="section-kicker">50 · TESTING</div>
 <h2>Testing: comprobar models, views y URLs</h2>
 <p class="lead">Django trae un framework de pruebas integrado para aislar base de datos y simular requests.</p>
@@ -23062,7 +24297,29 @@ class EstudianteTests(TestCase):
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>Ahora puedes comprobar automáticamente que cambios futuros no rompan funciones esenciales.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#optimizacion-orm"><small>← ANTERIOR</small><strong>Optimización ORM: menos consultas y consultas más precisas</strong></a><a class="lesson-pager-link next" href="#seguridad"><small>SIGUIENTE →</small><strong>Seguridad que el estudiante debe conocer</strong></a></nav></section><section data-course-group="Calidad y producción" id="seguridad" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="testing">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Escribe un test de regresión</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="testing" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Elige un bug o caso importante y crea un test que falle si vuelve a aparecer.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Agrega un test para una URL con `&lt;int:pk&gt;` inexistente y espera 404.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#optimizacion-orm"><small>← ANTERIOR</small><strong>Optimización ORM: menos consultas y consultas más precisas</strong></a><a class="lesson-pager-link next" href="#seguridad"><small>SIGUIENTE →</small><strong>Seguridad que el estudiante debe conocer</strong></a></nav></section><section data-course-group="Calidad y producción" id="seguridad" style="--section-accent:var(--django-green);">
 <div class="section-kicker">51 · SEGURIDAD</div>
 <h2>Seguridad que el estudiante debe conocer</h2>
 <p class="lead">Django ofrece protecciones importantes, pero necesitas configurarlas correctamente y no anularlas por comodidad.</p>
@@ -23302,7 +24559,29 @@ media/</pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El proyecto deja de depender de secretos escritos directamente en el repositorio.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#testing"><small>← ANTERIOR</small><strong>Testing: comprobar models, views y URLs</strong></a><a class="lesson-pager-link next" href="#deploy"><small>SIGUIENTE →</small><strong>Preparar Django para producción</strong></a></nav></section><section data-course-group="Calidad y producción" id="deploy" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="seguridad">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Haz una mini auditoría</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="seguridad" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Revisa `.gitignore`, secretos, CSRF, rutas protegidas y `DEBUG`.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Crea un archivo `AUDITORIA.md` con al menos 5 comprobaciones y su estado.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#testing"><small>← ANTERIOR</small><strong>Testing: comprobar models, views y URLs</strong></a><a class="lesson-pager-link next" href="#deploy"><small>SIGUIENTE →</small><strong>Preparar Django para producción</strong></a></nav></section><section data-course-group="Calidad y producción" id="deploy" style="--section-accent:var(--django-green);">
 <div class="section-kicker">52 · DESPLIEGUE</div>
 <h2>Preparar Django para producción</h2>
 <p class="lead">Pasa de runserver a un entorno donde seguridad, static files, base de datos y servidor estén configurados conscientemente.</p>
@@ -23516,7 +24795,29 @@ STATIC_ROOT = BASE_DIR / "staticfiles"</pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El proyecto queda documentado y preparado para una plataforma de despliegue.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#seguridad"><small>← ANTERIOR</small><strong>Seguridad que el estudiante debe conocer</strong></a><a class="lesson-pager-link next" href="#proyecto-final"><small>SIGUIENTE →</small><strong>Proyecto final: Sistema de estudiantes</strong></a></nav></section><section data-course-group="Proyecto final" id="proyecto-final" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="deploy">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Simula una instalación limpia</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="deploy" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>En otra carpeta o entorno virtual, intenta levantar el proyecto usando solo el repositorio y README.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Anota cualquier paso que faltó y corrige `README_DEPLOY.md`.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#seguridad"><small>← ANTERIOR</small><strong>Seguridad que el estudiante debe conocer</strong></a><a class="lesson-pager-link next" href="#proyecto-final"><small>SIGUIENTE →</small><strong>Proyecto final: Sistema de estudiantes</strong></a></nav></section><section data-course-group="Proyecto final" id="proyecto-final" style="--section-accent:var(--django-green);">
 <div class="section-kicker">53 · PROYECTO FINAL</div>
 <h2>Proyecto final: Sistema de estudiantes</h2>
 <p class="lead">Integra el CRUD principal y relaciona también ORM avanzado, validación, seguridad, rendimiento y utilidades del framework.</p>
@@ -23832,7 +25133,29 @@ STATIC_ROOT = BASE_DIR / "staticfiles"</pre>
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
 <p>El proyecto acumulativo queda listo como entrega final del curso.</p>
 </div>
-</div></div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#deploy"><small>← ANTERIOR</small><strong>Preparar Django para producción</strong></a><a class="lesson-pager-link next" href="#proyecto-desde-cero"><small>SIGUIENTE →</small><strong>Proyecto final desde cero: Sistema de estudiantes</strong></a></nav></section><section data-course-group="Proyecto final" id="proyecto-desde-cero" style="--section-accent:var(--django-green);">
+</div></div><div class="complementary-activity-card" data-complementary-section="proyecto-final">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Explica una funcionalidad de punta a punta</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="proyecto-final" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>Escoge Crear estudiante y documenta qué archivos participan desde la URL hasta el guardado y el redirect.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Haz lo mismo con Editar o Eliminar sin mirar la guía.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#deploy"><small>← ANTERIOR</small><strong>Preparar Django para producción</strong></a><a class="lesson-pager-link next" href="#proyecto-desde-cero"><small>SIGUIENTE →</small><strong>Proyecto final desde cero: Sistema de estudiantes</strong></a></nav></section><section data-course-group="Proyecto final" id="proyecto-desde-cero" style="--section-accent:var(--django-green);">
 <div class="section-kicker">54 · PROYECTO FINAL DESDE CERO</div>
 <h2>Proyecto final desde cero: Sistema de estudiantes</h2>
 <p class="lead">
@@ -24624,7 +25947,29 @@ python -m pip freeze &gt; requirements.txt</pre>
 <span>✓ README</span>
 </div>
 </div>
-<nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#proyecto-final"><small>← ANTERIOR</small><strong>Proyecto final: Sistema de estudiantes</strong></a></nav></section></main>
+<div class="complementary-activity-card" data-complementary-section="proyecto-desde-cero">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Reconstruye una parte sin copiar</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="proyecto-desde-cero" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>En el proyecto nuevo, implementa una funcionalidad completa sin copiar directamente del anterior.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Después compara ambos proyectos y escribe qué decisiones mejorarías.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#proyecto-final"><small>← ANTERIOR</small><strong>Proyecto final: Sistema de estudiantes</strong></a></nav></section></main>
 </div>
 <button class="mobile-menu" id="menuBtn" type="button">☰</button>
 <div class="toolbar">
@@ -25041,6 +26386,30 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   refreshProgressiveProject();
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const prefix = 'django-academy-complementary-';
+  document.querySelectorAll('[data-complementary-done]').forEach(function (button) {
+    const id = button.dataset.complementaryDone;
+    const key = prefix + id;
+
+    function refresh() {
+      const done = localStorage.getItem(key) === '1';
+      button.classList.toggle('is-complete', done);
+      button.textContent = done ? '✓ Completada' : '○ Pendiente';
+    }
+
+    button.addEventListener('click', function () {
+      const done = localStorage.getItem(key) === '1';
+      localStorage.setItem(key, done ? '0' : '1');
+      refresh();
+    });
+
+    refresh();
+  });
 });
 </script>
 </body></html>

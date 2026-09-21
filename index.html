@@ -14911,7 +14911,7 @@ body.theme-dark .views-no-template-yet p{
 }
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><link href="https://unpkg.com/tippy.js@6/animations/shift-away.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css" rel="stylesheet"/>
-<meta content="27" name="django-academy-version"/>
+<meta content="28" name="django-academy-version"/>
 </head><body>
 <div class="progress-top" id="progressTop"></div>
 <div class="layout">
@@ -19291,7 +19291,7 @@ urlpatterns = [
 <div class="mini-browser">
 <div class="mini-browser-bar">
 <i></i><i></i><i></i>
-<span>localhost:8000/estudiantes/demo/hora/</span>
+<span>localhost:8000/estudiantes/hora/</span>
 </div>
 <div class="mini-browser-body">
 <div class="preview-centered">
@@ -19313,7 +19313,7 @@ urlpatterns = [
 <div>
 <span>ESTA LECCIÓN SE CONCENTRA EN LA RESPONSE</span>
 <strong>Aquí la View recibe una petición, ejecuta Python y responde.</strong>
-<p>En Enrutamiento aprendiste cómo Django encuentra una View. Ahora estudiarás qué puede hacer esa View una vez que recibe el request.</p>
+<p>En Enrutamiento aprendiste cómo Django encuentra una View. Ahora crearás varias Views sencillas con nombres reales para observar diferentes tipos de respuesta.</p>
 </div>
 </div><div class="easy-dictionary">
 <div class="easy-dictionary-title">📘 Diccionario rápido de esta sección</div>
@@ -19335,22 +19335,22 @@ urlpatterns = [
 <div class="example-access-main">
 <span>RUTA PARA PROBAR ESTE EJEMPLO</span>
 <strong>Navegador</strong>
-<code>http://127.0.0.1:8000/estudiantes/demo/saludo/</code>
-<p>La View ejecuta Python y devuelve texto directamente al navegador.</p>
+<code>http://127.0.0.1:8000/estudiantes/saludo/</code>
+<p>Esta View devuelve un HttpResponse sencillo directamente al navegador.</p>
 <div class="example-access-prereq">
 <b>Antes:</b> asegúrate de tener ejecutándose <code>python manage.py runserver</code>.
             </div>
 </div>
-<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/demo/saludo/" rel="noopener" target="_blank">Abrir ruta ↗</a>
+<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/saludo/" rel="noopener" target="_blank">Abrir ruta ↗</a>
 </div>
 <div class="codebox">
 <div class="codehead"><span>estudiantes/views.py</span></div>
-<pre><code>from django.http import HttpResponse
+<pre>from django.http import HttpResponse
 
-def saludo_demo(request):
+def saludo(request):
     return HttpResponse(
         "Hola 👋 Esta respuesta viene de una View."
-    )</code></pre>
+    )</pre>
 </div>
 <div class="interaction-live-preview">
 <div class="interaction-preview-head">
@@ -19358,7 +19358,7 @@ def saludo_demo(request):
 <small>La view respondió texto directamente.</small>
 </div>
 <div class="mini-browser">
-<div class="mini-browser-bar"><i></i><i></i><i></i><span>localhost:8000/estudiantes/demo/saludo/</span></div>
+<div class="mini-browser-bar"><i></i><i></i><i></i><span>localhost:8000/estudiantes/saludo/</span></div>
 <div class="mini-browser-body"><div class="preview-centered">
 <div class="preview-card"><span class="django-preview-badge">Django View</span><h4>Hola 👋 Esta respuesta viene de una View.</h4><p>La View devolvió directamente un HttpResponse.</p></div>
 </div></div>
@@ -19382,25 +19382,25 @@ def saludo_demo(request):
 <div class="example-access-main">
 <span>RUTA PARA PROBAR ESTE EJEMPLO</span>
 <strong>Navegador</strong>
-<code>http://127.0.0.1:8000/estudiantes/demo/hora/</code>
-<p>Cada vez que recargas, Python calcula la hora actual y la View devuelve un nuevo HttpResponse.</p>
+<code>http://127.0.0.1:8000/estudiantes/hora/</code>
+<p>Cada vez que recargas, Python calcula la hora actual y la View construye una nueva Response.</p>
 <div class="example-access-prereq">
 <b>Antes:</b> asegúrate de tener ejecutándose <code>python manage.py runserver</code>.
             </div>
 </div>
-<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/demo/hora/" rel="noopener" target="_blank">Abrir ruta ↗</a>
+<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/hora/" rel="noopener" target="_blank">Abrir ruta ↗</a>
 </div>
 <div class="codebox">
 <div class="codehead"><span>estudiantes/views.py</span></div>
-<pre><code>from datetime import datetime
+<pre>from datetime import datetime
 from django.http import HttpResponse
 
-def hora_demo(request):
+def hora_actual(request):
     ahora = datetime.now().strftime("%H:%M:%S")
 
     return HttpResponse(
         f"Hora del servidor: {ahora}"
-    )</code></pre>
+    )</pre>
 </div><div class="views-dynamic-response-explainer">
 <div class="views-dynamic-head">
 <span>🔎 ¿QUÉ CAMBIÓ?</span>
@@ -19411,7 +19411,7 @@ def hora_demo(request):
 <b>1</b>
 <div>
 <strong>Entra el request</strong>
-<p>Django ejecuta <code>hora_demo(request)</code>.</p>
+<p>Django ejecuta <code>hora_actual(request)</code>.</p>
 </div>
 </article>
 <span>→</span>
@@ -19459,20 +19459,20 @@ def hora_demo(request):
 <div class="example-access-main">
 <span>RUTA PARA PROBAR ESTE EJEMPLO</span>
 <strong>Navegador</strong>
-<code>http://127.0.0.1:8000/estudiantes/demo/volver/</code>
-<p>Al abrir esta ruta no verás una página demo: Django responderá con una redirección hacia /estudiantes/.</p>
+<code>http://127.0.0.1:8000/estudiantes/volver/</code>
+<p>Al abrir esta ruta, Django responde con una redirección hacia la lista de estudiantes.</p>
 <div class="example-access-prereq">
 <b>Antes:</b> asegúrate de tener ejecutándose <code>python manage.py runserver</code>.
             </div>
 </div>
-<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/demo/volver/" rel="noopener" target="_blank">Abrir ruta ↗</a>
+<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/volver/" rel="noopener" target="_blank">Abrir ruta ↗</a>
 </div>
 <div class="codebox">
 <div class="codehead"><span>estudiantes/views.py</span></div>
-<pre><code>from django.shortcuts import redirect
+<pre>from django.shortcuts import redirect
 
-def volver_demo(request):
-    return redirect("estudiantes:lista")</code></pre>
+def volver_lista(request):
+    return redirect("estudiantes:lista")</pre>
 </div>
 <div class="deep-concepts-grid"><article class="deep-concept">
 <h4>HttpResponse</h4>
@@ -19504,24 +19504,24 @@ def volver_demo(request):
 <div class="example-access-main">
 <span>RUTA PARA PROBAR ESTE EJEMPLO</span>
 <strong>Navegador</strong>
-<code>http://127.0.0.1:8000/estudiantes/demo/buscar/?q=ana</code>
+<code>http://127.0.0.1:8000/estudiantes/buscar/?q=ana</code>
 <p>Cambia ana por otro texto y observa cómo la View recibe el valor de ?q=.</p>
 <div class="example-access-prereq">
 <b>Antes:</b> asegúrate de tener ejecutándose <code>python manage.py runserver</code>.
             </div>
 </div>
-<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/demo/buscar/?q=ana" rel="noopener" target="_blank">Abrir ruta ↗</a>
+<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/buscar/?q=ana" rel="noopener" target="_blank">Abrir ruta ↗</a>
 </div><div class="views-get-demo">
 <div class="codebox">
 <div class="codehead"><span>estudiantes/views.py</span></div>
-<pre><code>from django.http import HttpResponse
+<pre>from django.http import HttpResponse
 
-def buscar_demo(request):
+def buscar(request):
     termino = request.GET.get("q", "")
 
     return HttpResponse(
         f"Buscaste: {termino}"
-    )</code></pre>
+    )</pre>
 </div>
 <div class="views-query-explainer">
 <article>
@@ -19591,8 +19591,8 @@ def buscar_demo(request):
 <div class="progressive-project-head">
 <div>
 <span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
-<h3>Practica decisiones de una View usando solo Responses</h3>
-<p>En esta lección todavía no creamos Responses. Practica cuatro respuestas distintas con <code>HttpResponse</code>, <code>redirect()</code> y datos de <code>request.GET</code>.</p>
+<h3>Practica diferentes decisiones de una View usando Responses</h3>
+<p>Conserva las Views principales del proyecto y agrega cuatro Views sencillas para practicar HttpResponse, lógica Python, redirect y request.GET.</p>
 </div>
 <button class="progressive-project-complete" data-project-complete="views" type="button">○ Pendiente</button>
 </div>
@@ -19609,7 +19609,6 @@ def buscar_demo(request):
 from django.http import HttpResponse
 from django.shortcuts import redirect
 
-# Views principales que ya venían de Enrutamiento
 def lista(request):
     return HttpResponse("&lt;h1&gt;Lista de estudiantes&lt;/h1&gt;")
 
@@ -19618,22 +19617,21 @@ def detalle(request, pk):
         f"&lt;h1&gt;Detalle temporal del estudiante {pk}&lt;/h1&gt;"
     )
 
-# Laboratorio de Views
-def saludo_demo(request):
+def saludo(request):
     return HttpResponse(
         "Hola 👋 Esta respuesta viene de una View."
     )
 
-def hora_demo(request):
+def hora_actual(request):
     ahora = datetime.now().strftime("%H:%M:%S")
     return HttpResponse(
         f"Hora del servidor: {ahora}"
     )
 
-def volver_demo(request):
+def volver_lista(request):
     return redirect("estudiantes:lista")
 
-def buscar_demo(request):
+def buscar(request):
     termino = request.GET.get("q", "")
     return HttpResponse(
         f"Buscaste: {termino}"
@@ -19649,41 +19647,39 @@ from . import views
 app_name = "estudiantes"
 
 urlpatterns = [
-    # Rutas principales
     path("", views.lista, name="lista"),
     path("&lt;int:pk&gt;/", views.detalle, name="detalle"),
 
-    # Laboratorio de Views
     path(
-        "demo/saludo/",
-        views.saludo_demo,
-        name="demo-saludo",
+        "saludo/",
+        views.saludo,
+        name="saludo",
     ),
     path(
-        "demo/hora/",
-        views.hora_demo,
-        name="demo-hora",
+        "hora/",
+        views.hora_actual,
+        name="hora",
     ),
     path(
-        "demo/volver/",
-        views.volver_demo,
-        name="demo-volver",
+        "volver/",
+        views.volver_lista,
+        name="volver",
     ),
     path(
-        "demo/buscar/",
-        views.buscar_demo,
-        name="demo-buscar",
+        "buscar/",
+        views.buscar,
+        name="buscar",
     ),
 ]</pre>
 </div></div>
 <div class="project-step-list">
 <span class="project-step-list-title">PASO A PASO · ORDEN SEGURO</span>
-<ol><li><span>1</span><p>Conserva las Views principales <code>lista</code> y <code>detalle</code> que vienen de Enrutamiento.</p></li><li><span>2</span><p>Agrega <code>saludo_demo()</code> para practicar un <code>HttpResponse</code> fijo.</p></li><li><span>3</span><p>Agrega <code>hora_demo()</code> para practicar una Response construida con lógica Python.</p></li><li><span>4</span><p>Agrega <code>volver_demo()</code> para observar una redirección.</p></li><li><span>5</span><p>Agrega <code>buscar_demo()</code> para leer <code>?q=...</code> desde <code>request.GET</code>.</p></li><li><span>6</span><p>Conecta las cuatro rutas <code>demo/...</code> y pruébalas una por una.</p></li></ol>
+<ol><li><span>1</span><p>Conserva las Views principales lista y detalle que vienen de Enrutamiento.</p></li><li><span>2</span><p>Agrega saludo() para practicar un HttpResponse fijo.</p></li><li><span>3</span><p>Agrega hora_actual() para construir una Response usando lógica Python.</p></li><li><span>4</span><p>Agrega volver_lista() para practicar redirect().</p></li><li><span>5</span><p>Agrega buscar() para leer ?q=... desde request.GET.</p></li><li><span>6</span><p>Conecta las cuatro rutas y pruébalas una por una.</p></li></ol>
 </div>
 <div class="project-verification-access">
 <span>🌐 RUTA PARA COMPROBAR EL CAMBIO</span>
-<code>http://127.0.0.1:8000/estudiantes/demo/saludo/</code>
-<p>Después prueba demo/hora/, demo/volver/ y demo/buscar/?q=ana.</p>
+<code>http://127.0.0.1:8000/estudiantes/saludo/</code>
+<p>Después prueba /estudiantes/hora/, /estudiantes/volver/ y /estudiantes/buscar/?q=ana.</p>
 </div>
 <div class="project-health-check">
 <span>🩺 CHECKPOINT ANTES DE CONTINUAR</span>
@@ -19692,7 +19688,7 @@ urlpatterns = [
 </div>
 <div class="progressive-project-result">
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
-<p>La sección Views termina sin usar Responses: todas las respuestas se producen desde Python.</p>
+<p>La sección Views termina con cuatro rutas sencillas y reales, con nombres simples y propios del proyecto.</p>
 </div>
 </div></div><div class="complementary-activity-card" data-complementary-section="views">
 <div class="complementary-activity-head">
@@ -30998,3 +30994,874 @@ urlpatterns = [
 </div>
 <a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/" rel="noopener" target="_blank">Abrir ruta ↗</a>
 </div>
+<div class="codebox">
+<div class="codehead"><strong>estudiantes/views.py</strong><span>CRUD con Function-Based Views</span></div>
+<pre>from django.contrib import messages
+from django.shortcuts import get_object_or_404, redirect, render
+from .forms import EstudianteForm
+from .models import Estudiante
+
+def lista(request):
+    estudiantes = Estudiante.objects.select_related("programa")
+    q = request.GET.get("q", "").strip()
+
+    if q:
+        estudiantes = estudiantes.filter(nombre__icontains=q)
+
+    return render(
+        request,
+        "estudiantes/lista.html",
+        {"estudiantes": estudiantes, "q": q}
+    )
+
+def detalle(request, pk):
+    estudiante = get_object_or_404(Estudiante, pk=pk)
+    return render(
+        request,
+        "estudiantes/detalle.html",
+        {"estudiante": estudiante}
+    )
+
+def crear(request):
+    form = EstudianteForm(request.POST or None, request.FILES or None)
+
+    if form.is_valid():
+        form.save()
+        messages.success(request, "Estudiante creado.")
+        return redirect("estudiantes:lista")
+
+    return render(request, "estudiantes/formulario.html", {"form": form})
+
+def editar(request, pk):
+    estudiante = get_object_or_404(Estudiante, pk=pk)
+    form = EstudianteForm(
+        request.POST or None,
+        request.FILES or None,
+        instance=estudiante
+    )
+
+    if form.is_valid():
+        form.save()
+        messages.success(request, "Estudiante actualizado.")
+        return redirect("estudiantes:detalle", pk=pk)
+
+    return render(request, "estudiantes/formulario.html", {"form": form})
+
+def eliminar(request, pk):
+    estudiante = get_object_or_404(Estudiante, pk=pk)
+
+    if request.method == "POST":
+        estudiante.delete()
+        messages.success(request, "Estudiante eliminado.")
+        return redirect("estudiantes:lista")
+
+    return render(
+        request,
+        "estudiantes/confirmar_eliminar.html",
+        {"estudiante": estudiante}
+    )</pre>
+</div>
+</div>
+</details>
+<details class="course-topic" id="final-cero-10-templates">
+<summary>
+<span class="course-topic-num">10</span>
+<span class="course-topic-title">
+<strong>Crear los Templates</strong>
+<small>arma primero base.html y luego las cuatro pantallas del CRUD</small>
+</span>
+</summary>
+<div class="course-topic-body">
+<div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a <strong>Crear los Templates</strong>: arma primero base.html y luego las cuatro pantallas del CRUD. Hazlo con calma y prueba antes de continuar.</p>
+</div><div class="example-access-card browser-access">
+<div class="example-access-icon">🌐</div>
+<div class="example-access-main">
+<span>RUTA PARA PROBAR ESTE EJEMPLO</span>
+<strong>Navegador</strong>
+<code>http://127.0.0.1:8000/estudiantes/</code>
+<p>Comprueba lista, detalle, formulario y confirmación.</p>
+<div class="example-access-prereq">
+<b>Antes:</b> asegúrate de tener ejecutándose <code>python manage.py runserver</code>.
+            </div>
+</div>
+<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/" rel="noopener" target="_blank">Abrir ruta ↗</a>
+</div>
+<div class="final-zero-files">
+<div><code>templates/base.html</code><span>estructura y mensajes.</span></div>
+<div><code>templates/estudiantes/lista.html</code><span>tabla + búsqueda.</span></div>
+<div><code>templates/estudiantes/detalle.html</code><span>ficha individual.</span></div>
+<div><code>templates/estudiantes/formulario.html</code><span>crear / editar.</span></div>
+<div><code>templates/estudiantes/confirmar_eliminar.html</code><span>confirmación segura.</span></div>
+</div>
+<div class="codebox">
+<div class="codehead"><strong>formulario.html</strong><span>mínimo funcional</span></div>
+<pre>{% extends "base.html" %}
+
+{% block content %}
+  &lt;h1&gt;Formulario de estudiante&lt;/h1&gt;
+
+  &lt;form method="post" enctype="multipart/form-data"&gt;
+    {% csrf_token %}
+    {{ form.as_p }}
+    &lt;button type="submit"&gt;Guardar&lt;/button&gt;
+  &lt;/form&gt;
+{% endblock %}</pre>
+</div>
+<div class="callout success">
+<strong>Regla de principiante:</strong>
+<p>haz que funcione primero. Después mejora el CSS.</p>
+</div>
+</div>
+</details>
+<details class="course-topic" id="final-cero-11-auth">
+<summary>
+<span class="course-topic-num">11</span>
+<span class="course-topic-title">
+<strong>Agregar Login y proteger acciones</strong>
+<small>no permitas editar datos sensibles sin autenticación</small>
+</span>
+</summary>
+<div class="course-topic-body">
+<div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a <strong>Agregar Login y proteger acciones</strong>: no permitas editar datos sensibles sin autenticación. Hazlo con calma y prueba antes de continuar.</p>
+</div><div class="example-access-card browser-access">
+<div class="example-access-icon">🌐</div>
+<div class="example-access-main">
+<span>RUTA PARA PROBAR ESTE EJEMPLO</span>
+<strong>Navegador</strong>
+<code>http://127.0.0.1:8000/login/</code>
+<p>Prueba luego una ruta protegida como `/estudiantes/nuevo/`.</p>
+<div class="example-access-prereq">
+<b>Antes:</b> asegúrate de tener ejecutándose <code>python manage.py runserver</code>.
+            </div>
+</div>
+<a class="example-access-open" href="http://127.0.0.1:8000/login/" rel="noopener" target="_blank">Abrir ruta ↗</a>
+</div>
+<div class="codebox">
+<div class="codehead"><strong>config/urls.py</strong><span>login/logout de Django</span></div>
+<pre>from django.contrib.auth.views import LoginView, LogoutView
+
+urlpatterns += [
+    path(
+        "login/",
+        LoginView.as_view(template_name="registration/login.html"),
+        name="login"
+    ),
+    path("logout/", LogoutView.as_view(), name="logout"),
+]</pre>
+</div>
+<div class="codebox">
+<div class="codehead"><strong>estudiantes/views.py</strong><span>proteger acciones</span></div>
+<pre>from django.contrib.auth.decorators import login_required
+
+@login_required
+def crear(request):
+    ...
+
+@login_required
+def editar(request, pk):
+    ...
+
+@login_required
+def eliminar(request, pk):
+    ...</pre>
+</div>
+</div>
+</details>
+<details class="course-topic" id="final-cero-12-busqueda">
+<summary>
+<span class="course-topic-num">12</span>
+<span class="course-topic-title">
+<strong>Agregar búsqueda, filtros y mensajes</strong>
+<small>convierte el CRUD básico en una aplicación más usable</small>
+</span>
+</summary>
+<div class="course-topic-body">
+<div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a <strong>Agregar búsqueda, filtros y mensajes</strong>: convierte el CRUD básico en una aplicación más usable. Hazlo con calma y prueba antes de continuar.</p>
+</div><div class="example-access-card browser-access">
+<div class="example-access-icon">🌐</div>
+<div class="example-access-main">
+<span>RUTA PARA PROBAR ESTE EJEMPLO</span>
+<strong>Navegador</strong>
+<code>http://127.0.0.1:8000/estudiantes/?q=ana</code>
+<p>Cambia `ana` por otro texto para probar búsqueda.</p>
+<div class="example-access-prereq">
+<b>Antes:</b> asegúrate de tener ejecutándose <code>python manage.py runserver</code>.
+            </div>
+</div>
+<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/?q=ana" rel="noopener" target="_blank">Abrir ruta ↗</a>
+</div>
+<div class="final-zero-progress">
+<div><strong>Buscar</strong><span><code>?q=ana</code> filtra por nombre.</span></div>
+<div><strong>Filtrar</strong><span>programa y estado activo.</span></div>
+<div><strong>Mensajes</strong><span>confirma crear, editar y eliminar.</span></div>
+<div><strong>Foto</strong><span>muestra la imagen si existe.</span></div>
+</div>
+<div class="callout">
+<strong>No agregues todo al mismo tiempo.</strong>
+<p>Haz primero búsqueda, prueba; luego filtros, prueba; luego mensajes, prueba.</p>
+</div>
+</div>
+</details>
+<details class="course-topic" id="final-cero-13-api">
+<summary>
+<span class="course-topic-num">13</span>
+<span class="course-topic-title">
+<strong>Crear una API JSON y consumirla</strong>
+<small>reutiliza tus datos desde JavaScript</small>
+</span>
+</summary>
+<div class="course-topic-body">
+<div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a <strong>Crear una API JSON y consumirla</strong>: reutiliza tus datos desde JavaScript. Hazlo con calma y prueba antes de continuar.</p>
+</div><div class="example-access-card browser-access">
+<div class="example-access-icon">🌐</div>
+<div class="example-access-main">
+<span>RUTA PARA PROBAR ESTE EJEMPLO</span>
+<strong>Navegador</strong>
+<code>http://127.0.0.1:8000/estudiantes/api/</code>
+<p>Este es el endpoint usado por `fetch('/estudiantes/api/')` en esta fase.</p>
+<div class="example-access-prereq">
+<b>Antes:</b> asegúrate de tener ejecutándose <code>python manage.py runserver</code>.
+            </div>
+</div>
+<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/api/" rel="noopener" target="_blank">Abrir ruta ↗</a>
+</div>
+<div class="codebox">
+<div class="codehead"><strong>estudiantes/views.py</strong><span>endpoint sencillo</span></div>
+<pre>from django.http import JsonResponse
+
+def api_estudiantes(request):
+    data = list(
+        Estudiante.objects.values(
+            "id",
+            "documento",
+            "nombre",
+            "correo",
+            "activo"
+        )
+    )
+    return JsonResponse({"estudiantes": data})</pre>
+</div>
+<div class="codebox">
+<div class="codehead"><strong>static/js/app.js</strong><span>consumir endpoint</span></div>
+<pre>async function cargarEstudiantes() {
+  const response = await fetch("/estudiantes/api/");
+
+  if (!response.ok) {
+    throw new Error("No se pudieron cargar los estudiantes");
+  }
+
+  const data = await response.json();
+  console.log(data.estudiantes);
+}</pre>
+</div>
+</div>
+</details>
+<details class="course-topic" id="final-cero-14-tests">
+<summary>
+<span class="course-topic-num">14</span>
+<span class="course-topic-title">
+<strong>Crear pruebas antes de terminar</strong>
+<small>comprueba Model, lista, creación y permisos</small>
+</span>
+</summary>
+<div class="course-topic-body">
+<div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a <strong>Crear pruebas antes de terminar</strong>: comprueba Model, lista, creación y permisos. Hazlo con calma y prueba antes de continuar.</p>
+</div><div class="example-access-card terminal-access">
+<div class="example-access-icon">⌨️</div>
+<div class="example-access-main">
+<span>CÓMO PROBAR ESTE EJEMPLO</span>
+<strong>Terminal / PowerShell</strong>
+<code>python manage.py test</code>
+<p>Ejecuta toda la suite desde terminal.</p>
+<div class="example-access-no-url">Este ejemplo <b>no tiene una URL del navegador</b>.</div>
+</div>
+</div>
+<div class="final-zero-checklist">
+<label><input type="checkbox"/> <span>El Model Estudiante tiene un __str__ correcto.</span></label>
+<label><input type="checkbox"/> <span>GET de la lista responde 200.</span></label>
+<label><input type="checkbox"/> <span>POST válido crea un estudiante y redirige.</span></label>
+<label><input type="checkbox"/> <span>Un formulario inválido no guarda.</span></label>
+<label><input type="checkbox"/> <span>Una ruta protegida redirige a login.</span></label>
+</div>
+<div class="codebox">
+<div class="codehead"><strong>Terminal</strong><span>ejecutar pruebas</span></div>
+<pre>python manage.py test</pre>
+</div>
+</div>
+</details>
+<details class="course-topic" id="final-cero-15-entrega">
+<summary>
+<span class="course-topic-num">15</span>
+<span class="course-topic-title">
+<strong>Revisión final y entrega</strong>
+<small>comprueba que el proyecto funciona y que puedes explicarlo</small>
+</span>
+</summary>
+<div class="course-topic-body">
+<div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>En este bloque vas a <strong>Revisión final y entrega</strong>: comprueba que el proyecto funciona y que puedes explicarlo. Hazlo con calma y prueba antes de continuar.</p>
+</div><div class="example-access-card browser-access">
+<div class="example-access-icon">🌐</div>
+<div class="example-access-main">
+<span>RUTA PARA PROBAR ESTE EJEMPLO</span>
+<strong>Navegador</strong>
+<code>http://127.0.0.1:8000/estudiantes/</code>
+<p>Haz la revisión funcional empezando por el listado.</p>
+<div class="example-access-prereq">
+<b>Antes:</b> asegúrate de tener ejecutándose <code>python manage.py runserver</code>.
+            </div>
+</div>
+<a class="example-access-open" href="http://127.0.0.1:8000/estudiantes/" rel="noopener" target="_blank">Abrir ruta ↗</a>
+</div>
+<div class="final-zero-final-check">
+<article>
+<span>01</span>
+<div><strong>Funciona</strong><p>CRUD, login, búsqueda, fotos y API.</p></div>
+</article>
+<article>
+<span>02</span>
+<div><strong>Se entiende</strong><p>puedes explicar URL → View → Form → Model → Template.</p></div>
+</article>
+<article>
+<span>03</span>
+<div><strong>Está probado</strong><p>los tests importantes pasan correctamente.</p></div>
+</article>
+<article>
+<span>04</span>
+<div><strong>Está documentado</strong><p>README con instalación y pasos para ejecutarlo.</p></div>
+</article>
+</div>
+<div class="codebox">
+<div class="codehead"><strong>Últimos comandos</strong><span>antes de entregar</span></div>
+<pre>python manage.py check
+python manage.py test
+python -m pip freeze &gt; requirements.txt</pre>
+</div>
+</div>
+</details>
+<div class="concept-application-detail">
+<div class="concept-apply-head">
+<div><span>🧩 APLICACIÓN DETALLADA AL PROYECTO</span><strong>Reconstrucción desde cero</strong></div>
+<small>APRENDE → APLICA → COMPRUEBA</small>
+</div>
+<div class="concept-apply-why">
+<div class="concept-apply-icon">💡</div>
+<div><span>¿POR QUÉ LO APLICAMOS AQUÍ?</span><p>La prueba final es repetir el proceso sin depender del proyecto ya armado.</p></div>
+</div>
+<div class="concept-apply-file-title">
+<span>📍 ARCHIVO(S) EXACTO(S)</span>
+<p>Relaciona el concepto con estos archivos del mismo proyecto.</p>
+</div>
+<div class="concept-apply-paths"><div><span>📄</span><code>django_estudiantes/</code></div><div><span>📄</span><code>config/settings.py</code></div><div><span>📄</span><code>config/urls.py</code></div><div><span>📄</span><code>estudiantes/models.py</code></div><div><span>📄</span><code>estudiantes/views.py</code></div><div><span>📄</span><code>estudiantes/forms.py</code></div><div><span>📄</span><code>estudiantes/urls.py</code></div><div><span>📄</span><code>templates/</code></div><div><span>📄</span><code>static/</code></div></div>
+<div class="concept-apply-flow">
+<span>🔄 QUÉ PASA POR DETRÁS</span>
+<strong>carpeta vacía → venv → Django → app → CRUD → auth → API → tests</strong>
+</div>
+<div class="concept-apply-steps-wrap">
+<div class="concept-apply-steps-title">
+<span>👣 APLÍCALO PASO A PASO</span>
+<strong>Haz un cambio, guarda, prueba y luego continúa.</strong>
+</div>
+<ol class="concept-apply-steps"><li><span>1</span><p>Crea una carpeta nueva.</p></li><li><span>2</span><p>Sigue las 15 fases.</p></li><li><span>3</span><p>Prueba después de cada fase.</p></li><li><span>4</span><p>Usa el explorador como estructura objetivo.</p></li><li><span>5</span><p>Compara al final con el proyecto del curso.</p></li></ol>
+</div>
+<div class="concept-apply-check">
+<div><span>✅ COMPROBACIÓN</span><strong>¿Cómo sé que entendí?</strong></div>
+<p>El proyecto nuevo debe levantarse usando tu propia documentación.</p>
+</div>
+<div class="concept-apply-connection">
+<strong>🔗 Cómo se conecta con lo anterior</strong>
+<p>No borres lo que ya hiciste. Esta parte modifica o amplía el mismo <code>django_estudiantes</code>. Revisa el explorador de carpetas de la lección para ver exactamente dónde quedó el cambio.</p>
+</div>
+</div><details class="lesson-project-explorer" data-explorer-section="proyecto-desde-cero" open=""><summary><span class="explorer-chevron">▾</span><strong>Explorador del proyecto</strong><code>django_estudiantes/</code><span class="explorer-stage-label">ESTADO EN ESTA LECCIÓN</span></summary><div class="lesson-explorer-body"><div class="lesson-explorer-note"><span>📂 UBÍCATE ANTES DE ESCRIBIR CÓDIGO</span><p>La estructura crece con el curso. En verde aparecen los archivos que modificas ahora.</p></div><div class="lesson-explorer-tree"><div class="lesson-explorer-row type-dir" style="--explorer-level:0"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>django_estudiantes/</code></div><p>Carpeta raíz del proyecto progresivo.</p></div><div class="lesson-explorer-row type-md" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-type-badge badge-md">MD</span><code>README.md</code></div><p>Documentación principal del proyecto.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>docs/</code></div><p>Notas técnicas del curso.</p></div><div class="lesson-explorer-row type-md" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-md">MD</span><code>peticion_web.md</code></div><p>Request, Response, GET y POST.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>prototipo_estudiantes.py</code></div><p>Prototipo Python previo a Django.</p></div><div class="lesson-explorer-row type-env" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-type-badge badge-env">ENV</span><code>.venv/</code></div><p>Entorno virtual local; no se edita manualmente.</p></div><div class="lesson-explorer-row type-txt" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-type-badge badge-txt">TXT</span><code>requirements.txt</code></div><p>Dependencias Python.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>manage.py</code></div><p>Comandos del proyecto.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>config/</code></div><p>Configuración global.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>__init__.py</code></div><p>Paquete Python.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>settings.py</code></div><p>Configuración global.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>urls.py</code></div><p>URLs raíz.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>asgi.py</code></div><p>Entrada ASGI.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>wsgi.py</code></div><p>Entrada WSGI.</p></div><div class="lesson-explorer-row type-md" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-md">MD</span><code>mvt.md</code></div><p>Mapa MVT.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>estudiantes/</code></div><p>App principal.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>__init__.py</code></div><p>Paquete Python.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>admin.py</code></div><p>Admin.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>apps.py</code></div><p>AppConfig.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>models.py</code></div><p>Models.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>tests.py</code></div><p>Tests.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>views.py</code></div><p>Views.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>urls.py</code></div><p>URLs de la app.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>migrations/</code></div><p>Historial del esquema.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>__init__.py</code></div><p>Paquete de migraciones.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>0001_initial.py</code></div><p>Primera migración.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>templates/</code></div><p>Templates globales.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>base.html</code></div><p>Base HTML.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>estudiantes/</code></div><p>Templates de estudiantes.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>lista.html</code></div><p>Listado.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>static/</code></div><p>Static files.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>css/</code></div><p>CSS.</p></div><div class="lesson-explorer-row type-css" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-css">CSS</span><code>app.css</code></div><p>Estilos.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>forms.py</code></div><p>Forms y validación.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>formulario.html</code></div><p>Formulario.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>detalle.html</code></div><p>Detalle.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>confirmar_eliminar.html</code></div><p>Confirmación de borrado.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>registration/</code></div><p>Templates de autenticación.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>login.html</code></div><p>Login.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>media/</code></div><p>Archivos subidos.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>estudiantes/</code></div><p>Fotos de estudiantes.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>middleware.py</code></div><p>Middleware propio.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>signals.py</code></div><p>Signals.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>js/</code></div><p>JavaScript.</p></div><div class="lesson-explorer-row type-js" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-js">JS</span><code>app.js</code></div><p>fetch y UI.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>services.py</code></div><p>Lógica de negocio/transacciones.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>editar_varios.html</code></div><p>Formset de edición masiva.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>templatetags/</code></div><p>Tags y filtros propios.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>__init__.py</code></div><p>Paquete de template tags.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>estudiantes_extras.py</code></div><p>Filtros personalizados.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>management/</code></div><p>Comandos manage.py propios.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>__init__.py</code></div><p>Paquete management.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>commands/</code></div><p>Comandos propios.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:4"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>__init__.py</code></div><p>Paquete commands.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:4"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>cargar_estudiantes_demo.py</code></div><p>Comando de datos demo.</p></div><div class="lesson-explorer-row type-md" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-md">MD</span><code>usuario_personalizado.md</code></div><p>Decisión Custom User vs perfil.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>password_reset_form.html</code></div><p>Flujo de recuperación de contraseña.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>password_reset_done.html</code></div><p>Flujo de recuperación de contraseña.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>password_reset_confirm.html</code></div><p>Flujo de recuperación de contraseña.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>password_reset_complete.html</code></div><p>Flujo de recuperación de contraseña.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>notificaciones.py</code></div><p>Notificaciones por correo.</p></div><div class="lesson-explorer-row type-md" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-md">MD</span><code>i18n.md</code></div><p>Comandos y notas de traducción.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>fixtures/</code></div><p>Fixtures.</p></div><div class="lesson-explorer-row type-json" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-json">JSON</span><code>programas.json</code></div><p>Datos iniciales.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>sitemaps.py</code></div><p>Sitemap.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>feeds.py</code></div><p>RSS/Atom Feed.</p></div><div class="lesson-explorer-row type-md" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-md">MD</span><code>orm_rendimiento.md</code></div><p>Notas de rendimiento ORM.</p></div><div class="lesson-explorer-row type-env" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-type-badge badge-env">ENV</span><code>.env.example</code></div><p>Variables de entorno de ejemplo.</p></div><div class="lesson-explorer-row type-cfg" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-type-badge badge-cfg">CFG</span><code>.gitignore</code></div><p>Exclusiones Git.</p></div><div class="lesson-explorer-row type-md" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-type-badge badge-md">MD</span><code>README_DEPLOY.md</code></div><p>Guía de despliegue.</p></div></div><div class="lesson-explorer-legend"><span><i class="legend-current"></i> Lo modificas ahora</span><span><i class="legend-existing"></i> Ya existía</span></div></div></details><div class="final-zero-delivery">
+<div>
+<span>🏆 ENTREGA FINAL</span>
+<h3>¿Qué debe entregar el estudiante?</h3>
+<p>Proyecto funcionando + código organizado + README + capturas + explicación oral del flujo completo.</p>
+</div>
+<div class="final-zero-delivery-items">
+<span>✓ CRUD completo</span>
+<span>✓ Login y permisos</span>
+<span>✓ Búsqueda y filtros</span>
+<span>✓ Foto / media</span>
+<span>✓ API JSON</span>
+<span>✓ Tests</span>
+<span>✓ requirements.txt</span>
+<span>✓ README</span>
+</div>
+</div>
+<div class="complementary-activity-card" data-complementary-section="proyecto-desde-cero">
+<div class="complementary-activity-head">
+<div>
+<span>🌟 ACTIVIDAD COMPLEMENTARIA</span>
+<strong>Reconstruye una parte sin copiar</strong>
+</div>
+<button class="complementary-done-btn" data-complementary-done="proyecto-desde-cero" type="button">○ Pendiente</button>
+</div>
+<div class="complementary-activity-body">
+<div class="complementary-main-task">
+<span>🟡 PARA REFORZAR LA LECCIÓN</span>
+<p>En el proyecto nuevo, implementa una funcionalidad completa sin copiar directamente del anterior.</p>
+</div>
+<div class="complementary-extra-task">
+<span>⭐ RETO EXTRA</span>
+<p>Después compara ambos proyectos y escribe qué decisiones mejorarías.</p>
+</div>
+<div class="complementary-note">
+<strong>Idea:</strong>
+<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
+</div>
+</div>
+</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#proyecto-final"><small>← ANTERIOR</small><strong>Proyecto final: Sistema de estudiantes</strong></a></nav></section></main>
+</div>
+<button class="mobile-menu" id="menuBtn" type="button">☰</button>
+<div class="toolbar">
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Ir arriba" type="button">↑</button>
+<button onclick="window.print()" title="Imprimir" type="button">⌘</button>
+</div>
+<div aria-hidden="true" class="academy-search-modal" id="academySearchModal">
+<div class="academy-search-backdrop" data-close-search=""></div>
+<div aria-modal="true" class="academy-search-panel" role="dialog">
+<div class="academy-search-input-wrap">
+<span>⌕</span>
+<input autocomplete="off" id="academySearchInput" placeholder="Busca Model, URL, Form, migration, login..." type="search"/>
+<kbd>ESC</kbd>
+</div>
+<div class="academy-search-meta"><span>Buscar en capítulos y temas</span><span>↑↓ navegar · Enter abrir</span></div>
+<div class="academy-search-results" id="academySearchResults"></div>
+<div class="academy-search-empty" id="academySearchEmpty">Escribe para buscar en toda la academia.</div>
+</div>
+</div>
+<div class="academy-sidebar-backdrop" id="academySidebarBackdrop"></div>
+<button class="focus-exit-btn" id="focusExitBtn" type="button">Salir de enfoque</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const ORDER = ["inicio", "antes-django", "python-desde-cero", "entorno-python", "instalacion", "crear-proyecto", "que-es-django", "estructura", "apps", "urls", "views", "templates", "static", "models", "migrations", "admin", "forms", "csrf-botones", "crud", "relaciones", "auth", "sessions-messages", "uploads", "cbv", "middleware", "signals", "apis", "orm-avanzado", "models-avanzados", "transacciones", "forms-avanzados", "formsets", "cbv-edicion", "paginacion", "template-tags", "management-commands", "usuario-personalizado", "password-reset", "email", "cache", "logging", "i18n-timezones", "async-asgi", "fixtures", "serializacion", "contenttypes", "sitemaps-feeds", "seguridad-avanzada", "optimizacion-orm", "testing", "seguridad", "deploy", "proyecto-final", "proyecto-desde-cero"];
+  const LABELS = {"inicio": "Inicio", "antes-django": "Antes de Django", "python-desde-cero": "Python desde cero", "entorno-python": "Entorno virtual y pip", "instalacion": "Instalación", "crear-proyecto": "Hola Mundo", "que-es-django": "Qué es Django", "estructura": "Estructura", "apps": "Apps", "urls": "URLs", "views": "Views", "templates": "Templates", "static": "Static files", "models": "Models + ORM", "migrations": "Migraciones", "admin": "Admin", "forms": "Forms", "csrf-botones": "Botones + CSRF", "crud": "CRUD completo", "relaciones": "Relaciones", "auth": "Autenticación", "sessions-messages": "Sesiones + mensajes", "uploads": "Archivos y media", "cbv": "Class-Based Views", "middleware": "Middleware", "signals": "Signals", "apis": "APIs + fetch", "orm-avanzado": "ORM avanzado", "models-avanzados": "Models avanzados", "transacciones": "Transacciones", "forms-avanzados": "Forms avanzados", "formsets": "Formsets", "cbv-edicion": "CBV de edición", "paginacion": "Paginación", "template-tags": "Template tags", "management-commands": "Comandos propios", "usuario-personalizado": "Usuario y perfil", "password-reset": "Password reset", "email": "Email", "cache": "Cache", "logging": "Logging", "i18n-timezones": "i18n + zonas horarias", "async-asgi": "Async + ASGI", "fixtures": "Fixtures", "serializacion": "Serialización", "contenttypes": "ContentTypes", "sitemaps-feeds": "Sitemaps + feeds", "seguridad-avanzada": "Seguridad avanzada", "optimizacion-orm": "Optimización ORM", "testing": "Testing", "seguridad": "Seguridad", "deploy": "Despliegue", "proyecto-final": "Proyecto final", "proyecto-desde-cero": "Proyecto desde cero"};
+  const GROUPS = {"inicio": "Inicio", "antes-django": "Fundamentos", "python-desde-cero": "Fundamentos", "entorno-python": "Fundamentos", "instalacion": "Django esencial", "crear-proyecto": "Django esencial", "que-es-django": "Django esencial", "estructura": "Django esencial", "apps": "Django esencial", "urls": "Django esencial", "views": "Django esencial", "templates": "Django esencial", "static": "Django esencial", "models": "Datos y ORM", "migrations": "Datos y ORM", "admin": "Datos y ORM", "relaciones": "Datos y ORM", "forms": "Forms y CRUD", "csrf-botones": "Forms y CRUD", "crud": "Forms y CRUD", "auth": "Django avanzado", "sessions-messages": "Django avanzado", "uploads": "Django avanzado", "cbv": "Django avanzado", "middleware": "Django avanzado", "signals": "Django avanzado", "apis": "APIs", "orm-avanzado": "Intermedio y avanzado", "models-avanzados": "Intermedio y avanzado", "transacciones": "Intermedio y avanzado", "forms-avanzados": "Intermedio y avanzado", "formsets": "Intermedio y avanzado", "cbv-edicion": "Intermedio y avanzado", "paginacion": "Intermedio y avanzado", "template-tags": "Intermedio y avanzado", "management-commands": "Intermedio y avanzado", "usuario-personalizado": "Intermedio y avanzado", "password-reset": "Intermedio y avanzado", "email": "Intermedio y avanzado", "cache": "Intermedio y avanzado", "logging": "Intermedio y avanzado", "i18n-timezones": "Intermedio y avanzado", "async-asgi": "Intermedio y avanzado", "fixtures": "Intermedio y avanzado", "serializacion": "Intermedio y avanzado", "contenttypes": "Intermedio y avanzado", "sitemaps-feeds": "Intermedio y avanzado", "seguridad-avanzada": "Intermedio y avanzado", "optimizacion-orm": "Intermedio y avanzado", "testing": "Calidad y producción", "seguridad": "Calidad y producción", "deploy": "Calidad y producción", "proyecto-final": "Proyecto final", "proyecto-desde-cero": "Proyecto final"};
+  const sidebar = document.getElementById('sidebar');
+  const searchModal = document.getElementById('academySearchModal');
+  const searchInput = document.getElementById('academySearchInput');
+  const searchResults = document.getElementById('academySearchResults');
+  const searchEmpty = document.getElementById('academySearchEmpty');
+
+  // ---------- Mobile ----------
+  document.getElementById('menuBtn')?.addEventListener('click', () => {
+    document.body.classList.toggle('sidebar-open');
+    sidebar?.classList.toggle('open');
+  });
+  document.getElementById('academySidebarBackdrop')?.addEventListener('click', () => {
+    document.body.classList.remove('sidebar-open');
+    sidebar?.classList.remove('open');
+  });
+  document.querySelectorAll('#toc a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('sidebar-open');
+    sidebar?.classList.remove('open');
+  }));
+
+  // ---------- Theme ----------
+  const themeKey = 'django-academy-theme';
+  const themeBtn = document.getElementById('themeBtn');
+  function setTheme(theme) {
+    document.body.classList.toggle('theme-dark', theme === 'dark');
+    localStorage.setItem(themeKey, theme);
+    if (themeBtn) themeBtn.textContent = theme === 'dark' ? '☀' : '◐';
+  }
+  setTheme(localStorage.getItem(themeKey) || 'light');
+  themeBtn?.addEventListener('click', () => setTheme(
+    document.body.classList.contains('theme-dark') ? 'light' : 'dark'
+  ));
+
+  // ---------- Focus ----------
+  const focusBtn = document.getElementById('focusModeBtn');
+  function setFocus(on) {
+    document.body.classList.toggle('focus-mode', on);
+    if (focusBtn) focusBtn.textContent = on ? '▣' : '◫';
+  }
+  focusBtn?.addEventListener('click', () => setFocus(!document.body.classList.contains('focus-mode')));
+  document.getElementById('focusExitBtn')?.addEventListener('click', () => setFocus(false));
+
+  // ---------- State ----------
+  const visitedKey = 'django-academy-visited';
+  const lastKey = 'django-academy-last';
+  const statusPrefix = 'django-academy-status-';
+  const favPrefix = 'django-academy-fav-';
+  let visited = new Set();
+  try { visited = new Set(JSON.parse(localStorage.getItem(visitedKey) || '[]')); } catch(e) {}
+
+  function saveVisited(){ localStorage.setItem(visitedKey, JSON.stringify([...visited])); }
+  function status(id){ return localStorage.getItem(statusPrefix + id) || ''; }
+
+  function refreshStates(){
+    document.querySelectorAll('[data-section-link]').forEach(link => {
+      const id = link.dataset.sectionLink;
+      const s = status(id);
+      link.classList.toggle('is-visited', visited.has(id));
+      link.classList.toggle('is-done', s === 'done');
+      link.classList.toggle('needs-review', s === 'review');
+      const state = link.querySelector('.nav-link-state');
+      if(state) state.textContent = s === 'done' ? '✓' : s === 'review' ? '◐' : visited.has(id) ? '•' : '';
+    });
+    document.querySelectorAll('[data-study-section]').forEach(strip => {
+      const id = strip.dataset.studySection;
+      const s = status(id);
+      strip.querySelectorAll('[data-study-action]').forEach(btn => {
+        btn.classList.toggle('active-done', btn.dataset.studyAction === 'done' && s === 'done');
+        btn.classList.toggle('active-review', btn.dataset.studyAction === 'review' && s === 'review');
+      });
+      const fav = strip.querySelector('[data-favorite-section]');
+      if(fav){
+        const yes = localStorage.getItem(favPrefix + id) === '1';
+        fav.classList.toggle('is-favorite', yes);
+        fav.textContent = yes ? '★' : '☆';
+      }
+    });
+  }
+
+  function refreshProgress(){
+    const valid = ORDER.filter(id => document.getElementById(id));
+    const count = valid.filter(id => visited.has(id)).length;
+    const pct = Math.round((count / Math.max(valid.length,1))*100);
+    ['sidebarProgressText','topbarProgressText','dashboardProgressNumber'].forEach(id => {
+      const el = document.getElementById(id); if(el) el.textContent = pct + '%';
+    });
+    ['sidebarProgressBar','dashboardProgressBar'].forEach(id => {
+      const el = document.getElementById(id); if(el) el.style.width = pct + '%';
+    });
+    const detail = document.getElementById('dashboardProgressDetail');
+    if(detail) detail.textContent = count + ' de ' + valid.length + ' capítulos visitados';
+  }
+
+  document.querySelectorAll('[data-study-section]').forEach(strip => {
+    strip.querySelectorAll('[data-study-action]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = strip.dataset.studySection;
+        const next = btn.dataset.studyAction;
+        if(status(id) === next) localStorage.removeItem(statusPrefix + id);
+        else localStorage.setItem(statusPrefix + id, next);
+        visited.add(id); saveVisited(); refreshStates(); refreshProgress();
+      });
+    });
+    strip.querySelector('[data-favorite-section]')?.addEventListener('click', e => {
+      const id = strip.dataset.studySection;
+      const key = favPrefix + id;
+      localStorage.setItem(key, localStorage.getItem(key) === '1' ? '0' : '1');
+      refreshStates();
+    });
+  });
+
+  // ---------- Scrollspy / breadcrumbs ----------
+  function activate(id){
+    if(!document.getElementById(id)) return;
+    document.querySelectorAll('[data-section-link]').forEach(a => a.classList.toggle('active', a.dataset.sectionLink === id));
+    const link = document.querySelector(`[data-section-link="${CSS.escape(id)}"]`);
+    link?.closest('.academy-nav-group')?.setAttribute('open','');
+    const cg = document.getElementById('crumbGroup');
+    const cs = document.getElementById('crumbSection');
+    if(cg) cg.textContent = GROUPS[id] || 'Curso';
+    if(cs) cs.textContent = LABELS[id] || id;
+    visited.add(id); saveVisited(); localStorage.setItem(lastKey,id);
+    refreshStates(); refreshProgress(); refreshContinue(id);
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries.filter(e => e.isIntersecting).sort((a,b) =>
+      Math.abs(a.boundingClientRect.top - 85) - Math.abs(b.boundingClientRect.top - 85)
+    );
+    if(visible[0]) activate(visible[0].target.id);
+  }, {rootMargin:'-12% 0px -70% 0px', threshold:[0,.05,.2]});
+  ORDER.forEach(id => { const el = document.getElementById(id); if(el) observer.observe(el); });
+
+  function refreshContinue(forced){
+    let id = forced || localStorage.getItem(lastKey) || 'antes-django';
+    if(!document.getElementById(id)) id = 'antes-django';
+    const title = document.getElementById('dashboardContinueTitle');
+    const desc = document.getElementById('dashboardContinueDesc');
+    if(title) title.textContent = LABELS[id] || id;
+    if(desc) desc.textContent = (GROUPS[id] || 'Curso') + ' · vuelve al último capítulo visitado.';
+    const go = () => document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});
+    const b1 = document.getElementById('dashboardContinueBtn');
+    const b2 = document.getElementById('continueBtnSide');
+    if(b1) b1.onclick = go; if(b2) b2.onclick = go;
+  }
+  refreshContinue(); refreshStates(); refreshProgress();
+
+  // ---------- Search ----------
+  const searchable = [];
+  ORDER.forEach(id => {
+    const sec = document.getElementById(id);
+    if(!sec) return;
+    searchable.push({id,title:LABELS[id]||id,group:GROUPS[id]||'Curso',type:'Capítulo',text:sec.textContent.slice(0,2000)});
+  });
+  document.querySelectorAll('main details[id]').forEach(d => {
+    const sec = d.closest('section'); const sm = d.querySelector('summary');
+    const title = sm?.querySelector('strong')?.textContent || sm?.textContent || '';
+    if(sec?.id && title.trim()) searchable.push({id:d.id,title:title.trim(),group:LABELS[sec.id]||sec.id,type:'Tema',text:d.textContent.slice(0,1200)});
+  });
+
+  let filtered = [], selected = 0;
+  const norm = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function renderSearch(q=''){
+    const query = norm(q.trim());
+    filtered = !query ? searchable.filter(x=>x.type==='Capítulo').slice(0,12)
+      : searchable.map(item => {
+          const title=norm(item.title), hay=norm(item.title+' '+item.group+' '+item.text);
+          let score=0; query.split(/\s+/).forEach(t => score += title.includes(t)?6:hay.includes(t)?1:-10);
+          return {...item,score};
+        }).filter(x=>x.score>=0).sort((a,b)=>b.score-a.score).slice(0,18);
+    selected = Math.min(selected,Math.max(filtered.length-1,0));
+    searchResults.innerHTML='';
+    if(!filtered.length){ searchEmpty.style.display='block'; searchEmpty.textContent='No encontré coincidencias.'; return; }
+    searchEmpty.style.display='none';
+    filtered.forEach((item,index)=>{
+      const b=document.createElement('button'); b.type='button'; b.className='academy-search-result'+(index===selected?' selected':'');
+      b.innerHTML=`<span class="search-result-icon">${item.type==='Capítulo'?'§':'▤'}</span><span class="search-result-copy"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.group)}</span></span><span class="search-result-type">${item.type}</span>`;
+      b.addEventListener('click',()=>openItem(item)); searchResults.appendChild(b);
+    });
+  }
+  function openSearch(){ searchModal.classList.add('open'); document.body.style.overflow='hidden'; searchInput.value=''; renderSearch(''); setTimeout(()=>searchInput.focus(),30); }
+  function closeSearch(){ searchModal.classList.remove('open'); document.body.style.overflow=''; }
+  function openItem(item){ const el=document.getElementById(item.id); if(!el)return; if(el.tagName==='DETAILS')el.open=true; closeSearch(); setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),30); }
+  document.getElementById('openSearchBtn')?.addEventListener('click',openSearch);
+  document.getElementById('sidebarSearchTrigger')?.addEventListener('click',openSearch);
+  document.querySelectorAll('[data-close-search]').forEach(x=>x.addEventListener('click',closeSearch));
+  searchInput?.addEventListener('input',()=>{selected=0;renderSearch(searchInput.value)});
+  searchInput?.addEventListener('keydown',e=>{
+    if(e.key==='ArrowDown'){e.preventDefault();selected=Math.min(selected+1,filtered.length-1);renderSearch(searchInput.value)}
+    if(e.key==='ArrowUp'){e.preventDefault();selected=Math.max(selected-1,0);renderSearch(searchInput.value)}
+    if(e.key==='Enter'&&filtered[selected]){e.preventDefault();openItem(filtered[selected])}
+  });
+  document.addEventListener('keydown',e=>{
+    if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();searchModal.classList.contains('open')?closeSearch():openSearch()}
+    if(e.key==='Escape'){if(searchModal.classList.contains('open'))closeSearch();else if(document.body.classList.contains('focus-mode'))setFocus(false)}
+  });
+
+  // ---------- ORM preview ----------
+  const ormData = [
+    {id:1,nombre:'Ana',programa:'Sistemas',activo:true},
+    {id:2,nombre:'Luis',programa:'Diseño',activo:true},
+    {id:3,nombre:'Sara',programa:'Sistemas',activo:false},
+  ];
+  function renderOrm(kind='all'){
+    const rows=document.getElementById('ormRows'), q=document.getElementById('ormQuery'); if(!rows)return;
+    let data=ormData, text='Estudiante.objects.all()';
+    if(kind==='active'){data=ormData.filter(x=>x.activo);text='Estudiante.objects.filter(activo=True)'}
+    if(kind==='systems'){data=ormData.filter(x=>x.programa==='Sistemas');text='Estudiante.objects.filter(programa__nombre="Sistemas")'}
+    rows.innerHTML=data.map(x=>`<div class="orm-row"><span>#${x.id}</span><strong>${x.nombre}</strong><span>${x.programa}</span><span>${x.activo?'Activo':'Inactivo'}</span></div>`).join('');
+    if(q)q.textContent=text;
+  }
+  document.querySelectorAll('[data-orm-filter]').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('[data-orm-filter]').forEach(x=>x.classList.toggle('active',x===b));renderOrm(b.dataset.ormFilter)
+  }));
+  renderOrm();
+
+  // ---------- Form preview ----------
+  document.getElementById('djangoFormPreview')?.addEventListener('submit',e=>{
+    e.preventDefault();
+    const doc=document.getElementById('djDoc'), name=document.getElementById('djName'), email=document.getElementById('djEmail');
+    const goodMail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+    document.getElementById('djDocErr').textContent=doc.value.trim()?'':'Este campo es obligatorio.';
+    document.getElementById('djNameErr').textContent=name.value.trim()?'':'Este campo es obligatorio.';
+    document.getElementById('djEmailErr').textContent=email.value.trim()?(goodMail?'':'Introduce un correo válido.'):'Este campo es obligatorio.';
+    const ok=doc.value.trim()&&name.value.trim()&&goodMail;
+    document.getElementById('djFormStatus').textContent=ok?'form.is_valid() → True ✓':'form.is_valid() → False · revisa los errores.';
+  });
+
+  // ---------- Login preview ----------
+  document.getElementById('djLoginPreview')?.addEventListener('submit',e=>{
+    e.preventDefault();
+    const user=document.getElementById('djLoginUser').value.trim();
+    const pass=document.getElementById('djLoginPass').value;
+    document.getElementById('djLoginStatus').textContent=user&&pass?'✓ Login correcto (simulación): sesión creada.':'Completa usuario y contraseña.';
+  });
+
+  // ---------- CRUD preview ----------
+  let crud=[
+    {id:1,doc:'1099',name:'Ana Torres',email:'ana@correo.com'},
+    {id:2,doc:'1100',name:'Luis Pérez',email:'luis@correo.com'}
+  ], next=3;
+  const rows=document.getElementById('djCrudRows');
+  function renderCrud(){
+    if(!rows)return;
+    rows.innerHTML=crud.map(x=>`<tr class="crud-row"><td>${x.doc}</td><td>${x.name}</td><td>${x.email}</td><td><button data-edit="${x.id}">Editar</button> <button data-del="${x.id}">Eliminar</button></td></tr>`).join('');
+    rows.querySelectorAll('[data-edit]').forEach(b=>b.addEventListener('click',()=>{
+      const x=crud.find(r=>r.id===Number(b.dataset.edit)); if(!x)return;
+      djCrudId.value=x.id;djCrudDoc.value=x.doc;djCrudName.value=x.name;djCrudEmail.value=x.email;djCrudSave.textContent='Actualizar';djCrudStatus.textContent='UPDATE: instancia cargada en ModelForm.';
+    }));
+    rows.querySelectorAll('[data-del]').forEach(b=>b.addEventListener('click',()=>{
+      crud=crud.filter(r=>r.id!==Number(b.dataset.del));djCrudStatus.textContent='DELETE: registro eliminado (simulación).';renderCrud();
+    }));
+  }
+  const djCrudId=document.getElementById('djCrudId'),djCrudDoc=document.getElementById('djCrudDoc'),djCrudName=document.getElementById('djCrudName'),djCrudEmail=document.getElementById('djCrudEmail'),djCrudSave=document.getElementById('djCrudSave'),djCrudStatus=document.getElementById('djCrudStatus');
+  djCrudSave?.addEventListener('click',()=>{
+    const doc=djCrudDoc.value.trim(),name=djCrudName.value.trim(),email=djCrudEmail.value.trim();
+    if(!doc||!name||!email){djCrudStatus.textContent='Completa documento, nombre y correo.';return}
+    const id=Number(djCrudId.value||0);
+    if(id){crud=crud.map(x=>x.id===id?{...x,doc,name,email}:x);djCrudStatus.textContent='UPDATE: cambios guardados.'}
+    else{crud=[...crud,{id:next++,doc,name,email}];djCrudStatus.textContent='CREATE: estudiante agregado.'}
+    djCrudId.value='';djCrudDoc.value='';djCrudName.value='';djCrudEmail.value='';djCrudSave.textContent='Crear';renderCrud();
+  });
+  document.getElementById('djCrudCancel')?.addEventListener('click',()=>{djCrudId.value='';djCrudDoc.value='';djCrudName.value='';djCrudEmail.value='';djCrudSave.textContent='Crear';djCrudStatus.textContent='Edición cancelada.'});
+  renderCrud();
+
+  // ---------- Final project checklist ----------
+  document.querySelectorAll('#djangoProjectChecklist input').forEach((box,i)=>{
+    const key='django-project-check-'+i;box.checked=localStorage.getItem(key)==='1';box.addEventListener('change',()=>localStorage.setItem(key,box.checked?'1':'0'));
+  });
+
+  // Highlight.js if loaded
+  if(window.hljs){ window.hljs.highlightAll(); }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const exercisePrefix = 'django-academy-v3-exercise-';
+  const buttons = [...document.querySelectorAll('[data-exercise-complete]')];
+
+  function refreshBuildProgress() {
+    let complete = 0;
+
+    buttons.forEach(button => {
+      const id = button.dataset.exerciseComplete;
+      const yes = localStorage.getItem(exercisePrefix + id) === '1';
+      button.classList.toggle('is-complete', yes);
+      button.textContent = yes ? '✓ Completado' : '○ Pendiente';
+      if (yes) complete++;
+    });
+
+    const total = buttons.length;
+    const pct = Math.round((complete / Math.max(total, 1)) * 100);
+
+    const text = document.getElementById('buildProjectStepText');
+    const percent = document.getElementById('buildProjectPercent');
+    const bar = document.getElementById('buildProjectProgressBar');
+
+    if (text) text.textContent = complete + ' de ' + total + ' pasos';
+    if (percent) percent.textContent = pct + '%';
+    if (bar) bar.style.width = pct + '%';
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const id = button.dataset.exerciseComplete;
+      const key = exercisePrefix + id;
+      const current = localStorage.getItem(key) === '1';
+      localStorage.setItem(key, current ? '0' : '1');
+      refreshBuildProgress();
+    });
+  });
+
+  refreshBuildProgress();
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const prefix = 'django-academy-mini-project-';
+  const buttons = [...document.querySelectorAll('[data-mini-complete]')];
+
+  function refreshMiniProjects() {
+    let done = 0;
+
+    buttons.forEach(button => {
+      const id = button.dataset.miniComplete;
+      const completed = localStorage.getItem(prefix + id) === '1';
+      button.classList.toggle('is-complete', completed);
+      button.textContent = completed ? '✓ Completado' : '○ Pendiente';
+      if (completed) done++;
+    });
+
+    const total = buttons.length;
+    const pct = Math.round((done / Math.max(total, 1)) * 100);
+
+    const text = document.getElementById('buildProjectStepText');
+    const percent = document.getElementById('buildProjectPercent');
+    const bar = document.getElementById('buildProjectProgressBar');
+
+    if (text) text.textContent = done + ' de ' + total + ' mini proyectos';
+    if (percent) percent.textContent = pct + '%';
+    if (bar) bar.style.width = pct + '%';
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      const key = prefix + button.dataset.miniComplete;
+      const current = localStorage.getItem(key) === '1';
+      localStorage.setItem(key, current ? '0' : '1');
+      refreshMiniProjects();
+    });
+  });
+
+  refreshMiniProjects();
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const prefix = 'django-academy-progressive-project-';
+  const buttons = [...document.querySelectorAll('[data-project-complete]')];
+
+  function refreshProgressiveProject() {
+    let done = 0;
+    buttons.forEach(button => {
+      const completed = localStorage.getItem(prefix + button.dataset.projectComplete) === '1';
+      button.classList.toggle('is-complete', completed);
+      button.textContent = completed ? '✓ Aplicado al proyecto' : '○ Pendiente';
+      if (completed) done++;
+    });
+    const total = buttons.length;
+    const pct = Math.round((done / Math.max(total, 1)) * 100);
+    const text = document.getElementById('buildProjectStepText');
+    const percent = document.getElementById('buildProjectPercent');
+    const bar = document.getElementById('buildProjectProgressBar');
+    if (text) text.textContent = done + ' de ' + total + ' cambios aplicados';
+    if (percent) percent.textContent = pct + '%';
+    if (bar) bar.style.width = pct + '%';
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      const key = prefix + button.dataset.projectComplete;
+      const current = localStorage.getItem(key) === '1';
+      localStorage.setItem(key, current ? '0' : '1');
+      refreshProgressiveProject();
+    });
+  });
+
+  refreshProgressiveProject();
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const prefix = 'django-academy-complementary-';
+  document.querySelectorAll('[data-complementary-done]').forEach(function (button) {
+    const id = button.dataset.complementaryDone;
+    const key = prefix + id;
+
+    function refresh() {
+      const done = localStorage.getItem(key) === '1';
+      button.classList.toggle('is-complete', done);
+      button.textContent = done ? '✓ Completada' : '○ Pendiente';
+    }
+
+    button.addEventListener('click', function () {
+      const done = localStorage.getItem(key) === '1';
+      localStorage.setItem(key, done ? '0' : '1');
+      refresh();
+    });
+
+    refresh();
+  });
+});
+</script>
+</body></html>

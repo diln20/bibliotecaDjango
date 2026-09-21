@@ -16290,9 +16290,270 @@ body.theme-dark .crud-code-instruction strong{
     align-items:flex-start;
   }
 }
+
+/* ============================================================
+   DJANGO ACADEMY V35 · CRUD en columna + acordeón desplegable
+   ============================================================ */
+
+/* Una operación por fila */
+.crud-operation-grid{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:10px !important;
+  padding:16px !important;
+}
+
+/* Acordeón principal */
+.crud-operation-accordion{
+  overflow:hidden;
+  border:1px solid #dbe4ef;
+  border-radius:15px;
+  background:#fff;
+}
+
+.crud-operation-accordion.read{
+  border-left:5px solid #2563eb;
+}
+.crud-operation-accordion.create{
+  border-left:5px solid #16a34a;
+}
+.crud-operation-accordion.update{
+  border-left:5px solid #7c3aed;
+}
+.crud-operation-accordion.delete{
+  border-left:5px solid #dc2626;
+}
+
+.crud-operation-summary{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  min-height:74px;
+  padding:13px 15px;
+  cursor:pointer;
+  list-style:none;
+  background:#fff;
+  user-select:none;
+}
+.crud-operation-summary::-webkit-details-marker{
+  display:none;
+}
+
+.crud-operation-summary-main{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+}
+
+.crud-summary-letter{
+  flex:0 0 auto;
+  width:40px;
+  height:40px;
+  display:grid;
+  place-items:center;
+  border-radius:11px;
+  background:#0f172a;
+  color:#fff;
+  font-size:14px;
+  font-weight:900;
+}
+
+.crud-summary-text{
+  min-width:0;
+}
+.crud-summary-text small{
+  display:block;
+  margin-bottom:2px;
+  color:#64748b;
+  font-size:7.5px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.crud-summary-text strong{
+  display:block;
+  color:#0f172a;
+  font-size:12px;
+}
+.crud-summary-text>span{
+  display:block;
+  margin-top:3px;
+  color:#64748b;
+  font-size:9px;
+}
+
+.crud-summary-meta{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.crud-summary-meta code{
+  padding:6px 8px;
+  border-radius:8px;
+  background:#f1f5f9 !important;
+  color:#1d4ed8 !important;
+  font-size:8.8px !important;
+  font-weight:900;
+}
+.crud-summary-meta>span{
+  padding:5px 7px;
+  border:1px solid #dbe4ef;
+  border-radius:999px;
+  color:#64748b;
+  font-size:7.5px;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.crud-summary-chevron{
+  width:30px;
+  height:30px;
+  display:grid;
+  place-items:center;
+  border-radius:8px;
+  background:#f8fafc;
+  color:#334155;
+  font-size:17px;
+  transition:transform .2s ease, background .2s ease;
+}
+
+.crud-operation-accordion[open] > .crud-operation-summary{
+  border-bottom:1px solid #dbe4ef;
+  background:#f8fafc;
+}
+.crud-operation-accordion[open] .crud-summary-chevron{
+  transform:rotate(180deg);
+  background:#e2e8f0;
+}
+
+.crud-operation-accordion-body{
+  padding:14px;
+}
+
+/* Dentro del acordeón los bloques conservan ancho completo */
+.crud-operation-accordion-body .crud-file-role,
+.crud-operation-accordion-body .crud-operation-flow,
+.crud-operation-accordion-body .crud-inline-code{
+  width:100%;
+}
+
+/* Ayuda visual */
+.crud-accordion-help{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin:12px 16px 0;
+  padding:10px 12px;
+  border:1px dashed #cbd5e1;
+  border-radius:11px;
+  background:#f8fafc;
+}
+.crud-accordion-help>div{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.crud-accordion-help>div>span{
+  width:23px;
+  height:23px;
+  display:grid;
+  place-items:center;
+  border-radius:7px;
+  background:#0C4B33;
+  color:#fff;
+  font-size:8px;
+  font-weight:900;
+}
+.crud-accordion-help p{
+  margin:0 !important;
+  color:#475569 !important;
+  font-size:8.7px !important;
+}
+.crud-accordion-help>b{
+  color:#94a3b8;
+  font-size:12px;
+}
+
+/* Acordeones secundarios del código un poco más visibles */
+.crud-file-code-details{
+  border-radius:9px !important;
+}
+.crud-file-code-details>summary{
+  min-height:40px;
+}
+.crud-file-code-details[open]>summary small{
+  color:#0C4B33;
+}
+.crud-file-code-details[open]>summary small::after{
+  content:" · abierto";
+}
+
+/* Dark */
+body.theme-dark .crud-operation-accordion{
+  background:#0f172a;
+  border-color:#26344f;
+}
+body.theme-dark .crud-operation-summary{
+  background:#0f172a;
+}
+body.theme-dark .crud-operation-accordion[open] > .crud-operation-summary{
+  background:#111827;
+  border-bottom-color:#26344f;
+}
+body.theme-dark .crud-summary-text strong{
+  color:#f8fafc;
+}
+body.theme-dark .crud-summary-text>span{
+  color:#94a3b8;
+}
+body.theme-dark .crud-summary-meta code{
+  background:#111827 !important;
+  color:#93c5fd !important;
+}
+body.theme-dark .crud-summary-meta>span{
+  border-color:#334155;
+  color:#94a3b8;
+}
+body.theme-dark .crud-summary-chevron{
+  background:#111827;
+  color:#cbd5e1;
+}
+body.theme-dark .crud-operation-accordion[open] .crud-summary-chevron{
+  background:#1e293b;
+}
+body.theme-dark .crud-accordion-help{
+  background:#111827;
+  border-color:#334155;
+}
+body.theme-dark .crud-accordion-help p{
+  color:#cbd5e1 !important;
+}
+
+@media(max-width:760px){
+  .crud-operation-summary{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .crud-summary-meta{
+    justify-content:flex-start;
+    width:100%;
+    padding-left:52px;
+  }
+  .crud-accordion-help{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .crud-accordion-help>b{
+    display:none;
+  }
+}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><link href="https://unpkg.com/tippy.js@6/animations/shift-away.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css" rel="stylesheet"/>
-<meta content="34" name="django-academy-version"/>
+<meta content="35" name="django-academy-version"/>
 </head><body>
 <div class="progress-top" id="progressTop"></div>
 <div class="layout">
@@ -24739,25 +25000,47 @@ def detalle(request, pk):
 </div>
 <small>URL → VIEW → FORM/MODEL → TEMPLATE</small>
 </div><div class="crud-map-code-notice">
-<span>👇 AHORA EL CÓDIGO ESTÁ DENTRO DE CADA OPERACIÓN</span>
-<p>
-        Abre “Ver código” debajo de Listar, Crear, Editar o Eliminar.
-        Allí aparece exactamente qué escribir en cada archivo.
-      </p>
+<span>👇 ABRE UNA OPERACIÓN PARA VER SUS ARCHIVOS Y CÓDIGO</span>
+<p>Cada operación está ahora en una sola columna. Haz clic en Listar, Crear, Editar o Eliminar para desplegar sus archivos y luego abre “Ver código”.</p>
+</div><div class="crud-accordion-help">
+<div>
+<span>1</span>
+<p>Elige una operación</p>
+</div>
+<b>→</b>
+<div>
+<span>2</span>
+<p>Despliega el menú</p>
+</div>
+<b>→</b>
+<div>
+<span>3</span>
+<p>Abre el archivo</p>
+</div>
+<b>→</b>
+<div>
+<span>4</span>
+<p>Copia y comprende el código</p>
+</div>
 </div>
 <div class="crud-operation-grid">
-<article class="crud-operation-card read">
-<div class="crud-operation-title">
-<span class="crud-letter">R</span>
-<div>
+<details class="crud-operation-accordion read"><summary class="crud-operation-summary">
+<div class="crud-operation-summary-main">
+<span class="crud-summary-letter">R</span>
+<div class="crud-summary-text">
 <small>READ</small>
-<strong>LISTAR ESTUDIANTES</strong>
+<strong>LISTAR / VER ESTUDIANTES</strong>
+<span>Consulta y muestra información</span>
 </div>
 </div>
-<div class="crud-operation-route">
-<span>🌐 RUTA</span>
+<div class="crud-summary-meta">
 <code>/estudiantes/</code>
+<span>4 archivos</span>
+<b class="crud-summary-chevron">⌄</b>
 </div>
+</summary><div class="crud-operation-accordion-body">
+
+
 <div class="crud-files-title">📄 Archivos que intervienen</div>
 <div class="crud-file-role">
 <code>estudiantes/urls.py</code>
@@ -24964,19 +25247,24 @@ def detalle(request, pk):
 </details>
 </div>
 </div>
-</article>
-<article class="crud-operation-card create">
-<div class="crud-operation-title">
-<span class="crud-letter">C</span>
-<div>
+</div></details>
+<details class="crud-operation-accordion create"><summary class="crud-operation-summary">
+<div class="crud-operation-summary-main">
+<span class="crud-summary-letter">C</span>
+<div class="crud-summary-text">
 <small>CREATE</small>
 <strong>CREAR ESTUDIANTE</strong>
+<span>Formulario → validación → guardar</span>
 </div>
 </div>
-<div class="crud-operation-route">
-<span>🌐 RUTA</span>
+<div class="crud-summary-meta">
 <code>/estudiantes/nuevo/</code>
+<span>4 archivos</span>
+<b class="crud-summary-chevron">⌄</b>
 </div>
+</summary><div class="crud-operation-accordion-body">
+
+
 <div class="crud-files-title">📄 Archivos que intervienen</div>
 <div class="crud-file-role">
 <code>estudiantes/urls.py</code>
@@ -25153,19 +25441,24 @@ class EstudianteForm(forms.ModelForm):
 </details>
 </div>
 </div>
-</article>
-<article class="crud-operation-card update">
-<div class="crud-operation-title">
-<span class="crud-letter">U</span>
-<div>
+</div></details>
+<details class="crud-operation-accordion update"><summary class="crud-operation-summary">
+<div class="crud-operation-summary-main">
+<span class="crud-summary-letter">U</span>
+<div class="crud-summary-text">
 <small>UPDATE</small>
 <strong>EDITAR ESTUDIANTE</strong>
+<span>Buscar → cargar → modificar</span>
 </div>
 </div>
-<div class="crud-operation-route">
-<span>🌐 RUTA</span>
+<div class="crud-summary-meta">
 <code>/estudiantes/&lt;pk&gt;/editar/</code>
+<span>4 archivos</span>
+<b class="crud-summary-chevron">⌄</b>
 </div>
+</summary><div class="crud-operation-accordion-body">
+
+
 <div class="crud-files-title">📄 Archivos que intervienen</div>
 <div class="crud-file-role">
 <code>estudiantes/urls.py</code>
@@ -25350,19 +25643,24 @@ class EstudianteForm(forms.ModelForm):
 </details>
 </div>
 </div>
-</article>
-<article class="crud-operation-card delete">
-<div class="crud-operation-title">
-<span class="crud-letter">D</span>
-<div>
+</div></details>
+<details class="crud-operation-accordion delete"><summary class="crud-operation-summary">
+<div class="crud-operation-summary-main">
+<span class="crud-summary-letter">D</span>
+<div class="crud-summary-text">
 <small>DELETE</small>
 <strong>ELIMINAR ESTUDIANTE</strong>
+<span>Confirmar → POST → eliminar</span>
 </div>
 </div>
-<div class="crud-operation-route">
-<span>🌐 RUTA</span>
+<div class="crud-summary-meta">
 <code>/estudiantes/&lt;pk&gt;/eliminar/</code>
+<span>3 archivos</span>
+<b class="crud-summary-chevron">⌄</b>
 </div>
+</summary><div class="crud-operation-accordion-body">
+
+
 <div class="crud-files-title">📄 Archivos que intervienen</div>
 <div class="crud-file-role">
 <code>estudiantes/urls.py</code>
@@ -25504,7 +25802,7 @@ path(
 </details>
 </div>
 </div>
-</article>
+</div></details>
 </div>
 <div class="crud-detail-extension">
 <div>

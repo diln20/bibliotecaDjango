@@ -14314,9 +14314,319 @@ body.theme-dark .project-continuity-banner strong{color:#dcfce7}
 @media(max-width:700px){
   .project-continuity-banner,.continuity-audit-note{grid-template-columns:1fr}
 }
+
+/* ============================================================
+   DJANGO ACADEMY V24 · <int:pk> explicado junto a cada ejemplo
+   ============================================================ */
+.pk-inline-explainer{
+  display:grid;
+  gap:13px;
+  margin:15px 0 18px;
+  padding:16px;
+  border:1px solid #93c5fd;
+  border-radius:17px;
+  background:linear-gradient(180deg,#eff6ff,#fff);
+}
+.pk-inline-title{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  align-items:center;
+}
+.pk-inline-title span,
+.pk-read-sentence>span,
+.pk-real-example-head>span,
+.pk-left-right>span,
+.pk-extra-routes>span,
+.pk-template-example>span{
+  display:block;
+  margin-bottom:4px;
+  color:#1d4ed8;
+  font-size:8.5px;
+  font-weight:900;
+  letter-spacing:.09em;
+}
+.pk-inline-title strong{
+  color:#0f172a;
+  font-size:15px;
+}
+.pk-inline-title small{
+  color:#64748b;
+  font-size:8.5px;
+  font-weight:900;
+}
+.pk-read-sentence{
+  padding:12px 13px;
+  border-left:4px solid #2563eb;
+  border-radius:0 11px 11px 0;
+  background:#fff;
+}
+.pk-read-sentence p{
+  margin:0!important;
+  color:#334155!important;
+  font-size:12px!important;
+  line-height:1.65!important;
+}
+.pk-parts-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:8px;
+}
+.pk-parts-grid article{
+  padding:12px;
+  border:1px solid #dbeafe;
+  border-radius:12px;
+  background:#fff;
+}
+.pk-parts-grid strong{
+  display:block;
+  color:#0C4B33;
+  font-family:var(--mono);
+  font-size:17px;
+}
+.pk-parts-grid span{
+  display:block;
+  margin:4px 0 6px;
+  color:#64748b;
+  font-size:7.5px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.pk-parts-grid p{
+  margin:0!important;
+  color:#475569!important;
+  font-size:10px!important;
+  line-height:1.55!important;
+}
+.pk-real-example,
+.pk-left-right,
+.pk-template-example,
+.pk-extra-routes{
+  padding:13px;
+  border:1px solid #dbe4ef;
+  border-radius:13px;
+  background:#fff;
+}
+.pk-real-example-head strong{
+  color:#0f172a;
+  font-size:12px;
+}
+.pk-flow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  align-items:center;
+  margin-top:9px;
+}
+.pk-flow>*{
+  font-size:10px;
+}
+.pk-flow code,
+.pk-flow span{
+  padding:7px 8px;
+  border-radius:8px;
+  background:#f8fafc;
+}
+.pk-flow b{
+  color:#2563eb;
+}
+.pk-important-note{
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:10px;
+  padding:13px;
+  border:1px solid #fde68a;
+  border-radius:13px;
+  background:#fffbeb;
+}
+.pk-important-note>div:first-child{
+  width:36px;
+  height:36px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  background:#fef3c7;
+}
+.pk-important-note strong{
+  color:#92400e;
+  font-size:11.5px;
+}
+.pk-important-note p{
+  margin:4px 0!important;
+  color:#854d0e!important;
+  font-size:10.5px!important;
+  line-height:1.55!important;
+}
+.pk-important-note pre,
+.pk-template-example pre{
+  margin:8px 0 0!important;
+  padding:11px 12px!important;
+  border-radius:9px;
+  background:#0b1220!important;
+  color:#eaf2ff!important;
+  font-size:11px!important;
+  line-height:1.65!important;
+  white-space:pre-wrap;
+}
+.pk-left-right>div{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-top:8px;
+}
+.pk-left-right article{
+  padding:10px;
+  border-radius:10px;
+  background:#f8fafc;
+}
+.pk-left-right article>code{
+  color:#7c3aed;
+  font-weight:900;
+}
+.pk-left-right article p{
+  margin:5px 0 0!important;
+  color:#64748b!important;
+  font-size:10px!important;
+  line-height:1.55!important;
+}
+.pk-validity-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+.pk-validity-grid article{
+  padding:11px;
+  border-radius:11px;
+}
+.pk-validity-grid .ok{
+  border:1px solid #86efac;
+  background:#f0fdf4;
+}
+.pk-validity-grid .bad{
+  border:1px solid #fecaca;
+  background:#fef2f2;
+}
+.pk-validity-grid .warn{
+  border:1px solid #fde68a;
+  background:#fffbeb;
+}
+.pk-validity-grid code,
+.pk-validity-grid strong{
+  display:block;
+}
+.pk-validity-grid strong{
+  margin-top:5px;
+  font-size:10px;
+}
+.pk-validity-grid p,
+.pk-template-example p,
+.pk-extra-routes p{
+  margin:5px 0 0!important;
+  color:#64748b!important;
+  font-size:9.8px!important;
+  line-height:1.5!important;
+}
+.pk-extra-routes{
+  border-color:#ddd6fe;
+  background:#faf5ff;
+}
+.pk-extra-routes>span{
+  color:#7c3aed;
+}
+.pk-memory{
+  display:grid;
+  grid-template-columns:auto repeat(4,1fr);
+  gap:7px;
+  align-items:center;
+  padding:11px;
+  border:1px solid #86efac;
+  border-radius:11px;
+  background:#f0fdf4;
+}
+.pk-memory strong{
+  color:#166534;
+  font-size:10px;
+}
+.pk-memory span{
+  padding:7px 8px;
+  border-radius:8px;
+  background:#fff;
+  color:#475569;
+  font-size:9px;
+}
+
+/* Dark */
+body.theme-dark .pk-inline-explainer{
+  background:#10213f;
+  border-color:#1e3a5f;
+}
+body.theme-dark .pk-inline-title strong,
+body.theme-dark .pk-real-example-head strong{
+  color:#f8fafc;
+}
+body.theme-dark .pk-read-sentence,
+body.theme-dark .pk-parts-grid article,
+body.theme-dark .pk-real-example,
+body.theme-dark .pk-left-right,
+body.theme-dark .pk-template-example{
+  background:#0f172a;
+  border-color:#26344f;
+}
+body.theme-dark .pk-read-sentence p,
+body.theme-dark .pk-parts-grid p,
+body.theme-dark .pk-left-right article p,
+body.theme-dark .pk-template-example p{
+  color:#b7c4d6!important;
+}
+body.theme-dark .pk-left-right article{
+  background:#111827;
+}
+body.theme-dark .pk-important-note{
+  background:#2b2108;
+  border-color:#713f12;
+}
+body.theme-dark .pk-important-note strong,
+body.theme-dark .pk-important-note p{
+  color:#fde68a!important;
+}
+body.theme-dark .pk-memory{
+  background:#0d2a20;
+  border-color:#14532d;
+}
+body.theme-dark .pk-memory span{
+  background:#0f172a;
+  color:#bbf7d0;
+}
+body.theme-dark .pk-extra-routes{
+  background:#21152f;
+  border-color:#4c1d95;
+}
+
+@media(max-width:900px){
+  .pk-inline-title{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .pk-parts-grid{
+    grid-template-columns:1fr 1fr;
+  }
+  .pk-validity-grid{
+    grid-template-columns:1fr;
+  }
+  .pk-memory{
+    grid-template-columns:1fr 1fr;
+  }
+}
+@media(max-width:600px){
+  .pk-parts-grid,
+  .pk-left-right>div,
+  .pk-memory{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><link href="https://unpkg.com/tippy.js@6/animations/shift-away.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css" rel="stylesheet"/>
-<meta content="23" name="django-academy-version"/>
+<meta content="24" name="django-academy-version"/>
 </head><body>
 <div class="progress-top" id="progressTop"></div>
 <div class="layout">
@@ -17426,7 +17736,149 @@ app_name = "estudiantes"
 urlpatterns = [
     path("", views.lista, name="lista"),
     path("&lt;int:pk&gt;/", views.detalle, name="detalle"),
-]</code></pre>
+]</code></pre><div class="pk-inline-explainer">
+<div class="pk-inline-title">
+<div>
+<span>🔎 DETENTE AQUÍ</span>
+<strong>¿Cómo se lee <code>&lt;int:pk&gt;/</code>?</strong>
+</div>
+<small>NO ES TEXTO FIJO · ES UN VALOR DINÁMICO</small>
+</div>
+<div class="pk-read-sentence">
+<span>🗣️ LÉELO ASÍ</span>
+<p>
+          “En esta parte de la URL recibe un <b>número entero</b>,
+          guárdalo con el nombre <code>pk</code> y envíaselo a la View”.
+        </p>
+</div>
+<div class="pk-parts-grid">
+<article>
+<strong>&lt; &gt;</strong>
+<span>PARTE DINÁMICA</span>
+<p>
+            Lo que está entre estos signos <b>cambia</b>. No debes escribir
+            literalmente <code>&lt;int:pk&gt;</code> en el navegador.
+          </p>
+</article>
+<article>
+<strong>int</strong>
+<span>CONVERTIDOR</span>
+<p>
+            Django acepta un número entero no negativo y lo convierte a
+            un valor Python de tipo <code>int</code>.
+          </p>
+</article>
+<article>
+<strong>pk</strong>
+<span>NOMBRE DEL VALOR</span>
+<p>
+            Es la variable que Django enviará a la View.
+            <code>pk</code> suele significar <b>Primary Key</b>.
+          </p>
+</article>
+<article>
+<strong>/</strong>
+<span>BARRA FINAL</span>
+<p>
+            Forma parte del patrón. Por eso el ejemplo termina normalmente
+            en <code>/7/</code>.
+          </p>
+</article>
+</div>
+<div class="pk-real-example">
+<div class="pk-real-example-head">
+<span>🌐 EJEMPLO REAL</span>
+<strong>Si el usuario visita:</strong>
+</div>
+<div class="pk-flow">
+<code>/estudiantes/7/</code>
+<b>→</b>
+<span>Django compara <code>7/</code> con <code>&lt;int:pk&gt;/</code></span>
+<b>→</b>
+<code>pk = 7</code>
+<b>→</b>
+<code>views.detalle(request, pk=7)</code>
+</div>
+</div>
+<div class="pk-important-note">
+<div>⚠️</div>
+<div>
+<strong>Django NO busca el estudiante automáticamente</strong>
+<p>
+            La ruta solamente captura el número y lo entrega a la View.
+            Después la View decide qué hacer con él.
+          </p>
+<pre>def detalle(request, pk):
+    estudiante = get_object_or_404(
+        Estudiante,
+        pk=pk
+    )
+
+    return render(
+        request,
+        "estudiantes/detalle.html",
+        {"estudiante": estudiante}
+    )</pre>
+</div>
+</div>
+<div class="pk-left-right">
+<span>🤔 ¿POR QUÉ APARECE <code>pk=pk</code>?</span>
+<div>
+<article>
+<code>pk=</code>
+<p>
+              El de la izquierda se refiere al campo de clave primaria
+              que queremos consultar en el Model.
+            </p>
+</article>
+<article>
+<code>pk</code>
+<p>
+              El de la derecha es la variable que llegó desde la URL.
+              Si visitaste <code>/7/</code>, vale <b>7</b>.
+            </p>
+</article>
+</div>
+</div>
+<div class="pk-validity-grid">
+<article class="ok">
+<code>/estudiantes/7/</code>
+<strong>✓ Coincide</strong>
+<p>Django entrega <code>pk=7</code>.</p>
+</article>
+<article class="bad">
+<code>/estudiantes/ana/</code>
+<strong>✕ No coincide</strong>
+<p><code>ana</code> no cumple el convertidor <code>int</code>.</p>
+</article>
+<article class="warn">
+<code>/estudiantes/999/</code>
+<strong>⚠ La ruta sí coincide</strong>
+<p>
+<code>999</code> es un entero. Si ese registro no existe,
+            <code>get_object_or_404()</code> responde 404.
+          </p>
+</article>
+</div>
+<div class="pk-template-example">
+<span>🔗 DESDE UN TEMPLATE</span>
+<p>No necesitas escribir el número a mano. Django puede construir la URL:</p>
+<pre>&lt;a href="{% url 'estudiantes:detalle' estudiante.pk %}"&gt;
+    Ver estudiante
+&lt;/a&gt;</pre>
+<p>
+          Si <code>estudiante.pk</code> vale <b>7</b>, Django genera
+          <code>/estudiantes/7/</code>.
+        </p>
+</div>
+<div class="pk-memory">
+<strong>🧠 Qué recordar</strong>
+<span><code>int</code> = tipo de valor que acepta.</span>
+<span><code>pk</code> = nombre con el que llega a la View.</span>
+<span><code>7</code> = valor real recibido.</span>
+<span>La View usa ese valor para buscar el objeto.</span>
+</div>
+</div>
 </div>
 <div class="flow-wide"><span class="flow-box">/estudiantes/7/</span><span class="flow-arr">→</span><span class="flow-box hot">urls.py</span><span class="flow-arr">→</span><span class="flow-box">views.detalle</span><span class="flow-arr">→</span><span class="flow-box good">Response</span></div></div>
 </details>
@@ -17828,7 +18280,149 @@ path("", views.lista, name="lista")</pre>
 <h4><int:pk></int:pk></h4>
 <p>Captura un entero y lo pasa como argumento.</p>
 <div class="mental">Cómo pensarlo: Perfecto para ids.</div>
-<pre>path('&lt;int:pk&gt;/', views.detalle)</pre>
+<pre>path('&lt;int:pk&gt;/', views.detalle)</pre><div class="pk-inline-explainer">
+<div class="pk-inline-title">
+<div>
+<span>🔎 DETENTE AQUÍ</span>
+<strong>¿Cómo se lee <code>&lt;int:pk&gt;/</code>?</strong>
+</div>
+<small>NO ES TEXTO FIJO · ES UN VALOR DINÁMICO</small>
+</div>
+<div class="pk-read-sentence">
+<span>🗣️ LÉELO ASÍ</span>
+<p>
+          “En esta parte de la URL recibe un <b>número entero</b>,
+          guárdalo con el nombre <code>pk</code> y envíaselo a la View”.
+        </p>
+</div>
+<div class="pk-parts-grid">
+<article>
+<strong>&lt; &gt;</strong>
+<span>PARTE DINÁMICA</span>
+<p>
+            Lo que está entre estos signos <b>cambia</b>. No debes escribir
+            literalmente <code>&lt;int:pk&gt;</code> en el navegador.
+          </p>
+</article>
+<article>
+<strong>int</strong>
+<span>CONVERTIDOR</span>
+<p>
+            Django acepta un número entero no negativo y lo convierte a
+            un valor Python de tipo <code>int</code>.
+          </p>
+</article>
+<article>
+<strong>pk</strong>
+<span>NOMBRE DEL VALOR</span>
+<p>
+            Es la variable que Django enviará a la View.
+            <code>pk</code> suele significar <b>Primary Key</b>.
+          </p>
+</article>
+<article>
+<strong>/</strong>
+<span>BARRA FINAL</span>
+<p>
+            Forma parte del patrón. Por eso el ejemplo termina normalmente
+            en <code>/7/</code>.
+          </p>
+</article>
+</div>
+<div class="pk-real-example">
+<div class="pk-real-example-head">
+<span>🌐 EJEMPLO REAL</span>
+<strong>Si el usuario visita:</strong>
+</div>
+<div class="pk-flow">
+<code>/estudiantes/7/</code>
+<b>→</b>
+<span>Django compara <code>7/</code> con <code>&lt;int:pk&gt;/</code></span>
+<b>→</b>
+<code>pk = 7</code>
+<b>→</b>
+<code>views.detalle(request, pk=7)</code>
+</div>
+</div>
+<div class="pk-important-note">
+<div>⚠️</div>
+<div>
+<strong>Django NO busca el estudiante automáticamente</strong>
+<p>
+            La ruta solamente captura el número y lo entrega a la View.
+            Después la View decide qué hacer con él.
+          </p>
+<pre>def detalle(request, pk):
+    estudiante = get_object_or_404(
+        Estudiante,
+        pk=pk
+    )
+
+    return render(
+        request,
+        "estudiantes/detalle.html",
+        {"estudiante": estudiante}
+    )</pre>
+</div>
+</div>
+<div class="pk-left-right">
+<span>🤔 ¿POR QUÉ APARECE <code>pk=pk</code>?</span>
+<div>
+<article>
+<code>pk=</code>
+<p>
+              El de la izquierda se refiere al campo de clave primaria
+              que queremos consultar en el Model.
+            </p>
+</article>
+<article>
+<code>pk</code>
+<p>
+              El de la derecha es la variable que llegó desde la URL.
+              Si visitaste <code>/7/</code>, vale <b>7</b>.
+            </p>
+</article>
+</div>
+</div>
+<div class="pk-validity-grid">
+<article class="ok">
+<code>/estudiantes/7/</code>
+<strong>✓ Coincide</strong>
+<p>Django entrega <code>pk=7</code>.</p>
+</article>
+<article class="bad">
+<code>/estudiantes/ana/</code>
+<strong>✕ No coincide</strong>
+<p><code>ana</code> no cumple el convertidor <code>int</code>.</p>
+</article>
+<article class="warn">
+<code>/estudiantes/999/</code>
+<strong>⚠ La ruta sí coincide</strong>
+<p>
+<code>999</code> es un entero. Si ese registro no existe,
+            <code>get_object_or_404()</code> responde 404.
+          </p>
+</article>
+</div>
+<div class="pk-template-example">
+<span>🔗 DESDE UN TEMPLATE</span>
+<p>No necesitas escribir el número a mano. Django puede construir la URL:</p>
+<pre>&lt;a href="{% url 'estudiantes:detalle' estudiante.pk %}"&gt;
+    Ver estudiante
+&lt;/a&gt;</pre>
+<p>
+          Si <code>estudiante.pk</code> vale <b>7</b>, Django genera
+          <code>/estudiantes/7/</code>.
+        </p>
+</div>
+<div class="pk-memory">
+<strong>🧠 Qué recordar</strong>
+<span><code>int</code> = tipo de valor que acepta.</span>
+<span><code>pk</code> = nombre con el que llega a la View.</span>
+<span><code>7</code> = valor real recibido.</span>
+<span>La View usa ese valor para buscar el objeto.</span>
+</div>
+</div>
 <div class="mistake">⚠ Si no es entero, la ruta no coincide.</div>
 </article>
 <article class="deep-concept">
@@ -18171,7 +18765,149 @@ urlpatterns = [
     path("", views.lista, name="lista"),
     path("&lt;int:pk&gt;/", views.detalle, name="detalle"),
 ]
-</pre>
+</pre><div class="pk-inline-explainer">
+<div class="pk-inline-title">
+<div>
+<span>🔎 DETENTE AQUÍ</span>
+<strong>¿Cómo se lee <code>&lt;int:pk&gt;/</code>?</strong>
+</div>
+<small>NO ES TEXTO FIJO · ES UN VALOR DINÁMICO</small>
+</div>
+<div class="pk-read-sentence">
+<span>🗣️ LÉELO ASÍ</span>
+<p>
+          “En esta parte de la URL recibe un <b>número entero</b>,
+          guárdalo con el nombre <code>pk</code> y envíaselo a la View”.
+        </p>
+</div>
+<div class="pk-parts-grid">
+<article>
+<strong>&lt; &gt;</strong>
+<span>PARTE DINÁMICA</span>
+<p>
+            Lo que está entre estos signos <b>cambia</b>. No debes escribir
+            literalmente <code>&lt;int:pk&gt;</code> en el navegador.
+          </p>
+</article>
+<article>
+<strong>int</strong>
+<span>CONVERTIDOR</span>
+<p>
+            Django acepta un número entero no negativo y lo convierte a
+            un valor Python de tipo <code>int</code>.
+          </p>
+</article>
+<article>
+<strong>pk</strong>
+<span>NOMBRE DEL VALOR</span>
+<p>
+            Es la variable que Django enviará a la View.
+            <code>pk</code> suele significar <b>Primary Key</b>.
+          </p>
+</article>
+<article>
+<strong>/</strong>
+<span>BARRA FINAL</span>
+<p>
+            Forma parte del patrón. Por eso el ejemplo termina normalmente
+            en <code>/7/</code>.
+          </p>
+</article>
+</div>
+<div class="pk-real-example">
+<div class="pk-real-example-head">
+<span>🌐 EJEMPLO REAL</span>
+<strong>Si el usuario visita:</strong>
+</div>
+<div class="pk-flow">
+<code>/estudiantes/7/</code>
+<b>→</b>
+<span>Django compara <code>7/</code> con <code>&lt;int:pk&gt;/</code></span>
+<b>→</b>
+<code>pk = 7</code>
+<b>→</b>
+<code>views.detalle(request, pk=7)</code>
+</div>
+</div>
+<div class="pk-important-note">
+<div>⚠️</div>
+<div>
+<strong>Django NO busca el estudiante automáticamente</strong>
+<p>
+            La ruta solamente captura el número y lo entrega a la View.
+            Después la View decide qué hacer con él.
+          </p>
+<pre>def detalle(request, pk):
+    estudiante = get_object_or_404(
+        Estudiante,
+        pk=pk
+    )
+
+    return render(
+        request,
+        "estudiantes/detalle.html",
+        {"estudiante": estudiante}
+    )</pre>
+</div>
+</div>
+<div class="pk-left-right">
+<span>🤔 ¿POR QUÉ APARECE <code>pk=pk</code>?</span>
+<div>
+<article>
+<code>pk=</code>
+<p>
+              El de la izquierda se refiere al campo de clave primaria
+              que queremos consultar en el Model.
+            </p>
+</article>
+<article>
+<code>pk</code>
+<p>
+              El de la derecha es la variable que llegó desde la URL.
+              Si visitaste <code>/7/</code>, vale <b>7</b>.
+            </p>
+</article>
+</div>
+</div>
+<div class="pk-validity-grid">
+<article class="ok">
+<code>/estudiantes/7/</code>
+<strong>✓ Coincide</strong>
+<p>Django entrega <code>pk=7</code>.</p>
+</article>
+<article class="bad">
+<code>/estudiantes/ana/</code>
+<strong>✕ No coincide</strong>
+<p><code>ana</code> no cumple el convertidor <code>int</code>.</p>
+</article>
+<article class="warn">
+<code>/estudiantes/999/</code>
+<strong>⚠ La ruta sí coincide</strong>
+<p>
+<code>999</code> es un entero. Si ese registro no existe,
+            <code>get_object_or_404()</code> responde 404.
+          </p>
+</article>
+</div>
+<div class="pk-template-example">
+<span>🔗 DESDE UN TEMPLATE</span>
+<p>No necesitas escribir el número a mano. Django puede construir la URL:</p>
+<pre>&lt;a href="{% url 'estudiantes:detalle' estudiante.pk %}"&gt;
+    Ver estudiante
+&lt;/a&gt;</pre>
+<p>
+          Si <code>estudiante.pk</code> vale <b>7</b>, Django genera
+          <code>/estudiantes/7/</code>.
+        </p>
+</div>
+<div class="pk-memory">
+<strong>🧠 Qué recordar</strong>
+<span><code>int</code> = tipo de valor que acepta.</span>
+<span><code>pk</code> = nombre con el que llega a la View.</span>
+<span><code>7</code> = valor real recibido.</span>
+<span>La View usa ese valor para buscar el objeto.</span>
+</div>
+</div>
 </div></div>
 <div class="project-step-list">
 <span class="project-step-list-title">PASO A PASO · ORDEN SEGURO</span>
@@ -21198,7 +21934,153 @@ def detalle(request, pk):
     path("&lt;int:pk&gt;/", views.detalle, name="detalle"),
     path("&lt;int:pk&gt;/editar/", views.editar, name="editar"),
     path("&lt;int:pk&gt;/eliminar/", views.eliminar, name="eliminar"),
-]</pre>
+]</pre><div class="pk-inline-explainer">
+<div class="pk-inline-title">
+<div>
+<span>🔎 DETENTE AQUÍ</span>
+<strong>¿Cómo se lee <code>&lt;int:pk&gt;/</code>?</strong>
+</div>
+<small>NO ES TEXTO FIJO · ES UN VALOR DINÁMICO</small>
+</div>
+<div class="pk-read-sentence">
+<span>🗣️ LÉELO ASÍ</span>
+<p>
+          “En esta parte de la URL recibe un <b>número entero</b>,
+          guárdalo con el nombre <code>pk</code> y envíaselo a la View”.
+        </p>
+</div>
+<div class="pk-parts-grid">
+<article>
+<strong>&lt; &gt;</strong>
+<span>PARTE DINÁMICA</span>
+<p>
+            Lo que está entre estos signos <b>cambia</b>. No debes escribir
+            literalmente <code>&lt;int:pk&gt;</code> en el navegador.
+          </p>
+</article>
+<article>
+<strong>int</strong>
+<span>CONVERTIDOR</span>
+<p>
+            Django acepta un número entero no negativo y lo convierte a
+            un valor Python de tipo <code>int</code>.
+          </p>
+</article>
+<article>
+<strong>pk</strong>
+<span>NOMBRE DEL VALOR</span>
+<p>
+            Es la variable que Django enviará a la View.
+            <code>pk</code> suele significar <b>Primary Key</b>.
+          </p>
+</article>
+<article>
+<strong>/</strong>
+<span>BARRA FINAL</span>
+<p>
+            Forma parte del patrón. Por eso el ejemplo termina normalmente
+            en <code>/7/</code>.
+          </p>
+</article>
+</div>
+<div class="pk-real-example">
+<div class="pk-real-example-head">
+<span>🌐 EJEMPLO REAL</span>
+<strong>Si el usuario visita:</strong>
+</div>
+<div class="pk-flow">
+<code>/estudiantes/7/</code>
+<b>→</b>
+<span>Django compara <code>7/</code> con <code>&lt;int:pk&gt;/</code></span>
+<b>→</b>
+<code>pk = 7</code>
+<b>→</b>
+<code>views.detalle(request, pk=7)</code>
+</div>
+</div>
+<div class="pk-important-note">
+<div>⚠️</div>
+<div>
+<strong>Django NO busca el estudiante automáticamente</strong>
+<p>
+            La ruta solamente captura el número y lo entrega a la View.
+            Después la View decide qué hacer con él.
+          </p>
+<pre>def detalle(request, pk):
+    estudiante = get_object_or_404(
+        Estudiante,
+        pk=pk
+    )
+
+    return render(
+        request,
+        "estudiantes/detalle.html",
+        {"estudiante": estudiante}
+    )</pre>
+</div>
+</div>
+<div class="pk-left-right">
+<span>🤔 ¿POR QUÉ APARECE <code>pk=pk</code>?</span>
+<div>
+<article>
+<code>pk=</code>
+<p>
+              El de la izquierda se refiere al campo de clave primaria
+              que queremos consultar en el Model.
+            </p>
+</article>
+<article>
+<code>pk</code>
+<p>
+              El de la derecha es la variable que llegó desde la URL.
+              Si visitaste <code>/7/</code>, vale <b>7</b>.
+            </p>
+</article>
+</div>
+</div>
+<div class="pk-validity-grid">
+<article class="ok">
+<code>/estudiantes/7/</code>
+<strong>✓ Coincide</strong>
+<p>Django entrega <code>pk=7</code>.</p>
+</article>
+<article class="bad">
+<code>/estudiantes/ana/</code>
+<strong>✕ No coincide</strong>
+<p><code>ana</code> no cumple el convertidor <code>int</code>.</p>
+</article>
+<article class="warn">
+<code>/estudiantes/999/</code>
+<strong>⚠ La ruta sí coincide</strong>
+<p>
+<code>999</code> es un entero. Si ese registro no existe,
+            <code>get_object_or_404()</code> responde 404.
+          </p>
+</article>
+</div>
+<div class="pk-extra-routes">
+<span>EL MISMO <code>pk</code> SE REUTILIZA EN OTRAS RUTAS</span>
+<p><code>/estudiantes/7/editar/</code> → <code>pk = 7</code> → editar estudiante 7</p><p><code>/estudiantes/7/eliminar/</code> → <code>pk = 7</code> → eliminar estudiante 7</p>
+</div>
+<div class="pk-template-example">
+<span>🔗 DESDE UN TEMPLATE</span>
+<p>No necesitas escribir el número a mano. Django puede construir la URL:</p>
+<pre>&lt;a href="{% url 'estudiantes:detalle' estudiante.pk %}"&gt;
+    Ver estudiante
+&lt;/a&gt;</pre>
+<p>
+          Si <code>estudiante.pk</code> vale <b>7</b>, Django genera
+          <code>/estudiantes/7/</code>.
+        </p>
+</div>
+<div class="pk-memory">
+<strong>🧠 Qué recordar</strong>
+<span><code>int</code> = tipo de valor que acepta.</span>
+<span><code>pk</code> = nombre con el que llega a la View.</span>
+<span><code>7</code> = valor real recibido.</span>
+<span>La View usa ese valor para buscar el objeto.</span>
+</div>
+</div>
 </div>
 <div class="project-file-change">
 <div class="project-file-head">
@@ -22802,7 +23684,149 @@ path(
     views.EstudianteDetailView.as_view(),
     name="cbv-detalle",
 ),
-</pre>
+</pre><div class="pk-inline-explainer">
+<div class="pk-inline-title">
+<div>
+<span>🔎 DETENTE AQUÍ</span>
+<strong>¿Cómo se lee <code>&lt;int:pk&gt;/</code>?</strong>
+</div>
+<small>NO ES TEXTO FIJO · ES UN VALOR DINÁMICO</small>
+</div>
+<div class="pk-read-sentence">
+<span>🗣️ LÉELO ASÍ</span>
+<p>
+          “En esta parte de la URL recibe un <b>número entero</b>,
+          guárdalo con el nombre <code>pk</code> y envíaselo a la View”.
+        </p>
+</div>
+<div class="pk-parts-grid">
+<article>
+<strong>&lt; &gt;</strong>
+<span>PARTE DINÁMICA</span>
+<p>
+            Lo que está entre estos signos <b>cambia</b>. No debes escribir
+            literalmente <code>&lt;int:pk&gt;</code> en el navegador.
+          </p>
+</article>
+<article>
+<strong>int</strong>
+<span>CONVERTIDOR</span>
+<p>
+            Django acepta un número entero no negativo y lo convierte a
+            un valor Python de tipo <code>int</code>.
+          </p>
+</article>
+<article>
+<strong>pk</strong>
+<span>NOMBRE DEL VALOR</span>
+<p>
+            Es la variable que Django enviará a la View.
+            <code>pk</code> suele significar <b>Primary Key</b>.
+          </p>
+</article>
+<article>
+<strong>/</strong>
+<span>BARRA FINAL</span>
+<p>
+            Forma parte del patrón. Por eso el ejemplo termina normalmente
+            en <code>/7/</code>.
+          </p>
+</article>
+</div>
+<div class="pk-real-example">
+<div class="pk-real-example-head">
+<span>🌐 EJEMPLO REAL</span>
+<strong>Si el usuario visita:</strong>
+</div>
+<div class="pk-flow">
+<code>/estudiantes/7/</code>
+<b>→</b>
+<span>Django compara <code>7/</code> con <code>&lt;int:pk&gt;/</code></span>
+<b>→</b>
+<code>pk = 7</code>
+<b>→</b>
+<code>views.detalle(request, pk=7)</code>
+</div>
+</div>
+<div class="pk-important-note">
+<div>⚠️</div>
+<div>
+<strong>Django NO busca el estudiante automáticamente</strong>
+<p>
+            La ruta solamente captura el número y lo entrega a la View.
+            Después la View decide qué hacer con él.
+          </p>
+<pre>def detalle(request, pk):
+    estudiante = get_object_or_404(
+        Estudiante,
+        pk=pk
+    )
+
+    return render(
+        request,
+        "estudiantes/detalle.html",
+        {"estudiante": estudiante}
+    )</pre>
+</div>
+</div>
+<div class="pk-left-right">
+<span>🤔 ¿POR QUÉ APARECE <code>pk=pk</code>?</span>
+<div>
+<article>
+<code>pk=</code>
+<p>
+              El de la izquierda se refiere al campo de clave primaria
+              que queremos consultar en el Model.
+            </p>
+</article>
+<article>
+<code>pk</code>
+<p>
+              El de la derecha es la variable que llegó desde la URL.
+              Si visitaste <code>/7/</code>, vale <b>7</b>.
+            </p>
+</article>
+</div>
+</div>
+<div class="pk-validity-grid">
+<article class="ok">
+<code>/estudiantes/7/</code>
+<strong>✓ Coincide</strong>
+<p>Django entrega <code>pk=7</code>.</p>
+</article>
+<article class="bad">
+<code>/estudiantes/ana/</code>
+<strong>✕ No coincide</strong>
+<p><code>ana</code> no cumple el convertidor <code>int</code>.</p>
+</article>
+<article class="warn">
+<code>/estudiantes/999/</code>
+<strong>⚠ La ruta sí coincide</strong>
+<p>
+<code>999</code> es un entero. Si ese registro no existe,
+            <code>get_object_or_404()</code> responde 404.
+          </p>
+</article>
+</div>
+<div class="pk-template-example">
+<span>🔗 DESDE UN TEMPLATE</span>
+<p>No necesitas escribir el número a mano. Django puede construir la URL:</p>
+<pre>&lt;a href="{% url 'estudiantes:detalle' estudiante.pk %}"&gt;
+    Ver estudiante
+&lt;/a&gt;</pre>
+<p>
+          Si <code>estudiante.pk</code> vale <b>7</b>, Django genera
+          <code>/estudiantes/7/</code>.
+        </p>
+</div>
+<div class="pk-memory">
+<strong>🧠 Qué recordar</strong>
+<span><code>int</code> = tipo de valor que acepta.</span>
+<span><code>pk</code> = nombre con el que llega a la View.</span>
+<span><code>7</code> = valor real recibido.</span>
+<span>La View usa ese valor para buscar el objeto.</span>
+</div>
+</div>
 </div></div>
 <div class="project-step-list">
 <span class="project-step-list-title">PASO A PASO · ORDEN SEGURO</span>
@@ -24732,7 +25756,153 @@ class EstudianteDeleteView(LoginRequiredMixin, DeleteView):
 <div class="project-file-head"><span>📄 ARCHIVO EXACTO</span><code>django_estudiantes/estudiantes/urls.py</code></div>
 <pre>path("cbv/nuevo/", views.EstudianteCreateView.as_view(), name="cbv-crear"),
 path("cbv/&lt;int:pk&gt;/editar/", views.EstudianteUpdateView.as_view(), name="cbv-editar"),
-path("cbv/&lt;int:pk&gt;/eliminar/", views.EstudianteDeleteView.as_view(), name="cbv-eliminar"),</pre>
+path("cbv/&lt;int:pk&gt;/eliminar/", views.EstudianteDeleteView.as_view(), name="cbv-eliminar"),</pre><div class="pk-inline-explainer">
+<div class="pk-inline-title">
+<div>
+<span>🔎 DETENTE AQUÍ</span>
+<strong>¿Cómo se lee <code>&lt;int:pk&gt;/</code>?</strong>
+</div>
+<small>NO ES TEXTO FIJO · ES UN VALOR DINÁMICO</small>
+</div>
+<div class="pk-read-sentence">
+<span>🗣️ LÉELO ASÍ</span>
+<p>
+          “En esta parte de la URL recibe un <b>número entero</b>,
+          guárdalo con el nombre <code>pk</code> y envíaselo a la View”.
+        </p>
+</div>
+<div class="pk-parts-grid">
+<article>
+<strong>&lt; &gt;</strong>
+<span>PARTE DINÁMICA</span>
+<p>
+            Lo que está entre estos signos <b>cambia</b>. No debes escribir
+            literalmente <code>&lt;int:pk&gt;</code> en el navegador.
+          </p>
+</article>
+<article>
+<strong>int</strong>
+<span>CONVERTIDOR</span>
+<p>
+            Django acepta un número entero no negativo y lo convierte a
+            un valor Python de tipo <code>int</code>.
+          </p>
+</article>
+<article>
+<strong>pk</strong>
+<span>NOMBRE DEL VALOR</span>
+<p>
+            Es la variable que Django enviará a la View.
+            <code>pk</code> suele significar <b>Primary Key</b>.
+          </p>
+</article>
+<article>
+<strong>/</strong>
+<span>BARRA FINAL</span>
+<p>
+            Forma parte del patrón. Por eso el ejemplo termina normalmente
+            en <code>/7/</code>.
+          </p>
+</article>
+</div>
+<div class="pk-real-example">
+<div class="pk-real-example-head">
+<span>🌐 EJEMPLO REAL</span>
+<strong>Si el usuario visita:</strong>
+</div>
+<div class="pk-flow">
+<code>/estudiantes/7/</code>
+<b>→</b>
+<span>Django compara <code>7/</code> con <code>&lt;int:pk&gt;/</code></span>
+<b>→</b>
+<code>pk = 7</code>
+<b>→</b>
+<code>views.detalle(request, pk=7)</code>
+</div>
+</div>
+<div class="pk-important-note">
+<div>⚠️</div>
+<div>
+<strong>Django NO busca el estudiante automáticamente</strong>
+<p>
+            La ruta solamente captura el número y lo entrega a la View.
+            Después la View decide qué hacer con él.
+          </p>
+<pre>def detalle(request, pk):
+    estudiante = get_object_or_404(
+        Estudiante,
+        pk=pk
+    )
+
+    return render(
+        request,
+        "estudiantes/detalle.html",
+        {"estudiante": estudiante}
+    )</pre>
+</div>
+</div>
+<div class="pk-left-right">
+<span>🤔 ¿POR QUÉ APARECE <code>pk=pk</code>?</span>
+<div>
+<article>
+<code>pk=</code>
+<p>
+              El de la izquierda se refiere al campo de clave primaria
+              que queremos consultar en el Model.
+            </p>
+</article>
+<article>
+<code>pk</code>
+<p>
+              El de la derecha es la variable que llegó desde la URL.
+              Si visitaste <code>/7/</code>, vale <b>7</b>.
+            </p>
+</article>
+</div>
+</div>
+<div class="pk-validity-grid">
+<article class="ok">
+<code>/estudiantes/7/</code>
+<strong>✓ Coincide</strong>
+<p>Django entrega <code>pk=7</code>.</p>
+</article>
+<article class="bad">
+<code>/estudiantes/ana/</code>
+<strong>✕ No coincide</strong>
+<p><code>ana</code> no cumple el convertidor <code>int</code>.</p>
+</article>
+<article class="warn">
+<code>/estudiantes/999/</code>
+<strong>⚠ La ruta sí coincide</strong>
+<p>
+<code>999</code> es un entero. Si ese registro no existe,
+            <code>get_object_or_404()</code> responde 404.
+          </p>
+</article>
+</div>
+<div class="pk-extra-routes">
+<span>EL MISMO <code>pk</code> SE REUTILIZA EN OTRAS RUTAS</span>
+<p><code>/estudiantes/7/editar/</code> → <code>pk = 7</code> → editar estudiante 7</p><p><code>/estudiantes/7/eliminar/</code> → <code>pk = 7</code> → eliminar estudiante 7</p>
+</div>
+<div class="pk-template-example">
+<span>🔗 DESDE UN TEMPLATE</span>
+<p>No necesitas escribir el número a mano. Django puede construir la URL:</p>
+<pre>&lt;a href="{% url 'estudiantes:detalle' estudiante.pk %}"&gt;
+    Ver estudiante
+&lt;/a&gt;</pre>
+<p>
+          Si <code>estudiante.pk</code> vale <b>7</b>, Django genera
+          <code>/estudiantes/7/</code>.
+        </p>
+</div>
+<div class="pk-memory">
+<strong>🧠 Qué recordar</strong>
+<span><code>int</code> = tipo de valor que acepta.</span>
+<span><code>pk</code> = nombre con el que llega a la View.</span>
+<span><code>7</code> = valor real recibido.</span>
+<span>La View usa ese valor para buscar el objeto.</span>
+</div>
+</div>
 </div></div>
 <div class="project-step-list"><span class="project-step-list-title">PASO A PASO</span><ol><li><span>1</span><p>Crea CreateView.</p></li><li><span>2</span><p>Crea UpdateView.</p></li><li><span>3</span><p>Crea DeleteView.</p></li><li><span>4</span><p>Protege con LoginRequiredMixin.</p></li><li><span>5</span><p>Conecta cada clase con as_view().</p></li></ol></div>
 <div class="project-verification-access">
@@ -28381,7 +29551,153 @@ STATIC_ROOT = BASE_DIR / "staticfiles"</pre>
     path("&lt;int:pk&gt;/", views.detalle, name="detalle"),
     path("&lt;int:pk&gt;/editar/", views.editar, name="editar"),
     path("&lt;int:pk&gt;/eliminar/", views.eliminar, name="eliminar"),
-]</code></pre>
+]</code></pre><div class="pk-inline-explainer">
+<div class="pk-inline-title">
+<div>
+<span>🔎 DETENTE AQUÍ</span>
+<strong>¿Cómo se lee <code>&lt;int:pk&gt;/</code>?</strong>
+</div>
+<small>NO ES TEXTO FIJO · ES UN VALOR DINÁMICO</small>
+</div>
+<div class="pk-read-sentence">
+<span>🗣️ LÉELO ASÍ</span>
+<p>
+          “En esta parte de la URL recibe un <b>número entero</b>,
+          guárdalo con el nombre <code>pk</code> y envíaselo a la View”.
+        </p>
+</div>
+<div class="pk-parts-grid">
+<article>
+<strong>&lt; &gt;</strong>
+<span>PARTE DINÁMICA</span>
+<p>
+            Lo que está entre estos signos <b>cambia</b>. No debes escribir
+            literalmente <code>&lt;int:pk&gt;</code> en el navegador.
+          </p>
+</article>
+<article>
+<strong>int</strong>
+<span>CONVERTIDOR</span>
+<p>
+            Django acepta un número entero no negativo y lo convierte a
+            un valor Python de tipo <code>int</code>.
+          </p>
+</article>
+<article>
+<strong>pk</strong>
+<span>NOMBRE DEL VALOR</span>
+<p>
+            Es la variable que Django enviará a la View.
+            <code>pk</code> suele significar <b>Primary Key</b>.
+          </p>
+</article>
+<article>
+<strong>/</strong>
+<span>BARRA FINAL</span>
+<p>
+            Forma parte del patrón. Por eso el ejemplo termina normalmente
+            en <code>/7/</code>.
+          </p>
+</article>
+</div>
+<div class="pk-real-example">
+<div class="pk-real-example-head">
+<span>🌐 EJEMPLO REAL</span>
+<strong>Si el usuario visita:</strong>
+</div>
+<div class="pk-flow">
+<code>/estudiantes/7/</code>
+<b>→</b>
+<span>Django compara <code>7/</code> con <code>&lt;int:pk&gt;/</code></span>
+<b>→</b>
+<code>pk = 7</code>
+<b>→</b>
+<code>views.detalle(request, pk=7)</code>
+</div>
+</div>
+<div class="pk-important-note">
+<div>⚠️</div>
+<div>
+<strong>Django NO busca el estudiante automáticamente</strong>
+<p>
+            La ruta solamente captura el número y lo entrega a la View.
+            Después la View decide qué hacer con él.
+          </p>
+<pre>def detalle(request, pk):
+    estudiante = get_object_or_404(
+        Estudiante,
+        pk=pk
+    )
+
+    return render(
+        request,
+        "estudiantes/detalle.html",
+        {"estudiante": estudiante}
+    )</pre>
+</div>
+</div>
+<div class="pk-left-right">
+<span>🤔 ¿POR QUÉ APARECE <code>pk=pk</code>?</span>
+<div>
+<article>
+<code>pk=</code>
+<p>
+              El de la izquierda se refiere al campo de clave primaria
+              que queremos consultar en el Model.
+            </p>
+</article>
+<article>
+<code>pk</code>
+<p>
+              El de la derecha es la variable que llegó desde la URL.
+              Si visitaste <code>/7/</code>, vale <b>7</b>.
+            </p>
+</article>
+</div>
+</div>
+<div class="pk-validity-grid">
+<article class="ok">
+<code>/estudiantes/7/</code>
+<strong>✓ Coincide</strong>
+<p>Django entrega <code>pk=7</code>.</p>
+</article>
+<article class="bad">
+<code>/estudiantes/ana/</code>
+<strong>✕ No coincide</strong>
+<p><code>ana</code> no cumple el convertidor <code>int</code>.</p>
+</article>
+<article class="warn">
+<code>/estudiantes/999/</code>
+<strong>⚠ La ruta sí coincide</strong>
+<p>
+<code>999</code> es un entero. Si ese registro no existe,
+            <code>get_object_or_404()</code> responde 404.
+          </p>
+</article>
+</div>
+<div class="pk-extra-routes">
+<span>EL MISMO <code>pk</code> SE REUTILIZA EN OTRAS RUTAS</span>
+<p><code>/estudiantes/7/editar/</code> → <code>pk = 7</code> → editar estudiante 7</p><p><code>/estudiantes/7/eliminar/</code> → <code>pk = 7</code> → eliminar estudiante 7</p>
+</div>
+<div class="pk-template-example">
+<span>🔗 DESDE UN TEMPLATE</span>
+<p>No necesitas escribir el número a mano. Django puede construir la URL:</p>
+<pre>&lt;a href="{% url 'estudiantes:detalle' estudiante.pk %}"&gt;
+    Ver estudiante
+&lt;/a&gt;</pre>
+<p>
+          Si <code>estudiante.pk</code> vale <b>7</b>, Django genera
+          <code>/estudiantes/7/</code>.
+        </p>
+</div>
+<div class="pk-memory">
+<strong>🧠 Qué recordar</strong>
+<span><code>int</code> = tipo de valor que acepta.</span>
+<span><code>pk</code> = nombre con el que llega a la View.</span>
+<span><code>7</code> = valor real recibido.</span>
+<span>La View usa ese valor para buscar el objeto.</span>
+</div>
+</div>
 </div>
 <div class="flow-wide"><span class="flow-box">/estudiantes/</span><span class="flow-arr">→</span><span class="flow-box">/nuevo/</span><span class="flow-arr">→</span><span class="flow-box">/<pk>/</pk></span><span class="flow-arr">→</span><span class="flow-box">/<pk>/editar/</pk></span><span class="flow-arr">→</span><span class="flow-box">/<pk>/eliminar/</pk></span></div></div>
 </details>
@@ -29072,7 +30388,153 @@ urlpatterns = [
     path("&lt;int:pk&gt;/", views.detalle, name="detalle"),
     path("&lt;int:pk&gt;/editar/", views.editar, name="editar"),
     path("&lt;int:pk&gt;/eliminar/", views.eliminar, name="eliminar"),
-]</pre>
+]</pre><div class="pk-inline-explainer">
+<div class="pk-inline-title">
+<div>
+<span>🔎 DETENTE AQUÍ</span>
+<strong>¿Cómo se lee <code>&lt;int:pk&gt;/</code>?</strong>
+</div>
+<small>NO ES TEXTO FIJO · ES UN VALOR DINÁMICO</small>
+</div>
+<div class="pk-read-sentence">
+<span>🗣️ LÉELO ASÍ</span>
+<p>
+          “En esta parte de la URL recibe un <b>número entero</b>,
+          guárdalo con el nombre <code>pk</code> y envíaselo a la View”.
+        </p>
+</div>
+<div class="pk-parts-grid">
+<article>
+<strong>&lt; &gt;</strong>
+<span>PARTE DINÁMICA</span>
+<p>
+            Lo que está entre estos signos <b>cambia</b>. No debes escribir
+            literalmente <code>&lt;int:pk&gt;</code> en el navegador.
+          </p>
+</article>
+<article>
+<strong>int</strong>
+<span>CONVERTIDOR</span>
+<p>
+            Django acepta un número entero no negativo y lo convierte a
+            un valor Python de tipo <code>int</code>.
+          </p>
+</article>
+<article>
+<strong>pk</strong>
+<span>NOMBRE DEL VALOR</span>
+<p>
+            Es la variable que Django enviará a la View.
+            <code>pk</code> suele significar <b>Primary Key</b>.
+          </p>
+</article>
+<article>
+<strong>/</strong>
+<span>BARRA FINAL</span>
+<p>
+            Forma parte del patrón. Por eso el ejemplo termina normalmente
+            en <code>/7/</code>.
+          </p>
+</article>
+</div>
+<div class="pk-real-example">
+<div class="pk-real-example-head">
+<span>🌐 EJEMPLO REAL</span>
+<strong>Si el usuario visita:</strong>
+</div>
+<div class="pk-flow">
+<code>/estudiantes/7/</code>
+<b>→</b>
+<span>Django compara <code>7/</code> con <code>&lt;int:pk&gt;/</code></span>
+<b>→</b>
+<code>pk = 7</code>
+<b>→</b>
+<code>views.detalle(request, pk=7)</code>
+</div>
+</div>
+<div class="pk-important-note">
+<div>⚠️</div>
+<div>
+<strong>Django NO busca el estudiante automáticamente</strong>
+<p>
+            La ruta solamente captura el número y lo entrega a la View.
+            Después la View decide qué hacer con él.
+          </p>
+<pre>def detalle(request, pk):
+    estudiante = get_object_or_404(
+        Estudiante,
+        pk=pk
+    )
+
+    return render(
+        request,
+        "estudiantes/detalle.html",
+        {"estudiante": estudiante}
+    )</pre>
+</div>
+</div>
+<div class="pk-left-right">
+<span>🤔 ¿POR QUÉ APARECE <code>pk=pk</code>?</span>
+<div>
+<article>
+<code>pk=</code>
+<p>
+              El de la izquierda se refiere al campo de clave primaria
+              que queremos consultar en el Model.
+            </p>
+</article>
+<article>
+<code>pk</code>
+<p>
+              El de la derecha es la variable que llegó desde la URL.
+              Si visitaste <code>/7/</code>, vale <b>7</b>.
+            </p>
+</article>
+</div>
+</div>
+<div class="pk-validity-grid">
+<article class="ok">
+<code>/estudiantes/7/</code>
+<strong>✓ Coincide</strong>
+<p>Django entrega <code>pk=7</code>.</p>
+</article>
+<article class="bad">
+<code>/estudiantes/ana/</code>
+<strong>✕ No coincide</strong>
+<p><code>ana</code> no cumple el convertidor <code>int</code>.</p>
+</article>
+<article class="warn">
+<code>/estudiantes/999/</code>
+<strong>⚠ La ruta sí coincide</strong>
+<p>
+<code>999</code> es un entero. Si ese registro no existe,
+            <code>get_object_or_404()</code> responde 404.
+          </p>
+</article>
+</div>
+<div class="pk-extra-routes">
+<span>EL MISMO <code>pk</code> SE REUTILIZA EN OTRAS RUTAS</span>
+<p><code>/estudiantes/7/editar/</code> → <code>pk = 7</code> → editar estudiante 7</p><p><code>/estudiantes/7/eliminar/</code> → <code>pk = 7</code> → eliminar estudiante 7</p>
+</div>
+<div class="pk-template-example">
+<span>🔗 DESDE UN TEMPLATE</span>
+<p>No necesitas escribir el número a mano. Django puede construir la URL:</p>
+<pre>&lt;a href="{% url 'estudiantes:detalle' estudiante.pk %}"&gt;
+    Ver estudiante
+&lt;/a&gt;</pre>
+<p>
+          Si <code>estudiante.pk</code> vale <b>7</b>, Django genera
+          <code>/estudiantes/7/</code>.
+        </p>
+</div>
+<div class="pk-memory">
+<strong>🧠 Qué recordar</strong>
+<span><code>int</code> = tipo de valor que acepta.</span>
+<span><code>pk</code> = nombre con el que llega a la View.</span>
+<span><code>7</code> = valor real recibido.</span>
+<span>La View usa ese valor para buscar el objeto.</span>
+</div>
+</div>
 </div>
 <div class="codebox">
 <div class="codehead"><strong>config/urls.py</strong><span>conectar la app</span></div>
@@ -29536,450 +30998,3 @@ python -m pip freeze &gt; requirements.txt</pre>
 </div>
 <div class="complementary-note">
 <strong>Idea:</strong>
-<span>No es obligatorio para continuar. Úsalo para practicar un poco más el concepto antes de pasar a la siguiente lección.</span>
-</div>
-</div>
-</div><nav aria-label="Navegación entre lecciones" class="lesson-pager"><a class="lesson-pager-link prev" href="#proyecto-final"><small>← ANTERIOR</small><strong>Proyecto final: Sistema de estudiantes</strong></a></nav></section></main>
-</div>
-<button class="mobile-menu" id="menuBtn" type="button">☰</button>
-<div class="toolbar">
-<button onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Ir arriba" type="button">↑</button>
-<button onclick="window.print()" title="Imprimir" type="button">⌘</button>
-</div>
-<div aria-hidden="true" class="academy-search-modal" id="academySearchModal">
-<div class="academy-search-backdrop" data-close-search=""></div>
-<div aria-modal="true" class="academy-search-panel" role="dialog">
-<div class="academy-search-input-wrap">
-<span>⌕</span>
-<input autocomplete="off" id="academySearchInput" placeholder="Busca Model, URL, Form, migration, login..." type="search"/>
-<kbd>ESC</kbd>
-</div>
-<div class="academy-search-meta"><span>Buscar en capítulos y temas</span><span>↑↓ navegar · Enter abrir</span></div>
-<div class="academy-search-results" id="academySearchResults"></div>
-<div class="academy-search-empty" id="academySearchEmpty">Escribe para buscar en toda la academia.</div>
-</div>
-</div>
-<div class="academy-sidebar-backdrop" id="academySidebarBackdrop"></div>
-<button class="focus-exit-btn" id="focusExitBtn" type="button">Salir de enfoque</button>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const ORDER = ["inicio", "antes-django", "python-desde-cero", "entorno-python", "instalacion", "crear-proyecto", "que-es-django", "estructura", "apps", "urls", "views", "templates", "static", "models", "migrations", "admin", "forms", "csrf-botones", "crud", "relaciones", "auth", "sessions-messages", "uploads", "cbv", "middleware", "signals", "apis", "orm-avanzado", "models-avanzados", "transacciones", "forms-avanzados", "formsets", "cbv-edicion", "paginacion", "template-tags", "management-commands", "usuario-personalizado", "password-reset", "email", "cache", "logging", "i18n-timezones", "async-asgi", "fixtures", "serializacion", "contenttypes", "sitemaps-feeds", "seguridad-avanzada", "optimizacion-orm", "testing", "seguridad", "deploy", "proyecto-final", "proyecto-desde-cero"];
-  const LABELS = {"inicio": "Inicio", "antes-django": "Antes de Django", "python-desde-cero": "Python desde cero", "entorno-python": "Entorno virtual y pip", "instalacion": "Instalación", "crear-proyecto": "Hola Mundo", "que-es-django": "Qué es Django", "estructura": "Estructura", "apps": "Apps", "urls": "URLs", "views": "Views", "templates": "Templates", "static": "Static files", "models": "Models + ORM", "migrations": "Migraciones", "admin": "Admin", "forms": "Forms", "csrf-botones": "Botones + CSRF", "crud": "CRUD completo", "relaciones": "Relaciones", "auth": "Autenticación", "sessions-messages": "Sesiones + mensajes", "uploads": "Archivos y media", "cbv": "Class-Based Views", "middleware": "Middleware", "signals": "Signals", "apis": "APIs + fetch", "orm-avanzado": "ORM avanzado", "models-avanzados": "Models avanzados", "transacciones": "Transacciones", "forms-avanzados": "Forms avanzados", "formsets": "Formsets", "cbv-edicion": "CBV de edición", "paginacion": "Paginación", "template-tags": "Template tags", "management-commands": "Comandos propios", "usuario-personalizado": "Usuario y perfil", "password-reset": "Password reset", "email": "Email", "cache": "Cache", "logging": "Logging", "i18n-timezones": "i18n + zonas horarias", "async-asgi": "Async + ASGI", "fixtures": "Fixtures", "serializacion": "Serialización", "contenttypes": "ContentTypes", "sitemaps-feeds": "Sitemaps + feeds", "seguridad-avanzada": "Seguridad avanzada", "optimizacion-orm": "Optimización ORM", "testing": "Testing", "seguridad": "Seguridad", "deploy": "Despliegue", "proyecto-final": "Proyecto final", "proyecto-desde-cero": "Proyecto desde cero"};
-  const GROUPS = {"inicio": "Inicio", "antes-django": "Fundamentos", "python-desde-cero": "Fundamentos", "entorno-python": "Fundamentos", "instalacion": "Django esencial", "crear-proyecto": "Django esencial", "que-es-django": "Django esencial", "estructura": "Django esencial", "apps": "Django esencial", "urls": "Django esencial", "views": "Django esencial", "templates": "Django esencial", "static": "Django esencial", "models": "Datos y ORM", "migrations": "Datos y ORM", "admin": "Datos y ORM", "relaciones": "Datos y ORM", "forms": "Forms y CRUD", "csrf-botones": "Forms y CRUD", "crud": "Forms y CRUD", "auth": "Django avanzado", "sessions-messages": "Django avanzado", "uploads": "Django avanzado", "cbv": "Django avanzado", "middleware": "Django avanzado", "signals": "Django avanzado", "apis": "APIs", "orm-avanzado": "Intermedio y avanzado", "models-avanzados": "Intermedio y avanzado", "transacciones": "Intermedio y avanzado", "forms-avanzados": "Intermedio y avanzado", "formsets": "Intermedio y avanzado", "cbv-edicion": "Intermedio y avanzado", "paginacion": "Intermedio y avanzado", "template-tags": "Intermedio y avanzado", "management-commands": "Intermedio y avanzado", "usuario-personalizado": "Intermedio y avanzado", "password-reset": "Intermedio y avanzado", "email": "Intermedio y avanzado", "cache": "Intermedio y avanzado", "logging": "Intermedio y avanzado", "i18n-timezones": "Intermedio y avanzado", "async-asgi": "Intermedio y avanzado", "fixtures": "Intermedio y avanzado", "serializacion": "Intermedio y avanzado", "contenttypes": "Intermedio y avanzado", "sitemaps-feeds": "Intermedio y avanzado", "seguridad-avanzada": "Intermedio y avanzado", "optimizacion-orm": "Intermedio y avanzado", "testing": "Calidad y producción", "seguridad": "Calidad y producción", "deploy": "Calidad y producción", "proyecto-final": "Proyecto final", "proyecto-desde-cero": "Proyecto final"};
-  const sidebar = document.getElementById('sidebar');
-  const searchModal = document.getElementById('academySearchModal');
-  const searchInput = document.getElementById('academySearchInput');
-  const searchResults = document.getElementById('academySearchResults');
-  const searchEmpty = document.getElementById('academySearchEmpty');
-
-  // ---------- Mobile ----------
-  document.getElementById('menuBtn')?.addEventListener('click', () => {
-    document.body.classList.toggle('sidebar-open');
-    sidebar?.classList.toggle('open');
-  });
-  document.getElementById('academySidebarBackdrop')?.addEventListener('click', () => {
-    document.body.classList.remove('sidebar-open');
-    sidebar?.classList.remove('open');
-  });
-  document.querySelectorAll('#toc a').forEach(a => a.addEventListener('click', () => {
-    document.body.classList.remove('sidebar-open');
-    sidebar?.classList.remove('open');
-  }));
-
-  // ---------- Theme ----------
-  const themeKey = 'django-academy-theme';
-  const themeBtn = document.getElementById('themeBtn');
-  function setTheme(theme) {
-    document.body.classList.toggle('theme-dark', theme === 'dark');
-    localStorage.setItem(themeKey, theme);
-    if (themeBtn) themeBtn.textContent = theme === 'dark' ? '☀' : '◐';
-  }
-  setTheme(localStorage.getItem(themeKey) || 'light');
-  themeBtn?.addEventListener('click', () => setTheme(
-    document.body.classList.contains('theme-dark') ? 'light' : 'dark'
-  ));
-
-  // ---------- Focus ----------
-  const focusBtn = document.getElementById('focusModeBtn');
-  function setFocus(on) {
-    document.body.classList.toggle('focus-mode', on);
-    if (focusBtn) focusBtn.textContent = on ? '▣' : '◫';
-  }
-  focusBtn?.addEventListener('click', () => setFocus(!document.body.classList.contains('focus-mode')));
-  document.getElementById('focusExitBtn')?.addEventListener('click', () => setFocus(false));
-
-  // ---------- State ----------
-  const visitedKey = 'django-academy-visited';
-  const lastKey = 'django-academy-last';
-  const statusPrefix = 'django-academy-status-';
-  const favPrefix = 'django-academy-fav-';
-  let visited = new Set();
-  try { visited = new Set(JSON.parse(localStorage.getItem(visitedKey) || '[]')); } catch(e) {}
-
-  function saveVisited(){ localStorage.setItem(visitedKey, JSON.stringify([...visited])); }
-  function status(id){ return localStorage.getItem(statusPrefix + id) || ''; }
-
-  function refreshStates(){
-    document.querySelectorAll('[data-section-link]').forEach(link => {
-      const id = link.dataset.sectionLink;
-      const s = status(id);
-      link.classList.toggle('is-visited', visited.has(id));
-      link.classList.toggle('is-done', s === 'done');
-      link.classList.toggle('needs-review', s === 'review');
-      const state = link.querySelector('.nav-link-state');
-      if(state) state.textContent = s === 'done' ? '✓' : s === 'review' ? '◐' : visited.has(id) ? '•' : '';
-    });
-    document.querySelectorAll('[data-study-section]').forEach(strip => {
-      const id = strip.dataset.studySection;
-      const s = status(id);
-      strip.querySelectorAll('[data-study-action]').forEach(btn => {
-        btn.classList.toggle('active-done', btn.dataset.studyAction === 'done' && s === 'done');
-        btn.classList.toggle('active-review', btn.dataset.studyAction === 'review' && s === 'review');
-      });
-      const fav = strip.querySelector('[data-favorite-section]');
-      if(fav){
-        const yes = localStorage.getItem(favPrefix + id) === '1';
-        fav.classList.toggle('is-favorite', yes);
-        fav.textContent = yes ? '★' : '☆';
-      }
-    });
-  }
-
-  function refreshProgress(){
-    const valid = ORDER.filter(id => document.getElementById(id));
-    const count = valid.filter(id => visited.has(id)).length;
-    const pct = Math.round((count / Math.max(valid.length,1))*100);
-    ['sidebarProgressText','topbarProgressText','dashboardProgressNumber'].forEach(id => {
-      const el = document.getElementById(id); if(el) el.textContent = pct + '%';
-    });
-    ['sidebarProgressBar','dashboardProgressBar'].forEach(id => {
-      const el = document.getElementById(id); if(el) el.style.width = pct + '%';
-    });
-    const detail = document.getElementById('dashboardProgressDetail');
-    if(detail) detail.textContent = count + ' de ' + valid.length + ' capítulos visitados';
-  }
-
-  document.querySelectorAll('[data-study-section]').forEach(strip => {
-    strip.querySelectorAll('[data-study-action]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const id = strip.dataset.studySection;
-        const next = btn.dataset.studyAction;
-        if(status(id) === next) localStorage.removeItem(statusPrefix + id);
-        else localStorage.setItem(statusPrefix + id, next);
-        visited.add(id); saveVisited(); refreshStates(); refreshProgress();
-      });
-    });
-    strip.querySelector('[data-favorite-section]')?.addEventListener('click', e => {
-      const id = strip.dataset.studySection;
-      const key = favPrefix + id;
-      localStorage.setItem(key, localStorage.getItem(key) === '1' ? '0' : '1');
-      refreshStates();
-    });
-  });
-
-  // ---------- Scrollspy / breadcrumbs ----------
-  function activate(id){
-    if(!document.getElementById(id)) return;
-    document.querySelectorAll('[data-section-link]').forEach(a => a.classList.toggle('active', a.dataset.sectionLink === id));
-    const link = document.querySelector(`[data-section-link="${CSS.escape(id)}"]`);
-    link?.closest('.academy-nav-group')?.setAttribute('open','');
-    const cg = document.getElementById('crumbGroup');
-    const cs = document.getElementById('crumbSection');
-    if(cg) cg.textContent = GROUPS[id] || 'Curso';
-    if(cs) cs.textContent = LABELS[id] || id;
-    visited.add(id); saveVisited(); localStorage.setItem(lastKey,id);
-    refreshStates(); refreshProgress(); refreshContinue(id);
-  }
-
-  const observer = new IntersectionObserver(entries => {
-    const visible = entries.filter(e => e.isIntersecting).sort((a,b) =>
-      Math.abs(a.boundingClientRect.top - 85) - Math.abs(b.boundingClientRect.top - 85)
-    );
-    if(visible[0]) activate(visible[0].target.id);
-  }, {rootMargin:'-12% 0px -70% 0px', threshold:[0,.05,.2]});
-  ORDER.forEach(id => { const el = document.getElementById(id); if(el) observer.observe(el); });
-
-  function refreshContinue(forced){
-    let id = forced || localStorage.getItem(lastKey) || 'antes-django';
-    if(!document.getElementById(id)) id = 'antes-django';
-    const title = document.getElementById('dashboardContinueTitle');
-    const desc = document.getElementById('dashboardContinueDesc');
-    if(title) title.textContent = LABELS[id] || id;
-    if(desc) desc.textContent = (GROUPS[id] || 'Curso') + ' · vuelve al último capítulo visitado.';
-    const go = () => document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});
-    const b1 = document.getElementById('dashboardContinueBtn');
-    const b2 = document.getElementById('continueBtnSide');
-    if(b1) b1.onclick = go; if(b2) b2.onclick = go;
-  }
-  refreshContinue(); refreshStates(); refreshProgress();
-
-  // ---------- Search ----------
-  const searchable = [];
-  ORDER.forEach(id => {
-    const sec = document.getElementById(id);
-    if(!sec) return;
-    searchable.push({id,title:LABELS[id]||id,group:GROUPS[id]||'Curso',type:'Capítulo',text:sec.textContent.slice(0,2000)});
-  });
-  document.querySelectorAll('main details[id]').forEach(d => {
-    const sec = d.closest('section'); const sm = d.querySelector('summary');
-    const title = sm?.querySelector('strong')?.textContent || sm?.textContent || '';
-    if(sec?.id && title.trim()) searchable.push({id:d.id,title:title.trim(),group:LABELS[sec.id]||sec.id,type:'Tema',text:d.textContent.slice(0,1200)});
-  });
-
-  let filtered = [], selected = 0;
-  const norm = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-  function escapeHtml(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-  function renderSearch(q=''){
-    const query = norm(q.trim());
-    filtered = !query ? searchable.filter(x=>x.type==='Capítulo').slice(0,12)
-      : searchable.map(item => {
-          const title=norm(item.title), hay=norm(item.title+' '+item.group+' '+item.text);
-          let score=0; query.split(/\s+/).forEach(t => score += title.includes(t)?6:hay.includes(t)?1:-10);
-          return {...item,score};
-        }).filter(x=>x.score>=0).sort((a,b)=>b.score-a.score).slice(0,18);
-    selected = Math.min(selected,Math.max(filtered.length-1,0));
-    searchResults.innerHTML='';
-    if(!filtered.length){ searchEmpty.style.display='block'; searchEmpty.textContent='No encontré coincidencias.'; return; }
-    searchEmpty.style.display='none';
-    filtered.forEach((item,index)=>{
-      const b=document.createElement('button'); b.type='button'; b.className='academy-search-result'+(index===selected?' selected':'');
-      b.innerHTML=`<span class="search-result-icon">${item.type==='Capítulo'?'§':'▤'}</span><span class="search-result-copy"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.group)}</span></span><span class="search-result-type">${item.type}</span>`;
-      b.addEventListener('click',()=>openItem(item)); searchResults.appendChild(b);
-    });
-  }
-  function openSearch(){ searchModal.classList.add('open'); document.body.style.overflow='hidden'; searchInput.value=''; renderSearch(''); setTimeout(()=>searchInput.focus(),30); }
-  function closeSearch(){ searchModal.classList.remove('open'); document.body.style.overflow=''; }
-  function openItem(item){ const el=document.getElementById(item.id); if(!el)return; if(el.tagName==='DETAILS')el.open=true; closeSearch(); setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),30); }
-  document.getElementById('openSearchBtn')?.addEventListener('click',openSearch);
-  document.getElementById('sidebarSearchTrigger')?.addEventListener('click',openSearch);
-  document.querySelectorAll('[data-close-search]').forEach(x=>x.addEventListener('click',closeSearch));
-  searchInput?.addEventListener('input',()=>{selected=0;renderSearch(searchInput.value)});
-  searchInput?.addEventListener('keydown',e=>{
-    if(e.key==='ArrowDown'){e.preventDefault();selected=Math.min(selected+1,filtered.length-1);renderSearch(searchInput.value)}
-    if(e.key==='ArrowUp'){e.preventDefault();selected=Math.max(selected-1,0);renderSearch(searchInput.value)}
-    if(e.key==='Enter'&&filtered[selected]){e.preventDefault();openItem(filtered[selected])}
-  });
-  document.addEventListener('keydown',e=>{
-    if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();searchModal.classList.contains('open')?closeSearch():openSearch()}
-    if(e.key==='Escape'){if(searchModal.classList.contains('open'))closeSearch();else if(document.body.classList.contains('focus-mode'))setFocus(false)}
-  });
-
-  // ---------- ORM preview ----------
-  const ormData = [
-    {id:1,nombre:'Ana',programa:'Sistemas',activo:true},
-    {id:2,nombre:'Luis',programa:'Diseño',activo:true},
-    {id:3,nombre:'Sara',programa:'Sistemas',activo:false},
-  ];
-  function renderOrm(kind='all'){
-    const rows=document.getElementById('ormRows'), q=document.getElementById('ormQuery'); if(!rows)return;
-    let data=ormData, text='Estudiante.objects.all()';
-    if(kind==='active'){data=ormData.filter(x=>x.activo);text='Estudiante.objects.filter(activo=True)'}
-    if(kind==='systems'){data=ormData.filter(x=>x.programa==='Sistemas');text='Estudiante.objects.filter(programa__nombre="Sistemas")'}
-    rows.innerHTML=data.map(x=>`<div class="orm-row"><span>#${x.id}</span><strong>${x.nombre}</strong><span>${x.programa}</span><span>${x.activo?'Activo':'Inactivo'}</span></div>`).join('');
-    if(q)q.textContent=text;
-  }
-  document.querySelectorAll('[data-orm-filter]').forEach(b=>b.addEventListener('click',()=>{
-    document.querySelectorAll('[data-orm-filter]').forEach(x=>x.classList.toggle('active',x===b));renderOrm(b.dataset.ormFilter)
-  }));
-  renderOrm();
-
-  // ---------- Form preview ----------
-  document.getElementById('djangoFormPreview')?.addEventListener('submit',e=>{
-    e.preventDefault();
-    const doc=document.getElementById('djDoc'), name=document.getElementById('djName'), email=document.getElementById('djEmail');
-    const goodMail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
-    document.getElementById('djDocErr').textContent=doc.value.trim()?'':'Este campo es obligatorio.';
-    document.getElementById('djNameErr').textContent=name.value.trim()?'':'Este campo es obligatorio.';
-    document.getElementById('djEmailErr').textContent=email.value.trim()?(goodMail?'':'Introduce un correo válido.'):'Este campo es obligatorio.';
-    const ok=doc.value.trim()&&name.value.trim()&&goodMail;
-    document.getElementById('djFormStatus').textContent=ok?'form.is_valid() → True ✓':'form.is_valid() → False · revisa los errores.';
-  });
-
-  // ---------- Login preview ----------
-  document.getElementById('djLoginPreview')?.addEventListener('submit',e=>{
-    e.preventDefault();
-    const user=document.getElementById('djLoginUser').value.trim();
-    const pass=document.getElementById('djLoginPass').value;
-    document.getElementById('djLoginStatus').textContent=user&&pass?'✓ Login correcto (simulación): sesión creada.':'Completa usuario y contraseña.';
-  });
-
-  // ---------- CRUD preview ----------
-  let crud=[
-    {id:1,doc:'1099',name:'Ana Torres',email:'ana@correo.com'},
-    {id:2,doc:'1100',name:'Luis Pérez',email:'luis@correo.com'}
-  ], next=3;
-  const rows=document.getElementById('djCrudRows');
-  function renderCrud(){
-    if(!rows)return;
-    rows.innerHTML=crud.map(x=>`<tr class="crud-row"><td>${x.doc}</td><td>${x.name}</td><td>${x.email}</td><td><button data-edit="${x.id}">Editar</button> <button data-del="${x.id}">Eliminar</button></td></tr>`).join('');
-    rows.querySelectorAll('[data-edit]').forEach(b=>b.addEventListener('click',()=>{
-      const x=crud.find(r=>r.id===Number(b.dataset.edit)); if(!x)return;
-      djCrudId.value=x.id;djCrudDoc.value=x.doc;djCrudName.value=x.name;djCrudEmail.value=x.email;djCrudSave.textContent='Actualizar';djCrudStatus.textContent='UPDATE: instancia cargada en ModelForm.';
-    }));
-    rows.querySelectorAll('[data-del]').forEach(b=>b.addEventListener('click',()=>{
-      crud=crud.filter(r=>r.id!==Number(b.dataset.del));djCrudStatus.textContent='DELETE: registro eliminado (simulación).';renderCrud();
-    }));
-  }
-  const djCrudId=document.getElementById('djCrudId'),djCrudDoc=document.getElementById('djCrudDoc'),djCrudName=document.getElementById('djCrudName'),djCrudEmail=document.getElementById('djCrudEmail'),djCrudSave=document.getElementById('djCrudSave'),djCrudStatus=document.getElementById('djCrudStatus');
-  djCrudSave?.addEventListener('click',()=>{
-    const doc=djCrudDoc.value.trim(),name=djCrudName.value.trim(),email=djCrudEmail.value.trim();
-    if(!doc||!name||!email){djCrudStatus.textContent='Completa documento, nombre y correo.';return}
-    const id=Number(djCrudId.value||0);
-    if(id){crud=crud.map(x=>x.id===id?{...x,doc,name,email}:x);djCrudStatus.textContent='UPDATE: cambios guardados.'}
-    else{crud=[...crud,{id:next++,doc,name,email}];djCrudStatus.textContent='CREATE: estudiante agregado.'}
-    djCrudId.value='';djCrudDoc.value='';djCrudName.value='';djCrudEmail.value='';djCrudSave.textContent='Crear';renderCrud();
-  });
-  document.getElementById('djCrudCancel')?.addEventListener('click',()=>{djCrudId.value='';djCrudDoc.value='';djCrudName.value='';djCrudEmail.value='';djCrudSave.textContent='Crear';djCrudStatus.textContent='Edición cancelada.'});
-  renderCrud();
-
-  // ---------- Final project checklist ----------
-  document.querySelectorAll('#djangoProjectChecklist input').forEach((box,i)=>{
-    const key='django-project-check-'+i;box.checked=localStorage.getItem(key)==='1';box.addEventListener('change',()=>localStorage.setItem(key,box.checked?'1':'0'));
-  });
-
-  // Highlight.js if loaded
-  if(window.hljs){ window.hljs.highlightAll(); }
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const exercisePrefix = 'django-academy-v3-exercise-';
-  const buttons = [...document.querySelectorAll('[data-exercise-complete]')];
-
-  function refreshBuildProgress() {
-    let complete = 0;
-
-    buttons.forEach(button => {
-      const id = button.dataset.exerciseComplete;
-      const yes = localStorage.getItem(exercisePrefix + id) === '1';
-      button.classList.toggle('is-complete', yes);
-      button.textContent = yes ? '✓ Completado' : '○ Pendiente';
-      if (yes) complete++;
-    });
-
-    const total = buttons.length;
-    const pct = Math.round((complete / Math.max(total, 1)) * 100);
-
-    const text = document.getElementById('buildProjectStepText');
-    const percent = document.getElementById('buildProjectPercent');
-    const bar = document.getElementById('buildProjectProgressBar');
-
-    if (text) text.textContent = complete + ' de ' + total + ' pasos';
-    if (percent) percent.textContent = pct + '%';
-    if (bar) bar.style.width = pct + '%';
-  }
-
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const id = button.dataset.exerciseComplete;
-      const key = exercisePrefix + id;
-      const current = localStorage.getItem(key) === '1';
-      localStorage.setItem(key, current ? '0' : '1');
-      refreshBuildProgress();
-    });
-  });
-
-  refreshBuildProgress();
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const prefix = 'django-academy-mini-project-';
-  const buttons = [...document.querySelectorAll('[data-mini-complete]')];
-
-  function refreshMiniProjects() {
-    let done = 0;
-
-    buttons.forEach(button => {
-      const id = button.dataset.miniComplete;
-      const completed = localStorage.getItem(prefix + id) === '1';
-      button.classList.toggle('is-complete', completed);
-      button.textContent = completed ? '✓ Completado' : '○ Pendiente';
-      if (completed) done++;
-    });
-
-    const total = buttons.length;
-    const pct = Math.round((done / Math.max(total, 1)) * 100);
-
-    const text = document.getElementById('buildProjectStepText');
-    const percent = document.getElementById('buildProjectPercent');
-    const bar = document.getElementById('buildProjectProgressBar');
-
-    if (text) text.textContent = done + ' de ' + total + ' mini proyectos';
-    if (percent) percent.textContent = pct + '%';
-    if (bar) bar.style.width = pct + '%';
-  }
-
-  buttons.forEach(button => {
-    button.addEventListener('click', function () {
-      const key = prefix + button.dataset.miniComplete;
-      const current = localStorage.getItem(key) === '1';
-      localStorage.setItem(key, current ? '0' : '1');
-      refreshMiniProjects();
-    });
-  });
-
-  refreshMiniProjects();
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const prefix = 'django-academy-progressive-project-';
-  const buttons = [...document.querySelectorAll('[data-project-complete]')];
-
-  function refreshProgressiveProject() {
-    let done = 0;
-    buttons.forEach(button => {
-      const completed = localStorage.getItem(prefix + button.dataset.projectComplete) === '1';
-      button.classList.toggle('is-complete', completed);
-      button.textContent = completed ? '✓ Aplicado al proyecto' : '○ Pendiente';
-      if (completed) done++;
-    });
-    const total = buttons.length;
-    const pct = Math.round((done / Math.max(total, 1)) * 100);
-    const text = document.getElementById('buildProjectStepText');
-    const percent = document.getElementById('buildProjectPercent');
-    const bar = document.getElementById('buildProjectProgressBar');
-    if (text) text.textContent = done + ' de ' + total + ' cambios aplicados';
-    if (percent) percent.textContent = pct + '%';
-    if (bar) bar.style.width = pct + '%';
-  }
-
-  buttons.forEach(button => {
-    button.addEventListener('click', function () {
-      const key = prefix + button.dataset.projectComplete;
-      const current = localStorage.getItem(key) === '1';
-      localStorage.setItem(key, current ? '0' : '1');
-      refreshProgressiveProject();
-    });
-  });
-
-  refreshProgressiveProject();
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const prefix = 'django-academy-complementary-';
-  document.querySelectorAll('[data-complementary-done]').forEach(function (button) {
-    const id = button.dataset.complementaryDone;
-    const key = prefix + id;
-
-    function refresh() {
-      const done = localStorage.getItem(key) === '1';
-      button.classList.toggle('is-complete', done);
-      button.textContent = done ? '✓ Completada' : '○ Pendiente';
-    }
-
-    button.addEventListener('click', function () {
-      const done = localStorage.getItem(key) === '1';
-      localStorage.setItem(key, done ? '0' : '1');
-      refresh();
-    });
-
-    refresh();
-  });
-});
-</script>
-</body></html>
-</body></html>

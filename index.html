@@ -16551,9 +16551,131 @@ body.theme-dark .crud-accordion-help p{
     display:none;
   }
 }
+
+/* ============================================================
+   DJANGO ACADEMY V36 · CRUD estrictamente vertical
+   ============================================================ */
+
+/* Evita cualquier herencia anterior de 2 columnas */
+#crud .crud-operation-grid,
+#crud .crud-operation-stack{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  gap:12px !important;
+  width:100% !important;
+  grid-template-columns:none !important;
+}
+
+#crud .crud-operation-grid > *,
+#crud .crud-operation-stack > *{
+  width:100% !important;
+  max-width:none !important;
+  min-width:0 !important;
+  margin:0 !important;
+}
+
+#crud .crud-operation-accordion,
+#crud .crud-operation-fullwidth{
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+  box-sizing:border-box !important;
+}
+
+/* El contenido interno también ocupa todo el ancho */
+#crud .crud-operation-accordion-body{
+  display:block !important;
+  width:100% !important;
+  box-sizing:border-box !important;
+}
+
+#crud .crud-operation-accordion-body .crud-file-role,
+#crud .crud-operation-accordion-body .crud-inline-code,
+#crud .crud-operation-accordion-body .crud-operation-flow,
+#crud .crud-operation-accordion-body .crud-files-title{
+  width:100% !important;
+  max-width:none !important;
+  box-sizing:border-box !important;
+}
+
+/* Los archivos dentro de una operación también quedan uno debajo del otro */
+#crud .crud-inline-code-list{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:8px !important;
+  width:100% !important;
+}
+
+#crud .crud-file-code-details{
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+}
+
+/* Nota visual */
+.crud-vertical-layout-note{
+  margin:12px 16px 0;
+  padding:11px 13px;
+  border:1px solid #bfdbfe;
+  border-radius:11px;
+  background:#eff6ff;
+}
+.crud-vertical-layout-note span{
+  display:block;
+  margin-bottom:4px;
+  color:#1d4ed8;
+  font-size:8.5px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.crud-vertical-layout-note p{
+  margin:0 !important;
+  color:#475569 !important;
+  font-size:10px !important;
+  line-height:1.55 !important;
+}
+
+/* Summary más ancho y cómodo */
+#crud .crud-operation-summary{
+  width:100% !important;
+  box-sizing:border-box !important;
+}
+
+#crud .crud-operation-summary-main{
+  flex:1 1 auto !important;
+  min-width:0 !important;
+}
+
+#crud .crud-summary-meta{
+  flex:0 1 auto !important;
+  min-width:0 !important;
+}
+
+body.theme-dark .crud-vertical-layout-note{
+  background:#10213f;
+  border-color:#1e3a5f;
+}
+body.theme-dark .crud-vertical-layout-note p{
+  color:#bfdbfe !important;
+}
+
+@media(max-width:760px){
+  #crud .crud-operation-summary{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+  }
+
+  #crud .crud-summary-meta{
+    width:100% !important;
+    padding-left:0 !important;
+    justify-content:flex-start !important;
+  }
+}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><link href="https://unpkg.com/tippy.js@6/animations/shift-away.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css" rel="stylesheet"/>
-<meta content="35" name="django-academy-version"/>
+<meta content="36" name="django-academy-version"/>
 </head><body>
 <div class="progress-top" id="progressTop"></div>
 <div class="layout">
@@ -25022,9 +25144,15 @@ def detalle(request, pk):
 <span>4</span>
 <p>Copia y comprende el código</p>
 </div>
+</div><div class="crud-vertical-layout-note">
+<span>↕️ UNA OPERACIÓN DEBAJO DE LA OTRA</span>
+<p>
+    LISTAR, CREAR, EDITAR y ELIMINAR ahora ocupan todo el ancho.
+    Abre solamente la operación que estés trabajando para evitar sobrecarga visual.
+  </p>
 </div>
-<div class="crud-operation-grid">
-<details class="crud-operation-accordion read"><summary class="crud-operation-summary">
+<div class="crud-operation-grid crud-operation-stack">
+<details class="crud-operation-accordion read crud-operation-fullwidth"><summary class="crud-operation-summary">
 <div class="crud-operation-summary-main">
 <span class="crud-summary-letter">R</span>
 <div class="crud-summary-text">
@@ -25039,8 +25167,6 @@ def detalle(request, pk):
 <b class="crud-summary-chevron">⌄</b>
 </div>
 </summary><div class="crud-operation-accordion-body">
-
-
 <div class="crud-files-title">📄 Archivos que intervienen</div>
 <div class="crud-file-role">
 <code>estudiantes/urls.py</code>
@@ -25248,7 +25374,7 @@ def detalle(request, pk):
 </div>
 </div>
 </div></details>
-<details class="crud-operation-accordion create"><summary class="crud-operation-summary">
+<details class="crud-operation-accordion create crud-operation-fullwidth"><summary class="crud-operation-summary">
 <div class="crud-operation-summary-main">
 <span class="crud-summary-letter">C</span>
 <div class="crud-summary-text">
@@ -25263,8 +25389,6 @@ def detalle(request, pk):
 <b class="crud-summary-chevron">⌄</b>
 </div>
 </summary><div class="crud-operation-accordion-body">
-
-
 <div class="crud-files-title">📄 Archivos que intervienen</div>
 <div class="crud-file-role">
 <code>estudiantes/urls.py</code>
@@ -25442,7 +25566,7 @@ class EstudianteForm(forms.ModelForm):
 </div>
 </div>
 </div></details>
-<details class="crud-operation-accordion update"><summary class="crud-operation-summary">
+<details class="crud-operation-accordion update crud-operation-fullwidth"><summary class="crud-operation-summary">
 <div class="crud-operation-summary-main">
 <span class="crud-summary-letter">U</span>
 <div class="crud-summary-text">
@@ -25457,8 +25581,6 @@ class EstudianteForm(forms.ModelForm):
 <b class="crud-summary-chevron">⌄</b>
 </div>
 </summary><div class="crud-operation-accordion-body">
-
-
 <div class="crud-files-title">📄 Archivos que intervienen</div>
 <div class="crud-file-role">
 <code>estudiantes/urls.py</code>
@@ -25644,7 +25766,7 @@ class EstudianteForm(forms.ModelForm):
 </div>
 </div>
 </div></details>
-<details class="crud-operation-accordion delete"><summary class="crud-operation-summary">
+<details class="crud-operation-accordion delete crud-operation-fullwidth"><summary class="crud-operation-summary">
 <div class="crud-operation-summary-main">
 <span class="crud-summary-letter">D</span>
 <div class="crud-summary-text">
@@ -25659,8 +25781,6 @@ class EstudianteForm(forms.ModelForm):
 <b class="crud-summary-chevron">⌄</b>
 </div>
 </summary><div class="crud-operation-accordion-body">
-
-
 <div class="crud-files-title">📄 Archivos que intervienen</div>
 <div class="crud-file-role">
 <code>estudiantes/urls.py</code>

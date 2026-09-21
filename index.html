@@ -15045,9 +15045,308 @@ body.theme-dark .persistent-routes-final p{
     grid-template-columns:1fr;
   }
 }
+
+/* ============================================================
+   DJANGO ACADEMY V30 · Preview y código visual coherentes
+   ============================================================ */
+.styled-student-preview{
+  width:min(660px,100%);
+  padding:0;
+  border:none;
+  background:transparent;
+}
+.styled-browser-shell{
+  border:1px solid #dbe4ef;
+  border-radius:18px;
+  overflow:hidden;
+  background:
+    linear-gradient(#e5edf6 1px, transparent 1px),
+    linear-gradient(90deg, #e5edf6 1px, transparent 1px),
+    #f8fafc;
+  background-size:24px 24px;
+}
+.styled-browser-topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  padding:14px 18px;
+  background:#0c4b33;
+  color:#fff;
+  font-size:10px;
+}
+.styled-browser-topbar strong{
+  font-size:10px;
+}
+.styled-browser-content{
+  padding:16px;
+}
+.styled-browser-card{
+  padding:18px;
+  border:1px solid #dbe4ef;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 10px 28px rgba(15,23,42,.05);
+}
+.styled-browser-rainbow{
+  height:4px;
+  margin:-18px -18px 18px;
+  border-radius:22px 22px 0 0;
+  background:linear-gradient(90deg,#f43f5e,#a855f7,#3b82f6);
+}
+.styled-browser-card h4{
+  margin:0 0 14px;
+  font-size:16px;
+  color:#0f172a;
+}
+.pretty-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-top:10px;
+  padding:12px 14px;
+  border:1px solid #dbe4ef;
+  border-radius:12px;
+  background:#f8fafc;
+  font-size:10px;
+}
+.pretty-card strong{
+  display:block;
+  color:#0f172a;
+  font-size:10.2px;
+}
+.pretty-card small{
+  display:block;
+  margin-top:2px;
+  color:#94a3b8;
+  font-size:8.7px;
+}
+.pretty-card span{
+  color:#64748b;
+  font-size:9.5px;
+}
+.style-match-note{
+  margin:16px 0 18px;
+  padding:14px 16px;
+  border:1px solid #bfdbfe;
+  border-radius:14px;
+  background:linear-gradient(180deg,#eff6ff,#fff);
+}
+.style-match-note span{
+  display:block;
+  margin-bottom:5px;
+  color:#1d4ed8;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.08em;
+}
+.style-match-note p{
+  margin:0 !important;
+  color:#475569 !important;
+  font-size:11px !important;
+  line-height:1.7 !important;
+}
+body.theme-dark .styled-browser-shell{
+  background:
+    linear-gradient(#233248 1px, transparent 1px),
+    linear-gradient(90deg, #233248 1px, transparent 1px),
+    #0f172a;
+  border-color:#26344f;
+}
+body.theme-dark .styled-browser-card,
+body.theme-dark .pretty-card{
+  background:#111827;
+  border-color:#26344f;
+}
+body.theme-dark .styled-browser-card h4,
+body.theme-dark .pretty-card strong{
+  color:#f8fafc;
+}
+body.theme-dark .pretty-card small,
+body.theme-dark .pretty-card span{
+  color:#94a3b8;
+}
+body.theme-dark .style-match-note{
+  background:#10213f;
+  border-color:#1e3a5f;
+}
+body.theme-dark .style-match-note p{
+  color:#bfdbfe !important;
+}
+
+/* ============================================================
+   DJANGO ACADEMY V31 · Catálogo de Fields en Models
+   ============================================================ */
+.model-field-intro{
+  display:grid;
+  grid-template-columns:52px 1fr;
+  gap:14px;
+  align-items:start;
+  margin:16px 0;
+  padding:17px;
+  border:1px solid #bbf7d0;
+  border-radius:17px;
+  background:linear-gradient(180deg,#f0fdf4,#fff);
+}
+.model-field-intro-icon{
+  width:50px;height:50px;display:grid;place-items:center;
+  border-radius:14px;background:#dcfce7;font-size:23px;
+}
+.model-field-intro span,.field-choice-guide-head span,.field-options-head span,
+.field-model-example-head span,.field-practice-box>span,.official-model-fields-note>span,
+.field-auto-pk>span,.field-selection-project-note>span{
+  display:block;margin-bottom:5px;color:#166534;
+  font-size:9px;font-weight:900;letter-spacing:.09em
+}
+.model-field-intro strong{color:#14532d;font-size:14px}
+.model-field-intro p{margin:6px 0 0!important;color:#475569!important;font-size:12px!important;line-height:1.7!important}
+
+.model-field-mental-flow{
+  display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:center;
+  margin:14px 0 18px;padding:14px;border:1px solid #dbeafe;border-radius:15px;background:#eff6ff
+}
+.model-field-mental-flow>div{padding:10px;border-radius:11px;background:#fff;text-align:center}
+.model-field-mental-flow span{display:block;color:#64748b;font-size:8px;font-weight:900;letter-spacing:.07em}
+.model-field-mental-flow strong{display:block;margin-top:4px;color:#0f172a;font-size:11px}
+.model-field-mental-flow>b{color:#2563eb;font-size:18px}
+
+.model-field-categories{display:grid;gap:14px}
+.model-field-category{
+  overflow:hidden;border:1px solid #dbe4ef;border-radius:18px;background:#fff
+}
+.model-field-category-head{
+  display:flex;gap:11px;align-items:center;padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#f8fafc
+}
+.model-field-category-head>span{font-size:22px}
+.model-field-category-head strong{display:block;color:#0f172a;font-size:14px}
+.model-field-category-head small{display:block;margin-top:2px;color:#64748b;font-size:9.5px}
+.model-field-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:14px}
+.model-field-list>div{
+  padding:13px;border:1px solid #e2e8f0;border-radius:13px;background:#fff
+}
+.model-field-list>div.recommended{border-color:#86efac;background:#f0fdf4}
+.model-field-list>div>code{
+  display:inline-block;color:#0C4B33;font-size:12px!important;font-weight:900
+}
+.model-field-list p{margin:6px 0!important;color:#475569!important;font-size:10.5px!important;line-height:1.55!important}
+.model-field-list pre{
+  margin:8px 0!important;padding:10px 11px!important;border-radius:9px;
+  background:#0b1220!important;color:#eaf2ff!important;font-size:10.5px!important;line-height:1.6!important;white-space:pre-wrap
+}
+.model-field-list small{display:block;color:#64748b;font-size:9px;line-height:1.5}
+.relation-category{border-color:#c4b5fd}
+.relation-category .model-field-category-head{background:#faf5ff}
+
+.field-choice-guide,.field-options-explainer,.field-model-example,.field-practice-box,
+.field-auto-pk,.field-advanced-note,.official-model-fields-note,.model-pk-first-note,
+.field-selection-project-note{
+  margin-top:16px;padding:15px 16px;border:1px solid #dbe4ef;border-radius:15px;background:#fff
+}
+.field-choice-guide{border-color:#bfdbfe;background:#eff6ff}
+.field-choice-guide-head strong,.field-options-head strong,.field-model-example-head strong{color:#0f172a;font-size:13px}
+.field-choice-guide-head span{color:#1d4ed8}
+.field-choice-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:11px
+}
+.field-choice-grid>div{
+  display:grid;grid-template-columns:1fr auto 1fr;gap:7px;align-items:center;
+  padding:9px 10px;border-radius:10px;background:#fff
+}
+.field-choice-grid span{color:#475569;font-size:10px}
+.field-choice-grid b{color:#2563eb}
+.field-choice-grid code{color:#0C4B33;font-size:9.5px!important;font-weight:900}
+
+.field-options-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px
+}
+.field-options-grid article{padding:12px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc}
+.field-options-grid article>code{color:#7c3aed;font-weight:900;font-size:11px!important}
+.field-options-grid p{margin:5px 0!important;color:#475569!important;font-size:10px!important;line-height:1.55!important}
+.field-options-grid pre{
+  margin:7px 0 0!important;padding:9px 10px!important;border-radius:8px;
+  background:#0b1220!important;color:#eaf2ff!important;font-size:9.8px!important;line-height:1.55!important;white-space:pre-wrap
+}
+.field-options-grid .blank-option{border-color:#93c5fd;background:#eff6ff}
+.field-options-grid .null-option{border-color:#fde68a;background:#fffbeb}
+
+.blank-null-warning{
+  display:grid;grid-template-columns:42px 1fr;gap:11px;margin-top:14px;padding:14px;
+  border:1px solid #fdba74;border-radius:13px;background:#fff7ed
+}
+.blank-null-warning>div:first-child{
+  width:40px;height:40px;display:grid;place-items:center;border-radius:11px;background:#ffedd5
+}
+.blank-null-warning strong{color:#9a3412;font-size:11.5px}
+.blank-null-warning p{margin:5px 0 0!important;color:#7c2d12!important;font-size:10.5px!important;line-height:1.6!important}
+
+.field-model-example{border-color:#86efac;background:#f0fdf4}
+.field-model-example pre{
+  margin:12px 0!important;padding:14px!important;border-radius:11px;background:#0b1220!important;
+  color:#eaf2ff!important;font-size:11px!important;line-height:1.65!important;white-space:pre-wrap
+}
+.field-model-reading{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px
+}
+.field-model-reading>div{
+  display:flex;justify-content:space-between;gap:10px;padding:8px 9px;border-radius:9px;background:#fff
+}
+.field-model-reading code{color:#166534;font-size:9.5px!important;font-weight:900}
+.field-model-reading span{color:#64748b;font-size:9px}
+
+.field-auto-pk{border-color:#ddd6fe;background:#faf5ff}
+.field-auto-pk>span{color:#7c3aed}
+.field-auto-pk p,.field-advanced-note p,.official-model-fields-note p,.model-pk-first-note p,
+.field-selection-project-note p{
+  margin:5px 0 0!important;color:#475569!important;font-size:10.5px!important;line-height:1.62!important
+}
+.field-advanced-note{border-color:#cbd5e1;background:#f8fafc}
+.field-advanced-note strong{color:#334155;font-size:11px}
+.field-practice-box{border-color:#fde68a;background:#fffbeb}
+.field-practice-box>span{color:#a16207}
+.field-practice-box strong{color:#92400e;font-size:12px}
+.field-practice-box>div{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:9px}
+.field-practice-box p{margin:0!important;padding:8px;border-radius:8px;background:#fff;color:#475569!important;font-size:9.5px!important}
+.official-model-fields-note{border-style:dashed}
+.official-model-fields-note>span{color:#475569}
+.model-pk-first-note{border-color:#ddd6fe;background:#faf5ff}
+.model-pk-first-note strong{color:#7c3aed;font-size:11px}
+.field-selection-project-note{border-color:#bfdbfe;background:#eff6ff}
+.field-selection-project-note>span{color:#1d4ed8}
+
+body.theme-dark .model-field-intro,.field-dark-placeholder{background:#0d2a20;border-color:#14532d}
+body.theme-dark .model-field-category,body.theme-dark .field-options-explainer,
+body.theme-dark .official-model-fields-note{background:#0f172a;border-color:#26344f}
+body.theme-dark .model-field-category-head{background:#111827;border-color:#26344f}
+body.theme-dark .model-field-category-head strong,body.theme-dark .field-choice-guide-head strong,
+body.theme-dark .field-options-head strong,body.theme-dark .field-model-example-head strong{color:#f8fafc}
+body.theme-dark .model-field-list>div,body.theme-dark .field-choice-grid>div,
+body.theme-dark .field-model-reading>div{background:#111827;border-color:#26344f}
+body.theme-dark .model-field-list p,body.theme-dark .model-field-list small,
+body.theme-dark .field-options-grid p,body.theme-dark .field-auto-pk p,
+body.theme-dark .field-advanced-note p,body.theme-dark .official-model-fields-note p,
+body.theme-dark .model-pk-first-note p,body.theme-dark .field-selection-project-note p{color:#b7c4d6!important}
+body.theme-dark .field-choice-guide,body.theme-dark .field-selection-project-note{background:#10213f;border-color:#1e3a5f}
+body.theme-dark .field-options-grid article{background:#111827;border-color:#26344f}
+body.theme-dark .field-model-example{background:#0d2a20;border-color:#14532d}
+body.theme-dark .field-practice-box{background:#2b2108;border-color:#713f12}
+body.theme-dark .field-auto-pk,body.theme-dark .model-pk-first-note{background:#21152f;border-color:#4c1d95}
+body.theme-dark .field-advanced-note{background:#111827;border-color:#26344f}
+body.theme-dark .blank-null-warning{background:#2b1608;border-color:#7c2d12}
+body.theme-dark .blank-null-warning strong,body.theme-dark .blank-null-warning p{color:#fed7aa!important}
+
+@media(max-width:850px){
+  .model-field-list,.field-options-grid,.field-choice-grid,.field-model-reading,
+  .field-practice-box>div{grid-template-columns:1fr}
+  .model-field-mental-flow{grid-template-columns:1fr}
+  .model-field-mental-flow>b{transform:rotate(90deg);justify-self:center}
+}
+@media(max-width:600px){
+  .model-field-intro,.blank-null-warning{grid-template-columns:1fr}
+}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><link href="https://unpkg.com/tippy.js@6/animations/shift-away.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css" rel="stylesheet"/>
-<meta content="29" name="django-academy-version"/>
+<meta content="31" name="django-academy-version"/>
 </head><body>
 <div class="progress-top" id="progressTop"></div>
 <div class="layout">
@@ -20034,28 +20333,48 @@ urlpatterns = [
 </div>
 <div class="codebox">
 <div class="codehead"><span>templates/base.html</span></div>
-<pre><code>&lt;!doctype html&gt;
+<pre>&lt;!doctype html&gt;
 &lt;html lang="es"&gt;
 &lt;head&gt;
   &lt;title&gt;{% block title %}Academia{% endblock %}&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;nav&gt;...&lt;/nav&gt;
+  &lt;header&gt;
+    &lt;strong&gt;Academia&lt;/strong&gt;
+    &lt;nav&gt;Inicio · Estudiantes&lt;/nav&gt;
+  &lt;/header&gt;
+
   &lt;main&gt;
     {% block content %}{% endblock %}
   &lt;/main&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/html&gt;</pre>
 </div>
 <div class="codebox">
 <div class="codehead"><span>templates/estudiantes/lista.html</span></div>
-<pre><code>{% extends "base.html" %}
+<pre>{% extends "base.html" %}
 
 {% block title %}Estudiantes{% endblock %}
 
 {% block content %}
+&lt;section class="panel-estudiantes"&gt;
   &lt;h1&gt;Estudiantes&lt;/h1&gt;
-{% endblock %}</code></pre>
+
+  {% if estudiantes %}
+    {% for estudiante in estudiantes %}
+      &lt;article class="fila-estudiante"&gt;
+        &lt;div&gt;
+          &lt;strong&gt;{{ estudiante.nombre }}&lt;/strong&gt;
+          &lt;small&gt;{{ estudiante.documento }}&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;span&gt;{{ estudiante.programa }}&lt;/span&gt;
+      &lt;/article&gt;
+    {% endfor %}
+  {% else %}
+    &lt;p&gt;No hay estudiantes.&lt;/p&gt;
+  {% endif %}
+&lt;/section&gt;
+{% endblock %}</pre>
 </div>
 </div>
 </details>
@@ -20193,8 +20512,8 @@ from django.shortcuts import render, redirect
 
 def lista(request):
     estudiantes = [
-        {"documento": "1001", "nombre": "Ana"},
-        {"documento": "1002", "nombre": "Luis"},
+        {"documento": "1001", "nombre": "Ana Torres", "programa": "Sistemas"},
+        {"documento": "1002", "nombre": "Luis Pérez", "programa": "Diseño"},
     ]
     return render(
         request,
@@ -20240,10 +20559,18 @@ def buscar(request):
 &lt;html lang="es"&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
   &lt;title&gt;{% block title %}Academia{% endblock %}&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;main&gt;{% block content %}{% endblock %}&lt;/main&gt;
+  &lt;header&gt;
+    &lt;strong&gt;Academia&lt;/strong&gt;
+    &lt;nav&gt;Inicio · Estudiantes&lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    {% block content %}{% endblock %}
+  &lt;/main&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
@@ -20255,14 +20582,24 @@ def buscar(request):
 </div>
 <pre>{% extends "base.html" %}
 
-{% block content %}
-&lt;h1&gt;Estudiantes&lt;/h1&gt;
+{% block title %}Estudiantes{% endblock %}
 
-{% for estudiante in estudiantes %}
-  &lt;p&gt;{{ estudiante.documento }} - {{ estudiante.nombre }}&lt;/p&gt;
-{% empty %}
-  &lt;p&gt;No hay estudiantes.&lt;/p&gt;
-{% endfor %}
+{% block content %}
+&lt;section class="panel-estudiantes"&gt;
+  &lt;h1&gt;Estudiantes&lt;/h1&gt;
+
+  {% for estudiante in estudiantes %}
+    &lt;article class="fila-estudiante"&gt;
+      &lt;div&gt;
+        &lt;strong&gt;{{ estudiante.nombre }}&lt;/strong&gt;
+        &lt;small&gt;{{ estudiante.documento }}&lt;/small&gt;
+      &lt;/div&gt;
+      &lt;span&gt;{{ estudiante.programa }}&lt;/span&gt;
+    &lt;/article&gt;
+  {% empty %}
+    &lt;p&gt;No hay estudiantes.&lt;/p&gt;
+  {% endfor %}
+&lt;/section&gt;
 {% endblock %}
 </pre>
 </div></div>
@@ -20273,7 +20610,7 @@ def buscar(request):
 <div class="project-verification-access">
 <span>🌐 RUTA PARA COMPROBAR EL CAMBIO</span>
 <code>http://127.0.0.1:8000/estudiantes/</code>
-<p>Debes ver los dos estudiantes de ejemplo.</p>
+<p>Debes ver el encabezado Academia, el título Estudiantes y dos filas con Ana Torres y Luis Pérez.</p>
 </div>
 <div class="project-health-check">
 <span>🩺 CHECKPOINT ANTES DE CONTINUAR</span>
@@ -20282,7 +20619,7 @@ def buscar(request):
 </div>
 <div class="progressive-project-result">
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
-<p>El listado usa Templates y la ruta de detalle sigue respondiendo.</p>
+<p>El listado ya usa Templates y su HTML queda preparado para que en la siguiente lección el CSS lo convierta en la interfaz visual mostrada.</p>
 </div>
 </div></div><div class="complementary-activity-card" data-complementary-section="templates">
 <div class="complementary-activity-head">
@@ -20360,11 +20697,38 @@ def buscar(request):
 <span class="chapter-step-badge">Paso 12</span>
 </div>
 <div class="chapter-preview-stage preview-kind-browser">
-<div class="styled-student-preview"><header><strong>Academia</strong><nav>Inicio · Estudiantes</nav></header><section><h4>Estudiantes</h4><div class="pretty-card">Ana Torres <span>Sistemas</span></div><div class="pretty-card">Luis Pérez <span>Diseño</span></div></section></div>
+<div class="styled-student-preview">
+<div class="styled-browser-shell">
+<div class="styled-browser-topbar">
+<strong>Academia</strong>
+<nav>Inicio · Estudiantes</nav>
+</div>
+<div class="styled-browser-content">
+<section class="styled-browser-card">
+<div class="styled-browser-rainbow"></div>
+<h4>Estudiantes</h4>
+<div class="pretty-card">
+<div>
+<strong>Ana Torres</strong>
+<small>1001</small>
+</div>
+<span>Sistemas</span>
+</div>
+<div class="pretty-card">
+<div>
+<strong>Luis Pérez</strong>
+<small>1002</small>
+</div>
+<span>Diseño</span>
+</div>
+</section>
+</div>
+</div>
+</div>
 </div>
 <div class="chapter-preview-note">
 <strong>Qué debes observar</strong>
-<span>Aplicar CSS sin mezclarlo dentro de las Views.</span>
+<span>El HTML y el CSS de esta lección deben producir una vista muy parecida a esta.</span>
 </div>
 </div></div>
 <details class="course-topic" id="static-load" open="">
@@ -20393,12 +20757,25 @@ def buscar(request):
 </div>
 <div class="codebox">
 <div class="codehead"><span>base.html</span></div>
-<pre><code>{% load static %}
+<pre>{% load static %}
+&lt;!doctype html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;{% block title %}Academia{% endblock %}&lt;/title&gt;
+  &lt;link rel="stylesheet" href="{% static 'css/app.css' %}"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;strong&gt;Academia&lt;/strong&gt;
+    &lt;nav&gt;Inicio · Estudiantes&lt;/nav&gt;
+  &lt;/header&gt;
 
-&lt;link rel="stylesheet"
-      href="{% static 'css/app.css' %}"&gt;
-&lt;script defer
-        src="{% static 'js/app.js' %}"&gt;&lt;/script&gt;</code></pre>
+  &lt;main&gt;
+    {% block content %}{% endblock %}
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 </div>
 <div class="file-explorer"><div class="tree">static/
 ├── css/
@@ -20471,7 +20848,7 @@ def buscar(request):
 <span>📍 ARCHIVO(S) EXACTO(S)</span>
 <p>Relaciona el concepto con estos archivos del mismo proyecto.</p>
 </div>
-<div class="concept-apply-paths"><div><span>📄</span><code>django_estudiantes/static/css/app.css</code></div><div><span>📄</span><code>django_estudiantes/templates/base.html</code></div><div><span>📄</span><code>django_estudiantes/templates/estudiantes/lista.html</code></div></div>
+<div class="concept-apply-paths"><div><span>📄</span><code>django_estudiantes/static/css/app.css</code></div><div><span>📄</span><code>django_estudiantes/templates/base.html</code></div></div>
 <div class="concept-apply-flow">
 <span>🔄 QUÉ PASA POR DETRÁS</span>
 <strong>Template → {% static %} → navegador carga CSS/JS</strong>
@@ -20481,7 +20858,7 @@ def buscar(request):
 <span>👣 APLÍCALO PASO A PASO</span>
 <strong>Haz un cambio, guarda, prueba y luego continúa.</strong>
 </div>
-<ol class="concept-apply-steps"><li><span>1</span><p>Crea <code>static/css/app.css</code>.</p></li><li><span>2</span><p>Usa <code>{% load static %}</code> en <code>base.html</code>.</p></li><li><span>3</span><p>Enlaza <code>app.css</code>.</p></li><li><span>4</span><p>Modifica <code>lista.html</code> y agrega <code>class="tarjeta"</code> a cada estudiante.</p></li><li><span>5</span><p>Recarga la lista y comprueba en DevTools que el CSS cargó.</p></li></ol>
+<ol class="concept-apply-steps"><li><span>1</span><p>Crea static/css/app.css.</p></li><li><span>2</span><p>Usa {% load static %} en base.html.</p></li><li><span>3</span><p>Enlaza app.css.</p></li><li><span>4</span><p>Estiliza tabla, botones y formulario.</p></li><li><span>5</span><p>Comprueba en DevTools que el CSS cargó.</p></li></ol>
 </div>
 <div class="concept-apply-check">
 <div><span>✅ COMPROBACIÓN</span><strong>¿Cómo sé que entendí?</strong></div>
@@ -20504,7 +20881,7 @@ def buscar(request):
         Sigue conteniendo saludo(), hora_actual(), volver_lista() y buscar()
         junto con las Views nuevas del proyecto.
       </p>
-</div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>urls.py</code></div><p>URLs de la app.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>migrations/</code></div><p>Historial del esquema.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>__init__.py</code></div><p>Paquete de migraciones.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>templates/</code></div><p>Templates globales.</p></div><div class="lesson-explorer-row type-html is-current" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>base.html</code><span class="explorer-current-tag">EDITAS AHORA</span></div><p>Base HTML.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>estudiantes/</code></div><p>Templates de estudiantes.</p></div><div class="lesson-explorer-row type-html is-current" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>lista.html</code><span class="explorer-current-tag">EDITAS AHORA</span></div><p>Listado con tarjetas de estudiantes.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>static/</code></div><p>Static files.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>css/</code></div><p>CSS.</p></div><div class="lesson-explorer-row type-css is-current" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-css">CSS</span><code>app.css</code><span class="explorer-current-tag">EDITAS AHORA</span></div><p>Estilos.</p></div></div><div class="lesson-explorer-legend"><span><i class="legend-current"></i> Lo modificas ahora</span><span><i class="legend-existing"></i> Ya existía</span></div></div></details><div class="progressive-project-card" data-project-step="static">
+</div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>urls.py</code></div><p>URLs de la app.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>migrations/</code></div><p>Historial del esquema.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>__init__.py</code></div><p>Paquete de migraciones.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>templates/</code></div><p>Templates globales.</p></div><div class="lesson-explorer-row type-html is-current" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>base.html</code><span class="explorer-current-tag">EDITAS AHORA</span></div><p>Base HTML.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>estudiantes/</code></div><p>Templates de estudiantes.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>lista.html</code></div><p>Listado.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>static/</code></div><p>Static files.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>css/</code></div><p>CSS.</p></div><div class="lesson-explorer-row type-css is-current" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-css">CSS</span><code>app.css</code><span class="explorer-current-tag">EDITAS AHORA</span></div><p>Estilos.</p></div></div><div class="lesson-explorer-legend"><span><i class="legend-current"></i> Lo modificas ahora</span><span><i class="legend-existing"></i> Ya existía</span></div></div></details><div class="progressive-project-card" data-project-step="static">
 <div class="progressive-project-head">
 <div>
 <span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
@@ -20534,35 +20911,110 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 <code>django_estudiantes/static/css/app.css</code>
 </div>
 <pre>body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 24px;
-    background: #f5f7fb;
+    background-color: #f8fafc;
+    background-image:
+        linear-gradient(#e2e8f0 1px, transparent 1px),
+        linear-gradient(90deg, #e2e8f0 1px, transparent 1px);
+    background-size: 24px 24px;
+    color: #0f172a;
 }
 
-.lista-estudiantes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 16px;
+header {
+    max-width: 1200px;
+    margin: 16px auto 0;
+    padding: 18px 24px;
+    background: #0c4b33;
+    color: white;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.tarjeta {
+header nav {
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto 32px;
+    padding: 16px 24px 32px;
     background: white;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #dbe4ef;
+    border-top: none;
+    border-radius: 0 0 18px 18px;
+}
+
+.panel-estudiantes {
+    margin-top: 16px;
     padding: 18px;
+    border: 1px solid #dbe4ef;
+    border-radius: 24px;
+    background: white;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.panel-estudiantes::before {
+    content: "";
+    display: block;
+    height: 4px;
+    margin: -18px -18px 18px;
+    border-radius: 24px 24px 0 0;
+    background: linear-gradient(90deg, #f43f5e, #a855f7, #3b82f6);
+}
+
+.panel-estudiantes h1 {
+    margin: 0 0 16px;
+    font-size: 42px;
+}
+
+.fila-estudiante {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 10px;
+    padding: 16px 18px;
+    border: 1px solid #dbe4ef;
     border-radius: 14px;
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    background: #f8fafc;
 }
 
-.tarjeta h2 {
-    margin-top: 0;
-    color: #1e293b;
-}
-
-.tarjeta p {
+.fila-estudiante:last-child {
     margin-bottom: 0;
-    color: #475569;
+}
+
+.fila-estudiante strong {
+    display: block;
+    font-size: 18px;
+}
+
+.fila-estudiante small,
+.fila-estudiante span {
+    color: #64748b;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    header,
+    main {
+        margin-left: 12px;
+        margin-right: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .panel-estudiantes h1 {
+        font-size: 32px;
+    }
+
+    .fila-estudiante {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 </pre>
 </div>
@@ -20576,54 +21028,38 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 &lt;html lang="es"&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
   &lt;title&gt;{% block title %}Academia{% endblock %}&lt;/title&gt;
   &lt;link rel="stylesheet" href="{% static 'css/app.css' %}"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;main&gt;{% block content %}{% endblock %}&lt;/main&gt;
+  &lt;header&gt;
+    &lt;strong&gt;Academia&lt;/strong&gt;
+    &lt;nav&gt;Inicio · Estudiantes&lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    {% block content %}{% endblock %}
+  &lt;/main&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-</div>
-<div class="project-file-change">
-<div class="project-file-head">
-<span>📄 ARCHIVO EXACTO · AHORA USA LA CLASE CSS</span>
-<code>django_estudiantes/templates/estudiantes/lista.html</code>
-</div>
-<pre>{% extends "base.html" %}
-
-{% block title %}Estudiantes | Academia{% endblock %}
-
-{% block content %}
-&lt;h1&gt;Estudiantes&lt;/h1&gt;
-
-&lt;section class="lista-estudiantes"&gt;
-  {% for estudiante in estudiantes %}
-    &lt;article class="tarjeta"&gt;
-      &lt;h2&gt;{{ estudiante.nombre }}&lt;/h2&gt;
-      &lt;p&gt;
-        &lt;strong&gt;Documento:&lt;/strong&gt;
-        {{ estudiante.documento }}
-      &lt;/p&gt;
-    &lt;/article&gt;
-  {% empty %}
-    &lt;p&gt;No hay estudiantes.&lt;/p&gt;
-  {% endfor %}
-&lt;/section&gt;
-{% endblock %}
-</pre>
-<div class="callout success">
-<strong>Conexión HTML + CSS:</strong> <code>class="tarjeta"</code> es el puente entre <code>lista.html</code> y la regla <code>.tarjeta</code> de <code>app.css</code>. Django genera una tarjeta por cada estudiante del <code>{% for %}</code>.
-</div>
 </div></div>
-<div class="project-step-list">
+<div class="style-match-note">
+<span>🎯 IMPORTANTE</span>
+<p>
+    Aquí ya no dejamos un CSS genérico. El objetivo es que el resultado
+    real se parezca a la vista previa: barra superior verde, contenedor blanco,
+    franja de color arriba de la tarjeta y filas suaves para cada estudiante.
+  </p>
+</div><div class="project-step-list">
 <span class="project-step-list-title">PASO A PASO · ORDEN SEGURO</span>
-<ol><li><span>1</span><p>Crea <code>static/css/app.css</code> con las reglas <code>.lista-estudiantes</code> y <code>.tarjeta</code>.</p></li><li><span>2</span><p>Configura <code>STATICFILES_DIRS</code> y <code>STATIC_ROOT</code>.</p></li><li><span>3</span><p>Carga <code>{% load static %}</code> y enlaza el CSS en <code>base.html</code>.</p></li><li><span>4</span><p>Abre <code>templates/estudiantes/lista.html</code> y convierte cada estudiante en <code>&lt;article class="tarjeta"&gt;</code>.</p></li><li><span>5</span><p>Recarga <code>/estudiantes/</code> y verifica que Ana y Luis aparezcan como tarjetas.</p></li></ol>
+<ol><li><span>1</span><p>Crea <code>static/css/app.css</code>.</p></li><li><span>2</span><p>Configura <code>STATICFILES_DIRS</code> para los archivos fuente.</p></li><li><span>3</span><p>Configura también <code>STATIC_ROOT</code>; así <code>collectstatic</code> tendrá un destino válido cuando lo pruebes.</p></li><li><span>4</span><p>Carga <code>{% load static %}</code> y enlaza el CSS en <code>base.html</code>.</p></li><li><span>5</span><p>Recarga <code>/estudiantes/</code>.</p></li></ol>
 </div>
 <div class="project-verification-access">
 <span>🌐 RUTA PARA COMPROBAR EL CAMBIO</span>
 <code>http://127.0.0.1:8000/estudiantes/</code>
-<p>Debes ver a Ana y Luis en tarjetas. Si no cambia el diseño, haz una recarga forzada porque el navegador puede conservar CSS antiguo.</p>
+<p>Recarga forzadamente si el navegador conserva CSS antiguo.</p>
 </div>
 <div class="project-health-check">
 <span>🩺 CHECKPOINT ANTES DE CONTINUAR</span>
@@ -20632,7 +21068,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 </div>
 <div class="progressive-project-result">
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
-<p><code>lista.html</code> usa la clase <code>tarjeta</code>, el CSS se aplica al listado y <code>collectstatic</code> ya tiene un destino preparado.</p>
+<p>La página ya debería verse muy parecida a la vista previa: encabezado verde, tarjeta blanca redondeada y filas suaves para cada estudiante.</p>
 </div>
 </div></div><div class="complementary-activity-card" data-complementary-section="static">
 <div class="complementary-activity-head">
@@ -20754,6 +21190,13 @@ class Estudiante(models.Model):
 
     def __str__(self):
         return self.nombre</code></pre>
+</div><div class="model-pk-first-note">
+<strong>🔑 Observa algo importante</strong>
+<p>
+        No escribimos un campo <code>id</code>, pero Django agregará una clave
+        primaria automática si no defines otra. Más adelante esa clave es la que
+        usamos con <code>pk</code>, por ejemplo <code>Estudiante.objects.get(pk=1)</code>.
+      </p>
 </div>
 <div class="deep-concepts-grid">
 <article class="deep-concept">
@@ -20785,10 +21228,489 @@ class Estudiante(models.Model):
 <div class="mistake">⚠ auto_now y auto_now_add tienen usos diferentes.</div>
 </article>
 </div></div>
+</details><details class="course-topic" id="models-02-tipos-de-campos-field" open="">
+<summary>
+<span class="course-topic-num">02</span>
+<span class="course-topic-title">
+<strong>Tipos de campos (Field)</strong>
+<small>qué tipo usar según el dato que quieres guardar</small>
+</span>
+</summary>
+<div class="course-topic-body">
+<div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>
+        Cada atributo de un Model necesita un <strong>tipo de campo</strong>.
+        El Field le dice a Django qué dato esperas guardar, cómo validarlo y
+        qué tipo de columna debe crear en la base de datos.
+      </p>
+</div>
+<div class="model-field-intro">
+<div class="model-field-intro-icon">🧱</div>
+<div>
+<span>PIÉNSALO COMO UNA FICHA</span>
+<strong>No todos los datos de un estudiante son del mismo tipo.</strong>
+<p>
+          El nombre es texto, la fecha de nacimiento es una fecha, el promedio
+          puede necesitar decimales, el estado es verdadero/falso y una foto
+          es un archivo. Por eso Django ofrece distintos <code>Field</code>.
+        </p>
+</div>
+</div>
+<div class="model-field-mental-flow">
+<div>
+<span>Dato que necesitas</span>
+<strong>“fecha de nacimiento”</strong>
+</div>
+<b>→</b>
+<div>
+<span>Eliges el Field</span>
+<strong><code>DateField</code></strong>
+</div>
+<b>→</b>
+<div>
+<span>Django entiende</span>
+<strong>fecha + validación + columna</strong>
+</div>
+</div>
+<div class="model-field-categories">
+<article class="model-field-category">
+<div class="model-field-category-head">
+<span>📝</span>
+<div>
+<strong>Texto</strong>
+<small>nombres, descripciones, URLs y códigos</small>
+</div>
+</div>
+<div class="model-field-list">
+<div>
+<code>CharField</code>
+<p>Texto corto o medio con longitud máxima.</p>
+<pre>nombre = models.CharField(max_length=120)</pre>
+<small>Úsalo para: nombre, documento, código, ciudad.</small>
+</div>
+<div>
+<code>TextField</code>
+<p>Texto largo.</p>
+<pre>biografia = models.TextField(blank=True)</pre>
+<small>Úsalo para: observaciones, descripción, comentarios largos.</small>
+</div>
+<div>
+<code>EmailField</code>
+<p>Texto con validación de formato de correo.</p>
+<pre>correo = models.EmailField()</pre>
+<small>No comprueba que el buzón exista; valida el formato.</small>
+</div>
+<div>
+<code>URLField</code>
+<p>Texto con validación orientada a URL.</p>
+<pre>sitio_web = models.URLField(blank=True)</pre>
+<small>Úsalo para: página personal, repositorio, sitio institucional.</small>
+</div>
+<div>
+<code>SlugField</code>
+<p>Texto pensado para URLs legibles.</p>
+<pre>slug = models.SlugField(unique=True)</pre>
+<small>Ejemplo: <code>ana-torres</code>.</small>
+</div>
+<div>
+<code>UUIDField</code>
+<p>Identificador UUID.</p>
+<pre>codigo = models.UUIDField(default=uuid.uuid4, unique=True)</pre>
+<small>Útil cuando no quieres exponer IDs consecutivos.</small>
+</div>
+</div>
+</article>
+<article class="model-field-category">
+<div class="model-field-category-head">
+<span>🔢</span>
+<div>
+<strong>Números</strong>
+<small>enteros, positivos y decimales</small>
+</div>
+</div>
+<div class="model-field-list">
+<div>
+<code>IntegerField</code>
+<p>Número entero positivo o negativo.</p>
+<pre>semestre = models.IntegerField()</pre>
+<small>Ejemplo: <code>-2</code>, <code>0</code>, <code>8</code>.</small>
+</div>
+<div>
+<code>PositiveIntegerField</code>
+<p>Entero pensado para valores no negativos.</p>
+<pre>creditos = models.PositiveIntegerField(default=0)</pre>
+<small>Úsalo para cantidades que no deberían ser negativas.</small>
+</div>
+<div>
+<code>SmallIntegerField</code>
+<p>Entero para rangos más pequeños.</p>
+<pre>nivel = models.SmallIntegerField()</pre>
+<small>También existen variantes positivas.</small>
+</div>
+<div>
+<code>BigIntegerField</code>
+<p>Entero para valores mucho más grandes.</p>
+<pre>numero_externo = models.BigIntegerField()</pre>
+<small>No lo uses solo porque “suena mejor”; elige según el dato real.</small>
+</div>
+<div class="recommended">
+<code>DecimalField</code>
+<p>Decimal exacto con número de dígitos controlado.</p>
+<pre>promedio = models.DecimalField(
+    max_digits=4,
+    decimal_places=2
+)</pre>
+<small>Recomendado para dinero, notas y valores donde la precisión importa.</small>
+</div>
+<div>
+<code>FloatField</code>
+<p>Número de punto flotante.</p>
+<pre>temperatura = models.FloatField()</pre>
+<small>No es la opción preferida para dinero por errores de representación.</small>
+</div>
+</div>
+</article>
+<article class="model-field-category">
+<div class="model-field-category-head">
+<span>📅</span>
+<div>
+<strong>Fechas, horas y estados</strong>
+<small>tiempo y verdadero/falso</small>
+</div>
+</div>
+<div class="model-field-list">
+<div>
+<code>BooleanField</code>
+<p>Verdadero o falso.</p>
+<pre>activo = models.BooleanField(default=True)</pre>
+<small>Úsalo para: activo, aprobado, publicado.</small>
+</div>
+<div>
+<code>DateField</code>
+<p>Solo fecha.</p>
+<pre>fecha_nacimiento = models.DateField(
+    null=True,
+    blank=True
+)</pre>
+<small>Ejemplo: 2026-09-20.</small>
+</div>
+<div>
+<code>DateTimeField</code>
+<p>Fecha y hora.</p>
+<pre>creado = models.DateTimeField(
+    auto_now_add=True
+)</pre>
+<small>Muy usado para auditoría de creación/actualización.</small>
+</div>
+<div>
+<code>TimeField</code>
+<p>Solo hora.</p>
+<pre>hora_clase = models.TimeField()</pre>
+<small>Ejemplo: 14:30:00.</small>
+</div>
+<div>
+<code>DurationField</code>
+<p>Representa una duración o intervalo.</p>
+<pre>duracion = models.DurationField()</pre>
+<small>Ejemplo: duración de una actividad o préstamo.</small>
+</div>
+</div>
+</article>
+<article class="model-field-category">
+<div class="model-field-category-head">
+<span>📁</span>
+<div>
+<strong>Archivos y datos estructurados</strong>
+<small>imágenes, JSON, IP y datos especiales</small>
+</div>
+</div>
+<div class="model-field-list">
+<div>
+<code>FileField</code>
+<p>Guarda la referencia a un archivo subido.</p>
+<pre>documento_pdf = models.FileField(
+    upload_to="documentos/",
+    blank=True
+)</pre>
+<small>El archivo no se guarda “dentro” de la columna de la forma usual.</small>
+</div>
+<div>
+<code>ImageField</code>
+<p>Especialización de archivo para imágenes.</p>
+<pre>foto = models.ImageField(
+    upload_to="estudiantes/",
+    blank=True
+)</pre>
+<small>Requiere Pillow.</small>
+</div>
+<div>
+<code>JSONField</code>
+<p>Guarda datos JSON: diccionarios, listas, números y booleanos.</p>
+<pre>datos_extra = models.JSONField(
+    default=dict,
+    blank=True
+)</pre>
+<small>Útil para datos flexibles que realmente tienen estructura JSON.</small>
+</div>
+<div>
+<code>GenericIPAddressField</code>
+<p>Direcciones IPv4 o IPv6.</p>
+<pre>ultima_ip = models.GenericIPAddressField(
+    null=True,
+    blank=True
+)</pre>
+<small>Útil para registro de acceso o infraestructura.</small>
+</div>
+<div>
+<code>BinaryField</code>
+<p>Datos binarios sin procesar.</p>
+<pre>firma = models.BinaryField(blank=True)</pre>
+<small>Es menos común en proyectos CRUD normales.</small>
+</div>
+</div>
+</article>
+<article class="model-field-category relation-category">
+<div class="model-field-category-head">
+<span>🔗</span>
+<div>
+<strong>Relaciones entre Models</strong>
+<small>un registro conectado con otros registros</small>
+</div>
+</div>
+<div class="model-field-list">
+<div>
+<code>ForeignKey</code>
+<p>Muchos registros pueden apuntar a uno.</p>
+<pre>programa = models.ForeignKey(
+    Programa,
+    on_delete=models.PROTECT
+)</pre>
+<small>Ejemplo: muchos estudiantes pertenecen a un programa.</small>
+</div>
+<div>
+<code>OneToOneField</code>
+<p>Relación uno a uno.</p>
+<pre>perfil = models.OneToOneField(
+    Perfil,
+    on_delete=models.CASCADE
+)</pre>
+<small>Ejemplo: un usuario tiene un único perfil.</small>
+</div>
+<div>
+<code>ManyToManyField</code>
+<p>Muchos registros relacionados con muchos.</p>
+<pre>materias = models.ManyToManyField(
+    Materia,
+    blank=True
+)</pre>
+<small>Ejemplo: estudiantes ↔ materias.</small>
+</div>
+</div>
+</article>
+</div>
+<div class="field-choice-guide">
+<div class="field-choice-guide-head">
+<span>🧭 GUÍA RÁPIDA PARA ELEGIR</span>
+<strong>Pregúntate qué tipo de dato es antes de escribir el Field.</strong>
+</div>
+<div class="field-choice-grid">
+<div><span>Nombre</span><b>→</b><code>CharField</code></div>
+<div><span>Descripción larga</span><b>→</b><code>TextField</code></div>
+<div><span>Correo</span><b>→</b><code>EmailField</code></div>
+<div><span>Edad/cantidad</span><b>→</b><code>IntegerField</code></div>
+<div><span>Dinero/promedio</span><b>→</b><code>DecimalField</code></div>
+<div><span>Sí / no</span><b>→</b><code>BooleanField</code></div>
+<div><span>Fecha de nacimiento</span><b>→</b><code>DateField</code></div>
+<div><span>Creado en</span><b>→</b><code>DateTimeField</code></div>
+<div><span>Foto</span><b>→</b><code>ImageField</code></div>
+<div><span>Otro Model</span><b>→</b><code>ForeignKey</code></div>
+</div>
+</div>
+<div class="field-options-explainer">
+<div class="field-options-head">
+<span>⚙️ LOS TIPOS NO SON TODO</span>
+<strong>Los Fields también reciben opciones.</strong>
+</div>
+<div class="field-options-grid">
+<article>
+<code>max_length</code>
+<p>Longitud máxima. Muy importante en <code>CharField</code>.</p>
+<pre>nombre = models.CharField(max_length=120)</pre>
+</article>
+<article>
+<code>default</code>
+<p>Valor que se usa si no envías otro.</p>
+<pre>activo = models.BooleanField(default=True)</pre>
+</article>
+<article>
+<code>unique</code>
+<p>Impide valores repetidos.</p>
+<pre>documento = models.CharField(
+    max_length=20,
+    unique=True
+)</pre>
+</article>
+<article class="blank-option">
+<code>blank=True</code>
+<p>
+            Afecta la <b>validación</b>. En formularios permite dejar el campo vacío.
+          </p>
+<pre>sitio_web = models.URLField(blank=True)</pre>
+</article>
+<article class="null-option">
+<code>null=True</code>
+<p>
+            Afecta la <b>base de datos</b>. Permite guardar <code>NULL</code>.
+          </p>
+<pre>fecha_nacimiento = models.DateField(
+    null=True,
+    blank=True
+)</pre>
+</article>
+<article>
+<code>choices</code>
+<p>Limita el valor a opciones conocidas.</p>
+<pre>estado = models.CharField(
+    max_length=2,
+    choices=[
+        ("AC", "Activo"),
+        ("IN", "Inactivo"),
+    ],
+)</pre>
+</article>
+<article>
+<code>help_text</code>
+<p>Texto de ayuda que puede usar un formulario.</p>
+<pre>documento = models.CharField(
+    max_length=20,
+    help_text="Sin puntos ni espacios"
+)</pre>
+</article>
+<article>
+<code>validators</code>
+<p>Reglas de validación adicionales.</p>
+<pre>from django.core.validators import MinValueValidator
+
+edad = models.IntegerField(
+    validators=[MinValueValidator(0)]
+)</pre>
+</article>
+</div>
+</div>
+<div class="blank-null-warning">
+<div>⚠️</div>
+<div>
+<strong><code>blank</code> y <code>null</code> NO significan lo mismo.</strong>
+<p>
+<code>blank=True</code> habla principalmente de validación/formularios.
+          <code>null=True</code> indica que la base de datos puede almacenar
+          <code>NULL</code>. En campos de texto normalmente se evita
+          <code>null=True</code> y se usa cadena vacía para representar “sin texto”.
+        </p>
+</div>
+</div>
+<div class="field-model-example">
+<div class="field-model-example-head">
+<span>🧩 EJEMPLO APLICADO A ESTUDIANTE</span>
+<strong>No copies todos los campos por obligación: observa por qué se eligió cada tipo.</strong>
+</div>
+<pre>from django.db import models
+
+class Estudiante(models.Model):
+    documento = models.CharField(
+        max_length=20,
+        unique=True
+    )
+
+    nombre = models.CharField(
+        max_length=120
+    )
+
+    biografia = models.TextField(
+        blank=True
+    )
+
+    correo = models.EmailField()
+
+    edad = models.PositiveSmallIntegerField(
+        null=True,
+        blank=True
+    )
+
+    promedio = models.DecimalField(
+        max_digits=4,
+        decimal_places=2,
+        null=True,
+        blank=True
+    )
+
+    fecha_nacimiento = models.DateField(
+        null=True,
+        blank=True
+    )
+
+    activo = models.BooleanField(
+        default=True
+    )
+
+    creado = models.DateTimeField(
+        auto_now_add=True
+    )
+
+    actualizado = models.DateTimeField(
+        auto_now=True
+    )</pre>
+<div class="field-model-reading">
+<div><code>documento</code><span>texto corto y único</span></div>
+<div><code>biografia</code><span>texto largo opcional</span></div>
+<div><code>edad</code><span>entero positivo opcional</span></div>
+<div><code>promedio</code><span>decimal exacto</span></div>
+<div><code>fecha_nacimiento</code><span>solo fecha</span></div>
+<div><code>activo</code><span>verdadero/falso</span></div>
+</div>
+</div>
+<div class="field-auto-pk">
+<span>🔑 ¿Y EL CAMPO <code>id</code>?</span>
+<p>
+        Si no declaras otra clave primaria, Django agrega automáticamente
+        una clave primaria para el Model. Por eso luego puedes usar
+        <code>estudiante.pk</code> o rutas como <code>&lt;int:pk&gt;</code>.
+      </p>
+</div>
+<div class="field-advanced-note">
+<strong>📚 También existen Fields más avanzados</strong>
+<p>
+        Django 6.1 incluye opciones como <code>GeneratedField</code> y
+        <code>CompositePrimaryKey</code>. Son útiles en escenarios específicos,
+        pero no los necesitas para construir el CRUD básico de estudiantes.
+        Los veremos como conceptos avanzados, no como punto de partida.
+      </p>
+</div>
+<div class="field-practice-box">
+<span>✏️ MINI PRÁCTICA</span>
+<strong>¿Qué Field escogerías?</strong>
+<div>
+<p>1. Precio de matrícula → <code>DecimalField</code></p>
+<p>2. Foto de perfil → <code>ImageField</code></p>
+<p>3. ¿Está activo? → <code>BooleanField</code></p>
+<p>4. Observaciones largas → <code>TextField</code></p>
+<p>5. Fecha de ingreso → <code>DateField</code></p>
+<p>6. Programa académico → <code>ForeignKey</code></p>
+</div>
+</div>
+<div class="official-model-fields-note">
+<span>📖 REFERENCIA</span>
+<p>
+        Esta sección resume los tipos más útiles para aprender. Django ofrece
+        más Fields y opciones según el motor de base de datos y el problema.
+      </p>
+</div>
+</div>
 </details>
 <details class="course-topic" id="models-02-orm-consultar-sin-escribir-sql-para-lo-com-n">
 <summary>
-<span class="course-topic-num">02</span>
+<span class="course-topic-num">03</span>
 <span class="course-topic-title">
 <strong>ORM</strong>
 <small>consultar sin escribir SQL para lo común</small>
@@ -20824,7 +21746,7 @@ Estudiante.objects.create(
 </details>
 <details class="course-topic" id="models-03-queryset-filter-exclude-order-by-y-first">
 <summary>
-<span class="course-topic-num">03</span>
+<span class="course-topic-num">04</span>
 <span class="course-topic-title">
 <strong>QuerySet</strong>
 <small>filter, exclude, order_by y first</small>
@@ -20882,7 +21804,7 @@ Estudiante.objects.create(
 </details>
 <details class="course-topic" id="models-04-as-se-ve-el-orm-simulaci-n-de-filtros">
 <summary>
-<span class="course-topic-num">04</span>
+<span class="course-topic-num">05</span>
 <span class="course-topic-title">
 <strong>Así se ve el ORM</strong>
 <small>simulación de filtros</small>
@@ -20999,7 +21921,14 @@ Estudiante.objects.create(
 <strong>🛡️ Regla de continuidad</strong>
 <span>Aplica <b>todos</b> los cambios de esta tarjeta. Después ejecuta <code>python manage.py check</code> y realiza la comprobación indicada.</span>
 </div>
-<div class="project-files-stack">
+<div class="field-selection-project-note">
+<span>🧭 ANTES DE AGREGAR UN CAMPO NUEVO</span>
+<p>
+        Pregunta primero qué dato vas a guardar. No agregues todos los Field del catálogo
+        al Model Estudiante. Elige únicamente los que el proyecto necesite y recuerda que
+        cambiar un Model normalmente implica crear y aplicar una migración.
+      </p>
+</div><div class="project-files-stack">
 <div class="project-file-change">
 <div class="project-file-head">
 <span>📄 ARCHIVO EXACTO</span>
@@ -21175,155 +22104,9 @@ class Estudiante(models.Model):
 </div>
 <div class="flow-wide"><span class="flow-box">migration</span><span class="flow-arr">→</span><span class="flow-box hot">migrate</span><span class="flow-arr">→</span><span class="flow-box good">Base de datos</span></div></div>
 </details>
-
-<details class="course-topic" id="migrations-03-solo-una-app">
-<summary>
-<span class="course-topic-num">03</span>
-<span class="course-topic-title">
-<strong>Migraciones de una app concreta</strong>
-<small>trabajar solo con estudiantes</small>
-</span>
-</summary>
-<div class="course-topic-body">
-<div class="topic-simple-intro">
-<span>EN UNA FRASE</span>
-<p>Si tu proyecto tiene varias apps, puedes decirle a Django que revise o aplique migraciones únicamente para una app concreta.</p>
-</div>
-<div class="codebox">
-<div class="codehead"><span>Crear migraciones solamente de la app estudiantes</span></div>
-<pre><code>python manage.py makemigrations estudiantes</code></pre>
-</div>
-<div class="callout info">
-<strong>¿Qué significa?</strong> Django revisa los cambios de los modelos pertenecientes a la app <code>estudiantes</code> y genera las migraciones necesarias para esa app.
-</div>
-<div class="codebox">
-<div class="codehead"><span>Aplicar las migraciones pendientes de estudiantes</span></div>
-<pre><code>python manage.py migrate estudiantes</code></pre>
-</div>
-<div class="codebox">
-<div class="codehead"><span>Ver solamente el historial de estudiantes</span></div>
-<pre><code>python manage.py showmigrations estudiantes</code></pre>
-</div>
-<div class="output">estudiantes
- [X] 0001_initial
- [ ] 0002_estudiante_telefono</div>
-<div class="callout success">
-<strong>Lectura del resultado:</strong> <code>[X]</code> significa aplicada y <code>[ ]</code> significa pendiente.
-</div>
-</div>
-</details>
-
-<details class="course-topic" id="migrations-04-migracion-especifica">
-<summary>
-<span class="course-topic-num">04</span>
-<span class="course-topic-title">
-<strong>Ejecutar una migración específica</strong>
-<small>llevar una app hasta una versión concreta</small>
-</span>
-</summary>
-<div class="course-topic-body">
-<div class="topic-simple-intro">
-<span>EN UNA FRASE</span>
-<p>Con <code>migrate app migracion</code> indicas el estado exacto al que quieres llevar esa app.</p>
-</div>
-<div class="codebox">
-<div class="codehead"><span>Ejemplo · llegar hasta 0001_initial</span></div>
-<pre><code>python manage.py migrate estudiantes 0001</code></pre>
-</div>
-<p>También puedes escribir el nombre completo:</p>
-<div class="codebox">
-<div class="codehead"><span>Nombre completo</span></div>
-<pre><code>python manage.py migrate estudiantes 0001_initial</code></pre>
-</div>
-<div class="callout warning">
-<strong>Importante:</strong> esto no significa “ejecuta solamente este archivo ignorando todo lo demás”. Django respeta las dependencias y deja la app en el estado correspondiente a esa migración. Si estabas en una migración posterior, puede deshacer migraciones hasta llegar a la indicada.
-</div>
-
-<h4>Ejemplo con dos migraciones</h4>
-<div class="ascii">estudiantes/migrations/
-├── 0001_initial.py
-└── 0002_estudiante_telefono.py</div>
-<p>Si ambas están aplicadas y ejecutas:</p>
-<div class="codebox">
-<div class="codehead"><span>Volver al estado de 0001</span></div>
-<pre><code>python manage.py migrate estudiantes 0001</code></pre>
-</div>
-<p>Django deshará <code>0002_estudiante_telefono</code>, siempre que la operación sea reversible.</p>
-
-<div class="codebox">
-<div class="codehead"><span>Aplicar nuevamente hasta 0002</span></div>
-<pre><code>python manage.py migrate estudiantes 0002</code></pre>
-</div>
-
-<div class="codebox">
-<div class="codehead"><span>Deshacer todas las migraciones de esa app</span></div>
-<pre><code>python manage.py migrate estudiantes zero</code></pre>
-</div>
-<div class="callout warning">
-<strong>Usa <code>zero</code> con cuidado:</strong> puede eliminar tablas o columnas creadas por las migraciones de la app y, por tanto, datos almacenados.
-</div>
-</div>
-</details>
-
-<details class="course-topic" id="migrations-05-crear-migracion-con-nombre">
-<summary>
-<span class="course-topic-num">05</span>
-<span class="course-topic-title">
-<strong>Crear una migración concreta y con nombre</strong>
-<small>identificar claramente cada cambio</small>
-</span>
-</summary>
-<div class="course-topic-body">
-<div class="topic-simple-intro">
-<span>EN UNA FRASE</span>
-<p>Puedes limitar <code>makemigrations</code> a una app y además darle un nombre descriptivo al archivo generado.</p>
-</div>
-
-<p>Por ejemplo, primero agregas un campo al modelo:</p>
-<div class="codebox">
-<div class="codehead"><span>estudiantes/models.py</span></div>
-<pre><code>class Estudiante(models.Model):
-    documento = models.CharField(max_length=20, unique=True)
-    nombre = models.CharField(max_length=120)
-    correo = models.EmailField()
-    activo = models.BooleanField(default=True)
-    telefono = models.CharField(max_length=20, blank=True)</code></pre>
-</div>
-
-<p>Luego creas una migración solo para <code>estudiantes</code> y le asignas un nombre:</p>
-<div class="codebox">
-<div class="codehead"><span>Terminal</span></div>
-<pre><code>python manage.py makemigrations estudiantes --name agregar_telefono</code></pre>
-</div>
-<p>Django generará un archivo parecido a:</p>
-<div class="output">estudiantes/migrations/0002_agregar_telefono.py</div>
-
-<p>Antes de aplicarla puedes inspeccionar el SQL aproximado:</p>
-<div class="codebox">
-<div class="codehead"><span>Ver SQL de una migración concreta</span></div>
-<pre><code>python manage.py sqlmigrate estudiantes 0002</code></pre>
-</div>
-
-<p>Y finalmente aplicarla:</p>
-<div class="codebox">
-<div class="codehead"><span>Aplicar hasta esa migración</span></div>
-<pre><code>python manage.py migrate estudiantes 0002</code></pre>
-</div>
-
-<h4>¿Y si quiero crear una migración manual?</h4>
-<p>Para casos avanzados, Django puede crear una migración vacía para que escribas operaciones manualmente:</p>
-<div class="codebox">
-<div class="codehead"><span>Migración vacía</span></div>
-<pre><code>python manage.py makemigrations estudiantes --empty --name cargar_datos_iniciales</code></pre>
-</div>
-<div class="callout warning">
-<strong>Para principiantes:</strong> normalmente no necesitas <code>--empty</code>. Primero aprende el flujo normal: modificar <code>models.py</code> → <code>makemigrations</code> → <code>migrate</code>.
-</div>
-</div>
-</details>
 <details class="course-topic" id="migrations-03-flujo-correcto-model-migration-database">
 <summary>
-<span class="course-topic-num">06</span>
+<span class="course-topic-num">03</span>
 <span class="course-topic-title">
 <strong>Flujo correcto</strong>
 <small>model → migration → database</small>
@@ -21388,11 +22171,11 @@ python manage.py migrate</code></pre>
 <span>👣 APLÍCALO PASO A PASO</span>
 <strong>Haz un cambio, guarda, prueba y luego continúa.</strong>
 </div>
-<ol class="concept-apply-steps"><li><span>1</span><p>Ejecuta <code>python manage.py makemigrations estudiantes</code>.</p></li><li><span>2</span><p>Abre <code>0001_initial.py</code> y observa qué generó Django.</p></li><li><span>3</span><p>Ejecuta <code>python manage.py migrate estudiantes</code>.</p></li><li><span>4</span><p>Comprueba con <code>python manage.py showmigrations estudiantes</code>.</p></li><li><span>5</span><p>Prueba <code>python manage.py sqlmigrate estudiantes 0001</code> para observar el SQL.</p></li><li><span>6</span><p>Cuando exista una <code>0002</code>, practica cómo llevar la app específicamente a <code>0001</code> o <code>0002</code>.</p></li></ol>
+<ol class="concept-apply-steps"><li><span>1</span><p>Ejecuta makemigrations.</p></li><li><span>2</span><p>Abre 0001_initial.py y observa qué generó Django.</p></li><li><span>3</span><p>Ejecuta migrate.</p></li><li><span>4</span><p>Comprueba con showmigrations.</p></li></ol>
 </div>
 <div class="concept-apply-check">
 <div><span>✅ COMPROBACIÓN</span><strong>¿Cómo sé que entendí?</strong></div>
-<p><code>showmigrations estudiantes</code> debe mostrar con <code>[X]</code> las migraciones aplicadas y con <code>[ ]</code> las pendientes.</p>
+<p>showmigrations debe mostrar las migraciones aplicadas.</p>
 </div>
 <div class="concept-apply-connection">
 <strong>🔗 Cómo se conecta con lo anterior</strong>
@@ -33599,7 +34382,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-</body></html>
 </body></html>
 </body></html>
 </body></html>

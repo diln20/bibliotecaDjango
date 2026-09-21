@@ -20471,7 +20471,7 @@ def buscar(request):
 <span>📍 ARCHIVO(S) EXACTO(S)</span>
 <p>Relaciona el concepto con estos archivos del mismo proyecto.</p>
 </div>
-<div class="concept-apply-paths"><div><span>📄</span><code>django_estudiantes/static/css/app.css</code></div><div><span>📄</span><code>django_estudiantes/templates/base.html</code></div></div>
+<div class="concept-apply-paths"><div><span>📄</span><code>django_estudiantes/static/css/app.css</code></div><div><span>📄</span><code>django_estudiantes/templates/base.html</code></div><div><span>📄</span><code>django_estudiantes/templates/estudiantes/lista.html</code></div></div>
 <div class="concept-apply-flow">
 <span>🔄 QUÉ PASA POR DETRÁS</span>
 <strong>Template → {% static %} → navegador carga CSS/JS</strong>
@@ -20481,7 +20481,7 @@ def buscar(request):
 <span>👣 APLÍCALO PASO A PASO</span>
 <strong>Haz un cambio, guarda, prueba y luego continúa.</strong>
 </div>
-<ol class="concept-apply-steps"><li><span>1</span><p>Crea static/css/app.css.</p></li><li><span>2</span><p>Usa {% load static %} en base.html.</p></li><li><span>3</span><p>Enlaza app.css.</p></li><li><span>4</span><p>Estiliza tabla, botones y formulario.</p></li><li><span>5</span><p>Comprueba en DevTools que el CSS cargó.</p></li></ol>
+<ol class="concept-apply-steps"><li><span>1</span><p>Crea <code>static/css/app.css</code>.</p></li><li><span>2</span><p>Usa <code>{% load static %}</code> en <code>base.html</code>.</p></li><li><span>3</span><p>Enlaza <code>app.css</code>.</p></li><li><span>4</span><p>Modifica <code>lista.html</code> y agrega <code>class="tarjeta"</code> a cada estudiante.</p></li><li><span>5</span><p>Recarga la lista y comprueba en DevTools que el CSS cargó.</p></li></ol>
 </div>
 <div class="concept-apply-check">
 <div><span>✅ COMPROBACIÓN</span><strong>¿Cómo sé que entendí?</strong></div>
@@ -20504,7 +20504,7 @@ def buscar(request):
         Sigue conteniendo saludo(), hora_actual(), volver_lista() y buscar()
         junto con las Views nuevas del proyecto.
       </p>
-</div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>urls.py</code></div><p>URLs de la app.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>migrations/</code></div><p>Historial del esquema.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>__init__.py</code></div><p>Paquete de migraciones.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>templates/</code></div><p>Templates globales.</p></div><div class="lesson-explorer-row type-html is-current" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>base.html</code><span class="explorer-current-tag">EDITAS AHORA</span></div><p>Base HTML.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>estudiantes/</code></div><p>Templates de estudiantes.</p></div><div class="lesson-explorer-row type-html" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>lista.html</code></div><p>Listado.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>static/</code></div><p>Static files.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>css/</code></div><p>CSS.</p></div><div class="lesson-explorer-row type-css is-current" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-css">CSS</span><code>app.css</code><span class="explorer-current-tag">EDITAS AHORA</span></div><p>Estilos.</p></div></div><div class="lesson-explorer-legend"><span><i class="legend-current"></i> Lo modificas ahora</span><span><i class="legend-existing"></i> Ya existía</span></div></div></details><div class="progressive-project-card" data-project-step="static">
+</div><div class="lesson-explorer-row type-py" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>urls.py</code></div><p>URLs de la app.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>migrations/</code></div><p>Historial del esquema.</p></div><div class="lesson-explorer-row type-py" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-py">PY</span><code>__init__.py</code></div><p>Paquete de migraciones.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>templates/</code></div><p>Templates globales.</p></div><div class="lesson-explorer-row type-html is-current" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>base.html</code><span class="explorer-current-tag">EDITAS AHORA</span></div><p>Base HTML.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>estudiantes/</code></div><p>Templates de estudiantes.</p></div><div class="lesson-explorer-row type-html is-current" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-html">HTML</span><code>lista.html</code><span class="explorer-current-tag">EDITAS AHORA</span></div><p>Listado con tarjetas de estudiantes.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:1"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>static/</code></div><p>Static files.</p></div><div class="lesson-explorer-row type-dir" style="--explorer-level:2"><div class="explorer-file-main"><span class="explorer-folder-icon">📁</span><code>css/</code></div><p>CSS.</p></div><div class="lesson-explorer-row type-css is-current" style="--explorer-level:3"><div class="explorer-file-main"><span class="explorer-type-badge badge-css">CSS</span><code>app.css</code><span class="explorer-current-tag">EDITAS AHORA</span></div><p>Estilos.</p></div></div><div class="lesson-explorer-legend"><span><i class="legend-current"></i> Lo modificas ahora</span><span><i class="legend-existing"></i> Ya existía</span></div></div></details><div class="progressive-project-card" data-project-step="static">
 <div class="progressive-project-head">
 <div>
 <span class="progressive-project-kicker">🧩 APLÍCALO AL MISMO PROYECTO</span>
@@ -20538,13 +20538,31 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
     max-width: 1100px;
     margin: 0 auto;
     padding: 24px;
+    background: #f5f7fb;
+}
+
+.lista-estudiantes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
 }
 
 .tarjeta {
-    border: 1px solid #ddd;
-    padding: 16px;
-    border-radius: 12px;
-    margin-bottom: 12px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.tarjeta h2 {
+    margin-top: 0;
+    color: #1e293b;
+}
+
+.tarjeta p {
+    margin-bottom: 0;
+    color: #475569;
 }
 </pre>
 </div>
@@ -20566,15 +20584,46 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
+</div>
+<div class="project-file-change">
+<div class="project-file-head">
+<span>📄 ARCHIVO EXACTO · AHORA USA LA CLASE CSS</span>
+<code>django_estudiantes/templates/estudiantes/lista.html</code>
+</div>
+<pre>{% extends "base.html" %}
+
+{% block title %}Estudiantes | Academia{% endblock %}
+
+{% block content %}
+&lt;h1&gt;Estudiantes&lt;/h1&gt;
+
+&lt;section class="lista-estudiantes"&gt;
+  {% for estudiante in estudiantes %}
+    &lt;article class="tarjeta"&gt;
+      &lt;h2&gt;{{ estudiante.nombre }}&lt;/h2&gt;
+      &lt;p&gt;
+        &lt;strong&gt;Documento:&lt;/strong&gt;
+        {{ estudiante.documento }}
+      &lt;/p&gt;
+    &lt;/article&gt;
+  {% empty %}
+    &lt;p&gt;No hay estudiantes.&lt;/p&gt;
+  {% endfor %}
+&lt;/section&gt;
+{% endblock %}
+</pre>
+<div class="callout success">
+<strong>Conexión HTML + CSS:</strong> <code>class="tarjeta"</code> es el puente entre <code>lista.html</code> y la regla <code>.tarjeta</code> de <code>app.css</code>. Django genera una tarjeta por cada estudiante del <code>{% for %}</code>.
+</div>
 </div></div>
 <div class="project-step-list">
 <span class="project-step-list-title">PASO A PASO · ORDEN SEGURO</span>
-<ol><li><span>1</span><p>Crea <code>static/css/app.css</code>.</p></li><li><span>2</span><p>Configura <code>STATICFILES_DIRS</code> para los archivos fuente.</p></li><li><span>3</span><p>Configura también <code>STATIC_ROOT</code>; así <code>collectstatic</code> tendrá un destino válido cuando lo pruebes.</p></li><li><span>4</span><p>Carga <code>{% load static %}</code> y enlaza el CSS en <code>base.html</code>.</p></li><li><span>5</span><p>Recarga <code>/estudiantes/</code>.</p></li></ol>
+<ol><li><span>1</span><p>Crea <code>static/css/app.css</code> con las reglas <code>.lista-estudiantes</code> y <code>.tarjeta</code>.</p></li><li><span>2</span><p>Configura <code>STATICFILES_DIRS</code> y <code>STATIC_ROOT</code>.</p></li><li><span>3</span><p>Carga <code>{% load static %}</code> y enlaza el CSS en <code>base.html</code>.</p></li><li><span>4</span><p>Abre <code>templates/estudiantes/lista.html</code> y convierte cada estudiante en <code>&lt;article class="tarjeta"&gt;</code>.</p></li><li><span>5</span><p>Recarga <code>/estudiantes/</code> y verifica que Ana y Luis aparezcan como tarjetas.</p></li></ol>
 </div>
 <div class="project-verification-access">
 <span>🌐 RUTA PARA COMPROBAR EL CAMBIO</span>
 <code>http://127.0.0.1:8000/estudiantes/</code>
-<p>Recarga forzadamente si el navegador conserva CSS antiguo.</p>
+<p>Debes ver a Ana y Luis en tarjetas. Si no cambia el diseño, haz una recarga forzada porque el navegador puede conservar CSS antiguo.</p>
 </div>
 <div class="project-health-check">
 <span>🩺 CHECKPOINT ANTES DE CONTINUAR</span>
@@ -20583,7 +20632,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 </div>
 <div class="progressive-project-result">
 <span>✅ RESULTADO AL TERMINAR ESTA LECCIÓN</span>
-<p>Los estilos funcionan en desarrollo y collectstatic ya tiene un destino preparado.</p>
+<p><code>lista.html</code> usa la clase <code>tarjeta</code>, el CSS se aplica al listado y <code>collectstatic</code> ya tiene un destino preparado.</p>
 </div>
 </div></div><div class="complementary-activity-card" data-complementary-section="static">
 <div class="complementary-activity-head">

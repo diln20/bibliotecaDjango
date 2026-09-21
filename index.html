@@ -21175,9 +21175,155 @@ class Estudiante(models.Model):
 </div>
 <div class="flow-wide"><span class="flow-box">migration</span><span class="flow-arr">→</span><span class="flow-box hot">migrate</span><span class="flow-arr">→</span><span class="flow-box good">Base de datos</span></div></div>
 </details>
-<details class="course-topic" id="migrations-03-flujo-correcto-model-migration-database">
+
+<details class="course-topic" id="migrations-03-solo-una-app">
 <summary>
 <span class="course-topic-num">03</span>
+<span class="course-topic-title">
+<strong>Migraciones de una app concreta</strong>
+<small>trabajar solo con estudiantes</small>
+</span>
+</summary>
+<div class="course-topic-body">
+<div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>Si tu proyecto tiene varias apps, puedes decirle a Django que revise o aplique migraciones únicamente para una app concreta.</p>
+</div>
+<div class="codebox">
+<div class="codehead"><span>Crear migraciones solamente de la app estudiantes</span></div>
+<pre><code>python manage.py makemigrations estudiantes</code></pre>
+</div>
+<div class="callout info">
+<strong>¿Qué significa?</strong> Django revisa los cambios de los modelos pertenecientes a la app <code>estudiantes</code> y genera las migraciones necesarias para esa app.
+</div>
+<div class="codebox">
+<div class="codehead"><span>Aplicar las migraciones pendientes de estudiantes</span></div>
+<pre><code>python manage.py migrate estudiantes</code></pre>
+</div>
+<div class="codebox">
+<div class="codehead"><span>Ver solamente el historial de estudiantes</span></div>
+<pre><code>python manage.py showmigrations estudiantes</code></pre>
+</div>
+<div class="output">estudiantes
+ [X] 0001_initial
+ [ ] 0002_estudiante_telefono</div>
+<div class="callout success">
+<strong>Lectura del resultado:</strong> <code>[X]</code> significa aplicada y <code>[ ]</code> significa pendiente.
+</div>
+</div>
+</details>
+
+<details class="course-topic" id="migrations-04-migracion-especifica">
+<summary>
+<span class="course-topic-num">04</span>
+<span class="course-topic-title">
+<strong>Ejecutar una migración específica</strong>
+<small>llevar una app hasta una versión concreta</small>
+</span>
+</summary>
+<div class="course-topic-body">
+<div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>Con <code>migrate app migracion</code> indicas el estado exacto al que quieres llevar esa app.</p>
+</div>
+<div class="codebox">
+<div class="codehead"><span>Ejemplo · llegar hasta 0001_initial</span></div>
+<pre><code>python manage.py migrate estudiantes 0001</code></pre>
+</div>
+<p>También puedes escribir el nombre completo:</p>
+<div class="codebox">
+<div class="codehead"><span>Nombre completo</span></div>
+<pre><code>python manage.py migrate estudiantes 0001_initial</code></pre>
+</div>
+<div class="callout warning">
+<strong>Importante:</strong> esto no significa “ejecuta solamente este archivo ignorando todo lo demás”. Django respeta las dependencias y deja la app en el estado correspondiente a esa migración. Si estabas en una migración posterior, puede deshacer migraciones hasta llegar a la indicada.
+</div>
+
+<h4>Ejemplo con dos migraciones</h4>
+<div class="ascii">estudiantes/migrations/
+├── 0001_initial.py
+└── 0002_estudiante_telefono.py</div>
+<p>Si ambas están aplicadas y ejecutas:</p>
+<div class="codebox">
+<div class="codehead"><span>Volver al estado de 0001</span></div>
+<pre><code>python manage.py migrate estudiantes 0001</code></pre>
+</div>
+<p>Django deshará <code>0002_estudiante_telefono</code>, siempre que la operación sea reversible.</p>
+
+<div class="codebox">
+<div class="codehead"><span>Aplicar nuevamente hasta 0002</span></div>
+<pre><code>python manage.py migrate estudiantes 0002</code></pre>
+</div>
+
+<div class="codebox">
+<div class="codehead"><span>Deshacer todas las migraciones de esa app</span></div>
+<pre><code>python manage.py migrate estudiantes zero</code></pre>
+</div>
+<div class="callout warning">
+<strong>Usa <code>zero</code> con cuidado:</strong> puede eliminar tablas o columnas creadas por las migraciones de la app y, por tanto, datos almacenados.
+</div>
+</div>
+</details>
+
+<details class="course-topic" id="migrations-05-crear-migracion-con-nombre">
+<summary>
+<span class="course-topic-num">05</span>
+<span class="course-topic-title">
+<strong>Crear una migración concreta y con nombre</strong>
+<small>identificar claramente cada cambio</small>
+</span>
+</summary>
+<div class="course-topic-body">
+<div class="topic-simple-intro">
+<span>EN UNA FRASE</span>
+<p>Puedes limitar <code>makemigrations</code> a una app y además darle un nombre descriptivo al archivo generado.</p>
+</div>
+
+<p>Por ejemplo, primero agregas un campo al modelo:</p>
+<div class="codebox">
+<div class="codehead"><span>estudiantes/models.py</span></div>
+<pre><code>class Estudiante(models.Model):
+    documento = models.CharField(max_length=20, unique=True)
+    nombre = models.CharField(max_length=120)
+    correo = models.EmailField()
+    activo = models.BooleanField(default=True)
+    telefono = models.CharField(max_length=20, blank=True)</code></pre>
+</div>
+
+<p>Luego creas una migración solo para <code>estudiantes</code> y le asignas un nombre:</p>
+<div class="codebox">
+<div class="codehead"><span>Terminal</span></div>
+<pre><code>python manage.py makemigrations estudiantes --name agregar_telefono</code></pre>
+</div>
+<p>Django generará un archivo parecido a:</p>
+<div class="output">estudiantes/migrations/0002_agregar_telefono.py</div>
+
+<p>Antes de aplicarla puedes inspeccionar el SQL aproximado:</p>
+<div class="codebox">
+<div class="codehead"><span>Ver SQL de una migración concreta</span></div>
+<pre><code>python manage.py sqlmigrate estudiantes 0002</code></pre>
+</div>
+
+<p>Y finalmente aplicarla:</p>
+<div class="codebox">
+<div class="codehead"><span>Aplicar hasta esa migración</span></div>
+<pre><code>python manage.py migrate estudiantes 0002</code></pre>
+</div>
+
+<h4>¿Y si quiero crear una migración manual?</h4>
+<p>Para casos avanzados, Django puede crear una migración vacía para que escribas operaciones manualmente:</p>
+<div class="codebox">
+<div class="codehead"><span>Migración vacía</span></div>
+<pre><code>python manage.py makemigrations estudiantes --empty --name cargar_datos_iniciales</code></pre>
+</div>
+<div class="callout warning">
+<strong>Para principiantes:</strong> normalmente no necesitas <code>--empty</code>. Primero aprende el flujo normal: modificar <code>models.py</code> → <code>makemigrations</code> → <code>migrate</code>.
+</div>
+</div>
+</details>
+<details class="course-topic" id="migrations-03-flujo-correcto-model-migration-database">
+<summary>
+<span class="course-topic-num">06</span>
 <span class="course-topic-title">
 <strong>Flujo correcto</strong>
 <small>model → migration → database</small>
@@ -21242,11 +21388,11 @@ python manage.py migrate</code></pre>
 <span>👣 APLÍCALO PASO A PASO</span>
 <strong>Haz un cambio, guarda, prueba y luego continúa.</strong>
 </div>
-<ol class="concept-apply-steps"><li><span>1</span><p>Ejecuta makemigrations.</p></li><li><span>2</span><p>Abre 0001_initial.py y observa qué generó Django.</p></li><li><span>3</span><p>Ejecuta migrate.</p></li><li><span>4</span><p>Comprueba con showmigrations.</p></li></ol>
+<ol class="concept-apply-steps"><li><span>1</span><p>Ejecuta <code>python manage.py makemigrations estudiantes</code>.</p></li><li><span>2</span><p>Abre <code>0001_initial.py</code> y observa qué generó Django.</p></li><li><span>3</span><p>Ejecuta <code>python manage.py migrate estudiantes</code>.</p></li><li><span>4</span><p>Comprueba con <code>python manage.py showmigrations estudiantes</code>.</p></li><li><span>5</span><p>Prueba <code>python manage.py sqlmigrate estudiantes 0001</code> para observar el SQL.</p></li><li><span>6</span><p>Cuando exista una <code>0002</code>, practica cómo llevar la app específicamente a <code>0001</code> o <code>0002</code>.</p></li></ol>
 </div>
 <div class="concept-apply-check">
 <div><span>✅ COMPROBACIÓN</span><strong>¿Cómo sé que entendí?</strong></div>
-<p>showmigrations debe mostrar las migraciones aplicadas.</p>
+<p><code>showmigrations estudiantes</code> debe mostrar con <code>[X]</code> las migraciones aplicadas y con <code>[ ]</code> las pendientes.</p>
 </div>
 <div class="concept-apply-connection">
 <strong>🔗 Cómo se conecta con lo anterior</strong>
